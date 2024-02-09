@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisy ui and tailwind css link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- manrope fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">   
+
+    <title>Document</title>
+</head>
+<body style="font-family: manrope;">
+   <header>
+     <h1 class="text-5xl text-center font-extrabold text-red-300 mb-8">Score Board</h1>
+     <h2 class="text-center"> <span class="team1 font-semibold text-2xl">Team1 </span> <span class="text-red-500"> VS </span> <span class="team2 font-semibold text-2xl">  Team2</span> </h2>
+     <!-- inputs -->
+     <input class="team1Input border-black-100 border-2" type="text" placeholder="enter team1 name">
+     <input class="team2Input hidden border-black-100 border-2" type="text" placeholder="enter team2 name">
+     <!-- btns -->
+     <button class="btn-team1 btn btn-sm">Submit</button>
+     <button class="btn-team2 hidden btn btn-sm">Submit</button>
+     
+   </header>
+
+   <article>
+    <section>
+      <p> <span>score</span>: <span>0</span>/ <span>0</span></p>
+    </section>
+   </article>
+
+   <footer>
+    
+   </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
