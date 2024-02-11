@@ -135,14 +135,14 @@ totalRunSix.addEventListener('click',function(){
 
 let wicketConter= 0;
 TeamWicket.addEventListener('click',function(){
-        if(wicketConter>=0 && wicketConter<9){
+        if(wicketConter>=0 && wicketConter<10){
 
             wicketConter++;
             totalWicket.innerHTML = wicketConter;
             
         }
         else{
-            totalWicket.innerHTML= '10'
+            totalWicket.innerHTML= wicketConter;
             runIncrmenterDeincrementer.style.display= 'none'
             overIncrementDecrement.style.display = 'none'
             undo1.style.display = 'block'
@@ -151,7 +151,7 @@ TeamWicket.addEventListener('click',function(){
 
 undo1.addEventListener('click',function(){
     runIncrmenterDeincrementer.style.display= 'block'
-    totalWicket.innerHTML= '9'
+    totalWicket.innerHTML= wicketConter;
     undo1.style.display = 'none'
     overIncrementDecrement.style.display = 'inline'
     totalOvar.innerHTML= overCounter
@@ -212,7 +212,7 @@ totalOverMinus.addEventListener('click',function(){
     }
 })
 totalOverPlus.addEventListener('click',function(){
-    if(overCounter>=0 && overCounter<overLimit.value-1){
+    if(overCounter>=0 && overCounter<overLimit.value){
         overCounter++;
         totalOvar.innerHTML = overCounter;
      
@@ -220,7 +220,7 @@ totalOverPlus.addEventListener('click',function(){
       
             overIncrementDecrement.style.display = 'none'
             runIncrmenterDeincrementer.style.display= 'none'
-            totalOvar.innerHTML= '12'
+            totalOvar.innerHTML= overCounter;
             undo1.style.display = 'block'
         
     }
