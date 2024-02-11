@@ -101,6 +101,7 @@ let totalRunSix= document.querySelector('.totalRunSix')
 let totalRun= document.querySelector('.totalRun')
 let totalWicket= document.querySelector('.totalWicket')
 let TeamWicket= document.querySelector('.TeamWicket')
+let undo1= document.querySelector('.undo1')
 let runIncrmenterDeincrementer= document.querySelector('.runIncrmenterDeincrementer')
 
 let runCounter=0;
@@ -141,7 +142,14 @@ TeamWicket.addEventListener('click',function(){
         else{
             totalWicket.innerHTML= '10'
             runIncrmenterDeincrementer.style.display= 'none'
+            undo1.style.display = 'block'
         }
+})
+
+undo1.addEventListener('click',function(){
+    runIncrmenterDeincrementer.style.display= 'block'
+    totalWicket.innerHTML= '9'
+    undo1.style.display = 'none'
 })
 
 
