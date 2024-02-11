@@ -185,6 +185,31 @@ targetBtn.addEventListener('click',function(){
             #target part end
 =========================================================*/
 /*=========================================================
+            #Over part start
+=========================================================*/
+let totalOvar = document.querySelector('.totalOvar')
+let totalOverMinus = document.querySelector('.totalOverMinus')
+let totalOverPlus = document.querySelector('.totalOverPlus')
+
+let overCounter =0;
+
+totalOverMinus.addEventListener('click',function(){
+    if(overCounter>0){
+        overCounter--;
+        totalOvar.innerHTML = overCounter;
+    }
+})
+totalOverPlus.addEventListener('click',function(){
+    if(overCounter>=0){
+        overCounter++;
+        totalOvar.innerHTML = overCounter;
+    }
+})
+
+/*=========================================================
+            #Over part end
+=========================================================*/
+/*=========================================================
             #Batter part start
 =========================================================*/
 
