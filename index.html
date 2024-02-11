@@ -15,23 +15,49 @@
     <title>Document</title>
 </head>
 <body style="font-family: manrope;">
-   <header>
-     <h1 class="text-5xl text-center font-extrabold text-red-300 mb-8">Score Board</h1>
-     <h2 class="text-center"> <span class="team1 font-semibold text-2xl">Team1 </span> <span class="text-red-500"> VS </span> <span class="team2 font-semibold text-2xl">  Team2</span> </h2>
+   <header class="text-center">
+    <div class="mb-6">
+      <h1 class="text-5xl text-center font-extrabold text-red-300 mb-8">Score Board</h1>
+      <h2 class="text-center"> <span class="team1 font-semibold text-2xl">Team1 </span> <span class="text-red-500"> VS </span> <span class="team2 font-semibold text-2xl">  Team2</span> </h2>
+    </div>
      <!-- inputs -->
-     <input class="team1Input border-black-100 border-2" type="text" placeholder="enter team1 name">
-     <input class="team2Input hidden border-black-100 border-2" type="text" placeholder="enter team2 name">
-     <!-- btns -->
-     <button class="btn-team1 btn btn-sm">Submit</button>
-     <button class="btn-team2 hidden btn btn-sm">Submit</button>
+    <div class="mb-6">
+      <input class="team1Input border-black-100 border-2" type="text" placeholder="enter team1 name">
+      <input class="team2Input hidden border-black-100 border-2" type="text" placeholder="enter team2 name">
+      <!-- btns -->
+      <button class="btn-team1 btn btn-sm">Submit</button>
+      <button class="btn-team2 hidden btn btn-sm">Submit</button>
+ 
+      <h2 class="error1 text-red-500"></h2>
+    </div>
+
+     <div class="toss hidden mb-6">
+      <p>Which team batting now?</p>
+      <button class="toss-team1 btn btn-success">Team1</button>
+      <button class="toss-team2 btn btn-success">Team2</button>
+     </div>
+
+     <div class="battingFirstOrTarget hidden">
+        <button class="battingFirst btn btn-success">Batting first?</button> <span>or</span>
+        <button class="battingTarget btn btn-success">Target?</button>
+     </div>
      
    </header>
 
-   <article>
+   <article class="ml-6">
     <section>
-      <p> <span>score</span>: <span>0</span>/ <span>0</span></p>
+      <div class="target hidden">
+        <input type="number" placeholder="Target?" class="targetInput"> <button class="targetBtn btn btn-sm bg-yellow-500">set target</button>
+        <h2 class="error2 text-red-500"></h2>
+      </div>
+      <h2 class="targetName hidden">Target: <span class="targetRuns">0</span></h2>
+     </section>
+
+    <section>
+      <p> <span class="scoreCard">score</span>: <span>0</span>/ <span>0</span></p>
     </section>
    </article>
+
 
    <footer>
     
