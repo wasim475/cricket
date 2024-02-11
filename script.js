@@ -93,6 +93,56 @@ battingTarget.addEventListener('click',function(){
             #ScoreCard part start
 =========================================================*/
 let scoreCard= document.querySelector('.scoreCard')
+let totalRunMinus= document.querySelector('.totalRunMinus')
+let totalRunPlus= document.querySelector('.totalRunPlus')
+let totalRunDouble= document.querySelector('.totalRunDouble')
+let totalRunFour= document.querySelector('.totalRunFour')
+let totalRunSix= document.querySelector('.totalRunSix')
+let totalRun= document.querySelector('.totalRun')
+let totalWicket= document.querySelector('.totalWicket')
+let TeamWicket= document.querySelector('.TeamWicket')
+let runIncrmenterDeincrementer= document.querySelector('.runIncrmenterDeincrementer')
+
+let runCounter=0;
+totalRunMinus.addEventListener('click',function(){
+    if(runCounter>=1){
+        runCounter--;
+        totalRun.innerHTML=runCounter;
+    }
+})
+
+
+totalRunPlus.addEventListener('click',function(){
+    runCounter++;
+    totalRun.innerHTML=runCounter;
+})
+
+totalRunDouble.addEventListener('click',function(){
+    runCounter+=2;
+    totalRun.innerHTML=runCounter;
+})
+totalRunFour.addEventListener('click',function(){
+    runCounter+=4;
+    totalRun.innerHTML=runCounter;
+})
+totalRunSix.addEventListener('click',function(){
+    runCounter+=6;
+    totalRun.innerHTML=runCounter;
+})
+
+let wicketConter= 0;
+TeamWicket.addEventListener('click',function(){
+        if(wicketConter>=0 && wicketConter<9){
+
+            wicketConter++;
+            totalWicket.innerHTML = wicketConter;
+            
+        }
+        else{
+            totalWicket.innerHTML= '10'
+            runIncrmenterDeincrementer.style.display= 'none'
+        }
+})
 
 
 
