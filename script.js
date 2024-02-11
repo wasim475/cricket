@@ -103,6 +103,7 @@ let totalRun= document.querySelector('.totalRun')
 let totalWicket= document.querySelector('.totalWicket')
 let TeamWicket= document.querySelector('.TeamWicket')
 let undo1= document.querySelector('.undo1')
+let scoreAndOver= document.querySelector('.scoreAndOver')
 let runIncrmenterDeincrementer= document.querySelector('.runIncrmenterDeincrementer')
 
 let runCounter=0;
@@ -211,15 +212,17 @@ totalOverMinus.addEventListener('click',function(){
     }
 })
 totalOverPlus.addEventListener('click',function(){
-    if(overCounter>=0 && overCounter<overLimit.value){
+    if(overCounter>=0 && overCounter<overLimit.value-1){
         overCounter++;
         totalOvar.innerHTML = overCounter;
-        if(overCounter>overLimit.value-1){
+     
+    }else{
+      
             overIncrementDecrement.style.display = 'none'
             runIncrmenterDeincrementer.style.display= 'none'
             totalOvar.innerHTML= '12'
             undo1.style.display = 'block'
-        }
+        
     }
 })
 
@@ -229,6 +232,7 @@ overLimitBtn.addEventListener('click',function(){
     }
     else{
         overLimitPortion.style.display = 'none'
+        scoreAndOver.style.display = 'block'
     }
 })
 
