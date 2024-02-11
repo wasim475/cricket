@@ -80,6 +80,7 @@ tossTeam2.addEventListener('click',function(){
 
 battingFirst.addEventListener('click',function(){
     battingFirstOrTarget.style.display = 'none'
+    overLimitPortion.style.display ='block'
 })
 
 battingTarget.addEventListener('click',function(){
@@ -142,6 +143,7 @@ TeamWicket.addEventListener('click',function(){
         else{
             totalWicket.innerHTML= '10'
             runIncrmenterDeincrementer.style.display= 'none'
+            overIncrementDecrement.style.display = 'none'
             undo1.style.display = 'block'
         }
 })
@@ -150,6 +152,8 @@ undo1.addEventListener('click',function(){
     runIncrmenterDeincrementer.style.display= 'block'
     totalWicket.innerHTML= '9'
     undo1.style.display = 'none'
+    overIncrementDecrement.style.display = 'inline'
+    totalOvar.innerHTML= overCounter
 })
 
 
@@ -177,6 +181,8 @@ targetBtn.addEventListener('click',function(){
         targetName.style.display = 'block'
         error2.innerHTML = ''
         target.style.display = 'none'
+        error2.innerHTML= ''
+        overLimitPortion.style.display = 'block'
     }
     
 })
@@ -190,6 +196,11 @@ targetBtn.addEventListener('click',function(){
 let totalOvar = document.querySelector('.totalOvar')
 let totalOverMinus = document.querySelector('.totalOverMinus')
 let totalOverPlus = document.querySelector('.totalOverPlus')
+let overLimit = document.querySelector('.overLimit')
+let overLimitBtn = document.querySelector('.overLimitBtn')
+let error3 = document.querySelector('.error3')
+let overLimitPortion = document.querySelector('.overLimitPortion')
+let overIncrementDecrement = document.querySelector('.overIncrementDecrement')
 
 let overCounter =0;
 
@@ -200,9 +211,24 @@ totalOverMinus.addEventListener('click',function(){
     }
 })
 totalOverPlus.addEventListener('click',function(){
-    if(overCounter>=0){
+    if(overCounter>=0 && overCounter<overLimit.value){
         overCounter++;
         totalOvar.innerHTML = overCounter;
+        if(overCounter>overLimit.value-1){
+            overIncrementDecrement.style.display = 'none'
+            runIncrmenterDeincrementer.style.display= 'none'
+            totalOvar.innerHTML= '12'
+            undo1.style.display = 'block'
+        }
+    }
+})
+
+overLimitBtn.addEventListener('click',function(){
+    if(!overLimit.value && overLimit.value<0){
+        error3.innerHTML = 'Invalid'
+    }
+    else{
+        overLimitPortion.style.display = 'none'
     }
 })
 
