@@ -111,6 +111,7 @@ totalRunMinus.addEventListener('click',function(){
     if(runCounter>=1){
         runCounter--;
         totalRun.innerHTML=runCounter;
+        needRuns.innerHTML++
     }
 })
 
@@ -118,19 +119,43 @@ totalRunMinus.addEventListener('click',function(){
 totalRunPlus.addEventListener('click',function(){
     runCounter++;
     totalRun.innerHTML=runCounter;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 1;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 })
 
 totalRunDouble.addEventListener('click',function(){
     runCounter+=2;
     totalRun.innerHTML=runCounter;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 2;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 })
 totalRunFour.addEventListener('click',function(){
     runCounter+=4;
     totalRun.innerHTML=runCounter;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 4;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 })
 totalRunSix.addEventListener('click',function(){
     runCounter+=6;
     totalRun.innerHTML=runCounter;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 6;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 })
 
 let wicketConter= 0;
@@ -184,6 +209,9 @@ targetBtn.addEventListener('click',function(){
         target.style.display = 'none'
         error2.innerHTML= ''
         overLimitPortion.style.display = 'block'
+        needRuns.innerHTML = targetInput.value
+        NeedTeamName.innerHTML=scoreCard.innerHTML
+        needToWin.style.display = 'block'
     }
     
 })
@@ -191,6 +219,20 @@ targetBtn.addEventListener('click',function(){
 /*=========================================================
             #target part end
 =========================================================*/
+
+/*=========================================================
+            #Need to win part start
+=========================================================*/
+let needToWin = document.querySelector('.needToWin')
+let NeedTeamName = document.querySelector('.NeedTeamName')
+let needRuns = document.querySelector('.needRuns')
+
+
+
+/*=========================================================
+            #Need to win part End
+=========================================================*/
+
 /*=========================================================
             #Over part start
 =========================================================*/
@@ -241,6 +283,9 @@ overLimitBtn.addEventListener('click',function(){
 /*=========================================================
             #Over part end
 =========================================================*/
+
+
+
 /*=========================================================
             #Batter part start
 =========================================================*/
@@ -733,6 +778,12 @@ p1RunPlus.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p1ballC++;
     p1Ball.innerHTML = p1ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 1;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
     
 })
 
@@ -745,6 +796,12 @@ p1Six.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p1ballC++;
     p1Ball.innerHTML = p1ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 6;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 
 })
 p1Four.addEventListener('click',function(){
@@ -754,11 +811,18 @@ p1Four.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p1ballC++;
     p1Ball.innerHTML = p1ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 4;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 
 })
 p1RunMinus.addEventListener('click',function(){
     runC--;
     p1run.innerHTML = runC;
+    needRuns.innerHTML++
     
 })
 let p2RunC = 0;
@@ -769,6 +833,12 @@ p2RunPlus.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p2ballC++;
     p2Ball.innerHTML = p2ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 1;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 })
 let p2Six = document.querySelector('.p2Six')
 let p2Four = document.querySelector('.p2Four')
@@ -779,6 +849,12 @@ p2Six.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p2ballC++;
     p2Ball.innerHTML = p2ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 6;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 
 })
 p2Four.addEventListener('click',function(){
@@ -788,11 +864,18 @@ p2Four.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p2ballC++;
     p2Ball.innerHTML = p2ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 4;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 
 })
 p2RunMinus.addEventListener('click',function(){
     p2RunC--;
     p2run.innerHTML = p2RunC;
+    needRuns.innerHTML++;
 })
 let p3RunC = 0;
 p3RunPlus.addEventListener('click',function(){
@@ -802,6 +885,12 @@ p3RunPlus.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p3ballC++;
     p3Ball.innerHTML = p3ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 1;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 })
 
 let p3Six = document.querySelector('.p3Six')
@@ -813,6 +902,12 @@ p3Six.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p3ballC++;
     p3Ball.innerHTML = p3ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 6;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 
 })
 p3Four.addEventListener('click',function(){
@@ -822,12 +917,19 @@ p3Four.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p3ballC++;
     p3Ball.innerHTML = p3ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 4;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 
 })
 
 p3RunMinus.addEventListener('click',function(){
     p3RunC--;
     p3run.innerHTML = p3RunC;
+    needRuns.innerHTML++;
     
 })
 let p4RunC = 0;
@@ -838,6 +940,12 @@ p4RunPlus.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p4ballC++;
     p4Ball.innerHTML = p4ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 1;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 })
 
 let p4Six = document.querySelector('.p4Six')
@@ -849,6 +957,12 @@ p4Six.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p4ballC++;
     p4Ball.innerHTML = p4ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 6;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 
 })
 p4Four.addEventListener('click',function(){
@@ -858,12 +972,19 @@ p4Four.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p4ballC++;
     p4Ball.innerHTML = p4ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 4;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 
 })
 
 p4RunMinus.addEventListener('click',function(){
     p4RunC--;
     p4run.innerHTML = p4RunC;
+    needRuns.innerHTML++;
 })
 let p5RunC = 0;
 p5RunPlus.addEventListener('click',function(){
@@ -873,6 +994,12 @@ p5RunPlus.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p5ballC++;
     p5Ball.innerHTML = p5ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 1;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 })
 
 let p5Six = document.querySelector('.p5Six')
@@ -884,6 +1011,12 @@ p5Six.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p5ballC++;
     p5Ball.innerHTML = p5ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 6;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 
 })
 p5Four.addEventListener('click',function(){
@@ -893,12 +1026,19 @@ p5Four.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p5ballC++;
     p5Ball.innerHTML = p5ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 4;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 
 })
 
 p5RunMinus.addEventListener('click',function(){
     p5RunC--;
     p5run.innerHTML = p5RunC;
+    needRuns.innerHTML++;
 })
 let p6RunC = 0;
 p6RunPlus.addEventListener('click',function(){
@@ -908,6 +1048,12 @@ p6RunPlus.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p6ballC++;
     p6Ball.innerHTML = p6ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 1;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 })
 
 let p6Six = document.querySelector('.p6Six')
@@ -919,6 +1065,12 @@ p6Six.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p6ballC++;
     p6Ball.innerHTML = p6ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 6;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 
 })
 p6Four.addEventListener('click',function(){
@@ -928,12 +1080,19 @@ p6Four.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p6ballC++;
     p6Ball.innerHTML = p6ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 4;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 
 })
 
 p6RunMinus.addEventListener('click',function(){
     p6RunC--;
     p6run.innerHTML = p6RunC;
+    needRuns.innerHTML++;
 })
 let p7RunC = 0;
 p7RunPlus.addEventListener('click',function(){
@@ -943,6 +1102,12 @@ p7RunPlus.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p7ballC++;
     p7Ball.innerHTML = p7ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 1;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 })
 
 let p7Six = document.querySelector('.p7Six')
@@ -954,6 +1119,12 @@ p7Six.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p7ballC++;
     p7Ball.innerHTML = p7ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 6;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 
 })
 p7Four.addEventListener('click',function(){
@@ -963,12 +1134,19 @@ p7Four.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p7ballC++;
     p7Ball.innerHTML = p7ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 4;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 
 })
 
 p7RunMinus.addEventListener('click',function(){
     p7RunC--;
     p7run.innerHTML = p7RunC;
+    needRuns.innerHTML++;
 })
 let p8RunC = 0;
 p8RunPlus.addEventListener('click',function(){
@@ -978,6 +1156,12 @@ p8RunPlus.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p8ballC++;
     p8Ball.innerHTML = p8ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 1;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 })
 
 let p8Six = document.querySelector('.p8Six')
@@ -989,6 +1173,12 @@ p8Six.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p8ballC++;
     p8Ball.innerHTML = p8ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 6;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 
 })
 p8Four.addEventListener('click',function(){
@@ -998,12 +1188,19 @@ p8Four.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p8ballC++;
     p8Ball.innerHTML = p8ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 4;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 
 })
 
 p8RunMinus.addEventListener('click',function(){
     p8RunC--;
     p8run.innerHTML = p8RunC;
+    needRuns.innerHTML++;
 })
 let p9RunC = 0;
 p9RunPlus.addEventListener('click',function(){
@@ -1013,6 +1210,12 @@ p9RunPlus.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p9ballC++;
     p9Ball.innerHTML = p9ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 1;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 })
 
 let p9Six = document.querySelector('.p9Six')
@@ -1024,6 +1227,12 @@ p9Six.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p9ballC++;
     p9Ball.innerHTML = p9ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 6;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 
 })
 p9Four.addEventListener('click',function(){
@@ -1033,12 +1242,19 @@ p9Four.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p9ballC++;
     p9Ball.innerHTML = p9ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 4;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 
 })
 
 p9RunMinus.addEventListener('click',function(){
     p9RunC--;
     p9run.innerHTML = p9RunC;
+    needRuns.innerHTML++;
 })
 let p10RunC = 0;
 p10RunPlus.addEventListener('click',function(){
@@ -1048,6 +1264,12 @@ p10RunPlus.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p10ballC++;
     p10Ball.innerHTML = p10ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 1;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 })
 
 let p10Six = document.querySelector('.p10Six')
@@ -1059,6 +1281,12 @@ p10Six.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p10ballC++;
     p10Ball.innerHTML = p10ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 6;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 
 })
 p10Four.addEventListener('click',function(){
@@ -1068,11 +1296,18 @@ p10Four.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p10ballC++;
     p10Ball.innerHTML = p10ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 4;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 })
 
 p10RunMinus.addEventListener('click',function(){
     p10RunC--;
     p10run.innerHTML = p10RunC;
+    needRuns.innerHTML++;
 })
 let p11RunC = 0;
 p11RunPlus.addEventListener('click',function(){
@@ -1082,6 +1317,12 @@ p11RunPlus.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p11ballC++;
     p11Ball.innerHTML = p11ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 1;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 })
 
 let p11Six = document.querySelector('.p11Six')
@@ -1093,6 +1334,12 @@ p11Six.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p11ballC++;
     p11Ball.innerHTML = p11ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 6;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 
 })
 p11Four.addEventListener('click',function(){
@@ -1102,6 +1349,12 @@ p11Four.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p11ballC++;
     p11Ball.innerHTML = p11ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 4;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 
 })
 
@@ -1110,6 +1363,7 @@ p11RunMinus.addEventListener('click',function(){
     p11run.innerHTML = p11RunC;
     p11ballC++;
     p11Ball.innerHTML = p11ballC;
+    needRuns.innerHTML++;
 })
 
 // RunPlus Minus Button #End
