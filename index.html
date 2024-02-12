@@ -99,42 +99,148 @@
     <div class="box">
             <ol class="blist">
 
-                <li class="player1  p-2 mb-2"><span class="p1"> </span> <span class="p1run">0</span> <span class="p1Ball font-bold text-red-500 text-xs">0</span> <br>
+                <li class="player1 hidden  p-2 mb-2">
+                  <span class="p1"> </span> 
+                  <span class="p1run text-lg font-extrabold text-blue-500 ml-2">0</span> 
+                  <span class="p1Ball font-bold text-red-500 text-xs">0</span> <br>
                   
-                  <button class="p1RunPlus btn btn-xs bg-green-500 px-4">R+</button> 
-                  <button class="p1BallPlus btn btn-xs bg-green-500 px-4">B+</button>  
-                  <button class="p1Four btn btn-xs bg-green-500 px-4">4</button>  
-                  <button class="p1Six btn btn-xs bg-green-500 px-4">6</button>  
-                  <button class="p1RunMinus btn btn-xs bg-red-500 px-4">R-</button>   
-                  <button class="p1BallMinus btn btn-xs bg-red-500 px-4">B-</button> 
-                  <button class="p1Out btn btn-xs bg-red-500 px-4">Out</button></li>
+                  <button class="p1RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                  <button class="p1BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
+                  <button class="p1Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                  <button class="p1Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                  <button class="p1RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                  <button class="p1BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
+                  <button class="p1Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
 
-                <li class="player2"><span class="p2"> </span> <span class="p2run">0</span> <span class="p2Ball">0</span> 
-                  <button class="p2RunPlus">Run+</button>  
-                  <button class="p2BallPlus">Ball+</button>
-                  <button class="p2Four btn btn-xs bg-green-500 px-4">4</button>  
-                  <button class="p2Six btn btn-xs bg-green-500 px-4">6</button>   
-                  <button class="p2RunMinus">Run-</button>   
-                  <button class="p2BallMinus">Ball-</button> 
-                  <button class="p2Out">Out</button></li>
+                <li class="player2 hidden  p-2 mb-2">
+                  <span class="p2"> </span> 
+                  <span class="p2run text-lg font-extrabold text-blue-500 ml-2">0</span> 
+                  <span class="p2Ball font-bold text-red-500 text-xs">0</span> <br>
 
-                <li class="player3"><span class="p3"> </span> <span class="p3run">0</span> <span class="p3Ball">0</span> <button class="p3RunPlus">Run+</button>  <button class="p3BallPlus">Ball+</button>  <button class="p3RunMinus">Run-</button>   <button class="p3BallMinus">Ball-</button> <button class="p3Out">Out</button></li>
+                  <button class="p2RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                  <button class="p2BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
+                  <button class="p2Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                  <button class="p2Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                  <button class="p2RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                  <button class="p2BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
+                  <button class="p2Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
 
-                <li class="player4"><span class="p4"> </span> <span class="p4run">0</span> <span class="p4Ball">0</span> <button class="p4RunPlus">Run+</button>  <button class="p4BallPlus">Ball+</button>  <button class="p4RunMinus">Run-</button>   <button class="p4BallMinus">Ball-</button> <button class="p4Out">Out</button></li>
+                <li class="player3 hidden  p-2 mb-2">
+                  <span class="p3"> </span> 
+                  <span class="p3run text-lg font-extrabold text-blue-500 ml-2">0</span> 
+                  <span class="p3Ball font-bold text-red-500 text-xs">0</span> <br>
 
-                <li class="player5"><span class="p5"> </span> <span class="p5run">0</span> <span class="p5Ball">0</span> <button class="p5RunPlus">Run+</button>  <button class="p5BallPlus">Ball+</button>  <button class="p5RunMinus">Run-</button>   <button class="p5BallMinus">Ball-</button> <button class="p5Out">Out</button></li>
+                  <button class="p3RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                  <button class="p3BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
+                  <button class="p3Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                  <button class="p3Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                  <button class="p3RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                  <button class="p3BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
+                  <button class="p3Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
 
-                <li class="player6"><span class="p6"> </span> <span class="p6run">0</span> <span class="p6Ball">0</span> <button class="p6RunPlus">Run+</button>  <button class="p6BallPlus">Ball+</button>  <button class="p6RunMinus">Run-</button>   <button class="p6BallMinus">Ball-</button> <button class="p6Out">Out</button></li>
+                  <li class="player4 hidden  p-2 mb-2">
+                    <span class="p4"> </span> 
+                    <span class="p4run text-lg font-extrabold text-blue-500 ml-2">0</span> 
+                    <span class="p4Ball font-bold text-red-500 text-xs">0</span> <br>
+  
+                    <button class="p4RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                    <button class="p4BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
+                    <button class="p4Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                    <button class="p4Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                    <button class="p4RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                    <button class="p4BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
+                    <button class="p4Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
 
-                <li class="player7"><span class="p7"> </span> <span class="p7run">0</span> <span class="p7Ball">0</span> <button class="p7RunPlus">Run+</button>  <button class="p7BallPlus">Ball+</button>  <button class="p7RunMinus">Run-</button>   <button class="p7BallMinus">Ball-</button> <button class="p7Out">Out</button></li>
+                    <li class="player5 hidden  p-2 mb-2">
+                      <span class="p5"> </span> 
+                      <span class="p5run text-lg font-extrabold text-blue-500 ml-2">0</span> 
+                      <span class="p5Ball font-bold text-red-500 text-xs">0</span> <br>
+    
+                      <button class="p5RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                      <button class="p5BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
+                      <button class="p5Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                      <button class="p5Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                      <button class="p5RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                      <button class="p5BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
+                      <button class="p5Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
 
-                <li class="player8"><span class="p8"> </span> <span class="p8run">0</span> <span class="p8Ball">0</span> <button class="p8RunPlus">Run+</button>  <button class="p8BallPlus">Ball+</button>  <button class="p8RunMinus">Run-</button>   <button class="p8BallMinus">Ball-</button> <button class="p8Out">Out</button></li>
+                      <li class="player6 hidden  p-2 mb-2">
+                        <span class="p6"> </span> 
+                        <span class="p6run text-lg font-extrabold text-blue-500 ml-2">0</span> 
+                        <span class="p6Ball font-bold text-red-500 text-xs">0</span> <br>
+      
+                        <button class="p6RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                        <button class="p6BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
+                        <button class="p6Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                        <button class="p6Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                        <button class="p6RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                        <button class="p6BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
+                        <button class="p6Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
 
-                <li class="player9"><span class="p9"> </span> <span class="p9run">0</span> <span class="p9Ball">0</span> <button class="p9RunPlus">Run+</button>  <button class="p9BallPlus">Ball+</button>  <button class="p9RunMinus">Run-</button>   <button class="p9BallMinus">Ball-</button> <button class="p9Out">Out</button></li>
+                        <li class="player7 hidden  p-2 mb-2">
+                          <span class="p7"> </span> 
+                          <span class="p7run text-lg font-extrabold text-blue-500 ml-2">0</span> 
+                          <span class="p7Ball font-bold text-red-500 text-xs">0</span> <br>
+        
+                          <button class="p7RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                          <button class="p7BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
+                          <button class="p7Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                          <button class="p7Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                          <button class="p7RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                          <button class="p7BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
+                          <button class="p7Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
 
-                <li class="player10"><span class="p10"> </span> <span class="p10run">0</span> <span class="p10Ball">0</span> <button class="p10RunPlus">Run+</button>  <button class="p10BallPlus">Ball+</button>  <button class="p10RunMinus">Run-</button>   <button class="p10BallMinus">Ball-</button> <button class="p10Out">Out</button></li>
+                          <li class="player8 hidden  p-2 mb-2">
+                            <span class="p8"> </span> 
+                            <span class="p8run text-lg font-extrabold text-blue-500 ml-2">0</span> 
+                            <span class="p8Ball font-bold text-red-500 text-xs">0</span> <br>
+          
+                            <button class="p8RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                            <button class="p8BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
+                            <button class="p8Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                            <button class="p8Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                            <button class="p8RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                            <button class="p8BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
+                            <button class="p8Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
 
-                <li class="player11"><span class="p11"> </span> <span class="p11run">0</span> <span class="p11Ball">0</span> <button class="p11RunPlus">Run+</button>  <button class="p11BallPlus">Ball+</button>  <button class="p11RunMinus">Run-</button>   <button class="p11BallMinus">Ball-</button> <button class="p11Out">Out</button></li>
+                            <li class="player9 hidden  p-2 mb-2">
+                              <span class="p9"> </span> 
+                              <span class="p9run text-lg font-extrabold text-blue-500 ml-2">0</span> 
+                              <span class="p9Ball font-bold text-red-500 text-xs">0</span> <br>
+            
+                              <button class="p9RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                              <button class="p9BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
+                              <button class="p9Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                              <button class="p9Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                              <button class="p9RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                              <button class="p9BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
+                              <button class="p9Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
+
+                              <li class="player10 hidden  p-2 mb-2">
+                                <span class="p10"> </span> 
+                                <span class="p10run text-lg font-extrabold text-blue-500 ml-2">0</span> 
+                                <span class="p10Ball font-bold text-red-500 text-xs">0</span> <br>
+              
+                                <button class="p10RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                                <button class="p10BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
+                                <button class="p10Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                                <button class="p10Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                                <button class="p10RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                                <button class="p10BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
+                                <button class="p10Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
+
+                                <li class="player11 hidden  p-2 mb-2">
+                                  <span class="p11"> </span> 
+                                  <span class="p11run text-lg font-extrabold text-blue-500 ml-2">0</span> 
+                                  <span class="p11Ball font-bold text-red-500 text-xs">0</span> <br>
+                
+                                  <button class="p11RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                                  <button class="p11BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
+                                  <button class="p11Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                                  <button class="p11Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                                  <button class="p11RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                                  <button class="p11BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
+                                  <button class="p11Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
             </ol>
         </div>
 

@@ -699,6 +699,7 @@ p1Four.addEventListener('click',function(){
 p1RunMinus.addEventListener('click',function(){
     runC--;
     p1run.innerHTML = runC;
+    
 })
 let p2RunC = 0;
 p2RunPlus.addEventListener('click',function(){
@@ -735,7 +736,7 @@ p3Six.addEventListener('click',function(){
 
 })
 p3Four.addEventListener('click',function(){
-    p3RunC=p3RunC+6;
+    p3RunC=p3RunC+4;
     p3run.innerHTML = p3RunC;
 
 })
@@ -743,12 +744,27 @@ p3Four.addEventListener('click',function(){
 p3RunMinus.addEventListener('click',function(){
     p3RunC--;
     p3run.innerHTML = p3RunC;
+    
 })
 let p4RunC = 0;
 p4RunPlus.addEventListener('click',function(){
     p4RunC++;
     p4run.innerHTML = p4RunC;
 })
+
+let p4Six = document.querySelector('.p4Six')
+let p4Four = document.querySelector('.p4Four')
+p4Six.addEventListener('click',function(){
+    p4RunC=p4RunC+6;
+    p4run.innerHTML = p4RunC;
+
+})
+p4Four.addEventListener('click',function(){
+    p4RunC=p4RunC+4;
+    p4run.innerHTML = p4RunC;
+
+})
+
 p4RunMinus.addEventListener('click',function(){
     p4RunC--;
     p4run.innerHTML = p4RunC;
@@ -758,6 +774,20 @@ p5RunPlus.addEventListener('click',function(){
     p5RunC++;
     p5run.innerHTML = p5RunC;
 })
+
+let p5Six = document.querySelector('.p5Six')
+let p5Four = document.querySelector('.p5Four')
+p5Six.addEventListener('click',function(){
+    p5RunC=p5RunC+6;
+    p5run.innerHTML = p5RunC;
+
+})
+p5Four.addEventListener('click',function(){
+    p5RunC=p5RunC+4;
+    p5run.innerHTML = p5RunC;
+
+})
+
 p5RunMinus.addEventListener('click',function(){
     p5RunC--;
     p5run.innerHTML = p5RunC;
@@ -767,6 +797,20 @@ p6RunPlus.addEventListener('click',function(){
     p6RunC++;
     p6run.innerHTML = p6RunC;
 })
+
+let p6Six = document.querySelector('.p6Six')
+let p6Four = document.querySelector('.p6Four')
+p6Six.addEventListener('click',function(){
+    p6RunC=p6RunC+6;
+    p6run.innerHTML = p6RunC;
+
+})
+p6Four.addEventListener('click',function(){
+    p6RunC=p6RunC+4;
+    p6run.innerHTML = p6RunC;
+
+})
+
 p6RunMinus.addEventListener('click',function(){
     p6RunC--;
     p6run.innerHTML = p6RunC;
@@ -776,6 +820,20 @@ p7RunPlus.addEventListener('click',function(){
     p7RunC++;
     p7run.innerHTML = p7RunC;
 })
+
+let p7Six = document.querySelector('.p7Six')
+let p7Four = document.querySelector('.p7Four')
+p7Six.addEventListener('click',function(){
+    p7RunC=p7RunC+6;
+    p7run.innerHTML = p7RunC;
+
+})
+p7Four.addEventListener('click',function(){
+    p7RunC=p7RunC+4;
+    p7run.innerHTML = p7RunC;
+
+})
+
 p7RunMinus.addEventListener('click',function(){
     p7RunC--;
     p7run.innerHTML = p7RunC;
@@ -785,6 +843,20 @@ p8RunPlus.addEventListener('click',function(){
     p8RunC++;
     p8run.innerHTML = p8RunC;
 })
+
+let p8Six = document.querySelector('.p8Six')
+let p8Four = document.querySelector('.p8Four')
+p8Six.addEventListener('click',function(){
+    p8RunC=p8RunC+6;
+    p8run.innerHTML = p8RunC;
+
+})
+p8Four.addEventListener('click',function(){
+    p8RunC=p8RunC+4;
+    p8run.innerHTML = p8RunC;
+
+})
+
 p8RunMinus.addEventListener('click',function(){
     p8RunC--;
     p8run.innerHTML = p8RunC;
@@ -794,6 +866,20 @@ p9RunPlus.addEventListener('click',function(){
     p9RunC++;
     p9run.innerHTML = p9RunC;
 })
+
+let p9Six = document.querySelector('.p9Six')
+let p9Four = document.querySelector('.p9Four')
+p9Six.addEventListener('click',function(){
+    p9RunC=p9RunC+6;
+    p9run.innerHTML = p9RunC;
+
+})
+p9Four.addEventListener('click',function(){
+    p9RunC=p9RunC+4;
+    p9run.innerHTML = p9RunC;
+
+})
+
 p9RunMinus.addEventListener('click',function(){
     p9RunC--;
     p9run.innerHTML = p9RunC;
@@ -803,6 +889,20 @@ p10RunPlus.addEventListener('click',function(){
     p10RunC++;
     p10run.innerHTML = p10RunC;
 })
+
+let p10Six = document.querySelector('.p10Six')
+let p10Four = document.querySelector('.p10Four')
+p10Six.addEventListener('click',function(){
+    p10RunC=p10RunC+6;
+    p10run.innerHTML = p10RunC;
+
+})
+p10Four.addEventListener('click',function(){
+    p10RunC=p10RunC+4;
+    p10run.innerHTML = p10RunC;
+
+})
+
 p10RunMinus.addEventListener('click',function(){
     p10RunC--;
     p10run.innerHTML = p10RunC;
@@ -812,6 +912,20 @@ p11RunPlus.addEventListener('click',function(){
     p11RunC++;
     p11run.innerHTML = p11RunC;
 })
+
+let p11Six = document.querySelector('.p11Six')
+let p11Four = document.querySelector('.p11Four')
+p11Six.addEventListener('click',function(){
+    p11RunC=p11RunC+6;
+    p11run.innerHTML = p11RunC;
+
+})
+p11Four.addEventListener('click',function(){
+    p11RunC=p11RunC+4;
+    p11run.innerHTML = p11RunC;
+
+})
+
 p11RunMinus.addEventListener('click',function(){
     p11RunC--;
     p11run.innerHTML = p11RunC;
@@ -823,6 +937,7 @@ let p1ballC=0;
 p1BallPlus.addEventListener('click',function(){
     p1ballC++;
     p1Ball.innerHTML = p1ballC;
+    console.log(p1ballC)
 })
 p1BallMinus.addEventListener('click',function(){
     p1ballC--;
