@@ -328,6 +328,10 @@ p1Out.addEventListener('click',function(){
     p1Out.style.display = 'none'
     p1Six.style.display = 'none'
     p1Four.style.display = 'none'
+    wicketConter++;
+    totalWicket.innerHTML = wicketConter;
+    p1ballC++;
+    p1Ball.innerHTML = p1ballC;
 })
 p2Out.addEventListener('click',function(){
     p2RunPlus.style.display = 'none'
@@ -337,6 +341,10 @@ p2Out.addEventListener('click',function(){
     p2Out.style.display = 'none'
     p2Six.style.display = 'none'
     p2Four.style.display = 'none'
+    wicketConter++;
+    totalWicket.innerHTML = wicketConter;
+    p2ballC++;
+    p2Ball.innerHTML = p2ballC;
 })
 
 p3Out.addEventListener('click',function(){
@@ -347,6 +355,10 @@ p3Out.addEventListener('click',function(){
     p3Out.style.display = 'none'
     p3Six.style.display = 'none'
     p3Four.style.display = 'none'
+    wicketConter++;
+    totalWicket.innerHTML = wicketConter;
+    p3ballC++;
+    p3Ball.innerHTML = p3ballC;
 })
 p4Out.addEventListener('click',function(){
     p4RunPlus.style.display = 'none'
@@ -356,6 +368,10 @@ p4Out.addEventListener('click',function(){
     p4Out.style.display = 'none'
     p4Six.style.display = 'none'
     p4Four.style.display = 'none'
+    wicketConter++;
+    totalWicket.innerHTML = wicketConter;
+    p4ballC++;
+    p4Ball.innerHTML = p4ballC;
 })
 p11Out.addEventListener('click',function(){
     p11RunPlus.style.display = 'none'
@@ -365,6 +381,10 @@ p11Out.addEventListener('click',function(){
     p11Out.style.display = 'none'
     p11Six.style.display = 'none'
     p11Four.style.display = 'none'
+    wicketConter++;
+    totalWicket.innerHTML = wicketConter;
+    p11ballC++;
+    p11Ball.innerHTML = p11ballC;
 })
 p5Out.addEventListener('click',function(){
     p5RunPlus.style.display = 'none'
@@ -374,6 +394,10 @@ p5Out.addEventListener('click',function(){
     p5Out.style.display = 'none'
     p5Six.style.display = 'none'
     p5Four.style.display = 'none'
+    wicketConter++;
+    totalWicket.innerHTML = wicketConter;
+    p5ballC++;
+    p5Ball.innerHTML = p5ballC;
 })
 p6Out.addEventListener('click',function(){
     p6RunPlus.style.display = 'none'
@@ -383,6 +407,10 @@ p6Out.addEventListener('click',function(){
     p6Out.style.display = 'none'
     p6Six.style.display = 'none'
     p6Four.style.display = 'none'
+    wicketConter++;
+    totalWicket.innerHTML = wicketConter;
+    p6ballC++;
+    p6Ball.innerHTML = p6ballC;
 })
 p7Out.addEventListener('click',function(){
     p7RunPlus.style.display = 'none'
@@ -392,6 +420,10 @@ p7Out.addEventListener('click',function(){
     p7Out.style.display = 'none'
     p7Six.style.display = 'none'
     p7Four.style.display = 'none'
+    wicketConter++;
+    totalWicket.innerHTML = wicketConter;
+    p7ballC++;
+    p7Ball.innerHTML = p7ballC;
 })
 p8Out.addEventListener('click',function(){
     p8RunPlus.style.display = 'none'
@@ -401,6 +433,10 @@ p8Out.addEventListener('click',function(){
     p8Out.style.display = 'none'
     p8Six.style.display = 'none'
     p8Four.style.display = 'none'
+    wicketConter++;
+    totalWicket.innerHTML = wicketConter;
+    p8ballC++;
+    p8Ball.innerHTML = p8ballC;
 })
 p9Out.addEventListener('click',function(){
     p9RunPlus.style.display = 'none'
@@ -410,6 +446,10 @@ p9Out.addEventListener('click',function(){
     p9Out.style.display = 'none'
     p9Six.style.display = 'none'
     p9Four.style.display = 'none'
+    wicketConter++;
+    totalWicket.innerHTML = wicketConter;
+    p9ballC++;
+    p9Ball.innerHTML = p9ballC;
 })
 p10Out.addEventListener('click',function(){
     p10RunPlus.style.display = 'none'
@@ -419,6 +459,10 @@ p10Out.addEventListener('click',function(){
     p10Out.style.display = 'none'
     p10Six.style.display = 'none'
     p10Four.style.display = 'none'
+    wicketConter++;
+    totalWicket.innerHTML = wicketConter;
+    p10ballC++;
+    p10Ball.innerHTML = p10ballC;
 })
 // Out portion #End
 // Batter Name Protion #Start
@@ -685,6 +729,11 @@ let runC=0;
 p1RunPlus.addEventListener('click',function(){
     runC++;
     p1run.innerHTML = runC;
+    runCounter++;
+    totalRun.innerHTML=runCounter;
+    p1ballC++;
+    p1Ball.innerHTML = p1ballC;
+    
 })
 
 let p1Six = document.querySelector('.p1Six')
@@ -692,11 +741,19 @@ let p1Four = document.querySelector('.p1Four')
 p1Six.addEventListener('click',function(){
     runC=runC+6;
     p1run.innerHTML = runC;
+    runCounter+=6;
+    totalRun.innerHTML=runCounter;
+    p1ballC++;
+    p1Ball.innerHTML = p1ballC;
 
 })
 p1Four.addEventListener('click',function(){
     runC=runC+4;
     p1run.innerHTML = runC;
+    runCounter+=4;
+    totalRun.innerHTML=runCounter;
+    p1ballC++;
+    p1Ball.innerHTML = p1ballC;
 
 })
 p1RunMinus.addEventListener('click',function(){
@@ -708,17 +765,29 @@ let p2RunC = 0;
 p2RunPlus.addEventListener('click',function(){
     p2RunC++;
     p2run.innerHTML = p2RunC;
+    runCounter++;
+    totalRun.innerHTML=runCounter;
+    p2ballC++;
+    p2Ball.innerHTML = p2ballC;
 })
 let p2Six = document.querySelector('.p2Six')
 let p2Four = document.querySelector('.p2Four')
 p2Six.addEventListener('click',function(){
     p2RunC=p2RunC+6;
     p2run.innerHTML = p2RunC;
+    runCounter+=6;
+    totalRun.innerHTML=runCounter;
+    p2ballC++;
+    p2Ball.innerHTML = p2ballC;
 
 })
 p2Four.addEventListener('click',function(){
     p2RunC=p2RunC+4;
     p2run.innerHTML = p2RunC;
+    runCounter+=4;
+    totalRun.innerHTML=runCounter;
+    p2ballC++;
+    p2Ball.innerHTML = p2ballC;
 
 })
 p2RunMinus.addEventListener('click',function(){
@@ -729,6 +798,10 @@ let p3RunC = 0;
 p3RunPlus.addEventListener('click',function(){
     p3RunC++;
     p3run.innerHTML = p3RunC;
+    runCounter++;
+    totalRun.innerHTML=runCounter;
+    p3ballC++;
+    p3Ball.innerHTML = p3ballC;
 })
 
 let p3Six = document.querySelector('.p3Six')
@@ -736,11 +809,19 @@ let p3Four = document.querySelector('.p3Four')
 p3Six.addEventListener('click',function(){
     p3RunC=p3RunC+6;
     p3run.innerHTML = p3RunC;
+    runCounter+=6;
+    totalRun.innerHTML=runCounter;
+    p3ballC++;
+    p3Ball.innerHTML = p3ballC;
 
 })
 p3Four.addEventListener('click',function(){
     p3RunC=p3RunC+4;
     p3run.innerHTML = p3RunC;
+    runCounter+=4;
+    totalRun.innerHTML=runCounter;
+    p3ballC++;
+    p3Ball.innerHTML = p3ballC;
 
 })
 
@@ -753,6 +834,10 @@ let p4RunC = 0;
 p4RunPlus.addEventListener('click',function(){
     p4RunC++;
     p4run.innerHTML = p4RunC;
+    runCounter++;
+    totalRun.innerHTML=runCounter;
+    p4ballC++;
+    p4Ball.innerHTML = p4ballC;
 })
 
 let p4Six = document.querySelector('.p4Six')
@@ -760,11 +845,19 @@ let p4Four = document.querySelector('.p4Four')
 p4Six.addEventListener('click',function(){
     p4RunC=p4RunC+6;
     p4run.innerHTML = p4RunC;
+    runCounter+=6;
+    totalRun.innerHTML=runCounter;
+    p4ballC++;
+    p4Ball.innerHTML = p4ballC;
 
 })
 p4Four.addEventListener('click',function(){
     p4RunC=p4RunC+4;
     p4run.innerHTML = p4RunC;
+    runCounter+=4;
+    totalRun.innerHTML=runCounter;
+    p4ballC++;
+    p4Ball.innerHTML = p4ballC;
 
 })
 
@@ -776,6 +869,10 @@ let p5RunC = 0;
 p5RunPlus.addEventListener('click',function(){
     p5RunC++;
     p5run.innerHTML = p5RunC;
+    runCounter++;
+    totalRun.innerHTML=runCounter;
+    p5ballC++;
+    p5Ball.innerHTML = p5ballC;
 })
 
 let p5Six = document.querySelector('.p5Six')
@@ -783,11 +880,19 @@ let p5Four = document.querySelector('.p5Four')
 p5Six.addEventListener('click',function(){
     p5RunC=p5RunC+6;
     p5run.innerHTML = p5RunC;
+    runCounter+=6;
+    totalRun.innerHTML=runCounter;
+    p5ballC++;
+    p5Ball.innerHTML = p5ballC;
 
 })
 p5Four.addEventListener('click',function(){
     p5RunC=p5RunC+4;
     p5run.innerHTML = p5RunC;
+    runCounter+=4;
+    totalRun.innerHTML=runCounter;
+    p5ballC++;
+    p5Ball.innerHTML = p5ballC;
 
 })
 
@@ -799,6 +904,10 @@ let p6RunC = 0;
 p6RunPlus.addEventListener('click',function(){
     p6RunC++;
     p6run.innerHTML = p6RunC;
+    runCounter++;
+    totalRun.innerHTML=runCounter;
+    p6ballC++;
+    p6Ball.innerHTML = p6ballC;
 })
 
 let p6Six = document.querySelector('.p6Six')
@@ -806,11 +915,19 @@ let p6Four = document.querySelector('.p6Four')
 p6Six.addEventListener('click',function(){
     p6RunC=p6RunC+6;
     p6run.innerHTML = p6RunC;
+    runCounter+=6;
+    totalRun.innerHTML=runCounter;
+    p6ballC++;
+    p6Ball.innerHTML = p6ballC;
 
 })
 p6Four.addEventListener('click',function(){
     p6RunC=p6RunC+4;
     p6run.innerHTML = p6RunC;
+    runCounter+=4;
+    totalRun.innerHTML=runCounter;
+    p6ballC++;
+    p6Ball.innerHTML = p6ballC;
 
 })
 
@@ -822,6 +939,10 @@ let p7RunC = 0;
 p7RunPlus.addEventListener('click',function(){
     p7RunC++;
     p7run.innerHTML = p7RunC;
+    runCounter++;
+    totalRun.innerHTML=runCounter;
+    p7ballC++;
+    p7Ball.innerHTML = p7ballC;
 })
 
 let p7Six = document.querySelector('.p7Six')
@@ -829,11 +950,19 @@ let p7Four = document.querySelector('.p7Four')
 p7Six.addEventListener('click',function(){
     p7RunC=p7RunC+6;
     p7run.innerHTML = p7RunC;
+    runCounter+=6;
+    totalRun.innerHTML=runCounter;
+    p7ballC++;
+    p7Ball.innerHTML = p7ballC;
 
 })
 p7Four.addEventListener('click',function(){
     p7RunC=p7RunC+4;
     p7run.innerHTML = p7RunC;
+    runCounter+=4;
+    totalRun.innerHTML=runCounter;
+    p7ballC++;
+    p7Ball.innerHTML = p7ballC;
 
 })
 
@@ -845,6 +974,10 @@ let p8RunC = 0;
 p8RunPlus.addEventListener('click',function(){
     p8RunC++;
     p8run.innerHTML = p8RunC;
+    runCounter++;
+    totalRun.innerHTML=runCounter;
+    p8ballC++;
+    p8Ball.innerHTML = p8ballC;
 })
 
 let p8Six = document.querySelector('.p8Six')
@@ -852,11 +985,19 @@ let p8Four = document.querySelector('.p8Four')
 p8Six.addEventListener('click',function(){
     p8RunC=p8RunC+6;
     p8run.innerHTML = p8RunC;
+    runCounter+=6;
+    totalRun.innerHTML=runCounter;
+    p8ballC++;
+    p8Ball.innerHTML = p8ballC;
 
 })
 p8Four.addEventListener('click',function(){
     p8RunC=p8RunC+4;
     p8run.innerHTML = p8RunC;
+    runCounter+=4;
+    totalRun.innerHTML=runCounter;
+    p8ballC++;
+    p8Ball.innerHTML = p8ballC;
 
 })
 
@@ -868,6 +1009,10 @@ let p9RunC = 0;
 p9RunPlus.addEventListener('click',function(){
     p9RunC++;
     p9run.innerHTML = p9RunC;
+    runCounter++;
+    totalRun.innerHTML=runCounter;
+    p9ballC++;
+    p9Ball.innerHTML = p9ballC;
 })
 
 let p9Six = document.querySelector('.p9Six')
@@ -875,11 +1020,19 @@ let p9Four = document.querySelector('.p9Four')
 p9Six.addEventListener('click',function(){
     p9RunC=p9RunC+6;
     p9run.innerHTML = p9RunC;
+    runCounter+=6;
+    totalRun.innerHTML=runCounter;
+    p9ballC++;
+    p9Ball.innerHTML = p9ballC;
 
 })
 p9Four.addEventListener('click',function(){
     p9RunC=p9RunC+4;
     p9run.innerHTML = p9RunC;
+    runCounter+=4;
+    totalRun.innerHTML=runCounter;
+    p9ballC++;
+    p9Ball.innerHTML = p9ballC;
 
 })
 
@@ -891,6 +1044,10 @@ let p10RunC = 0;
 p10RunPlus.addEventListener('click',function(){
     p10RunC++;
     p10run.innerHTML = p10RunC;
+    runCounter++;
+    totalRun.innerHTML=runCounter;
+    p10ballC++;
+    p10Ball.innerHTML = p10ballC;
 })
 
 let p10Six = document.querySelector('.p10Six')
@@ -898,12 +1055,19 @@ let p10Four = document.querySelector('.p10Four')
 p10Six.addEventListener('click',function(){
     p10RunC=p10RunC+6;
     p10run.innerHTML = p10RunC;
+    runCounter+=6;
+    totalRun.innerHTML=runCounter;
+    p10ballC++;
+    p10Ball.innerHTML = p10ballC;
 
 })
 p10Four.addEventListener('click',function(){
     p10RunC=p10RunC+4;
     p10run.innerHTML = p10RunC;
-
+    runCounter+=4;
+    totalRun.innerHTML=runCounter;
+    p10ballC++;
+    p10Ball.innerHTML = p10ballC;
 })
 
 p10RunMinus.addEventListener('click',function(){
@@ -914,6 +1078,10 @@ let p11RunC = 0;
 p11RunPlus.addEventListener('click',function(){
     p11RunC++;
     p11run.innerHTML = p11RunC;
+    runCounter++;
+    totalRun.innerHTML=runCounter;
+    p11ballC++;
+    p11Ball.innerHTML = p11ballC;
 })
 
 let p11Six = document.querySelector('.p11Six')
@@ -921,17 +1089,27 @@ let p11Four = document.querySelector('.p11Four')
 p11Six.addEventListener('click',function(){
     p11RunC=p11RunC+6;
     p11run.innerHTML = p11RunC;
+    runCounter+=6;
+    totalRun.innerHTML=runCounter;
+    p11ballC++;
+    p11Ball.innerHTML = p11ballC;
 
 })
 p11Four.addEventListener('click',function(){
     p11RunC=p11RunC+4;
     p11run.innerHTML = p11RunC;
+    runCounter+=4;
+    totalRun.innerHTML=runCounter;
+    p11ballC++;
+    p11Ball.innerHTML = p11ballC;
 
 })
 
 p11RunMinus.addEventListener('click',function(){
     p11RunC--;
     p11run.innerHTML = p11RunC;
+    p11ballC++;
+    p11Ball.innerHTML = p11ballC;
 })
 
 // RunPlus Minus Button #End
