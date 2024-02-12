@@ -323,6 +323,8 @@ p1Out.addEventListener('click',function(){
     p1RunMinus.style.display = 'none'
     p1BallMinus.style.display = 'none'
     p1Out.style.display = 'none'
+    p1Six.style.display = 'none'
+    p1Four.style.display = 'none'
 })
 p2Out.addEventListener('click',function(){
     p2RunPlus.style.display = 'none'
@@ -330,6 +332,8 @@ p2Out.addEventListener('click',function(){
     p2RunMinus.style.display = 'none'
     p2BallMinus.style.display = 'none'
     p2Out.style.display = 'none'
+    p2Six.style.display = 'none'
+    p2Four.style.display = 'none'
 })
 
 p3Out.addEventListener('click',function(){
@@ -338,6 +342,8 @@ p3Out.addEventListener('click',function(){
     p3RunMinus.style.display = 'none'
     p3BallMinus.style.display = 'none'
     p3Out.style.display = 'none'
+    p3Six.style.display = 'none'
+    p3Four.style.display = 'none'
 })
 p4Out.addEventListener('click',function(){
     p4RunPlus.style.display = 'none'
@@ -345,6 +351,8 @@ p4Out.addEventListener('click',function(){
     p4RunMinus.style.display = 'none'
     p4BallMinus.style.display = 'none'
     p4Out.style.display = 'none'
+    p4Six.style.display = 'none'
+    p4Four.style.display = 'none'
 })
 p11Out.addEventListener('click',function(){
     p11RunPlus.style.display = 'none'
@@ -352,6 +360,8 @@ p11Out.addEventListener('click',function(){
     p11RunMinus.style.display = 'none'
     p11BallMinus.style.display = 'none'
     p11Out.style.display = 'none'
+    p11Six.style.display = 'none'
+    p11Four.style.display = 'none'
 })
 p5Out.addEventListener('click',function(){
     p5RunPlus.style.display = 'none'
@@ -359,6 +369,8 @@ p5Out.addEventListener('click',function(){
     p5RunMinus.style.display = 'none'
     p5BallMinus.style.display = 'none'
     p5Out.style.display = 'none'
+    p5Six.style.display = 'none'
+    p5Four.style.display = 'none'
 })
 p6Out.addEventListener('click',function(){
     p6RunPlus.style.display = 'none'
@@ -366,6 +378,8 @@ p6Out.addEventListener('click',function(){
     p6RunMinus.style.display = 'none'
     p6BallMinus.style.display = 'none'
     p6Out.style.display = 'none'
+    p6Six.style.display = 'none'
+    p6Four.style.display = 'none'
 })
 p7Out.addEventListener('click',function(){
     p7RunPlus.style.display = 'none'
@@ -373,6 +387,8 @@ p7Out.addEventListener('click',function(){
     p7RunMinus.style.display = 'none'
     p7BallMinus.style.display = 'none'
     p7Out.style.display = 'none'
+    p7Six.style.display = 'none'
+    p7Four.style.display = 'none'
 })
 p8Out.addEventListener('click',function(){
     p8RunPlus.style.display = 'none'
@@ -380,6 +396,8 @@ p8Out.addEventListener('click',function(){
     p8RunMinus.style.display = 'none'
     p8BallMinus.style.display = 'none'
     p8Out.style.display = 'none'
+    p8Six.style.display = 'none'
+    p8Four.style.display = 'none'
 })
 p9Out.addEventListener('click',function(){
     p9RunPlus.style.display = 'none'
@@ -387,6 +405,8 @@ p9Out.addEventListener('click',function(){
     p9RunMinus.style.display = 'none'
     p9BallMinus.style.display = 'none'
     p9Out.style.display = 'none'
+    p9Six.style.display = 'none'
+    p9Four.style.display = 'none'
 })
 p10Out.addEventListener('click',function(){
     p10RunPlus.style.display = 'none'
@@ -394,6 +414,8 @@ p10Out.addEventListener('click',function(){
     p10RunMinus.style.display = 'none'
     p10BallMinus.style.display = 'none'
     p10Out.style.display = 'none'
+    p10Six.style.display = 'none'
+    p10Four.style.display = 'none'
 })
 // Out portion #End
 // Batter Name Protion #Start
@@ -650,6 +672,7 @@ let p8BallMinus = document.querySelector('.p8BallMinus')
 let p9BallMinus = document.querySelector('.p9BallMinus')
 let p10BallMinus = document.querySelector('.p10BallMinus')
 let p11BallMinus = document.querySelector('.p11BallMinus')
+
 // Player Ball- #End
 
 
@@ -660,6 +683,19 @@ p1RunPlus.addEventListener('click',function(){
     runC++;
     p1run.innerHTML = runC;
 })
+
+let p1Six = document.querySelector('.p1Six')
+let p1Four = document.querySelector('.p1Four')
+p1Six.addEventListener('click',function(){
+    runC=runC+6;
+    p1run.innerHTML = runC;
+
+})
+p1Four.addEventListener('click',function(){
+    runC=runC+4;
+    p1run.innerHTML = runC;
+
+})
 p1RunMinus.addEventListener('click',function(){
     runC--;
     p1run.innerHTML = runC;
@@ -668,6 +704,18 @@ let p2RunC = 0;
 p2RunPlus.addEventListener('click',function(){
     p2RunC++;
     p2run.innerHTML = p2RunC;
+})
+let p2Six = document.querySelector('.p2Six')
+let p2Four = document.querySelector('.p2Four')
+p2Six.addEventListener('click',function(){
+    p2RunC=p2RunC+6;
+    p2run.innerHTML = p2RunC;
+
+})
+p2Four.addEventListener('click',function(){
+    p2RunC=p2RunC+4;
+    p2run.innerHTML = p2RunC;
+
 })
 p2RunMinus.addEventListener('click',function(){
     p2RunC--;
@@ -678,6 +726,20 @@ p3RunPlus.addEventListener('click',function(){
     p3RunC++;
     p3run.innerHTML = p3RunC;
 })
+
+let p3Six = document.querySelector('.p3Six')
+let p3Four = document.querySelector('.p3Four')
+p3Six.addEventListener('click',function(){
+    p3RunC=p3RunC+6;
+    p3run.innerHTML = p3RunC;
+
+})
+p3Four.addEventListener('click',function(){
+    p3RunC=p3RunC+6;
+    p3run.innerHTML = p3RunC;
+
+})
+
 p3RunMinus.addEventListener('click',function(){
     p3RunC--;
     p3run.innerHTML = p3RunC;
