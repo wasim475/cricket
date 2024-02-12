@@ -233,6 +233,8 @@ overLimitBtn.addEventListener('click',function(){
     else{
         overLimitPortion.style.display = 'none'
         scoreAndOver.style.display = 'block'
+        batsman.style.display = 'block'
+        
     }
 })
 
@@ -242,6 +244,7 @@ overLimitBtn.addEventListener('click',function(){
 /*=========================================================
             #Batter part start
 =========================================================*/
+let batsman = document.querySelector('.batsman')
 let batterBaller = document.querySelector('.batterBaller')
 let bnInput = document.querySelector('.bnInput')
 let batbtn = document.querySelector('.batbtn')
