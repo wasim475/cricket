@@ -89,206 +89,371 @@
         #Need to win end
     =========================================== -->
    </article>
+   <hr class="mt-3 mb-3">
    <section>
-     
+    <div class="batterOrBowler hidden flex w-full gap-x-3 flex-row">
+      <div class="grid flex-grow  card bg-base-300 rounded-box place-items-center">
+        <button class="BattersBtn btn btn-sm">Batters</button>
+      </div> 
+      <div class="grid flex-grow  card bg-base-300 rounded-box place-items-center">
+        <button class="bowlersBtn btn btn-sm">Bowlers</button>
+      </div>
+    </div>
    </section>
    <!-- Batter section -->
-   <hr class="mt-3 mb-3">
-   <div class="batsman hidden mt-6">
-    <input type="text" class="b1 border-black-100 border-2 py-[1px] px-1 " placeholder="Enter Batter Name." > 
-    
-    
-    <button class="btn1 btn btn-sm bg-gray-400 text-white ">Batter</button>
-
-    <input type="text" class="b2 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Batter Name." > 
-    
-    <button class="btn2 btn btn-sm bg-gray-400 text-white hidden">Batter</button>
-
-    <input type="text" class="b3 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Batter Name." > 
-    
-    <button class="btn3 btn btn-sm bg-gray-400 text-white hidden">Batter</button>
-
-    <input type="text" class="b4 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Batter Name." > 
-    
-    <button class="btn4 btn btn-sm bg-gray-400 text-white hidden">Batter</button>
-
-    <input type="text" class="b5 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Batter Name." > 
-    
-    <button class="btn5 btn btn-sm bg-gray-400 text-white hidden">Batter</button>
-
-    <input type="text" class="b6 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Batter Name." > 
-    
-    <button class="btn6 btn btn-sm bg-gray-400 text-white hidden">Batter</button>
-
-    <input type="text" class="b7 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Batter Name." > 
-    
-    <button class="btn7 btn btn-sm bg-gray-400 text-white hidden">Batter</button>
-
-    <input type="text" class="b8 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Batter Name." > 
-    
-    <button class="btn8 btn btn-sm bg-gray-400 text-white hidden">Batter</button>
-
-    <input type="text" class="b9 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Batter Name." > 
-    
-    <button class="btn9 btn btn-sm bg-gray-400 text-white hidden">Batter</button>
-
-    <input type="text" class="b10 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Batter Name." > 
-    
-    <button class="btn10 btn btn-sm bg-gray-400 text-white hidden" >Batter</button
-      >
-    <input type="text" class="b11 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Batter Name." > 
-    
-    <button class="btn11 btn btn-sm bg-gray-400 text-white hidden">Batter</button
-      >
-    <h3 class="err2 text-red-500"></h3>
-</div>
-
-    <div class="box">
-            <ol class="blist">
-                <li class="player1 hidden  p-2 mb-2 border-b-2 drop-shadow-md">
-                  <span class="p1"> </span> 
-                  <span class="p1run text-lg font-extrabold text-blue-500 ml-2">0</span> 
-                  <span class="p1Ball font-bold text-red-500 text-xs">0</span> <br>
-                  
-                  <button class="p1RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
-                  <button class="p1BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
-                  <button class="p1Four btn btn-xs text-white bg-green-500 px-4">4</button>  
-                  <button class="p1Six btn btn-xs text-white bg-green-500 px-4">6</button>  
-                  <button class="p1RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
-                  <button class="p1BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
-                  <button class="p1Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
-
-                <li class="player2 hidden  p-2 mb-2 border-b-2 drop-shadow-md">
-                  <span class="p2"> </span> 
-                  <span class="p2run text-lg font-extrabold text-blue-500 ml-2">0</span> 
-                  <span class="p2Ball font-bold text-red-500 text-xs">0</span> <br>
-
-                  <button class="p2RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
-                  <button class="p2BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
-                  <button class="p2Four btn btn-xs text-white bg-green-500 px-4">4</button>  
-                  <button class="p2Six btn btn-xs text-white bg-green-500 px-4">6</button>  
-                  <button class="p2RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
-                  <button class="p2BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
-                  <button class="p2Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
-
-                <li class="player3 hidden  p-2 mb-2 border-b-2 drop-shadow-md">
-                  <span class="p3"> </span> 
-                  <span class="p3run text-lg font-extrabold text-blue-500 ml-2">0</span> 
-                  <span class="p3Ball font-bold text-red-500 text-xs">0</span> <br>
-
-                  <button class="p3RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
-                  <button class="p3BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
-                  <button class="p3Four btn btn-xs text-white bg-green-500 px-4">4</button>  
-                  <button class="p3Six btn btn-xs text-white bg-green-500 px-4">6</button>  
-                  <button class="p3RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
-                  <button class="p3BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
-                  <button class="p3Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
-
-                  <li class="player4 hidden  p-2 mb-2 border-b-2 drop-shadow-md">
-                    <span class="p4"> </span> 
-                    <span class="p4run text-lg font-extrabold text-blue-500 ml-2">0</span> 
-                    <span class="p4Ball font-bold text-red-500 text-xs">0</span> <br>
-  
-                    <button class="p4RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
-                    <button class="p4BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
-                    <button class="p4Four btn btn-xs text-white bg-green-500 px-4">4</button>  
-                    <button class="p4Six btn btn-xs text-white bg-green-500 px-4">6</button>  
-                    <button class="p4RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
-                    <button class="p4BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
-                    <button class="p4Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
-
-                    <li class="player5 hidden  p-2 mb-2 border-b-2 drop-shadow-md">
-                      <span class="p5"> </span> 
-                      <span class="p5run text-lg font-extrabold text-blue-500 ml-2">0</span> 
-                      <span class="p5Ball font-bold text-red-500 text-xs">0</span> <br>
-    
-                      <button class="p5RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
-                      <button class="p5BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
-                      <button class="p5Four btn btn-xs text-white bg-green-500 px-4">4</button>  
-                      <button class="p5Six btn btn-xs text-white bg-green-500 px-4">6</button>  
-                      <button class="p5RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
-                      <button class="p5BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
-                      <button class="p5Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
-
-                      <li class="player6 hidden  p-2 mb-2 border-b-2 drop-shadow-md">
-                        <span class="p6"> </span> 
-                        <span class="p6run text-lg font-extrabold text-blue-500 ml-2">0</span> 
-                        <span class="p6Ball font-bold text-red-500 text-xs">0</span> <br>
+  <section class="batsman hidden mt-6">
+    <div>
+      <input type="text" class="b1 border-black-100 border-2 py-[1px] px-1 " placeholder="Enter Batter Name." > 
       
-                        <button class="p6RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
-                        <button class="p6BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
-                        <button class="p6Four btn btn-xs text-white bg-green-500 px-4">4</button>  
-                        <button class="p6Six btn btn-xs text-white bg-green-500 px-4">6</button>  
-                        <button class="p6RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
-                        <button class="p6BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
-                        <button class="p6Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
-
-                        <li class="player7 hidden  p-2 mb-2 border-b-2 drop-shadow-md">
-                          <span class="p7"> </span> 
-                          <span class="p7run text-lg font-extrabold text-blue-500 ml-2">0</span> 
-                          <span class="p7Ball font-bold text-red-500 text-xs">0</span> <br>
+      
+      <button class="btn1 btn btn-sm bg-gray-400 text-white ">Batter</button>
+  
+      <input type="text" class="b2 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Batter Name." > 
+      
+      <button class="btn2 btn btn-sm bg-gray-400 text-white hidden">Batter</button>
+  
+      <input type="text" class="b3 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Batter Name." > 
+      
+      <button class="btn3 btn btn-sm bg-gray-400 text-white hidden">Batter</button>
+  
+      <input type="text" class="b4 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Batter Name." > 
+      
+      <button class="btn4 btn btn-sm bg-gray-400 text-white hidden">Batter</button>
+  
+      <input type="text" class="b5 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Batter Name." > 
+      
+      <button class="btn5 btn btn-sm bg-gray-400 text-white hidden">Batter</button>
+  
+      <input type="text" class="b6 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Batter Name." > 
+      
+      <button class="btn6 btn btn-sm bg-gray-400 text-white hidden">Batter</button>
+  
+      <input type="text" class="b7 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Batter Name." > 
+      
+      <button class="btn7 btn btn-sm bg-gray-400 text-white hidden">Batter</button>
+  
+      <input type="text" class="b8 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Batter Name." > 
+      
+      <button class="btn8 btn btn-sm bg-gray-400 text-white hidden">Batter</button>
+  
+      <input type="text" class="b9 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Batter Name." > 
+      
+      <button class="btn9 btn btn-sm bg-gray-400 text-white hidden">Batter</button>
+  
+      <input type="text" class="b10 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Batter Name." > 
+      
+      <button class="btn10 btn btn-sm bg-gray-400 text-white hidden" >Batter</button
+        >
+      <input type="text" class="b11 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Batter Name." > 
+      
+      <button class="btn11 btn btn-sm bg-gray-400 text-white hidden">Batter</button
+        >
+      <h3 class="err2 text-red-500"></h3>
+  </div>
+  
+      <div class="box">
+              <ol class="blist">
+                  <li class="player1 hidden  p-2 mb-2 border-b-2 drop-shadow-md">
+                    <span class="p1"> </span> 
+                    <span class="p1run text-lg font-extrabold text-blue-500 ml-2">0</span> 
+                    <span class="p1Ball font-bold text-red-500 text-xs">0</span> <br>
+                    
+                    <button class="p1RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                    <button class="p1BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
+                    <button class="p1Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                    <button class="p1Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                    <button class="p1RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                    <button class="p1BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
+                    <button class="p1Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
+  
+                  <li class="player2 hidden  p-2 mb-2 border-b-2 drop-shadow-md">
+                    <span class="p2"> </span> 
+                    <span class="p2run text-lg font-extrabold text-blue-500 ml-2">0</span> 
+                    <span class="p2Ball font-bold text-red-500 text-xs">0</span> <br>
+  
+                    <button class="p2RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                    <button class="p2BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
+                    <button class="p2Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                    <button class="p2Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                    <button class="p2RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                    <button class="p2BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
+                    <button class="p2Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
+  
+                  <li class="player3 hidden  p-2 mb-2 border-b-2 drop-shadow-md">
+                    <span class="p3"> </span> 
+                    <span class="p3run text-lg font-extrabold text-blue-500 ml-2">0</span> 
+                    <span class="p3Ball font-bold text-red-500 text-xs">0</span> <br>
+  
+                    <button class="p3RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                    <button class="p3BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
+                    <button class="p3Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                    <button class="p3Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                    <button class="p3RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                    <button class="p3BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
+                    <button class="p3Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
+  
+                    <li class="player4 hidden  p-2 mb-2 border-b-2 drop-shadow-md">
+                      <span class="p4"> </span> 
+                      <span class="p4run text-lg font-extrabold text-blue-500 ml-2">0</span> 
+                      <span class="p4Ball font-bold text-red-500 text-xs">0</span> <br>
+    
+                      <button class="p4RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                      <button class="p4BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
+                      <button class="p4Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                      <button class="p4Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                      <button class="p4RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                      <button class="p4BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
+                      <button class="p4Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
+  
+                      <li class="player5 hidden  p-2 mb-2 border-b-2 drop-shadow-md">
+                        <span class="p5"> </span> 
+                        <span class="p5run text-lg font-extrabold text-blue-500 ml-2">0</span> 
+                        <span class="p5Ball font-bold text-red-500 text-xs">0</span> <br>
+      
+                        <button class="p5RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                        <button class="p5BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
+                        <button class="p5Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                        <button class="p5Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                        <button class="p5RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                        <button class="p5BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
+                        <button class="p5Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
+  
+                        <li class="player6 hidden  p-2 mb-2 border-b-2 drop-shadow-md">
+                          <span class="p6"> </span> 
+                          <span class="p6run text-lg font-extrabold text-blue-500 ml-2">0</span> 
+                          <span class="p6Ball font-bold text-red-500 text-xs">0</span> <br>
         
-                          <button class="p7RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
-                          <button class="p7BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
-                          <button class="p7Four btn btn-xs text-white bg-green-500 px-4">4</button>  
-                          <button class="p7Six btn btn-xs text-white bg-green-500 px-4">6</button>  
-                          <button class="p7RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
-                          <button class="p7BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
-                          <button class="p7Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
-
-                          <li class="player8 hidden  p-2 mb-2 border-b-2 drop-shadow-md">
-                            <span class="p8"> </span> 
-                            <span class="p8run text-lg font-extrabold text-blue-500 ml-2">0</span> 
-                            <span class="p8Ball font-bold text-red-500 text-xs">0</span> <br>
+                          <button class="p6RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                          <button class="p6BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
+                          <button class="p6Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                          <button class="p6Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                          <button class="p6RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                          <button class="p6BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
+                          <button class="p6Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
+  
+                          <li class="player7 hidden  p-2 mb-2 border-b-2 drop-shadow-md">
+                            <span class="p7"> </span> 
+                            <span class="p7run text-lg font-extrabold text-blue-500 ml-2">0</span> 
+                            <span class="p7Ball font-bold text-red-500 text-xs">0</span> <br>
           
-                            <button class="p8RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
-                            <button class="p8BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
-                            <button class="p8Four btn btn-xs text-white bg-green-500 px-4">4</button>  
-                            <button class="p8Six btn btn-xs text-white bg-green-500 px-4">6</button>  
-                            <button class="p8RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
-                            <button class="p8BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
-                            <button class="p8Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
-
-                            <li class="player9 hidden  p-2 mb-2 border-b-2 drop-shadow-md">
-                              <span class="p9"> </span> 
-                              <span class="p9run text-lg font-extrabold text-blue-500 ml-2">0</span> 
-                              <span class="p9Ball font-bold text-red-500 text-xs">0</span> <br>
+                            <button class="p7RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                            <button class="p7BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
+                            <button class="p7Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                            <button class="p7Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                            <button class="p7RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                            <button class="p7BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
+                            <button class="p7Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
+  
+                            <li class="player8 hidden  p-2 mb-2 border-b-2 drop-shadow-md">
+                              <span class="p8"> </span> 
+                              <span class="p8run text-lg font-extrabold text-blue-500 ml-2">0</span> 
+                              <span class="p8Ball font-bold text-red-500 text-xs">0</span> <br>
             
-                              <button class="p9RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
-                              <button class="p9BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
-                              <button class="p9Four btn btn-xs text-white bg-green-500 px-4">4</button>  
-                              <button class="p9Six btn btn-xs text-white bg-green-500 px-4">6</button>  
-                              <button class="p9RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
-                              <button class="p9BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
-                              <button class="p9Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
-
-                              <li class="player10 hidden  p-2 mb-2 border-b-2 drop-shadow-md">
-                                <span class="p10"> </span> 
-                                <span class="p10run text-lg font-extrabold text-blue-500 ml-2">0</span> 
-                                <span class="p10Ball font-bold text-red-500 text-xs">0</span> <br>
+                              <button class="p8RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                              <button class="p8BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
+                              <button class="p8Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                              <button class="p8Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                              <button class="p8RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                              <button class="p8BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
+                              <button class="p8Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
+  
+                              <li class="player9 hidden  p-2 mb-2 border-b-2 drop-shadow-md">
+                                <span class="p9"> </span> 
+                                <span class="p9run text-lg font-extrabold text-blue-500 ml-2">0</span> 
+                                <span class="p9Ball font-bold text-red-500 text-xs">0</span> <br>
               
-                                <button class="p10RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
-                                <button class="p10BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
-                                <button class="p10Four btn btn-xs text-white bg-green-500 px-4">4</button>  
-                                <button class="p10Six btn btn-xs text-white bg-green-500 px-4">6</button>  
-                                <button class="p10RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
-                                <button class="p10BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
-                                <button class="p10Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
-
-                                <li class="player11 hidden  p-2 mb-2 border-b-2 drop-shadow-md">
-                                  <span class="p11"> </span> 
-                                  <span class="p11run text-lg font-extrabold text-blue-500 ml-2">0</span> 
-                                  <span class="p11Ball font-bold text-red-500 text-xs">0</span> <br>
+                                <button class="p9RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                                <button class="p9BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
+                                <button class="p9Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                                <button class="p9Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                                <button class="p9RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                                <button class="p9BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
+                                <button class="p9Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
+  
+                                <li class="player10 hidden  p-2 mb-2 border-b-2 drop-shadow-md">
+                                  <span class="p10"> </span> 
+                                  <span class="p10run text-lg font-extrabold text-blue-500 ml-2">0</span> 
+                                  <span class="p10Ball font-bold text-red-500 text-xs">0</span> <br>
                 
-                                  <button class="p11RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
-                                  <button class="p11BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
-                                  <button class="p11Four btn btn-xs text-white bg-green-500 px-4">4</button>  
-                                  <button class="p11Six btn btn-xs text-white bg-green-500 px-4">6</button>  
-                                  <button class="p11RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
-                                  <button class="p11BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
-                                  <button class="p11Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
-            </ol>
+                                  <button class="p10RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                                  <button class="p10BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
+                                  <button class="p10Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                                  <button class="p10Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                                  <button class="p10RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                                  <button class="p10BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
+                                  <button class="p10Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
+  
+                                  <li class="player11 hidden  p-2 mb-2 border-b-2 drop-shadow-md">
+                                    <span class="p11"> </span> 
+                                    <span class="p11run text-lg font-extrabold text-blue-500 ml-2">0</span> 
+                                    <span class="p11Ball font-bold text-red-500 text-xs">0</span> <br>
+                  
+                                    <button class="p11RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                                    <button class="p11BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
+                                    <button class="p11Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                                    <button class="p11Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                                    <button class="p11RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                                    <button class="p11BallMinus btn btn-xs text-white bg-red-500 px-4">B-</button> 
+                                    <button class="p11Out btn btn-xs text-white bg-red-500 px-4">Out</button></li>
+              </ol>
+          </div>
+  </section>
+
+        <section class="bwler-part hidden">
+          <div class="bwler mt-6">
+            <input type="text" class="blwer1 border-black-100 border-2 py-[1px] px-1 " placeholder="Enter Bowler Name." > 
+            
+            
+            <button class="bltn1 btn btn-sm bg-gray-400 text-white ">Bowler</button>
+        
+            <input type="text" class="blwer2 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Bowler Name." > 
+            
+            <button class="bltn2 btn btn-sm bg-gray-400 text-white hidden">Bowler</button>
+        
+            <input type="text" class="blwer3 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Bowler Name." > 
+            
+            <button class="bltn3 btn btn-sm bg-gray-400 text-white hidden">Bowler</button>
+        
+            <input type="text" class="blwer4 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Bowler Name." > 
+            
+            <button class="bltn4 btn btn-sm bg-gray-400 text-white hidden">Bowler</button>
+        
+            <input type="text" class="blwer5 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Bowler Name." > 
+            
+            <button class="bltn5 btn btn-sm bg-gray-400 text-white hidden">Bowler</button>
+        
+            <input type="text" class="blwer6 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Bowler Name." > 
+            
+            <button class="bltn6 btn btn-sm bg-gray-400 text-white hidden">Bowler</button>
+        
+            <input type="text" class="blwer7 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Bowler Name." > 
+            
+            <button class="bltn7 btn btn-sm bg-gray-400 text-white hidden">Bowler</button>
+        
+            <input type="text" class="blwer8 border-black-100 border-2 py-[1px] px-1 hidden" placeholder="Enter Bowler Name." > 
+            
+            <button class="bltn8 btn btn-sm bg-gray-400 text-white hidden">Bowler</button>
+        
+           
+            <h3 class="err4 text-red-500"></h3>
         </div>
+        
+            <div class="box">
+                    <ol class="bwlerList">
+                        <li class="blName1 hidden  p-2 mb-2 border-b-2 drop-shadow-md">
+                          <span class="bl1 mr-7"></span> over:
+                          <span class="bl1over text-lg font-extrabold text-blue-500 mr-2">0</span> Runs:
+                          <span class="bl1runs text-lg font-extrabold text-red-500 mr-2">0</span>Wicket:
+                          <span class="bl1Wicket text-lg font-extrabold text-red-500">0</span> <br>
+                          
+                          <button class="bl1OverPlus btn btn-xs text-white bg-green-500 px-4">Ov+</button>  
+                          <button class="bl1RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                          <button class="bl1Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                          <button class="bl1Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                          <button class="bl1RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                          <button class="bl1OverMinus btn btn-xs text-white bg-red-500 px-4">Ov-</button> 
+                          <button class="bl1Wicket2 btn btn-xs text-white bg-red-500 px-4">Wicket</button></li>
+        
+                          <li class="blName2 hidden p-2 mb-2 border-b-2 drop-shadow-md">
+                            <span class="bl2 mr-7">roni </span> over:
+                            <span class="bl2over text-lg font-extrabold text-blue-500 mr-2">0</span> Runs:
+                            <span class="bl2runs text-lg font-extrabold text-red-500 mr-2">0</span>Wicket:
+                            <span class="bl2Wicket text-lg font-extrabold text-red-500">0</span> <br>
+                            
+                            <button class="bl2OverPlus btn btn-xs text-white bg-green-500 px-4">Ov+</button>  
+                            <button class="bl2RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                            <button class="bl2Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                            <button class="bl2Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                            <button class="bl2RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                            <button class="bl2OverMinus btn btn-xs text-white bg-red-500 px-4">Ov-</button> 
+                            <button class="bl2Wicket2 btn btn-xs text-white bg-red-500 px-4">Wicket</button></li>
+        
+                            <li class="blName3 hidden p-2 mb-2 border-b-2 drop-shadow-md">
+                              <span class="bl3 mr-7"> </span> over:
+                              <span class="bl3over text-lg font-extrabold text-blue-500 mr-2">0</span> Runs:
+                              <span class="bl3runs text-lg font-extrabold text-red-500 mr-2">0</span>Wicket:
+                              <span class="bl3Wicket text-lg font-extrabold text-red-500">0</span> <br>
+                              
+                              <button class="bl3OverPlus btn btn-xs text-white bg-green-500 px-4">Ov+</button>  
+                              <button class="bl3RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                              <button class="bl3Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                              <button class="bl3Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                              <button class="bl3RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                              <button class="bl3OverMinus btn btn-xs text-white bg-red-500 px-4">Ov-</button> 
+                              <button class="bl3Wicket2 btn btn-xs text-white bg-red-500 px-4">Wicket</button></li>
+        
+                              <li class="blName4 hidden p-2 mb-2 border-b-2 drop-shadow-md">
+                                <span class="bl4 mr-7"> </span> over:
+                                <span class="bl4over text-lg font-extrabold text-blue-500 mr-2">0</span> Runs:
+                                <span class="bl4runs text-lg font-extrabold text-red-500 mr-2">0</span>Wicket:
+                                <span class="bl4Wicket text-lg font-extrabold text-red-500">0</span> <br>
+                                
+                                <button class="bl4OverPlus btn btn-xs text-white bg-green-500 px-4">Ov+</button>  
+                                <button class="bl4RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                                <button class="bl4Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                                <button class="bl4Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                                <button class="bl4RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                                <button class="bl4OverMinus btn btn-xs text-white bg-red-500 px-4">Ov-</button> 
+                                <button class="bl4Wicket2 btn btn-xs text-white bg-red-500 px-4">Wicket</button></li>
+        
+                                <li class="blName5 hidden p-2 mb-2 border-b-2 drop-shadow-md">
+                                  <span class="bl5 mr-7"> </span> over:
+                                  <span class="bl5over text-lg font-extrabold text-blue-500 mr-2">0</span> Runs:
+                                  <span class="bl5runs text-lg font-extrabold text-red-500 mr-2">0</span>Wicket:
+                                  <span class="bl5Wicket text-lg font-extrabold text-red-500">0</span> <br>
+                                  
+                                  <button class="bl5OverPlus btn btn-xs text-white bg-green-500 px-4">Ov+</button>  
+                                  <button class="bl5RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                                  <button class="bl5Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                                  <button class="bl5Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                                  <button class="bl5RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                                  <button class="bl5OverMinus btn btn-xs text-white bg-red-500 px-4">Ov-</button> 
+                                  <button class="bl5Wicket2 btn btn-xs text-white bg-red-500 px-4">Wicket</button></li>
+        
+                                  <li class="blName6 hidden p-2 mb-2 border-b-2 drop-shadow-md">
+                                    <span class="bl6 mr-7"> </span> over:
+                                    <span class="bl6over text-lg font-extrabold text-blue-500 mr-2">0</span> Runs:
+                                    <span class="bl6runs text-lg font-extrabold text-red-500 mr-2">0</span>Wicket:
+                                    <span class="bl6Wicket text-lg font-extrabold text-red-500">0</span> <br>
+                                    
+                                    <button class="bl6RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                                    <button class="bl6Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                                    <button class="bl6Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                                    <button class="bl6RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                                    <button class="bl6OverMinus btn btn-xs text-white bg-red-500 px-4">Ov-</button> 
+                                    <button class="bl6OverPlus btn btn-xs text-white bg-green-500 px-4">Ov+</button>  
+                                    <button class="bl6Wicket2 btn btn-xs text-white bg-red-500 px-4">Wicket</button></li>
+        
+                                    <li class="blName7 hidden p-2 mb-2 border-b-2 drop-shadow-md">
+                                      <span class="bl7 mr-7"> </span> over:
+                                      <span class="bl7over text-lg font-extrabold text-blue-500 mr-2">0</span> Runs:
+                                      <span class="bl7runs text-lg font-extrabold text-red-500 mr-2">0</span>Wicket:
+                                      <span class="bl7Wicket text-lg font-extrabold text-red-500">0</span> <br>
+                                      
+                                      <button class="bl7RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                                      <button class="bl7Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                                      <button class="bl7Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                                      <button class="bl7RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                                      <button class="bl7OverMinus btn btn-xs text-white bg-red-500 px-4">Ov-</button> 
+                                      <button class="bl7OverPlus btn btn-xs text-white bg-green-500 px-4">Ov+</button>  
+                                      <button class="bl7Wicket2 btn btn-xs text-white bg-red-500 px-4">Wicket</button></li>
+        
+                                      <li class="blName8 hidden p-2 mb-2 border-b-2 drop-shadow-md">
+                                        <span class="bl8 mr-7"> </span> over:
+                                        <span class="bl8over text-lg font-extrabold text-blue-500 mr-2">0</span> Runs:
+                                        <span class="bl8runs text-lg font-extrabold text-red-500 mr-2">0</span>Wicket:
+                                        <span class="bl8Wicket text-lg font-extrabold text-red-500">0</span> <br>
+                                        
+                                        <button class="bl8RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
+                                        <button class="bl8Four btn btn-xs text-white bg-green-500 px-4">4</button>  
+                                        <button class="bl8Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                                        <button class="bl8RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
+                                        <button class="bl8OverMinus btn btn-xs text-white bg-red-500 px-4">Ov-</button> 
+                                        <button class="bl8OverPlus btn btn-xs text-white bg-green-500 px-4">Ov+</button>  
+                                        <button class="bl8Wicket2 btn btn-xs text-white bg-red-500 px-4">Wicket</button></li>
+                    </ol>
+                </div>
+        </section>
 
    <footer class="text-center mt-[55vh]">
     

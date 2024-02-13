@@ -275,13 +275,35 @@ overLimitBtn.addEventListener('click',function(){
     else{
         overLimitPortion.style.display = 'none'
         scoreAndOver.style.display = 'block'
+        batterOrBowler.style.display = 'flex'
         batsman.style.display = 'block'
         
     }
 })
 
 /*=========================================================
-            #Over part end
+#Over part end
+=========================================================*/
+/*=========================================================
+#batterOrBowler part Start 
+=========================================================*/
+let batterOrBowler = document.querySelector('.batterOrBowler')
+let BattersBtn = document.querySelector('.BattersBtn')
+let bowlersBtn = document.querySelector('.bowlersBtn')
+
+BattersBtn.addEventListener('click',function(){
+    batsman.style.display = 'block'
+    bwlerPart.style.display = 'none'
+    
+})
+bowlersBtn.addEventListener('click',function(){
+    batsman.style.display = 'none'
+    bwlerPart.style.display = 'block'
+
+})
+
+/*=========================================================
+            #batterOrBowler part end
 =========================================================*/
 
 
@@ -1478,4 +1500,744 @@ p11BallMinus.addEventListener('click',function(){
 
 /*=========================================================
             #Batter part end
+=========================================================*/
+
+/*=========================================================
+            #Bwler part Start
+=========================================================*/
+let bwlerPart =document.querySelector('.bwler-part')
+let blwer =document.querySelector('.blwer')
+let blwer1 =document.querySelector('.blwer1')
+let blwer2 =document.querySelector('.blwer2')
+let blwer3 =document.querySelector('.blwer3')
+let blwer4 =document.querySelector('.blwer4')
+let blwer5 =document.querySelector('.blwer5')
+let blwer6 =document.querySelector('.blwer6')
+let blwer7 =document.querySelector('.blwer7')
+let blwer8 =document.querySelector('.blwer8')
+
+let bltn1 =document.querySelector('.bltn1')
+let bltn2 =document.querySelector('.bltn2')
+let bltn3 =document.querySelector('.bltn3')
+let bltn4 =document.querySelector('.bltn4')
+let bltn5 =document.querySelector('.bltn5')
+let bltn6 =document.querySelector('.bltn6')
+let bltn7 =document.querySelector('.bltn7')
+let bltn8 =document.querySelector('.bltn8')
+let blName1 =document.querySelector('.blName1')
+let blName2 =document.querySelector('.blName2')
+let blName3 =document.querySelector('.blName3')
+let blName4 =document.querySelector('.blName4')
+let blName5 =document.querySelector('.blName5')
+let blName6 =document.querySelector('.blName6')
+let blName7 =document.querySelector('.blName7')
+let blName8 =document.querySelector('.blName8')
+let err4 =document.querySelector('.err4')
+
+
+// Bowler1
+let bl1 = document.querySelector('.bl1')
+let bl1over = document.querySelector('.bl1over')
+let bl1runs = document.querySelector('.bl1runs')
+let bl1Wicket = document.querySelector('.bl1Wicket')
+let bl1RunPlus = document.querySelector('.bl1RunPlus')
+let bl1Four = document.querySelector('.bl1Four')
+let bl1Six = document.querySelector('.bl1Six')
+let bl1RunMinus = document.querySelector('.bl1RunMinus')
+let bl1OverMinus = document.querySelector('.bl1OverMinus')
+let bl1OverPlus = document.querySelector('.bl1OverPlus')
+let bl1Wicket2 = document.querySelector('.bl1Wicket2')
+
+bltn1.addEventListener('click',function(){
+    if(!blwer1.value){
+        err4.innerHTML='Empty field'
+    }
+    else if(blwer1.value.length<3){
+        err4.innerHTML='Bowler name atleat 3 charactar long.'
+    }else{
+        bl1.innerHTML= blwer1.value; 
+        blName1.style.display= 'block' 
+        err4.innerHTML= ''
+        blwer1.style.display= 'none' 
+        bltn1.style.display = 'none'
+        
+        blwer2.style.display = 'inline'
+        bltn2.style.display = 'inline'
+    }
+})
+
+// b1 in de
+
+let bl1OverCounter= 0;
+bl1OverPlus.addEventListener('click',function(){
+   if(bl1OverCounter>=0){
+    bl1OverCounter++;
+    bl1over.innerHTML= bl1OverCounter;
+    overCounter++;
+    totalOvar.innerHTML = overCounter;
+   }
+})
+bl1OverMinus.addEventListener('click',function(){
+   if(bl1OverCounter>0){
+    bl1OverCounter--;
+    bl1over.innerHTML= bl1OverCounter;
+    overCounter--;
+    totalOvar.innerHTML = overCounter;
+   }
+})
+
+let bl1RunC = 0;
+bl1RunPlus.addEventListener('click',function(){
+   if(bl1RunC>=0){
+    bl1RunC++;
+    bl1runs.innerHTML= bl1RunC;
+   }
+})
+bl1RunMinus.addEventListener('click',function(){
+   if(bl1RunC>0){
+    bl1RunC--;
+    bl1runs.innerHTML= bl1RunC;
+   }
+})
+bl1Six.addEventListener('click',function(){
+    if(bl1RunC>=0){
+     bl1RunC+=6;
+     bl1runs.innerHTML= bl1RunC;
+    }
+ })
+bl1Four.addEventListener('click',function(){
+    if(bl1RunC>=0){
+     bl1RunC+=4;
+     bl1runs.innerHTML= bl1RunC;
+    }
+ })
+ let bl1WicketC = 0;
+bl1Wicket2.addEventListener('click',function(){
+    if(bl1RunC>=0){
+        bl1WicketC++;
+        bl1Wicket.innerHTML= bl1WicketC;
+    }
+ })
+
+
+// Bowler2
+let bl2 = document.querySelector('.bl2')
+let bl2over = document.querySelector('.bl2over')
+let bl2runs = document.querySelector('.bl2runs')
+let bl2Wicket = document.querySelector('.bl2Wicket')
+let bl2RunPlus = document.querySelector('.bl2RunPlus')
+let bl2Four = document.querySelector('.bl2Four')
+let bl2Six = document.querySelector('.bl2Six')
+let bl2RunMinus = document.querySelector('.bl2RunMinus')
+let bl2OverMinus = document.querySelector('.bl2OverMinus')
+let bl2OverPlus = document.querySelector('.bl2OverPlus')
+let bl2Wicket2 = document.querySelector('.bl2Wicket2')
+
+bltn2.addEventListener('click',function(){
+    if(!blwer2.value){
+        err4.innerHTML='Empty field'
+    }
+    else if(blwer2.value.length<3){
+        err4.innerHTML='Bowler name atleat 3 charactar long.'
+    }else{
+        bl2.innerHTML= blwer2.value; 
+        blName2.style.display= 'block' 
+        err4.innerHTML= ''
+        blwer2.style.display= 'none' 
+        bltn2.style.display = 'none'
+        
+        blwer3.style.display = 'inline'
+        bltn3.style.display = 'inline'
+    }
+})
+
+// b2 in de
+
+let bl2OverCounter= 0;
+bl2OverPlus.addEventListener('click',function(){
+   if(bl2OverCounter>=0){
+    bl2OverCounter++;
+    bl2over.innerHTML= bl2OverCounter;
+    // don't touc2
+    overCounter++;
+    totalOvar.innerHTML = overCounter;
+   }
+})
+bl2OverMinus.addEventListener('click',function(){
+   if(bl2OverCounter>0){
+    bl2OverCounter--;
+    bl2over.innerHTML= bl2OverCounter;
+    // dont touch
+    overCounter--;
+    totalOvar.innerHTML = overCounter;
+   }
+})
+
+let bl2RunC = 0;
+bl2RunPlus.addEventListener('click',function(){
+   if(bl2RunC>=0){
+    bl2RunC++;
+    bl2runs.innerHTML= bl2RunC;
+   }
+})
+bl2RunMinus.addEventListener('click',function(){
+   if(bl2RunC>0){
+    bl2RunC--;
+    bl2runs.innerHTML= bl2RunC;
+   }
+})
+bl2Six.addEventListener('click',function(){
+    if(bl2RunC>=0){
+     bl2RunC+=6;
+     bl2runs.innerHTML= bl2RunC;
+    }
+ })
+bl2Four.addEventListener('click',function(){
+    if(bl2RunC>=0){
+     bl2RunC+=4;
+     bl2runs.innerHTML= bl2RunC;
+    }
+ })
+
+ let bl2WicketC = 0;
+
+bl2Wicket2.addEventListener('click',function(){
+    if(bl2WicketC>=0){
+        bl2WicketC++;
+        bl2Wicket.innerHTML= bl2WicketC;
+    }
+ })
+
+
+
+// Bowler3
+let bl3 = document.querySelector('.bl3')
+let bl3over = document.querySelector('.bl3over')
+let bl3runs = document.querySelector('.bl3runs')
+let bl3Wicket = document.querySelector('.bl3Wicket')
+let bl3RunPlus = document.querySelector('.bl3RunPlus')
+let bl3Four = document.querySelector('.bl3Four')
+let bl3Six = document.querySelector('.bl3Six')
+let bl3RunMinus = document.querySelector('.bl3RunMinus')
+let bl3OverMinus = document.querySelector('.bl3OverMinus')
+let bl3OverPlus = document.querySelector('.bl3OverPlus')
+let bl3Wicket2 = document.querySelector('.bl3Wicket2')
+
+bltn3.addEventListener('click',function(){
+    if(!blwer3.value){
+        err4.innerHTML='Empty field'
+    }
+    else if(blwer3.value.length<3){
+        err4.innerHTML='Bowler name atleat 3 charactar long.'
+    }else{
+        bl3.innerHTML= blwer3.value; 
+        blName3.style.display= 'block' 
+        err4.innerHTML= ''
+        blwer3.style.display= 'none' 
+        bltn3.style.display = 'none'
+        
+        blwer4.style.display = 'inline'
+        bltn4.style.display = 'inline'
+    }
+})
+
+// b3 in de
+
+let bl3OverCounter= 0;
+bl3OverPlus.addEventListener('click',function(){
+   if(bl3OverCounter>=0){
+    bl3OverCounter++;
+    bl3over.innerHTML= bl3OverCounter;
+    // don't touc2
+    overCounter++;
+    totalOvar.innerHTML = overCounter;
+   }
+})
+bl3OverMinus.addEventListener('click',function(){
+   if(bl3OverCounter>0){
+    bl3OverCounter--;
+    bl3over.innerHTML= bl3OverCounter;
+    // dont touch
+    overCounter--;
+    totalOvar.innerHTML = overCounter;
+   }
+})
+
+let bl3RunC = 0;
+bl3RunPlus.addEventListener('click',function(){
+   if(bl3RunC>=0){
+    bl3RunC++;
+    bl3runs.innerHTML= bl3RunC
+   }
+})
+bl3RunMinus.addEventListener('click',function(){
+   if(bl3RunC>0){
+    bl3RunC--;
+    bl3runs.innerHTML= bl3RunC
+   }
+})
+bl3Six.addEventListener('click',function(){
+    if(bl3RunC>=0){
+     bl3RunC+=6;
+     bl3runs.innerHTML= bl3RunC;
+    }
+ })
+bl3Four.addEventListener('click',function(){
+    if(bl3RunC>=0){
+     bl3RunC+=4;
+     bl3runs.innerHTML= bl3RunC;
+    }
+ })
+ 
+ let bl3WicketC = 0;
+
+bl3Wicket2.addEventListener('click',function(){
+    if(bl3WicketC>=0){
+        bl3WicketC++;
+        bl3Wicket.innerHTML= bl3WicketC;
+    }
+ })
+
+// Bowler4
+let bl4 = document.querySelector('.bl4')
+let bl4over = document.querySelector('.bl4over')
+let bl4runs = document.querySelector('.bl4runs')
+let bl4Wicket = document.querySelector('.bl4Wicket')
+let bl4RunPlus = document.querySelector('.bl4RunPlus')
+let bl4Four = document.querySelector('.bl4Four')
+let bl4Six = document.querySelector('.bl4Six')
+let bl4RunMinus = document.querySelector('.bl4RunMinus')
+let bl4OverMinus = document.querySelector('.bl4OverMinus')
+let bl4OverPlus = document.querySelector('.bl4OverPlus')
+let bl4Wicket2 = document.querySelector('.bl4Wicket2')
+
+bltn4.addEventListener('click',function(){
+    if(!blwer4.value){
+        err4.innerHTML='Empty field'
+    }
+    else if(blwer4.value.length<3){
+        err4.innerHTML='Bowler name atleat 3 charactar long.'
+    }else{
+        bl4.innerHTML= blwer3.value; 
+        blName4.style.display= 'block' 
+        err4.innerHTML= ''
+        blwer4.style.display= 'none' 
+        bltn4.style.display = 'none'
+        
+        blwer5.style.display = 'inline'
+        bltn5.style.display = 'inline'
+    }
+})
+
+// b4 in de
+
+let bl4OverCounter= 0;
+bl4OverPlus.addEventListener('click',function(){
+   if(bl4OverCounter>=0){
+    bl4OverCounter++;
+    bl4over.innerHTML= bl4OverCounter;
+    // don't touc2
+    overCounter++;
+    totalOvar.innerHTML = overCounter;
+   }
+})
+bl4OverMinus.addEventListener('click',function(){
+   if(bl4OverCounter>0){
+    bl4OverCounter--;
+    bl4over.innerHTML= bl4OverCounter;
+    // dont touch
+    overCounter--;
+    totalOvar.innerHTML = overCounter;
+   }
+})
+
+let bl4RunC = 0;
+bl4RunPlus.addEventListener('click',function(){
+   if(bl4RunC>=0){
+    bl4RunC++;
+    bl4runs.innerHTML= bl4RunC;
+   }
+})
+bl4RunMinus.addEventListener('click',function(){
+   if(bl4RunC>0){
+    bl4RunC--;
+    bl4runs.innerHTML= bl4RunC;
+   }
+})
+bl4Six.addEventListener('click',function(){
+    if(bl4RunC>=0){
+     bl4RunC+=6;
+     bl4runs.innerHTML= bl4RunC;
+    }
+ })
+bl4Four.addEventListener('click',function(){
+    if(bl4RunC>=0){
+     bl4RunC+=4;
+     bl4runs.innerHTML= bl4RunC;
+    }
+ })
+ 
+ let bl4WicketC = 0;
+
+bl4Wicket2.addEventListener('click',function(){
+    if(bl4WicketC>=0){
+        bl4WicketC++;
+        bl4Wicket.innerHTML= bl4WicketC;
+    }
+ })
+
+// Bowler5
+let bl5 = document.querySelector('.bl5')
+let bl5over = document.querySelector('.bl5over')
+let bl5runs = document.querySelector('.bl5runs')
+let bl5Wicket = document.querySelector('.bl5Wicket')
+let bl5RunPlus = document.querySelector('.bl5RunPlus')
+let bl5Four = document.querySelector('.bl5Four')
+let bl5Six = document.querySelector('.bl5Six')
+let bl5RunMinus = document.querySelector('.bl5RunMinus')
+let bl5OverMinus = document.querySelector('.bl5OverMinus')
+let bl5OverPlus = document.querySelector('.bl5OverPlus')
+let bl5Wicket2 = document.querySelector('.bl5Wicket2')
+
+bltn5.addEventListener('click',function(){
+    if(!blwer5.value){
+        err4.innerHTML='Empty field'
+    }
+    else if(blwer5.value.length<3){
+        err4.innerHTML='Bowler name atleat 3 charactar long.'
+    }else{
+        bl5.innerHTML= blwer5.value; 
+        blName5.style.display= 'block' 
+        err4.innerHTML= ''
+        blwer5.style.display= 'none' 
+        bltn5.style.display = 'none'
+        
+        blwer6.style.display = 'inline'
+        bltn6.style.display = 'inline'
+    }
+})
+
+// b5 in de
+
+let bl5OverCounter= 0;
+bl5OverPlus.addEventListener('click',function(){
+    if(bl5OverCounter>=0){
+     bl5OverCounter++;
+     bl5over.innerHTML= bl5OverCounter;
+     // don't touc2
+     overCounter++;
+     totalOvar.innerHTML = overCounter;
+    }
+ })
+bl5OverMinus.addEventListener('click',function(){
+   if(bl5OverCounter>0){
+    bl5OverCounter--;
+    bl5over.innerHTML= bl5OverCounter;
+    // dont touch
+    overCounter--;
+    totalOvar.innerHTML = overCounter;
+   }
+})
+
+let bl5RunC = 0;
+bl5RunPlus.addEventListener('click',function(){
+   if(bl5RunC>=0){
+    bl5RunC++;
+    bl5runs.innerHTML= bl5RunC;
+   }
+})
+bl5RunMinus.addEventListener('click',function(){
+   if(bl5RunC>0){
+    bl5RunC--;
+    bl5runs.innerHTML= bl5RunC;
+   }
+})
+bl5Six.addEventListener('click',function(){
+    if(bl5RunC>=0){
+     bl5RunC+=6;
+     bl5runs.innerHTML= bl5RunC;
+    }
+ })
+bl5Four.addEventListener('click',function(){
+    if(bl5RunC>=0){
+     bl5RunC+=4;
+     bl5runs.innerHTML= bl5RunC;
+    }
+ })
+ 
+ let bl5WicketC = 0;
+
+bl5Wicket2.addEventListener('click',function(){
+    if(bl5WicketC>=0){
+        bl5WicketC++;
+        bl5Wicket.innerHTML= bl5WicketC;
+    }
+ })
+
+// Bowler6
+let bl6 = document.querySelector('.bl6')
+let bl6over = document.querySelector('.bl6over')
+let bl6runs = document.querySelector('.bl6runs')
+let bl6Wicket = document.querySelector('.bl6Wicket')
+let bl6RunPlus = document.querySelector('.bl6RunPlus')
+let bl6Four = document.querySelector('.bl6Four')
+let bl6Six = document.querySelector('.bl6Six')
+let bl6RunMinus = document.querySelector('.bl6RunMinus')
+let bl6OverMinus = document.querySelector('.bl6OverMinus')
+let bl6OverPlus = document.querySelector('.bl6OverPlus')
+let bl6Wicket2 = document.querySelector('.bl6Wicket2')
+
+bltn6.addEventListener('click',function(){
+    if(!blwer6.value){
+        err4.innerHTML='Empty field'
+    }
+    else if(blwer6.value.length<3){
+        err4.innerHTML='Bowler name atleat 3 charactar long.'
+    }else{
+        bl6.innerHTML= blwer6.value; 
+        blName6.style.display= 'block' 
+        err4.innerHTML= ''
+        blwer6.style.display= 'none' 
+        bltn6.style.display = 'none'
+        
+        blwer7.style.display = 'inline'
+        bltn7.style.display = 'inline'
+    }
+})
+
+// b6 in de
+
+let bl6OverCounter= 0;
+bl6OverPlus.addEventListener('click',function(){
+    if(bl6OverCounter>=0){
+     bl6OverCounter++;
+     bl6over.innerHTML= bl6OverCounter;
+     // don't touc2
+     overCounter++;
+     totalOvar.innerHTML = overCounter;
+    }
+ })
+bl6OverMinus.addEventListener('click',function(){
+   if(bl6OverCounter>0){
+    bl6OverCounter--;
+    bl6over.innerHTML= bl6OverCounter;
+    // dont touch
+    overCounter--;
+    totalOvar.innerHTML = overCounter;
+   }
+})
+
+let bl6RunC = 0;
+bl6RunPlus.addEventListener('click',function(){
+   if(bl6RunC>=0){
+    bl6RunC++;
+    bl6runs.innerHTML= bl6RunC;
+   }
+})
+bl6RunMinus.addEventListener('click',function(){
+   if(bl6RunC>0){
+    bl6RunC--;
+    bl6runs.innerHTML= bl6RunC
+   }
+})
+bl6Six.addEventListener('click',function(){
+    if(bl6RunC>=0){
+     bl6RunC+=6;
+     bl6runs.innerHTML= bl6RunC;
+    }
+ })
+bl6Four.addEventListener('click',function(){
+    if(bl6RunC>=0){
+     bl6RunC+=4;
+     bl6runs.innerHTML= bl6RunC;
+    }
+ })
+ 
+ let bl6WicketC = 0;
+
+bl6Wicket2.addEventListener('click',function(){
+    if(bl6WicketC>=0){
+        bl6WicketC++;
+        bl6Wicket.innerHTML= bl6WicketC;
+    }
+ })
+
+// Bowler7
+let bl7 = document.querySelector('.bl7')
+let bl7over = document.querySelector('.bl7over')
+let bl7runs = document.querySelector('.bl7runs')
+let bl7Wicket = document.querySelector('.bl7Wicket')
+let bl7RunPlus = document.querySelector('.bl7RunPlus')
+let bl7Four = document.querySelector('.bl7Four')
+let bl7Six = document.querySelector('.bl7Six')
+let bl7RunMinus = document.querySelector('.bl7RunMinus')
+let bl7OverMinus = document.querySelector('.bl7OverMinus')
+let bl7OverPlus = document.querySelector('.bl7OverPlus')
+let bl7Wicket2 = document.querySelector('.bl7Wicket2')
+
+bltn7.addEventListener('click',function(){
+    if(!blwer7.value){
+        err4.innerHTML='Empty field'
+    }
+    else if(blwer7.value.length<3){
+        err4.innerHTML='Bowler name atleat 3 charactar long.'
+    }else{
+        bl7.innerHTML= blwer7.value; 
+        blName7.style.display= 'block' 
+        err4.innerHTML= ''
+        blwer7.style.display= 'none' 
+        bltn7.style.display = 'none'
+        
+        blwer8.style.display = 'inline'
+        bltn8.style.display = 'inline'
+    }
+})
+
+// b8 in de
+
+let bl7OverCounter= 0;
+bl7OverPlus.addEventListener('click',function(){
+    if(bl7OverCounter>=0){
+     bl7OverCounter++;
+     bl7over.innerHTML= bl7OverCounter;
+     // don't touc2
+     overCounter++;
+     totalOvar.innerHTML = overCounter;
+    }
+ })
+bl7OverMinus.addEventListener('click',function(){
+   if(bl7OverCounter>0){
+    bl7OverCounter--;
+    bl7over.innerHTML= bl7OverCounter;
+    // dont touch
+    overCounter--;
+    totalOvar.innerHTML = overCounter;
+   }
+})
+
+let bl7RunC = 0;
+bl7RunPlus.addEventListener('click',function(){
+   if(bl7RunC>=0){
+    bl7RunC++;
+    bl7runs.innerHTML= bl7RunC;
+   }
+})
+bl7RunMinus.addEventListener('click',function(){
+   if(bl7RunC>0){
+    bl7RunC--;
+    bl7runs.innerHTML= bl7RunC
+   }
+})
+bl7Six.addEventListener('click',function(){
+    if(bl7RunC>=0){
+     bl7RunC+=6;
+     bl7runs.innerHTML= bl7RunC;
+    }
+ })
+bl7Four.addEventListener('click',function(){
+    if(bl7RunC>=0){
+     bl7RunC+=4;
+     bl7runs.innerHTML= bl7RunC;
+    }
+ })
+ 
+ let bl7WicketC = 0;
+
+bl7Wicket2.addEventListener('click',function(){
+    if(bl7WicketC>=0){
+        bl7WicketC++;
+        bl7Wicket.innerHTML= bl7WicketC;
+    }
+ })
+
+
+// Bowler8
+let bl8 = document.querySelector('.bl8')
+let bl8over = document.querySelector('.bl8over')
+let bl8runs = document.querySelector('.bl8runs')
+let bl8Wicket = document.querySelector('.bl8Wicket')
+let bl8RunPlus = document.querySelector('.bl8RunPlus')
+let bl8Four = document.querySelector('.bl8Four')
+let bl8Six = document.querySelector('.bl8Six')
+let bl8RunMinus = document.querySelector('.bl8RunMinus')
+let bl8OverMinus = document.querySelector('.bl8OverMinus')
+let bl8OverPlus = document.querySelector('.bl8OverPlus')
+let bl8Wicket2 = document.querySelector('.bl8Wicket2')
+
+bltn8.addEventListener('click',function(){
+    if(!blwer8.value){
+        err4.innerHTML='Empty field'
+    }
+    else if(blwer8.value.length<3){
+        err4.innerHTML='Bowler name atleat 3 charactar long.'
+    }else{
+        bl8.innerHTML= blwer8.value; 
+        blName8.style.display= 'block' 
+        err4.innerHTML= ''
+        blwer8.style.display= 'none' 
+        bltn8.style.display = 'none'
+    }
+})
+
+// b8 in de
+
+let bl8OverCounter= 0;
+bl8OverPlus.addEventListener('click',function(){
+    if(bl8OverCounter>=0){
+     bl8OverCounter++;
+     bl8over.innerHTML= bl8OverCounter;
+     // don't touc2
+     overCounter++;
+     totalOvar.innerHTML = overCounter;
+    }
+ })
+bl8OverMinus.addEventListener('click',function(){
+   if(bl8OverCounter>0){
+    bl8OverCounter--;
+    bl8over.innerHTML= bl8OverCounter;
+    // dont touch
+    overCounter--;
+    totalOvar.innerHTML = overCounter;
+   }
+})
+
+let bl8RunC = 0;
+bl8RunPlus.addEventListener('click',function(){
+   if(bl8RunC>=0){
+    bl8RunC++;
+    bl8runs.innerHTML= bl8RunC;
+   }
+})
+bl8RunMinus.addEventListener('click',function(){
+   if(bl8RunC>0){
+    bl8RunC--;
+    bl8runs.innerHTML= bl8RunC
+   }
+})
+bl8Six.addEventListener('click',function(){
+    if(bl8RunC>=0){
+     bl8RunC+=6;
+     bl8runs.innerHTML= bl8RunC;
+    }
+ })
+bl8Four.addEventListener('click',function(){
+    if(bl8RunC>=0){
+     bl8RunC+=4;
+     bl8runs.innerHTML= bl8RunC;
+    }
+ })
+ 
+ let bl8WicketC = 0;
+
+bl8Wicket2.addEventListener('click',function(){
+    if(bl8WicketC>=0){
+        bl8WicketC++;
+        bl8Wicket.innerHTML= bl8WicketC;
+    }
+ })
+// Bowler9
+// Bowler
+
+/*=========================================================
+            #Bwler part end
 =========================================================*/
