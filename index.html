@@ -93,10 +93,14 @@
    <section>
     <div class="batterOrBowler hidden flex w-full gap-x-3 flex-row">
       <div class="grid flex-grow  card bg-base-300 rounded-box place-items-center">
-        <button class="BattersBtn btn btn-sm">Batters</button>
+        <button class="BattersBtn btn btn-sm">Batters 
+          <i class="batterHand fa-regular fa-hand-pointer text-green-500"></i>
+        </button>
       </div> 
       <div class="grid flex-grow  card bg-base-300 rounded-box place-items-center">
-        <button class="bowlersBtn btn btn-sm">Bowlers</button>
+        <button class="bowlersBtn btn btn-sm">Bowlers
+          <i class="bowlerHand hidden text-violet-600 fa-regular fa-hand-pointer"></i>
+        </button>
       </div>
     </div>
    </section>
@@ -298,7 +302,11 @@
               </ol>
           </div>
   </section>
-
+<!-- <div class="bowlerLimit">
+    <input class="bowlerLimitValue border-[2px] border-gray-300" type="number" name="" id="" placeholder="Bowler's over limit."> 
+    <button class="bowlerLimitBtn btn btn-sm bg-yellow-500 text-white">SetOverLimit</button>
+    <h2 class="err5 text-red-500"></h2>
+</div> -->
         <section class="bwler-part hidden">
           <div class="bwler mt-6">
             <input type="text" class="blwer1 border-black-100 border-2 py-[1px] px-1 " placeholder="Enter Bowler Name." > 
@@ -343,13 +351,13 @@
                         <li class="blName1 hidden  p-2 mb-2 border-b-2 drop-shadow-md">
                           <span class="bl1 mr-7"></span> over:
                           <span class="bl1over text-lg font-extrabold text-blue-500 mr-2">0</span> Runs:
-                          <span class="bl1runs text-lg font-extrabold text-red-500 mr-2">0</span>Wicket:
+                          <span class="bl1runs text-lg font-extrabold text-green-500 mr-2">0</span>Wicket:
                           <span class="bl1Wicket text-lg font-extrabold text-red-500">0</span> <br>
                           
-                          <button class="bl1OverPlus btn btn-xs text-white bg-green-500 px-4">Ov+</button>  
-                          <button class="bl1RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
-                          <button class="bl1Four btn btn-xs text-white bg-green-500 px-4">4</button>  
-                          <button class="bl1Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                          <button class="bl1OverPlus btn btn-xs text-white bg-violet-500 px-4">Ov+</button>  
+                          <button class="bl1RunPlus btn btn-xs text-white bg-violet-500 px-4">R+</button> 
+                          <button class="bl1Four btn btn-xs text-white bg-violet-500 px-4">4</button>  
+                          <button class="bl1Six btn btn-xs text-white bg-violet-500 px-4">6</button>  
                           <button class="bl1RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
                           <button class="bl1OverMinus btn btn-xs text-white bg-red-500 px-4">Ov-</button> 
                           <button class="bl1Wicket2 btn btn-xs text-white bg-red-500 px-4">Wicket</button></li>
@@ -357,13 +365,13 @@
                           <li class="blName2 hidden p-2 mb-2 border-b-2 drop-shadow-md">
                             <span class="bl2 mr-7">roni </span> over:
                             <span class="bl2over text-lg font-extrabold text-blue-500 mr-2">0</span> Runs:
-                            <span class="bl2runs text-lg font-extrabold text-red-500 mr-2">0</span>Wicket:
+                            <span class="bl2runs text-lg font-extrabold text-green-500 mr-2">0</span>Wicket:
                             <span class="bl2Wicket text-lg font-extrabold text-red-500">0</span> <br>
                             
-                            <button class="bl2OverPlus btn btn-xs text-white bg-green-500 px-4">Ov+</button>  
-                            <button class="bl2RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
-                            <button class="bl2Four btn btn-xs text-white bg-green-500 px-4">4</button>  
-                            <button class="bl2Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                            <button class="bl2OverPlus btn btn-xs text-white bg-violet-500 px-4">Ov+</button>  
+                            <button class="bl2RunPlus btn btn-xs text-white bg-violet-500 px-4">R+</button> 
+                            <button class="bl2Four btn btn-xs text-white bg-violet-500 px-4">4</button>  
+                            <button class="bl2Six btn btn-xs text-white bg-violet-500 px-4">6</button>  
                             <button class="bl2RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
                             <button class="bl2OverMinus btn btn-xs text-white bg-red-500 px-4">Ov-</button> 
                             <button class="bl2Wicket2 btn btn-xs text-white bg-red-500 px-4">Wicket</button></li>
@@ -371,13 +379,13 @@
                             <li class="blName3 hidden p-2 mb-2 border-b-2 drop-shadow-md">
                               <span class="bl3 mr-7"> </span> over:
                               <span class="bl3over text-lg font-extrabold text-blue-500 mr-2">0</span> Runs:
-                              <span class="bl3runs text-lg font-extrabold text-red-500 mr-2">0</span>Wicket:
+                              <span class="bl3runs text-lg font-extrabold text-green-500 mr-2">0</span>Wicket:
                               <span class="bl3Wicket text-lg font-extrabold text-red-500">0</span> <br>
                               
-                              <button class="bl3OverPlus btn btn-xs text-white bg-green-500 px-4">Ov+</button>  
-                              <button class="bl3RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
-                              <button class="bl3Four btn btn-xs text-white bg-green-500 px-4">4</button>  
-                              <button class="bl3Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                              <button class="bl3OverPlus btn btn-xs text-white bg-violet-500 px-4">Ov+</button>  
+                              <button class="bl3RunPlus btn btn-xs text-white bg-violet-500 px-4">R+</button> 
+                              <button class="bl3Four btn btn-xs text-white bg-violet-500 px-4">4</button>  
+                              <button class="bl3Six btn btn-xs text-white bg-violet-500 px-4">6</button>  
                               <button class="bl3RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
                               <button class="bl3OverMinus btn btn-xs text-white bg-red-500 px-4">Ov-</button> 
                               <button class="bl3Wicket2 btn btn-xs text-white bg-red-500 px-4">Wicket</button></li>
@@ -385,13 +393,13 @@
                               <li class="blName4 hidden p-2 mb-2 border-b-2 drop-shadow-md">
                                 <span class="bl4 mr-7"> </span> over:
                                 <span class="bl4over text-lg font-extrabold text-blue-500 mr-2">0</span> Runs:
-                                <span class="bl4runs text-lg font-extrabold text-red-500 mr-2">0</span>Wicket:
+                                <span class="bl4runs text-lg font-extrabold text-green-500 mr-2">0</span>Wicket:
                                 <span class="bl4Wicket text-lg font-extrabold text-red-500">0</span> <br>
                                 
-                                <button class="bl4OverPlus btn btn-xs text-white bg-green-500 px-4">Ov+</button>  
-                                <button class="bl4RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
-                                <button class="bl4Four btn btn-xs text-white bg-green-500 px-4">4</button>  
-                                <button class="bl4Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                                <button class="bl4OverPlus btn btn-xs text-white bg-violet-500 px-4">Ov+</button>  
+                                <button class="bl4RunPlus btn btn-xs text-white bg-violet-500 px-4">R+</button> 
+                                <button class="bl4Four btn btn-xs text-white bg-violet-500 px-4">4</button>  
+                                <button class="bl4Six btn btn-xs text-white bg-violet-500 px-4">6</button>  
                                 <button class="bl4RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
                                 <button class="bl4OverMinus btn btn-xs text-white bg-red-500 px-4">Ov-</button> 
                                 <button class="bl4Wicket2 btn btn-xs text-white bg-red-500 px-4">Wicket</button></li>
@@ -399,13 +407,13 @@
                                 <li class="blName5 hidden p-2 mb-2 border-b-2 drop-shadow-md">
                                   <span class="bl5 mr-7"> </span> over:
                                   <span class="bl5over text-lg font-extrabold text-blue-500 mr-2">0</span> Runs:
-                                  <span class="bl5runs text-lg font-extrabold text-red-500 mr-2">0</span>Wicket:
+                                  <span class="bl5runs text-lg font-extrabold text-green-500 mr-2">0</span>Wicket:
                                   <span class="bl5Wicket text-lg font-extrabold text-red-500">0</span> <br>
                                   
-                                  <button class="bl5OverPlus btn btn-xs text-white bg-green-500 px-4">Ov+</button>  
-                                  <button class="bl5RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
-                                  <button class="bl5Four btn btn-xs text-white bg-green-500 px-4">4</button>  
-                                  <button class="bl5Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                                  <button class="bl5OverPlus btn btn-xs text-white bg-violet-500 px-4">Ov+</button>  
+                                  <button class="bl5RunPlus btn btn-xs text-white bg-violet-500 px-4">R+</button> 
+                                  <button class="bl5Four btn btn-xs text-white bg-violet-500 px-4">4</button>  
+                                  <button class="bl5Six btn btn-xs text-white bg-violet-500 px-4">6</button>  
                                   <button class="bl5RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
                                   <button class="bl5OverMinus btn btn-xs text-white bg-red-500 px-4">Ov-</button> 
                                   <button class="bl5Wicket2 btn btn-xs text-white bg-red-500 px-4">Wicket</button></li>
@@ -413,43 +421,43 @@
                                   <li class="blName6 hidden p-2 mb-2 border-b-2 drop-shadow-md">
                                     <span class="bl6 mr-7"> </span> over:
                                     <span class="bl6over text-lg font-extrabold text-blue-500 mr-2">0</span> Runs:
-                                    <span class="bl6runs text-lg font-extrabold text-red-500 mr-2">0</span>Wicket:
+                                    <span class="bl6runs text-lg font-extrabold text-green-500 mr-2">0</span>Wicket:
                                     <span class="bl6Wicket text-lg font-extrabold text-red-500">0</span> <br>
                                     
-                                    <button class="bl6RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
-                                    <button class="bl6Four btn btn-xs text-white bg-green-500 px-4">4</button>  
-                                    <button class="bl6Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                                    <button class="bl6OverPlus btn btn-xs text-white bg-violet-500 px-4">Ov+</button>  
+                                    <button class="bl6RunPlus btn btn-xs text-white bg-violet-500 px-4">R+</button> 
+                                    <button class="bl6Four btn btn-xs text-white bg-violet-500 px-4">4</button>  
+                                    <button class="bl6Six btn btn-xs text-white bg-violet-500 px-4">6</button>  
                                     <button class="bl6RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
                                     <button class="bl6OverMinus btn btn-xs text-white bg-red-500 px-4">Ov-</button> 
-                                    <button class="bl6OverPlus btn btn-xs text-white bg-green-500 px-4">Ov+</button>  
                                     <button class="bl6Wicket2 btn btn-xs text-white bg-red-500 px-4">Wicket</button></li>
         
                                     <li class="blName7 hidden p-2 mb-2 border-b-2 drop-shadow-md">
                                       <span class="bl7 mr-7"> </span> over:
                                       <span class="bl7over text-lg font-extrabold text-blue-500 mr-2">0</span> Runs:
-                                      <span class="bl7runs text-lg font-extrabold text-red-500 mr-2">0</span>Wicket:
+                                      <span class="bl7runs text-lg font-extrabold text-green-500 mr-2">0</span>Wicket:
                                       <span class="bl7Wicket text-lg font-extrabold text-red-500">0</span> <br>
                                       
-                                      <button class="bl7RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
-                                      <button class="bl7Four btn btn-xs text-white bg-green-500 px-4">4</button>  
-                                      <button class="bl7Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                                      <button class="bl7OverPlus btn btn-xs text-white bg-violet-500 px-4">Ov+</button>  
+                                      <button class="bl7RunPlus btn btn-xs text-white bg-violet-500 px-4">R+</button> 
+                                      <button class="bl7Four btn btn-xs text-white bg-violet-500 px-4">4</button>  
+                                      <button class="bl7Six btn btn-xs text-white bg-violet-500 px-4">6</button>  
                                       <button class="bl7RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
                                       <button class="bl7OverMinus btn btn-xs text-white bg-red-500 px-4">Ov-</button> 
-                                      <button class="bl7OverPlus btn btn-xs text-white bg-green-500 px-4">Ov+</button>  
                                       <button class="bl7Wicket2 btn btn-xs text-white bg-red-500 px-4">Wicket</button></li>
         
                                       <li class="blName8 hidden p-2 mb-2 border-b-2 drop-shadow-md">
                                         <span class="bl8 mr-7"> </span> over:
                                         <span class="bl8over text-lg font-extrabold text-blue-500 mr-2">0</span> Runs:
-                                        <span class="bl8runs text-lg font-extrabold text-red-500 mr-2">0</span>Wicket:
+                                        <span class="bl8runs text-lg font-extrabold text-green-500 mr-2">0</span>Wicket:
                                         <span class="bl8Wicket text-lg font-extrabold text-red-500">0</span> <br>
                                         
-                                        <button class="bl8RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
-                                        <button class="bl8Four btn btn-xs text-white bg-green-500 px-4">4</button>  
-                                        <button class="bl8Six btn btn-xs text-white bg-green-500 px-4">6</button>  
+                                        <button class="bl8OverPlus btn btn-xs text-white bg-violet-500 px-4">Ov+</button>  
+                                        <button class="bl8RunPlus btn btn-xs text-white bg-violet-500 px-4">R+</button> 
+                                        <button class="bl8Four btn btn-xs text-white bg-violet-500 px-4">4</button>  
+                                        <button class="bl8Six btn btn-xs text-white bg-violet-500 px-4">6</button>  
                                         <button class="bl8RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
                                         <button class="bl8OverMinus btn btn-xs text-white bg-red-500 px-4">Ov-</button> 
-                                        <button class="bl8OverPlus btn btn-xs text-white bg-green-500 px-4">Ov+</button>  
                                         <button class="bl8Wicket2 btn btn-xs text-white bg-red-500 px-4">Wicket</button></li>
                     </ol>
                 </div>

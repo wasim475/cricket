@@ -284,6 +284,39 @@ overLimitBtn.addEventListener('click',function(){
 /*=========================================================
 #Over part end
 =========================================================*/
+
+/*=========================================================
+#bowlerLimit part Start
+=========================================================*/
+// let bowlerLimit =document.querySelector('.bowlerLimit')
+// let bowlerLimitValue =document.querySelector('.bowlerLimitValue')
+// let bowlerLimitBtn =document.querySelector('.bowlerLimitBtn')
+// let err5 =document.querySelector('.err5')
+
+// bowlerLimitBtn.addEventListener('click',function(){
+//     if(!bowlerLimitValue.value){
+//         err5.innerHTML = 'Empty field'
+//     }
+//     else if(bowlerLimitValue.value<1){
+//         err5.innerHTML = 'Invalid limitation.'
+//     }else{
+
+//     }
+// })
+
+/*=========================================================
+#bowlerLimit part end
+=========================================================*/
+/*=========================================================
+#cursor part start
+=========================================================*/
+let batterHand = document.querySelector('.batterHand')
+let bowlerHand = document.querySelector('.bowlerHand')
+
+/*=========================================================
+#cursor part end
+=========================================================*/
+
 /*=========================================================
 #batterOrBowler part Start 
 =========================================================*/
@@ -291,14 +324,21 @@ let batterOrBowler = document.querySelector('.batterOrBowler')
 let BattersBtn = document.querySelector('.BattersBtn')
 let bowlersBtn = document.querySelector('.bowlersBtn')
 
+
 BattersBtn.addEventListener('click',function(){
     batsman.style.display = 'block'
     bwlerPart.style.display = 'none'
+    bowlerHand.style.display = 'none'
+    batterHand.style.display = 'inline'
+    // bowlerLimit.style.display = 'none'
     
 })
 bowlersBtn.addEventListener('click',function(){
     batsman.style.display = 'none'
     bwlerPart.style.display = 'block'
+    batterHand.style.display = 'none'
+    bowlerHand.style.display = 'inline'
+    // bowlerLimit.style.display = 'block'
 
 })
 
