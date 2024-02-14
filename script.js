@@ -1086,9 +1086,18 @@ p1Four.addEventListener('click',function(){
 
 })
 p1RunMinus.addEventListener('click',function(){
-    runC--;
-    p1run.innerHTML = runC;
-    needRuns.innerHTML++
+    if(runC>0){
+        runC--;
+        p1run.innerHTML = runC;
+        runCounter--;
+        totalRun.innerHTML=runCounter;
+        if(needRuns.innerHTML>1){
+            needRuns.innerHTML++;
+        }else{
+            needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+            needToWin.style.color = 'red'
+        }
+    }
     
 })
 let p2RunC = 0;
@@ -1139,9 +1148,19 @@ p2Four.addEventListener('click',function(){
 
 })
 p2RunMinus.addEventListener('click',function(){
-    p2RunC--;
-    p2run.innerHTML = p2RunC;
-    needRuns.innerHTML++;
+    
+    if(p2RunC>0){
+        p2RunC--;
+        p2run.innerHTML = p2RunC;
+        runCounter--;
+        totalRun.innerHTML=runCounter;
+        if(needRuns.innerHTML>1){
+            needRuns.innerHTML++;
+        }else{
+            needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+            needToWin.style.color = 'red'
+        }
+    }
 })
 let p3RunC = 0;
 p3RunPlus.addEventListener('click',function(){
@@ -1193,9 +1212,19 @@ p3Four.addEventListener('click',function(){
 })
 
 p3RunMinus.addEventListener('click',function(){
-    p3RunC--;
-    p3run.innerHTML = p3RunC;
-    needRuns.innerHTML++;
+    
+    if(p3RunC>0){
+        p3RunC--;
+        p3run.innerHTML = p3RunC;
+        runCounter--;
+        totalRun.innerHTML=runCounter;
+        if(needRuns.innerHTML>1){
+            needRuns.innerHTML++;
+        }else{
+            needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+            needToWin.style.color = 'red'
+        }
+    }
     
 })
 let p4RunC = 0;
@@ -1248,9 +1277,18 @@ p4Four.addEventListener('click',function(){
 })
 
 p4RunMinus.addEventListener('click',function(){
-    p4RunC--;
-    p4run.innerHTML = p4RunC;
-    needRuns.innerHTML++;
+    if(p4RunC>0){
+        p4RunC--;
+        p4run.innerHTML = p4RunC;
+        runCounter--;
+        totalRun.innerHTML=runCounter;
+        if(needRuns.innerHTML>1){
+            needRuns.innerHTML++;
+        }else{
+            needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+            needToWin.style.color = 'red'
+        }
+    }
 })
 let p5RunC = 0;
 p5RunPlus.addEventListener('click',function(){
@@ -1302,9 +1340,18 @@ p5Four.addEventListener('click',function(){
 })
 
 p5RunMinus.addEventListener('click',function(){
-    p5RunC--;
-    p5run.innerHTML = p5RunC;
-    needRuns.innerHTML++;
+    if(p5RunC>0){
+        p5RunC--;
+        p5run.innerHTML = p5RunC;
+        runCounter--;
+        totalRun.innerHTML=runCounter;
+        if(needRuns.innerHTML>1){
+            needRuns.innerHTML++;
+        }else{
+            needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+            needToWin.style.color = 'red'
+        }
+    }
 })
 let p6RunC = 0;
 p6RunPlus.addEventListener('click',function(){
@@ -1356,9 +1403,18 @@ p6Four.addEventListener('click',function(){
 })
 
 p6RunMinus.addEventListener('click',function(){
-    p6RunC--;
-    p6run.innerHTML = p6RunC;
-    needRuns.innerHTML++;
+    if(p6RunC>0){
+        p6RunC--;
+        p6run.innerHTML = p6RunC;
+        runCounter--;
+        totalRun.innerHTML=runCounter;
+        if(needRuns.innerHTML>1){
+            needRuns.innerHTML++;
+        }else{
+            needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+            needToWin.style.color = 'red'
+        }
+    }
 })
 let p7RunC = 0;
 p7RunPlus.addEventListener('click',function(){
@@ -1410,9 +1466,19 @@ p7Four.addEventListener('click',function(){
 })
 
 p7RunMinus.addEventListener('click',function(){
-    p7RunC--;
-    p7run.innerHTML = p7RunC;
-    needRuns.innerHTML++;
+    
+    if(p7RunC>0){
+        p7RunC--;
+        p7run.innerHTML = p7RunC;
+        runCounter--;
+        totalRun.innerHTML=runCounter;
+        if(needRuns.innerHTML>1){
+            needRuns.innerHTML++;
+        }else{
+            needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+            needToWin.style.color = 'red'
+        }
+    }
 })
 let p8RunC = 0;
 p8RunPlus.addEventListener('click',function(){
@@ -1464,9 +1530,19 @@ p8Four.addEventListener('click',function(){
 })
 
 p8RunMinus.addEventListener('click',function(){
-    p8RunC--;
-    p8run.innerHTML = p8RunC;
-    needRuns.innerHTML++;
+    
+    if(p8RunC>0){
+        p8RunC--;
+        p8run.innerHTML = p8RunC;
+        runCounter--;
+        totalRun.innerHTML=runCounter;
+        if(needRuns.innerHTML>1){
+            needRuns.innerHTML++;
+        }else{
+            needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+            needToWin.style.color = 'red'
+        }
+    }
 })
 let p9RunC = 0;
 p9RunPlus.addEventListener('click',function(){
@@ -1518,9 +1594,18 @@ p9Four.addEventListener('click',function(){
 })
 
 p9RunMinus.addEventListener('click',function(){
-    p9RunC--;
-    p9run.innerHTML = p9RunC;
-    needRuns.innerHTML++;
+    if(p9RunC>0){
+        p9RunC--;
+        p9run.innerHTML = p9RunC;
+        runCounter--;
+        totalRun.innerHTML=runCounter;
+        if(needRuns.innerHTML>1){
+            needRuns.innerHTML++;
+        }else{
+            needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+            needToWin.style.color = 'red'
+        }
+    }
 })
 let p10RunC = 0;
 p10RunPlus.addEventListener('click',function(){
@@ -1571,9 +1656,19 @@ p10Four.addEventListener('click',function(){
 })
 
 p10RunMinus.addEventListener('click',function(){
-    p10RunC--;
-    p10run.innerHTML = p10RunC;
-    needRuns.innerHTML++;
+    
+    if(p10RunC>0){
+        p10RunC--;
+        p10run.innerHTML = p10RunC;
+        runCounter--;
+        totalRun.innerHTML=runCounter;
+        if(needRuns.innerHTML>1){
+            needRuns.innerHTML++;
+        }else{
+            needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+            needToWin.style.color = 'red'
+        }
+    }
 })
 let p11RunC = 0;
 p11RunPlus.addEventListener('click',function(){
@@ -1625,11 +1720,18 @@ p11Four.addEventListener('click',function(){
 })
 
 p11RunMinus.addEventListener('click',function(){
-    p11RunC--;
-    p11run.innerHTML = p11RunC;
-    p11ballC++;
-    p11Ball.innerHTML = p11ballC;
-    needRuns.innerHTML++;
+    if(p11RunC>0){
+        p11RunC--;
+        p11run.innerHTML = p11RunC;
+        runCounter--;
+        totalRun.innerHTML=runCounter;
+        if(needRuns.innerHTML>1){
+            needRuns.innerHTML++;
+        }else{
+            needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+            needToWin.style.color = 'red'
+        }
+    }
 })
 
 // RunPlus Minus Button #End
@@ -1641,8 +1743,11 @@ p1BallPlus.addEventListener('click',function(){
     console.log(p1ballC)
 })
 p1BallMinus.addEventListener('click',function(){
-    p1ballC--;
-    p1Ball.innerHTML = p1ballC;
+    if(p1ballC>0){
+        p1ballC--;
+        p1Ball.innerHTML = p1ballC;
+    }
+    
 })
 let p2ballC=0;
 p2BallPlus.addEventListener('click',function(){
@@ -1650,8 +1755,10 @@ p2BallPlus.addEventListener('click',function(){
     p2Ball.innerHTML = p2ballC;
 })
 p2BallMinus.addEventListener('click',function(){
-    p2ballC--;
-    p2Ball.innerHTML = p2ballC;
+    if(p2ballC>0){
+        p2ballC--;
+        p2Ball.innerHTML = p2ballC;
+    }
 })
 let p3ballC=0;
 p3BallPlus.addEventListener('click',function(){
@@ -1659,8 +1766,10 @@ p3BallPlus.addEventListener('click',function(){
     p3Ball.innerHTML = p3ballC;
 })
 p3BallMinus.addEventListener('click',function(){
-    p3ballC--;
-    p3Ball.innerHTML = p3ballC;
+    if(p3ballC>0){
+        p3ballC--;
+        p3Ball.innerHTML = p3ballC;
+    }
 })
 let p4ballC=0;
 p4BallPlus.addEventListener('click',function(){
@@ -1668,8 +1777,11 @@ p4BallPlus.addEventListener('click',function(){
     p4Ball.innerHTML = p4ballC;
 })
 p4BallMinus.addEventListener('click',function(){
-    p4ballC--;
-    p4Ball.innerHTML = p4ballC;
+    if(p4ballC>0){
+
+        p4ballC--;
+        p4Ball.innerHTML = p4ballC;
+    }
 })
 let p5ballC=0;
 p5BallPlus.addEventListener('click',function(){
@@ -1677,8 +1789,11 @@ p5BallPlus.addEventListener('click',function(){
     p5Ball.innerHTML = p5ballC;
 })
 p5BallMinus.addEventListener('click',function(){
-    p5ballC--;
-    p5Ball.innerHTML = p5ballC;
+    if(p5ballC>0){
+        
+        p5ballC--;
+        p5Ball.innerHTML = p5ballC;
+    }
 })
 let p6ballC=0;
 p6BallPlus.addEventListener('click',function(){
@@ -1686,8 +1801,11 @@ p6BallPlus.addEventListener('click',function(){
     p6Ball.innerHTML = p6ballC;
 })
 p6BallMinus.addEventListener('click',function(){
-    p6ballC--;
-    p6Ball.innerHTML = p6ballC;
+    if(p6ballC>0){
+        
+        p6ballC--;
+        p6Ball.innerHTML = p6ballC;
+    }
 })
 let p7ballC=0;
 p7BallPlus.addEventListener('click',function(){
@@ -1695,8 +1813,11 @@ p7BallPlus.addEventListener('click',function(){
     p7Ball.innerHTML = p7ballC;
 })
 p7BallMinus.addEventListener('click',function(){
-    p7ballC--;
-    p7Ball.innerHTML = p7ballC;
+    if(p7ballC>0){
+        
+        p7ballC--;
+        p7Ball.innerHTML = p7ballC;
+    }
 })
 let p8ballC=0;
 p8BallPlus.addEventListener('click',function(){
@@ -1704,8 +1825,11 @@ p8BallPlus.addEventListener('click',function(){
     p8Ball.innerHTML = p8ballC;
 })
 p8BallMinus.addEventListener('click',function(){
-    p8ballC--;
-    p8Ball.innerHTML = p8ballC;
+    if(p8ballC>0){
+        
+        p8ballC--;
+        p8Ball.innerHTML = p8ballC;
+    }
 })
 let p9ballC=0;
 p9BallPlus.addEventListener('click',function(){
@@ -1713,8 +1837,11 @@ p9BallPlus.addEventListener('click',function(){
     p9Ball.innerHTML = p9ballC;
 })
 p9BallMinus.addEventListener('click',function(){
-    p9ballC--;
-    p9Ball.innerHTML = p9ballC;
+    if(p9ballC>0){
+        
+        p9ballC--;
+        p9Ball.innerHTML = p9ballC;
+    }
 })
 let p10ballC=0;
 p10BallPlus.addEventListener('click',function(){
@@ -1722,8 +1849,11 @@ p10BallPlus.addEventListener('click',function(){
     p10Ball.innerHTML = p10ballC;
 })
 p10BallMinus.addEventListener('click',function(){
-    p10ballC--;
-    p10Ball.innerHTML = p10ballC;
+    if(p10ballC>0){
+        
+        p10ballC--;
+        p10Ball.innerHTML = p10ballC;
+    }
 })
 let p11ballC=0;
 p11BallPlus.addEventListener('click',function(){
@@ -1731,8 +1861,11 @@ p11BallPlus.addEventListener('click',function(){
     p11Ball.innerHTML = p11ballC;
 })
 p11BallMinus.addEventListener('click',function(){
-    p11ballC--;
-    p11Ball.innerHTML = p11ballC;
+    if(p11ballC>0){
+        
+        p11ballC--;
+        p11Ball.innerHTML = p11ballC;
+    }
 })
 
 // BallPlus Minus Button #End
