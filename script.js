@@ -318,6 +318,63 @@ byeFour.addEventListener('click',function(){
 })
 extraRunMinus.addEventListener('click',function(){
    if(runCounter>0 && extraRunsC>0){
+    wdRunC--;
+    wdRun.innerHTML = wdRunC;
+    extraRunsC--;
+    runCounter--;
+    totalRun.innerHTML=runCounter;
+    extraRuns.innerHTML = extraRunsC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML++;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
+   }
+})
+
+
+let legByeMinus = document.querySelector('.legByeMinus')
+legByeMinus.addEventListener('click',function(){
+   if(runCounter>0 && extraRunsC>0 && legByeRunC>0){
+    legByeRunC--;
+    lbRun.innerHTML = legByeRunC;
+    extraRunsC--;
+    runCounter--;
+    totalRun.innerHTML=runCounter;
+    extraRuns.innerHTML = extraRunsC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML++;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
+   }
+})
+
+let noBallMinus = document.querySelector('.noBallMinus')
+noBallMinus.addEventListener('click',function(){
+   if(runCounter>0 && extraRunsC>0 && noBallRunC>0){
+    noBallRunC--;
+    extraRunsC--;
+    runCounter--;
+    totalRun.innerHTML=runCounter;
+    extraRuns.innerHTML = extraRunsC;
+    nbRun.innerHTML = noBallRunC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML++;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
+   }
+})
+let byeRunMinus = document.querySelector('.byeRunMinus')
+byeRunMinus.addEventListener('click',function(){
+    if(runCounter>0 && extraRunsC>0 && bRunC>0){
+       console.log('ami bye minus')
+    bRunC--;
+    bRun.innerHTML = bRunC;
     extraRunsC--;
     runCounter--;
     totalRun.innerHTML=runCounter;
