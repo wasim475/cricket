@@ -160,7 +160,7 @@ totalRunSix.addEventListener('click',function(){
 
 let wicketConter= 0;
 TeamWicket.addEventListener('click',function(){
-        if(wicketConter>=0 && wicketConter<10){
+        if(wicketConter>=0 && wicketConter<11){
 
             wicketConter++;
             totalWicket.innerHTML = wicketConter;
@@ -473,7 +473,7 @@ totalOverPlus.addEventListener('click',function(){
 })
 
 overLimitBtn.addEventListener('click',function(){
-    if(!overLimit.value && overLimit.value<0){
+    if(!(overLimit.value) && !overLimit.value>0){
         error3.innerHTML = 'Invalid'
     }
     else{
