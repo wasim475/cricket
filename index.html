@@ -68,7 +68,7 @@
            #Total scoreAndOver
     =============================== -->
     <section class="scoreAndOver hidden">
-      <p> <span class="scoreCard">score</span>: 
+      <p class="font-bold text-xl"> <span class="scoreCard">score</span>: 
         <span class="totalRun">0</span>/ 
         <span class="totalWicket">0</span> 
         <span>     </span> 
@@ -80,14 +80,25 @@
         <button class="totalOverPlus text-white btn btn-xs bg-green-500 px-6">+</button>
 
       </span> </p>
+      
 <!-- ==========================================================================================
             #Extra field Start
 ============================================================================================== -->
-<button class="btn" onclick="my_modal_5.showModal()">Extra</button>
+<button class="btn mt-5" onclick="my_modal_5.showModal()">Extra</button>
 <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
   <div class="modal-box">
-    <h3 class="font-bold text-lg">Extra: <span class="extraRuns">0 ( wd:<span>0</span> nb: <span>0</span> lb: <span>0</span> b: <span>0</span> )</span></h3>
-    <p class="py-4">Press ESC key or click the button below to close</p>
+    <h3 class="font-bold text-base inline-block">Extra Runs: <span class="extraRuns text-blue-800">0</span></h3> <span class="extraSp text-sm font-normal">( wd:<span class="wdRun">0</span> nb: <span class="nbRun">0</span> lb: <span class="lbRun">0</span> b: <span class="bRun">0</span> )</span>
+    <p class="py-4">
+      <button class="wide1 text-white btn btn-xs px-4 bg-green-700">wide</button>
+      <button class="wide2 text-white btn btn-xs px-4 bg-green-700">wide+4</button>
+      <button class="noBall text-white btn btn-xs px-4 bg-green-700">No ball</button>
+      <button class="legBye text-white btn btn-xs px-4 bg-green-700">Leg bye</button>
+      <button class="legByeFour text-white btn btn-xs px-4 bg-green-700">Leg bye(4)</button>
+      <button class="bye text-white btn btn-xs px-4 bg-green-700 mt-2">bye</button>
+      <button class="byeFour text-white btn btn-xs px-4 bg-green-700 mt-2">bye(4)</button>
+      <button class="extraRunMinus text-white btn btn-xs px-4 bg-red-500 mt-2">-1</button>
+
+    </p>
     <div class="modal-action">
       <form method="dialog">
         <!-- if there is a button in form, it will close the modal -->
@@ -101,7 +112,7 @@
 ============================================================================================== -->
       <button class="undo1 hidden btn btn-xs bg-green-500 text-white px-4">   <i class="fa-solid fa-arrow-rotate-left"></i></button>
 
-      <p class="runIncrmenterDeincrementer mt-6"> <button class="totalRunMinus text-white btn btn-xs px-4 bg-red-500">-</button> <button class="totalRunPlus text-white btn btn-xs bg-green-500 px-6">+</button><button class="totalRunDouble btn btn-xs bg-green-500 px-6 text-white">2</button><button class="totalRunFour btn btn-xs bg-green-500 px-6 text-white">4</button><button class="totalRunSix btn btn-xs bg-green-500 px-6 text-white">6</button><button class="TeamWicket btn btn-xs bg-red-500 px-4">Wicket</button> </p>
+      <p class="runIncrmenterDeincrementer mt-6"> <button class="totalRunMinus text-white btn btn-xs px-4 bg-red-500">-1</button> <button class="totalRunPlus text-white btn btn-xs bg-green-500 px-6">1</button><button class="totalRunDouble btn btn-xs bg-green-500 px-6 text-white">2</button><button class="totalRunFour btn btn-xs bg-green-500 px-6 text-white">4</button><button class="totalRunSix btn btn-xs bg-green-500 px-6 text-white">6</button><button class="TeamWicket btn btn-xs bg-red-500 px-4">Wicket</button> </p>
     </section>
     <!-- =======================================
         #Need to win start

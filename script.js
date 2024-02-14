@@ -187,6 +187,105 @@ undo1.addEventListener('click',function(){
 /*=========================================================
             #ScoreCard part end
 =========================================================*/
+/*=========================================================
+            #Extra part Start
+=========================================================*/
+let extraRuns = document.querySelector('.extraRuns')
+let wdRun = document.querySelector('.wdRun')
+let nbRun = document.querySelector('.nbRun')
+let lbRun = document.querySelector('.lbRun')
+let bRun = document.querySelector('.bRun')
+
+// btns
+let wide1 = document.querySelector('.wide1')
+let wide2 = document.querySelector('.wide2')
+let noBall = document.querySelector('.noBall')
+let legBye = document.querySelector('.legBye')
+let legByeFour = document.querySelector('.legByeFour')
+let bye = document.querySelector('.bye')
+let byeFour = document.querySelector('.byeFour')
+let extraRunMinus = document.querySelector('.extraRunMinus')
+
+// wide
+let wdRunC= 0;
+let extraRunsC =0;
+wide1.addEventListener('click',function(){
+    wdRunC++;
+    extraRunsC++;
+    runCounter++;
+    totalRun.innerHTML=runCounter;
+    extraRuns.innerHTML = extraRunsC;
+    wdRun.innerHTML = wdRunC;
+
+})
+wide2.addEventListener('click',function(){
+    wdRunC+=5;
+    extraRunsC+=5;
+    runCounter+=5;
+    totalRun.innerHTML=runCounter;
+    extraRuns.innerHTML = extraRunsC;
+    wdRun.innerHTML = wdRunC;
+
+})
+
+// no ball
+let noBallRunC= 0;
+noBall.addEventListener('click',function(){
+    noBallRunC++;
+    extraRunsC++;
+    runCounter++;
+    totalRun.innerHTML=runCounter;
+    extraRuns.innerHTML = extraRunsC;
+    nbRun.innerHTML = noBallRunC;
+
+})
+let legByeRunC = 0;
+legBye.addEventListener('click',function(){
+    legByeRunC++;
+    extraRunsC++;
+    runCounter++;
+    totalRun.innerHTML=runCounter;
+    extraRuns.innerHTML = extraRunsC;
+    lbRun.innerHTML = legByeRunC;
+})
+legByeFour.addEventListener('click',function(){
+    legByeRunC+=4;
+    extraRunsC+=4;
+    runCounter+=4;
+    totalRun.innerHTML=runCounter;
+    extraRuns.innerHTML = extraRunsC;
+    lbRun.innerHTML = legByeRunC;
+})
+
+let bRunC = 0;
+bye.addEventListener('click',function(){
+    bRunC++
+    extraRunsC++;
+    runCounter++;
+    totalRun.innerHTML=runCounter;
+    extraRuns.innerHTML = extraRunsC;
+    bRun.innerHTML = bRunC;
+})
+byeFour.addEventListener('click',function(){
+    bRunC+=4
+    extraRunsC+=4;
+    runCounter+=4;
+    totalRun.innerHTML=runCounter;
+    extraRuns.innerHTML = extraRunsC;
+    bRun.innerHTML = bRunC;
+})
+extraRunMinus.addEventListener('click',function(){
+   if(runCounter>0 && extraRunsC>0){
+    extraRunsC--;
+    runCounter--;
+    totalRun.innerHTML=runCounter;
+    extraRuns.innerHTML = extraRunsC;
+   }
+})
+
+/*=========================================================
+            #Extra part end
+=========================================================*/
 
 
 /*=========================================================
