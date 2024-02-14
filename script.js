@@ -216,6 +216,12 @@ wide1.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     extraRuns.innerHTML = extraRunsC;
     wdRun.innerHTML = wdRunC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML--;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 
 })
 wide2.addEventListener('click',function(){
@@ -225,6 +231,12 @@ wide2.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     extraRuns.innerHTML = extraRunsC;
     wdRun.innerHTML = wdRunC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 5;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 
 })
 
@@ -237,6 +249,12 @@ noBall.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     extraRuns.innerHTML = extraRunsC;
     nbRun.innerHTML = noBallRunC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML--;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 
 })
 let legByeRunC = 0;
@@ -247,6 +265,12 @@ legBye.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     extraRuns.innerHTML = extraRunsC;
     lbRun.innerHTML = legByeRunC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML--;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 })
 legByeFour.addEventListener('click',function(){
     legByeRunC+=4;
@@ -255,6 +279,12 @@ legByeFour.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     extraRuns.innerHTML = extraRunsC;
     lbRun.innerHTML = legByeRunC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 4;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 })
 
 let bRunC = 0;
@@ -265,6 +295,12 @@ bye.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     extraRuns.innerHTML = extraRunsC;
     bRun.innerHTML = bRunC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML--;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 })
 byeFour.addEventListener('click',function(){
     bRunC+=4
@@ -273,6 +309,12 @@ byeFour.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     extraRuns.innerHTML = extraRunsC;
     bRun.innerHTML = bRunC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 4;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
 })
 extraRunMinus.addEventListener('click',function(){
    if(runCounter>0 && extraRunsC>0){
@@ -280,6 +322,12 @@ extraRunMinus.addEventListener('click',function(){
     runCounter--;
     totalRun.innerHTML=runCounter;
     extraRuns.innerHTML = extraRunsC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML++;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
    }
 })
 
