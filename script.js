@@ -205,6 +205,17 @@ let legByeFour = document.querySelector('.legByeFour')
 let bye = document.querySelector('.bye')
 let byeFour = document.querySelector('.byeFour')
 let extraRunMinus = document.querySelector('.extraRunMinus')
+let closeBtn = document.querySelector('.closeBtn')
+let extraIcon = document.querySelector('.extraIcon')
+let extraBtn = document.querySelector('.extraBtn')
+
+extraBtn.addEventListener('click',function(){
+    extraIcon.style.display ='none';
+})
+closeBtn.addEventListener('click',function(){
+    extraIcon.style.display ='inline';
+
+})
 
 // wide
 let wdRunC= 0;
