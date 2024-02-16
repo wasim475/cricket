@@ -2193,7 +2193,7 @@ bl1Four.addEventListener('click',function(){
  })
  let bl1WicketC = 0;
 bl1Wicket2.addEventListener('click',function(){
-    if(bl1RunC>=0){
+    if(bl1RunC>=0 && bl1WicketC>=0 && bl1WicketC<10){
         bl1WicketC++;
         bl1Wicket.innerHTML= bl1WicketC;
     }
@@ -2282,7 +2282,7 @@ bl2Four.addEventListener('click',function(){
  let bl2WicketC = 0;
 
 bl2Wicket2.addEventListener('click',function(){
-    if(bl2WicketC>=0){
+    if(bl2WicketC>=0 && bl2WicketC>=0 && bl2WicketC<10){
         bl2WicketC++;
         bl2Wicket.innerHTML= bl2WicketC;
     }
@@ -2372,7 +2372,7 @@ bl3Four.addEventListener('click',function(){
  let bl3WicketC = 0;
 
 bl3Wicket2.addEventListener('click',function(){
-    if(bl3WicketC>=0){
+    if(bl3WicketC>=0 && bl3WicketC>=0 && bl3WicketC<10){
         bl3WicketC++;
         bl3Wicket.innerHTML= bl3WicketC;
     }
@@ -2460,7 +2460,7 @@ bl4Four.addEventListener('click',function(){
  let bl4WicketC = 0;
 
 bl4Wicket2.addEventListener('click',function(){
-    if(bl4WicketC>=0){
+    if(bl4WicketC>=0 && bl4WicketC>=0 && bl4WicketC<10){
         bl4WicketC++;
         bl4Wicket.innerHTML= bl4WicketC;
     }
@@ -2548,7 +2548,7 @@ bl5Four.addEventListener('click',function(){
  let bl5WicketC = 0;
 
 bl5Wicket2.addEventListener('click',function(){
-    if(bl5WicketC>=0){
+    if(bl5WicketC>=0 && bl5WicketC>=0 && bl5WicketC<10){
         bl5WicketC++;
         bl5Wicket.innerHTML= bl5WicketC;
     }
@@ -2636,7 +2636,7 @@ bl6Four.addEventListener('click',function(){
  let bl6WicketC = 0;
 
 bl6Wicket2.addEventListener('click',function(){
-    if(bl6WicketC>=0){
+    if(bl6WicketC>=0 && bl6WicketC>=0 && bl6WicketC<10){
         bl6WicketC++;
         bl6Wicket.innerHTML= bl6WicketC;
     }
@@ -2724,7 +2724,7 @@ bl7Four.addEventListener('click',function(){
  let bl7WicketC = 0;
 
 bl7Wicket2.addEventListener('click',function(){
-    if(bl7WicketC>=0){
+    if(bl7WicketC>=0 && bl7WicketC>=0 && bl7WicketC<10){
         bl7WicketC++;
         bl7Wicket.innerHTML= bl7WicketC;
     }
@@ -2810,7 +2810,7 @@ bl8Four.addEventListener('click',function(){
  let bl8WicketC = 0;
 
 bl8Wicket2.addEventListener('click',function(){
-    if(bl8WicketC>=0){
+    if(bl8WicketC>=0 && bl8WicketC>=0 && bl8WicketC<10){
         bl8WicketC++;
         bl8Wicket.innerHTML= bl8WicketC;
     }
