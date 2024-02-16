@@ -650,11 +650,28 @@ p1Out.addEventListener('click',function(){
     p1Out.style.display = 'none'
     p1Six.style.display = 'none'
     p1Four.style.display = 'none'
+    bt1undo.style.display = 'inline'
     wicketConter++;
     totalWicket.innerHTML = wicketConter;
     p1ballC++;
     p1Ball.innerHTML = p1ballC;
 })
+let bt1undo = document.querySelector('.bt1undo')
+bt1undo.addEventListener('click',function(){
+    p1RunPlus.style.display = 'inline'
+    p1BallPlus.style.display = 'inline'
+    p1RunMinus.style.display = 'inline'
+    p1BallMinus.style.display = 'inline'
+    p1Out.style.display = 'inline'
+    p1Six.style.display = 'inline'
+    p1Four.style.display = 'inline'
+    bt1undo.style.display = 'none'
+    wicketConter--;
+    totalWicket.innerHTML = wicketConter;
+    p1ballC--;
+    p1Ball.innerHTML = p1ballC;
+})
+
 p2Out.addEventListener('click',function(){
     p2RunPlus.style.display = 'none'
     p2BallPlus.style.display = 'none'
@@ -663,11 +680,31 @@ p2Out.addEventListener('click',function(){
     p2Out.style.display = 'none'
     p2Six.style.display = 'none'
     p2Four.style.display = 'none'
+    bt2undo.style.display = 'inline'
     wicketConter++;
     totalWicket.innerHTML = wicketConter;
     p2ballC++;
     p2Ball.innerHTML = p2ballC;
 })
+
+let bt2undo = document.querySelector('.bt2undo')
+
+bt2undo.addEventListener('click',function(){
+    p2RunPlus.style.display = 'inline'
+    p2BallPlus.style.display = 'inline'
+    p2RunMinus.style.display = 'inline'
+    p2BallMinus.style.display = 'inline'
+    p2Out.style.display = 'inline'
+    p2Six.style.display = 'inline'
+    p2Four.style.display = 'inline'
+    bt2undo.style.display = 'none'
+    wicketConter--;
+    totalWicket.innerHTML = wicketConter;
+    p2ballC--;
+    p2Ball.innerHTML = p2ballC;
+})
+
+
 
 p3Out.addEventListener('click',function(){
     p3RunPlus.style.display = 'none'
@@ -677,11 +714,29 @@ p3Out.addEventListener('click',function(){
     p3Out.style.display = 'none'
     p3Six.style.display = 'none'
     p3Four.style.display = 'none'
+    bt3undo.style.display = 'inline'
     wicketConter++;
     totalWicket.innerHTML = wicketConter;
     p3ballC++;
     p3Ball.innerHTML = p3ballC;
 })
+
+let bt3undo = document.querySelector('.bt3undo')
+bt3undo.addEventListener('click',function(){
+    p3RunPlus.style.display = 'inline'
+    p3BallPlus.style.display = 'inline'
+    p3RunMinus.style.display = 'inline'
+    p3BallMinus.style.display = 'inline'
+    p3Out.style.display = 'inline'
+    p3Six.style.display = 'inline'
+    p3Four.style.display = 'inline'
+    bt3undo.style.display = 'none'
+    wicketConter--;
+    totalWicket.innerHTML = wicketConter;
+    p3ballC--;
+    p3Ball.innerHTML = p3ballC;
+})
+
 p4Out.addEventListener('click',function(){
     p4RunPlus.style.display = 'none'
     p4BallPlus.style.display = 'none'
@@ -690,9 +745,25 @@ p4Out.addEventListener('click',function(){
     p4Out.style.display = 'none'
     p4Six.style.display = 'none'
     p4Four.style.display = 'none'
+    bt4undo.style.display = 'inline'
     wicketConter++;
     totalWicket.innerHTML = wicketConter;
     p4ballC++;
+    p4Ball.innerHTML = p4ballC;
+})
+let bt4undo = document.querySelector('.bt4undo')
+bt4undo.addEventListener('click',function(){
+    p4RunPlus.style.display = 'inline'
+    p4BallPlus.style.display = 'inline'
+    p4RunMinus.style.display = 'inline'
+    p4BallMinus.style.display = 'inline'
+    p4Out.style.display = 'inline'
+    p4Six.style.display = 'inline'
+    p4Four.style.display = 'inline'
+    bt4undo.style.display = 'none'
+    wicketConter--;
+    totalWicket.innerHTML = wicketConter;
+    p4ballC--;
     p4Ball.innerHTML = p4ballC;
 })
 p11Out.addEventListener('click',function(){
@@ -703,9 +774,25 @@ p11Out.addEventListener('click',function(){
     p11Out.style.display = 'none'
     p11Six.style.display = 'none'
     p11Four.style.display = 'none'
+    bt11undo.style.display = 'inline'
     wicketConter++;
     totalWicket.innerHTML = wicketConter;
     p11ballC++;
+    p11Ball.innerHTML = p11ballC;
+})
+let bt11undo = document.querySelector('.bt11undo')
+bt11undo.addEventListener('click',function(){
+    p11RunPlus.style.display = 'inline'
+    p11BallPlus.style.display = 'inline'
+    p11RunMinus.style.display = 'inline'
+    p11BallMinus.style.display = 'inline'
+    p11Out.style.display = 'inline'
+    p11Six.style.display = 'inline'
+    p11Four.style.display = 'inline'
+    bt11undo.style.display = 'none'
+    wicketConter--;
+    totalWicket.innerHTML = wicketConter;
+    p11ballC--;
     p11Ball.innerHTML = p11ballC;
 })
 p5Out.addEventListener('click',function(){
@@ -716,11 +803,29 @@ p5Out.addEventListener('click',function(){
     p5Out.style.display = 'none'
     p5Six.style.display = 'none'
     p5Four.style.display = 'none'
+    bt5undo.style.display = 'inline'
     wicketConter++;
     totalWicket.innerHTML = wicketConter;
     p5ballC++;
     p5Ball.innerHTML = p5ballC;
 })
+
+let bt5undo = document.querySelector('.bt5undo')
+bt5undo.addEventListener('click',function(){
+    p5RunPlus.style.display = 'inline'
+    p5BallPlus.style.display = 'inline'
+    p5RunMinus.style.display = 'inline'
+    p5BallMinus.style.display = 'inline'
+    p5Out.style.display = 'inline'
+    p5Six.style.display = 'inline'
+    p5Four.style.display = 'inline'
+    bt5undo.style.display = 'none'
+    wicketConter--;
+    totalWicket.innerHTML = wicketConter;
+    p5ballC--;
+    p5Ball.innerHTML = p5ballC;
+})
+
 p6Out.addEventListener('click',function(){
     p6RunPlus.style.display = 'none'
     p6BallPlus.style.display = 'none'
@@ -729,11 +834,29 @@ p6Out.addEventListener('click',function(){
     p6Out.style.display = 'none'
     p6Six.style.display = 'none'
     p6Four.style.display = 'none'
+    bt6undo.style.display = 'inline'
     wicketConter++;
     totalWicket.innerHTML = wicketConter;
     p6ballC++;
     p6Ball.innerHTML = p6ballC;
 })
+
+let bt6undo = document.querySelector('.bt6undo')
+bt6undo.addEventListener('click',function(){
+    p6RunPlus.style.display = 'inline'
+    p6BallPlus.style.display = 'inline'
+    p6RunMinus.style.display = 'inline'
+    p6BallMinus.style.display = 'inline'
+    p6Out.style.display = 'inline'
+    p6Six.style.display = 'inline'
+    p6Four.style.display = 'inline'
+    bt6undo.style.display = 'none'
+    wicketConter--;
+    totalWicket.innerHTML = wicketConter;
+    p6ballC--;
+    p6Ball.innerHTML = p6ballC;
+})
+
 p7Out.addEventListener('click',function(){
     p7RunPlus.style.display = 'none'
     p7BallPlus.style.display = 'none'
@@ -742,11 +865,29 @@ p7Out.addEventListener('click',function(){
     p7Out.style.display = 'none'
     p7Six.style.display = 'none'
     p7Four.style.display = 'none'
+    bt7undo.style.display = 'inline'
     wicketConter++;
     totalWicket.innerHTML = wicketConter;
     p7ballC++;
     p7Ball.innerHTML = p7ballC;
 })
+
+let bt7undo = document.querySelector('.bt7undo')
+bt7undo.addEventListener('click',function(){
+    p7RunPlus.style.display = 'inline'
+    p7BallPlus.style.display = 'inline'
+    p7RunMinus.style.display = 'inline'
+    p7BallMinus.style.display = 'inline'
+    p7Out.style.display = 'inline'
+    p7Six.style.display = 'inline'
+    p7Four.style.display = 'inline'
+    bt7undo.style.display = 'none'
+    wicketConter--;
+    totalWicket.innerHTML = wicketConter;
+    p7ballC--;
+    p7Ball.innerHTML = p7ballC;
+})
+
 p8Out.addEventListener('click',function(){
     p8RunPlus.style.display = 'none'
     p8BallPlus.style.display = 'none'
@@ -755,9 +896,26 @@ p8Out.addEventListener('click',function(){
     p8Out.style.display = 'none'
     p8Six.style.display = 'none'
     p8Four.style.display = 'none'
+    bt8undo.style.display = 'inline'
     wicketConter++;
     totalWicket.innerHTML = wicketConter;
     p8ballC++;
+    p8Ball.innerHTML = p8ballC;
+})
+
+let bt8undo = document.querySelector('.bt8undo')
+bt8undo.addEventListener('click',function(){
+    p8RunPlus.style.display = 'inline'
+    p8BallPlus.style.display = 'inline'
+    p8RunMinus.style.display = 'inline'
+    p8BallMinus.style.display = 'inline'
+    p8Out.style.display = 'inline'
+    p8Six.style.display = 'inline'
+    p8Four.style.display = 'inline'
+    bt8undo.style.display = 'none'
+    wicketConter--;
+    totalWicket.innerHTML = wicketConter;
+    p8ballC--;
     p8Ball.innerHTML = p8ballC;
 })
 p9Out.addEventListener('click',function(){
@@ -768,11 +926,29 @@ p9Out.addEventListener('click',function(){
     p9Out.style.display = 'none'
     p9Six.style.display = 'none'
     p9Four.style.display = 'none'
+    bt9undo.style.display = 'inline'
     wicketConter++;
     totalWicket.innerHTML = wicketConter;
     p9ballC++;
     p9Ball.innerHTML = p9ballC;
 })
+
+let bt9undo = document.querySelector('.bt9undo')
+bt9undo.addEventListener('click',function(){
+    p9RunPlus.style.display = 'inline'
+    p9BallPlus.style.display = 'inline'
+    p9RunMinus.style.display = 'inline'
+    p9BallMinus.style.display = 'inline'
+    p9Out.style.display = 'inline'
+    p9Six.style.display = 'inline'
+    p9Four.style.display = 'inline'
+    bt9undo.style.display = 'none'
+    wicketConter--;
+    totalWicket.innerHTML = wicketConter;
+    p9ballC--;
+    p9Ball.innerHTML = p9ballC;
+})
+
 p10Out.addEventListener('click',function(){
     p10RunPlus.style.display = 'none'
     p10BallPlus.style.display = 'none'
@@ -781,9 +957,25 @@ p10Out.addEventListener('click',function(){
     p10Out.style.display = 'none'
     p10Six.style.display = 'none'
     p10Four.style.display = 'none'
+    bt10undo.style.display = 'inline'
     wicketConter++;
     totalWicket.innerHTML = wicketConter;
     p10ballC++;
+    p10Ball.innerHTML = p10ballC;
+})
+let bt10undo = document.querySelector('.bt10undo')
+bt10undo.addEventListener('click',function(){
+    p10RunPlus.style.display = 'inline'
+    p10BallPlus.style.display = 'inline'
+    p10RunMinus.style.display = 'inline'
+    p10BallMinus.style.display = 'inline'
+    p10Out.style.display = 'inline'
+    p10Six.style.display = 'inline'
+    p10Four.style.display = 'inline'
+    bt10undo.style.display = 'none'
+    wicketConter--;
+    totalWicket.innerHTML = wicketConter;
+    p10ballC--;
     p10Ball.innerHTML = p10ballC;
 })
 // Out portion #End
