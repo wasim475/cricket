@@ -650,6 +650,7 @@ p1Out.addEventListener('click',function(){
     p1Out.style.display = 'none'
     p1Six.style.display = 'none'
     p1Four.style.display = 'none'
+    p1two.style.display = 'none'
     bt1undo.style.display = 'inline'
     wicketConter++;
     totalWicket.innerHTML = wicketConter;
@@ -665,6 +666,7 @@ bt1undo.addEventListener('click',function(){
     p1Out.style.display = 'inline'
     p1Six.style.display = 'inline'
     p1Four.style.display = 'inline'
+    p1two.style.display = 'inline'
     bt1undo.style.display = 'none'
     wicketConter--;
     totalWicket.innerHTML = wicketConter;
@@ -680,6 +682,7 @@ p2Out.addEventListener('click',function(){
     p2Out.style.display = 'none'
     p2Six.style.display = 'none'
     p2Four.style.display = 'none'
+    p2two.style.display = 'none'
     bt2undo.style.display = 'inline'
     wicketConter++;
     totalWicket.innerHTML = wicketConter;
@@ -697,6 +700,7 @@ bt2undo.addEventListener('click',function(){
     p2Out.style.display = 'inline'
     p2Six.style.display = 'inline'
     p2Four.style.display = 'inline'
+    p2two.style.display = 'inline'
     bt2undo.style.display = 'none'
     wicketConter--;
     totalWicket.innerHTML = wicketConter;
@@ -714,6 +718,7 @@ p3Out.addEventListener('click',function(){
     p3Out.style.display = 'none'
     p3Six.style.display = 'none'
     p3Four.style.display = 'none'
+    p3two.style.display = 'none'
     bt3undo.style.display = 'inline'
     wicketConter++;
     totalWicket.innerHTML = wicketConter;
@@ -730,6 +735,7 @@ bt3undo.addEventListener('click',function(){
     p3Out.style.display = 'inline'
     p3Six.style.display = 'inline'
     p3Four.style.display = 'inline'
+    p3two.style.display = 'inline'
     bt3undo.style.display = 'none'
     wicketConter--;
     totalWicket.innerHTML = wicketConter;
@@ -745,6 +751,7 @@ p4Out.addEventListener('click',function(){
     p4Out.style.display = 'none'
     p4Six.style.display = 'none'
     p4Four.style.display = 'none'
+    p4two.style.display = 'none'
     bt4undo.style.display = 'inline'
     wicketConter++;
     totalWicket.innerHTML = wicketConter;
@@ -760,6 +767,7 @@ bt4undo.addEventListener('click',function(){
     p4Out.style.display = 'inline'
     p4Six.style.display = 'inline'
     p4Four.style.display = 'inline'
+    p4two.style.display = 'inline'
     bt4undo.style.display = 'none'
     wicketConter--;
     totalWicket.innerHTML = wicketConter;
@@ -774,6 +782,7 @@ p11Out.addEventListener('click',function(){
     p11Out.style.display = 'none'
     p11Six.style.display = 'none'
     p11Four.style.display = 'none'
+    p11two.style.display = 'none'
     bt11undo.style.display = 'inline'
     wicketConter++;
     totalWicket.innerHTML = wicketConter;
@@ -789,6 +798,7 @@ bt11undo.addEventListener('click',function(){
     p11Out.style.display = 'inline'
     p11Six.style.display = 'inline'
     p11Four.style.display = 'inline'
+    p11two.style.display = 'inline'
     bt11undo.style.display = 'none'
     wicketConter--;
     totalWicket.innerHTML = wicketConter;
@@ -803,6 +813,7 @@ p5Out.addEventListener('click',function(){
     p5Out.style.display = 'none'
     p5Six.style.display = 'none'
     p5Four.style.display = 'none'
+    p5two.style.display = 'none'
     bt5undo.style.display = 'inline'
     wicketConter++;
     totalWicket.innerHTML = wicketConter;
@@ -819,6 +830,7 @@ bt5undo.addEventListener('click',function(){
     p5Out.style.display = 'inline'
     p5Six.style.display = 'inline'
     p5Four.style.display = 'inline'
+    p5two.style.display = 'inline'
     bt5undo.style.display = 'none'
     wicketConter--;
     totalWicket.innerHTML = wicketConter;
@@ -834,6 +846,7 @@ p6Out.addEventListener('click',function(){
     p6Out.style.display = 'none'
     p6Six.style.display = 'none'
     p6Four.style.display = 'none'
+    p6two.style.display = 'none'
     bt6undo.style.display = 'inline'
     wicketConter++;
     totalWicket.innerHTML = wicketConter;
@@ -850,6 +863,7 @@ bt6undo.addEventListener('click',function(){
     p6Out.style.display = 'inline'
     p6Six.style.display = 'inline'
     p6Four.style.display = 'inline'
+    p6two.style.display = 'inline'
     bt6undo.style.display = 'none'
     wicketConter--;
     totalWicket.innerHTML = wicketConter;
@@ -865,6 +879,7 @@ p7Out.addEventListener('click',function(){
     p7Out.style.display = 'none'
     p7Six.style.display = 'none'
     p7Four.style.display = 'none'
+    p7two.style.display = 'none'
     bt7undo.style.display = 'inline'
     wicketConter++;
     totalWicket.innerHTML = wicketConter;
@@ -881,6 +896,7 @@ bt7undo.addEventListener('click',function(){
     p7Out.style.display = 'inline'
     p7Six.style.display = 'inline'
     p7Four.style.display = 'inline'
+    p7two.style.display = 'inline'
     bt7undo.style.display = 'none'
     wicketConter--;
     totalWicket.innerHTML = wicketConter;
@@ -896,6 +912,7 @@ p8Out.addEventListener('click',function(){
     p8Out.style.display = 'none'
     p8Six.style.display = 'none'
     p8Four.style.display = 'none'
+    p8two.style.display = 'none'
     bt8undo.style.display = 'inline'
     wicketConter++;
     totalWicket.innerHTML = wicketConter;
@@ -912,6 +929,7 @@ bt8undo.addEventListener('click',function(){
     p8Out.style.display = 'inline'
     p8Six.style.display = 'inline'
     p8Four.style.display = 'inline'
+    p8two.style.display = 'inline'
     bt8undo.style.display = 'none'
     wicketConter--;
     totalWicket.innerHTML = wicketConter;
@@ -926,6 +944,7 @@ p9Out.addEventListener('click',function(){
     p9Out.style.display = 'none'
     p9Six.style.display = 'none'
     p9Four.style.display = 'none'
+    p9two.style.display = 'none'
     bt9undo.style.display = 'inline'
     wicketConter++;
     totalWicket.innerHTML = wicketConter;
@@ -942,6 +961,7 @@ bt9undo.addEventListener('click',function(){
     p9Out.style.display = 'inline'
     p9Six.style.display = 'inline'
     p9Four.style.display = 'inline'
+    p9two.style.display = 'inline'
     bt9undo.style.display = 'none'
     wicketConter--;
     totalWicket.innerHTML = wicketConter;
@@ -957,6 +977,7 @@ p10Out.addEventListener('click',function(){
     p10Out.style.display = 'none'
     p10Six.style.display = 'none'
     p10Four.style.display = 'none'
+    p10two.style.display = 'none'
     bt10undo.style.display = 'inline'
     wicketConter++;
     totalWicket.innerHTML = wicketConter;
@@ -972,6 +993,7 @@ bt10undo.addEventListener('click',function(){
     p10Out.style.display = 'inline'
     p10Six.style.display = 'inline'
     p10Four.style.display = 'inline'
+    p10two.style.display = 'inline'
     bt10undo.style.display = 'none'
     wicketConter--;
     totalWicket.innerHTML = wicketConter;
@@ -1288,6 +1310,24 @@ p1Four.addEventListener('click',function(){
     }
 
 })
+
+let p1two = document.querySelector('.p1two')
+p1two.addEventListener('click',function(){
+    runC=runC+2;
+    p1run.innerHTML = runC;
+    runCounter+=2;
+    totalRun.innerHTML=runCounter;
+    p1ballC++;
+    p1Ball.innerHTML = p1ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 2;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`;
+        needToWin.style.color = 'red';
+    }
+
+})
+
 p1RunMinus.addEventListener('click',function(){
     if(runC>0){
         runC--;
@@ -1335,6 +1375,24 @@ p2Six.addEventListener('click',function(){
     }
 
 })
+
+let p2two = document.querySelector('.p2two')
+p2two.addEventListener('click',function(){
+    p2RunC=p2RunC+2;
+    p2run.innerHTML = p2RunC;
+    runCounter+=2;
+    totalRun.innerHTML=runCounter;
+    p2ballC++;
+    p2Ball.innerHTML = p2ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 2;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
+
+})
+
 p2Four.addEventListener('click',function(){
     p2RunC=p2RunC+4;
     p2run.innerHTML = p2RunC;
@@ -1398,6 +1456,24 @@ p3Six.addEventListener('click',function(){
     }
 
 })
+
+let p3two = document.querySelector('.p3two')
+p3two.addEventListener('click',function(){
+    p3RunC=p3RunC+2;
+    p3run.innerHTML = p3RunC;
+    runCounter+=2;
+    totalRun.innerHTML=runCounter;
+    p3ballC++;
+    p3Ball.innerHTML = p3ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 2;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
+
+})
+
 p3Four.addEventListener('click',function(){
     p3RunC=p3RunC+4;
     p3run.innerHTML = p3RunC;
@@ -1457,6 +1533,22 @@ p4Six.addEventListener('click',function(){
     p4Ball.innerHTML = p4ballC;
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 6;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
+
+})
+let p4two = document.querySelector('.p4two')
+p4two.addEventListener('click',function(){
+    p4RunC=p4RunC+2;
+    p4run.innerHTML = p4RunC;
+    runCounter+=2;
+    totalRun.innerHTML=runCounter;
+    p4ballC++;
+    p4Ball.innerHTML = p4ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 2;
     }else{
         needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
         needToWin.style.color = 'red'
@@ -1526,6 +1618,22 @@ p5Six.addEventListener('click',function(){
     }
 
 })
+let p5two = document.querySelector('.p5two')
+p5two.addEventListener('click',function(){
+    p5RunC=p5RunC+2;
+    p5run.innerHTML = p5RunC;
+    runCounter+=2;
+    totalRun.innerHTML=runCounter;
+    p5ballC++;
+    p5Ball.innerHTML = p5ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 2;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
+
+})
 p5Four.addEventListener('click',function(){
     p5RunC=p5RunC+4;
     p5run.innerHTML = p5RunC;
@@ -1589,6 +1697,22 @@ p6Six.addEventListener('click',function(){
     }
 
 })
+let p6two = document.querySelector('.p6two')
+p6two.addEventListener('click',function(){
+    p6RunC=p6RunC+2;
+    p6run.innerHTML = p6RunC;
+    runCounter+=2;
+    totalRun.innerHTML=runCounter;
+    p6ballC++;
+    p6Ball.innerHTML = p6ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 2;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
+
+})
 p6Four.addEventListener('click',function(){
     p6RunC=p6RunC+4;
     p6run.innerHTML = p6RunC;
@@ -1646,6 +1770,22 @@ p7Six.addEventListener('click',function(){
     p7Ball.innerHTML = p7ballC;
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 6;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
+
+})
+let p7two = document.querySelector('.p7two')
+p7two.addEventListener('click',function(){
+    p7RunC=p7RunC+2;
+    p7run.innerHTML = p7RunC;
+    runCounter+=2;
+    totalRun.innerHTML=runCounter;
+    p7ballC++;
+    p7Ball.innerHTML = p7ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 2;
     }else{
         needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
         needToWin.style.color = 'red'
@@ -1716,6 +1856,22 @@ p8Six.addEventListener('click',function(){
     }
 
 })
+let p8two = document.querySelector('.p8two')
+p8two.addEventListener('click',function(){
+    p8RunC=p8RunC+2;
+    p8run.innerHTML = p8RunC;
+    runCounter+=2;
+    totalRun.innerHTML=runCounter;
+    p8ballC++;
+    p8Ball.innerHTML = p8ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 2;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
+
+})
 p8Four.addEventListener('click',function(){
     p8RunC=p8RunC+4;
     p8run.innerHTML = p8RunC;
@@ -1774,6 +1930,22 @@ p9Six.addEventListener('click',function(){
     p9Ball.innerHTML = p9ballC;
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 6;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
+
+})
+let p9two = document.querySelector('.p9two')
+p9two.addEventListener('click',function(){
+    p9RunC=p9RunC+2;
+    p9run.innerHTML = p9RunC;
+    runCounter+=2;
+    totalRun.innerHTML=runCounter;
+    p9ballC++;
+    p9Ball.innerHTML = p9ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 2;
     }else{
         needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
         needToWin.style.color = 'red'
@@ -1843,6 +2015,22 @@ p10Six.addEventListener('click',function(){
     }
 
 })
+let p10two = document.querySelector('.p10two')
+p10two.addEventListener('click',function(){
+    p10RunC=p10RunC+2;
+    p10run.innerHTML = p10RunC;
+    runCounter+=2;
+    totalRun.innerHTML=runCounter;
+    p10ballC++;
+    p10Ball.innerHTML = p10ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 2;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
+
+})
 p10Four.addEventListener('click',function(){
     p10RunC=p10RunC+4;
     p10run.innerHTML = p10RunC;
@@ -1900,6 +2088,22 @@ p11Six.addEventListener('click',function(){
     p11Ball.innerHTML = p11ballC;
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 6;
+    }else{
+        needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
+        needToWin.style.color = 'red'
+    }
+
+})
+let p11two = document.querySelector('.p11two')
+p11two.addEventListener('click',function(){
+    p11RunC=p11RunC+2;
+    p11run.innerHTML = p11RunC;
+    runCounter+=2;
+    totalRun.innerHTML=runCounter;
+    p11ballC++;
+    p11Ball.innerHTML = p11ballC;
+    if(needRuns.innerHTML>1){
+        needRuns.innerHTML-= 2;
     }else{
         needToWin.innerHTML = `${scoreCard.innerHTML} won the match.`
         needToWin.style.color = 'red'
