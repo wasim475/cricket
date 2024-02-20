@@ -657,6 +657,8 @@ p1Out.addEventListener('click',function(){
     p1DotsC++;
     p1Ball.innerHTML = p1ballC;
     p1Dots.innerHTML = p1DotsC;
+    console.log(p1Sr)
+    p1Sr.innerHTML = ((RunC*100)/p1ballC).toFixed(1);
 })
 let bt1undo = document.querySelector('.bt1undo')
 bt1undo.addEventListener('click',function(){
@@ -675,6 +677,7 @@ bt1undo.addEventListener('click',function(){
     p1DotsC--;
     p1Ball.innerHTML = p1ballC;
     p1Dots.innerHTML = p1DotsC;
+    p1Sr.innerHTML = ((RunC*100)/p1ballC).toFixed(1);
 })
 
 p2Out.addEventListener('click',function(){
@@ -693,6 +696,7 @@ p2Out.addEventListener('click',function(){
     p2DotsC++;
     p2Ball.innerHTML = p2ballC;
     p2Dots.innerHTML = p2DotsC;
+    p2Sr.innerHTML = ((p2RunC*100)/p2ballC).toFixed(1);
 })
 
 let bt2undo = document.querySelector('.bt2undo')
@@ -713,6 +717,7 @@ bt2undo.addEventListener('click',function(){
     p2DotsC--;
     p2Ball.innerHTML = p2ballC;
     p2Dots.innerHTML = p2DotsC;
+    p2Sr.innerHTML = ((p2RunC*100)/p2ballC).toFixed(1);
 })
 
 
@@ -733,6 +738,7 @@ p3Out.addEventListener('click',function(){
     p3DotsC++;
     p3Ball.innerHTML = p3ballC;
     p3Dots.innerHTML = p3DotsC;
+    p3Sr.innerHTML = ((p3RunC*100)/p3ballC).toFixed(1);
 })
 
 let bt3undo = document.querySelector('.bt3undo')
@@ -752,6 +758,7 @@ bt3undo.addEventListener('click',function(){
     p3DotsC--;
     p3Ball.innerHTML = p3ballC;
     p3Dots.innerHTML = p3DotsC;
+    p3Sr.innerHTML = ((p3RunC*100)/p3ballC).toFixed(1);
 })
 
 p4Out.addEventListener('click',function(){
@@ -770,6 +777,7 @@ p4Out.addEventListener('click',function(){
     p4DotsC++;
     p4Ball.innerHTML = p4ballC;
     p4Dots.innerHTML = p4DotsC;
+    p4Sr.innerHTML = ((p4RunC*100)/p4ballC).toFixed(1);
 })
 let bt4undo = document.querySelector('.bt4undo')
 bt4undo.addEventListener('click',function(){
@@ -788,6 +796,7 @@ bt4undo.addEventListener('click',function(){
     p4DotsC--;
     p4Ball.innerHTML = p4ballC;
     p4Dots.innerHTML = p4DotsC;
+    p4Sr.innerHTML = ((p4RunC*100)/p4ballC).toFixed(1);
 })
 p11Out.addEventListener('click',function(){
     p11RunPlus.style.display = 'none'
@@ -805,6 +814,7 @@ p11Out.addEventListener('click',function(){
     p11DotsC++;
     p11Ball.innerHTML = p11ballC;
     p11Dots.innerHTML = p11DotsC;
+    p11Sr.innerHTML = ((p11RunC*100)/p11ballC).toFixed(1);
 })
 let bt11undo = document.querySelector('.bt11undo')
 bt11undo.addEventListener('click',function(){
@@ -823,6 +833,7 @@ bt11undo.addEventListener('click',function(){
     p11DotsC--;
     p11Ball.innerHTML = p11ballC;
     p11Dots.innerHTML = p11DotsC;
+    p11Sr.innerHTML = ((p11RunC*100)/p11ballC).toFixed(1);
 })
 p5Out.addEventListener('click',function(){
     p5RunPlus.style.display = 'none'
@@ -840,6 +851,7 @@ p5Out.addEventListener('click',function(){
     p5DotsC++;
     p5Ball.innerHTML = p5ballC;
     p5Dots.innerHTML = p5DotsC;
+    p5Sr.innerHTML = ((p5RunC*100)/p5ballC).toFixed(1);
 })
 
 let bt5undo = document.querySelector('.bt5undo')
@@ -859,6 +871,7 @@ bt5undo.addEventListener('click',function(){
     p5DotsC--;
     p5Ball.innerHTML = p5ballC;
     p5Dots.innerHTML = p5DotsC;
+    p5Sr.innerHTML = ((p5RunC*100)/p5ballC).toFixed(1);
 })
 
 p6Out.addEventListener('click',function(){
@@ -877,6 +890,7 @@ p6Out.addEventListener('click',function(){
     p6DotsC++;
     p6Ball.innerHTML = p6ballC;
     p6Dots.innerHTML = p6DotsC;
+    p6Sr.innerHTML = ((p6RunC*100)/p6ballC).toFixed(1);
 })
 
 let bt6undo = document.querySelector('.bt6undo')
@@ -896,6 +910,7 @@ bt6undo.addEventListener('click',function(){
     p6DotsC--;
     p6Ball.innerHTML = p6ballC;
     p6Dots.innerHTML = p6DotsC;
+    p6Sr.innerHTML = ((p6RunC*100)/p6ballC).toFixed(1);
 })
 
 p7Out.addEventListener('click',function(){
@@ -914,6 +929,7 @@ p7Out.addEventListener('click',function(){
     p7DotsC++;
     p7Ball.innerHTML = p7ballC;
     p7Dots.innerHTML = p7DotsC;
+    p7Sr.innerHTML = ((p7RunC*100)/p7ballC).toFixed(1);
 })
 
 let bt7undo = document.querySelector('.bt7undo')
@@ -933,6 +949,7 @@ bt7undo.addEventListener('click',function(){
     p7DotsC--;
     p7Ball.innerHTML = p7ballC;
     p7Dots.innerHTML = p7DotsC;
+    p7Sr.innerHTML = ((p7RunC*100)/p7ballC).toFixed(1);
 })
 
 p8Out.addEventListener('click',function(){
@@ -951,6 +968,7 @@ p8Out.addEventListener('click',function(){
     p8DotsC++;
     p8Ball.innerHTML = p8ballC;
     p8Dots.innerHTML = p8DotsC;
+    p8Sr.innerHTML = ((p8RunC*100)/p8ballC).toFixed(1);
 })
 
 let bt8undo = document.querySelector('.bt8undo')
@@ -970,6 +988,7 @@ bt8undo.addEventListener('click',function(){
     p8DotsC--;
     p8Ball.innerHTML = p8ballC;
     p8Dots.innerHTML = p8DotsC;
+    p8Sr.innerHTML = ((p8RunC*100)/p8ballC).toFixed(1);
 })
 p9Out.addEventListener('click',function(){
     p9RunPlus.style.display = 'none'
@@ -987,6 +1006,7 @@ p9Out.addEventListener('click',function(){
     p9DotsC++;
     p9Ball.innerHTML = p9ballC;
     p9Dots.innerHTML = p9DotsC;
+    p9Sr.innerHTML = ((p9RunC*100)/p9ballC).toFixed(1);
     
 })
 
@@ -1007,6 +1027,7 @@ bt9undo.addEventListener('click',function(){
     p9DotsC--;
     p9Ball.innerHTML = p9ballC;
     p9Dots.innerHTML = p9DotsC;
+    p9Sr.innerHTML = ((p9RunC*100)/p9ballC).toFixed(1);
 })
 
 p10Out.addEventListener('click',function(){
@@ -1025,6 +1046,7 @@ p10Out.addEventListener('click',function(){
     p10DotsC++;
     p10Ball.innerHTML = p10ballC;
     p10Dots.innerHTML = p10DotsC;
+    p10Sr.innerHTML = ((p10RunC*100)/p10ballC).toFixed(1);
 })
 let bt10undo = document.querySelector('.bt10undo')
 bt10undo.addEventListener('click',function(){
@@ -1043,6 +1065,7 @@ bt10undo.addEventListener('click',function(){
     p10DotsC--;
     p10Ball.innerHTML = p10ballC;
     p10Dots.innerHTML = p10DotsC;
+    p10Sr.innerHTML = ((p10RunC*100)/p10ballC).toFixed(1);
 })
 // Out portion #End
 // Batter Name Protion #Start
@@ -1313,6 +1336,7 @@ p1RunPlus.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p1ballC++;
     p1Ball.innerHTML = p1ballC;
+    p1Sr.innerHTML = ((runC*100)/p1ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 1;
     }else{
@@ -1330,6 +1354,8 @@ let p1DotsC = 0;
 let p1TSixC = 0;
 let p1TFourC = 0;
 
+
+
 let p1Six = document.querySelector('.p1Six')
 let p1Four = document.querySelector('.p1Four')
 p1Six.addEventListener('click',function(){
@@ -1341,6 +1367,7 @@ p1Six.addEventListener('click',function(){
     p1TSix.innerHTML = p1TSixC
     p1ballC++;
     p1Ball.innerHTML = p1ballC;
+    p1Sr.innerHTML = ((runC*100)/p1ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 6;
     }else{
@@ -1358,6 +1385,7 @@ p1Four.addEventListener('click',function(){
     p1TFour.innerHTML = p1TFourC;
     p1ballC++;
     p1Ball.innerHTML = p1ballC;
+    p1Sr.innerHTML = ((runC*100)/p1ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 4;
     }else{
@@ -1375,6 +1403,7 @@ p1two.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p1ballC++;
     p1Ball.innerHTML = p1ballC;
+    p1Sr.innerHTML = ((runC*100)/p1ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 2;
     }else{
@@ -1390,6 +1419,7 @@ p1RunMinus.addEventListener('click',function(){
         p1run.innerHTML = runC;
         runCounter--;
         totalRun.innerHTML=runCounter;
+        p1Sr.innerHTML = ((runC*100)/p1ballC).toFixed(1);
         if(needRuns.innerHTML>1){
             needRuns.innerHTML++;
         }else{
@@ -1407,6 +1437,7 @@ p2RunPlus.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p2ballC++;
     p2Ball.innerHTML = p2ballC;
+    p2Sr.innerHTML = ((p2RunC*100)/p2ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 1;
     }else{
@@ -1432,6 +1463,7 @@ p2Six.addEventListener('click',function(){
     p2TSix.innerHTML = p2TSixC;
     p2ballC++;
     p2Ball.innerHTML = p2ballC;
+    p2Sr.innerHTML = ((p2RunC*100)/p2ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 6;
     }else{
@@ -1449,6 +1481,7 @@ p2two.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p2ballC++;
     p2Ball.innerHTML = p2ballC;
+    p2Sr.innerHTML = ((p2RunC*100)/p2ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 2;
     }else{
@@ -1467,6 +1500,7 @@ p2Four.addEventListener('click',function(){
     p2TFour.innerHTML = p2TFourC;
     p2ballC++;
     p2Ball.innerHTML = p2ballC;
+    p2Sr.innerHTML = ((p2RunC*100)/p2ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 4;
     }else{
@@ -1482,6 +1516,7 @@ p2RunMinus.addEventListener('click',function(){
         p2run.innerHTML = p2RunC;
         runCounter--;
         totalRun.innerHTML=runCounter;
+        p2Sr.innerHTML = ((p2RunC*100)/p2ballC).toFixed(1);
         if(needRuns.innerHTML>1){
             needRuns.innerHTML++;
         }else{
@@ -1498,6 +1533,7 @@ p3RunPlus.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p3ballC++;
     p3Ball.innerHTML = p3ballC;
+    p3Sr.innerHTML = ((p3RunC*100)/p3ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 1;
     }else{
@@ -1524,6 +1560,7 @@ p3Six.addEventListener('click',function(){
     p3TSix.innerHTML = p3TSixC;
     p3ballC++;
     p3Ball.innerHTML = p3ballC;
+    p3Sr.innerHTML = ((p3RunC*100)/p3ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 6;
     }else{
@@ -1541,6 +1578,7 @@ p3two.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p3ballC++;
     p3Ball.innerHTML = p3ballC;
+    p3Sr.innerHTML = ((p3RunC*100)/p3ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 2;
     }else{
@@ -1559,6 +1597,7 @@ p3Four.addEventListener('click',function(){
     p3TFour.innerHTML = p3TFourC;
     p3ballC++;
     p3Ball.innerHTML = p3ballC;
+    p3Sr.innerHTML = ((p3RunC*100)/p3ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 4;
     }else{
@@ -1575,6 +1614,7 @@ p3RunMinus.addEventListener('click',function(){
         p3run.innerHTML = p3RunC;
         runCounter--;
         totalRun.innerHTML=runCounter;
+        p3Sr.innerHTML = ((p3RunC*100)/p3ballC).toFixed(1);
         if(needRuns.innerHTML>1){
             needRuns.innerHTML++;
         }else{
@@ -1592,6 +1632,7 @@ p4RunPlus.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p4ballC++;
     p4Ball.innerHTML = p4ballC;
+    p4Sr.innerHTML = ((p4RunC*100)/p4ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 1;
     }else{
@@ -1618,6 +1659,7 @@ p4Six.addEventListener('click',function(){
     p4TSix.innerHTML = p4TSixC;
     p4ballC++;
     p4Ball.innerHTML = p4ballC;
+    p4Sr.innerHTML = ((p4RunC*100)/p4ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 6;
     }else{
@@ -1634,6 +1676,7 @@ p4two.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p4ballC++;
     p4Ball.innerHTML = p4ballC;
+    p4Sr.innerHTML = ((p4RunC*100)/p4ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 2;
     }else{
@@ -1651,6 +1694,7 @@ p4Four.addEventListener('click',function(){
     p4TFour.innerHTML = p4TFourC;
     p4ballC++;
     p4Ball.innerHTML = p4ballC;
+    p4Sr.innerHTML = ((p4RunC*100)/p4ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 4;
     }else{
@@ -1666,6 +1710,7 @@ p4RunMinus.addEventListener('click',function(){
         p4run.innerHTML = p4RunC;
         runCounter--;
         totalRun.innerHTML=runCounter;
+        p4Sr.innerHTML = ((p4RunC*100)/p4ballC).toFixed(1);
         if(needRuns.innerHTML>1){
             needRuns.innerHTML++;
         }else{
@@ -1682,6 +1727,7 @@ p5RunPlus.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p5ballC++;
     p5Ball.innerHTML = p5ballC;
+    p5Sr.innerHTML = ((p5RunC*100)/p5ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 1;
     }else{
@@ -1707,6 +1753,7 @@ p5Six.addEventListener('click',function(){
     p5TSix.innerHTML = p5TSixC;
     p5ballC++;
     p5Ball.innerHTML = p5ballC;
+    p5Sr.innerHTML = ((p5RunC*100)/p5ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 6;
     }else{
@@ -1723,6 +1770,7 @@ p5two.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p5ballC++;
     p5Ball.innerHTML = p5ballC;
+    p5Sr.innerHTML = ((p5RunC*100)/p5ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 2;
     }else{
@@ -1740,6 +1788,7 @@ p5Four.addEventListener('click',function(){
     p5TFour.innerHTML = p5TFourC;
     p5ballC++;
     p5Ball.innerHTML = p5ballC;
+    p5Sr.innerHTML = ((p5RunC*100)/p5ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 4;
     }else{
@@ -1755,6 +1804,7 @@ p5RunMinus.addEventListener('click',function(){
         p5run.innerHTML = p5RunC;
         runCounter--;
         totalRun.innerHTML=runCounter;
+        p5Sr.innerHTML = ((p5RunC*100)/p5ballC).toFixed(1);
         if(needRuns.innerHTML>1){
             needRuns.innerHTML++;
         }else{
@@ -1771,6 +1821,7 @@ p6RunPlus.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p6ballC++;
     p6Ball.innerHTML = p6ballC;
+    p6Sr.innerHTML = ((p6RunC*100)/p6ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 1;
     }else{
@@ -1796,6 +1847,7 @@ p6Six.addEventListener('click',function(){
     p6TSix.innerHTML = p6TSixC;
     p6ballC++;
     p6Ball.innerHTML = p6ballC;
+    p6Sr.innerHTML = ((p6RunC*100)/p6ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 6;
     }else{
@@ -1812,6 +1864,7 @@ p6two.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p6ballC++;
     p6Ball.innerHTML = p6ballC;
+    p6Sr.innerHTML = ((p6RunC*100)/p6ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 2;
     }else{
@@ -1829,6 +1882,7 @@ p6Four.addEventListener('click',function(){
     p6TFour.innerHTML = p6TFourC;
     p6ballC++;
     p6Ball.innerHTML = p6ballC;
+    p6Sr.innerHTML = ((p6RunC*100)/p6ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 4;
     }else{
@@ -1844,6 +1898,7 @@ p6RunMinus.addEventListener('click',function(){
         p6run.innerHTML = p6RunC;
         runCounter--;
         totalRun.innerHTML=runCounter;
+        p6Sr.innerHTML = ((p6RunC*100)/p6ballC).toFixed(1);
         if(needRuns.innerHTML>1){
             needRuns.innerHTML++;
         }else{
@@ -1860,6 +1915,7 @@ p7RunPlus.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p7ballC++;
     p7Ball.innerHTML = p7ballC;
+    p7Sr.innerHTML = ((p7RunC*100)/p7ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 1;
     }else{
@@ -1886,6 +1942,7 @@ p7Six.addEventListener('click',function(){
     p7TSix.innerHTML = p7TSixC;
     p7ballC++;
     p7Ball.innerHTML = p7ballC;
+    p7Sr.innerHTML = ((p7RunC*100)/p7ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 6;
     }else{
@@ -1902,6 +1959,7 @@ p7two.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p7ballC++;
     p7Ball.innerHTML = p7ballC;
+    p7Sr.innerHTML = ((p7RunC*100)/p7ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 2;
     }else{
@@ -1919,6 +1977,7 @@ p7Four.addEventListener('click',function(){
     p7TFour.innerHTML = p7TFourC;
     p7ballC++;
     p7Ball.innerHTML = p7ballC;
+    p7Sr.innerHTML = ((p7RunC*100)/p7ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 4;
     }else{
@@ -1935,6 +1994,7 @@ p7RunMinus.addEventListener('click',function(){
         p7run.innerHTML = p7RunC;
         runCounter--;
         totalRun.innerHTML=runCounter;
+        p7Sr.innerHTML = ((p7RunC*100)/p7ballC).toFixed(1);
         if(needRuns.innerHTML>1){
             needRuns.innerHTML++;
         }else{
@@ -1951,6 +2011,7 @@ p8RunPlus.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p8ballC++;
     p8Ball.innerHTML = p8ballC;
+    p8Sr.innerHTML = ((p8RunC*100)/p8ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 1;
     }else{
@@ -1976,6 +2037,7 @@ p8Six.addEventListener('click',function(){
     p8TSix.innerHTML = p8TSixC;
     p8ballC++;
     p8Ball.innerHTML = p8ballC;
+    p8Sr.innerHTML = ((p8RunC*100)/p8ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 6;
     }else{
@@ -1992,6 +2054,7 @@ p8two.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p8ballC++;
     p8Ball.innerHTML = p8ballC;
+    p8Sr.innerHTML = ((p8RunC*100)/p8ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 2;
     }else{
@@ -2009,6 +2072,7 @@ p8Four.addEventListener('click',function(){
     p8TFour.innerHTML = p8TFourC;
     p8ballC++;
     p8Ball.innerHTML = p8ballC;
+    p8Sr.innerHTML = ((p8RunC*100)/p8ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 4;
     }else{
@@ -2025,6 +2089,7 @@ p8RunMinus.addEventListener('click',function(){
         p8run.innerHTML = p8RunC;
         runCounter--;
         totalRun.innerHTML=runCounter;
+        p8Sr.innerHTML = ((p8RunC*100)/p8ballC).toFixed(1);
         if(needRuns.innerHTML>1){
             needRuns.innerHTML++;
         }else{
@@ -2041,6 +2106,7 @@ p9RunPlus.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p9ballC++;
     p9Ball.innerHTML = p9ballC;
+    p9Sr.innerHTML = ((p9RunC*100)/p9ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 1;
     }else{
@@ -2065,6 +2131,7 @@ p9Six.addEventListener('click',function(){
     p9TSix.innerHTML = p9TSixC;
     p9ballC++;
     p9Ball.innerHTML = p9ballC;
+    p9Sr.innerHTML = ((p9RunC*100)/p9ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 6;
     }else{
@@ -2081,6 +2148,7 @@ p9two.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p9ballC++;
     p9Ball.innerHTML = p9ballC;
+    p9Sr.innerHTML = ((p9RunC*100)/p9ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 2;
     }else{
@@ -2098,6 +2166,7 @@ p9Four.addEventListener('click',function(){
     p9TFour.innerHTML =p9TFourC;
     p9ballC++;
     p9Ball.innerHTML = p9ballC;
+    p9Sr.innerHTML = ((p9RunC*100)/p9ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 4;
     }else{
@@ -2113,6 +2182,7 @@ p9RunMinus.addEventListener('click',function(){
         p9run.innerHTML = p9RunC;
         runCounter--;
         totalRun.innerHTML=runCounter;
+        p9Sr.innerHTML = ((p9RunC*100)/p9ballC).toFixed(1);
         if(needRuns.innerHTML>1){
             needRuns.innerHTML++;
         }else{
@@ -2129,6 +2199,7 @@ p10RunPlus.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p10ballC++;
     p10Ball.innerHTML = p10ballC;
+    p10Sr.innerHTML = ((p10RunC*100)/p10ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 1;
     }else{
@@ -2153,6 +2224,7 @@ p10Six.addEventListener('click',function(){
     p10TSix.innerHTML =p10TSixC
     p10ballC++;
     p10Ball.innerHTML = p10ballC;
+    p10Sr.innerHTML = ((p10RunC*100)/p10ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 6;
     }else{
@@ -2169,6 +2241,7 @@ p10two.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p10ballC++;
     p10Ball.innerHTML = p10ballC;
+    p10Sr.innerHTML = ((p10RunC*100)/p10ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 2;
     }else{
@@ -2186,6 +2259,7 @@ p10Four.addEventListener('click',function(){
     p10TFour.innerHTML = p10TFourC;
     p10ballC++;
     p10Ball.innerHTML = p10ballC;
+    p10Sr.innerHTML = ((p10RunC*100)/p10ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 4;
     }else{
@@ -2201,6 +2275,7 @@ p10RunMinus.addEventListener('click',function(){
         p10run.innerHTML = p10RunC;
         runCounter--;
         totalRun.innerHTML=runCounter;
+        p10Sr.innerHTML = ((p10RunC*100)/p10ballC).toFixed(1);
         if(needRuns.innerHTML>1){
             needRuns.innerHTML++;
         }else{
@@ -2217,6 +2292,7 @@ p11RunPlus.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p11ballC++;
     p11Ball.innerHTML = p11ballC;
+    p11Sr.innerHTML = ((p11RunC*100)/p11ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 1;
     }else{
@@ -2241,6 +2317,7 @@ p11Six.addEventListener('click',function(){
     p11TSix.innerHTML =p11TSixC;
     p11ballC++;
     p11Ball.innerHTML = p11ballC;
+    p11Sr.innerHTML = ((p11RunC*100)/p11ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 6;
     }else{
@@ -2257,6 +2334,7 @@ p11two.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p11ballC++;
     p11Ball.innerHTML = p11ballC;
+    p11Sr.innerHTML = ((p11RunC*100)/p11ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 2;
     }else{
@@ -2274,6 +2352,7 @@ p11Four.addEventListener('click',function(){
     p11TFour.innerHTML= p11TFourC
     p11ballC++;
     p11Ball.innerHTML = p11ballC;
+    p11Sr.innerHTML = ((p11RunC*100)/p11ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 4;
     }else{
@@ -2289,6 +2368,7 @@ p11RunMinus.addEventListener('click',function(){
         p11run.innerHTML = p11RunC;
         runCounter--;
         totalRun.innerHTML=runCounter;
+        p11Sr.innerHTML = ((p11RunC*100)/p11ballC).toFixed(1);
         if(needRuns.innerHTML>1){
             needRuns.innerHTML++;
         }else{
@@ -2298,6 +2378,19 @@ p11RunMinus.addEventListener('click',function(){
     }
 })
 
+let p1Sr = document.querySelector('.p1Sr')
+let p2Sr = document.querySelector('.p2Sr')
+let p3Sr = document.querySelector('.p3Sr')
+let p4Sr = document.querySelector('.p4Sr')
+let p5Sr = document.querySelector('.p5Sr')
+let p6Sr = document.querySelector('.p6Sr')
+let p7Sr = document.querySelector('.p7Sr')
+let p8Sr = document.querySelector('.p8Sr')
+let p9Sr = document.querySelector('.p9Sr')
+let p10Sr = document.querySelector('.p10Sr')
+let p11Sr = document.querySelector('.p11Sr')
+
+
 // RunPlus Minus Button #End
 // BallPlus Minus Button #start
 let p1ballC=0;
@@ -2306,12 +2399,14 @@ p1BallPlus.addEventListener('click',function(){
     p1DotsC++;
     p1Ball.innerHTML = p1ballC;
     p1Dots.innerHTML = p1DotsC;
+    p1Sr.innerHTML = ((runC*100)/p1ballC).toFixed(1);
     
 })
 p1BallMinus.addEventListener('click',function(){
     if(p1ballC>0){
         p1ballC--;
         p1Ball.innerHTML = p1ballC;
+        p1Sr.innerHTML = ((runC*100)/p1ballC).toFixed(1);
         // p1Dots.innerHTML = p1ballC;
     }
     
@@ -2322,11 +2417,13 @@ p2BallPlus.addEventListener('click',function(){
     p2DotsC++;
     p2Ball.innerHTML = p2ballC;
     p2Dots.innerHTML = p2DotsC;
+    p2Sr.innerHTML = ((p2RunC*100)/p2ballC).toFixed(1);
 })
 p2BallMinus.addEventListener('click',function(){
     if(p2ballC>0){
         p2ballC--;
         p2Ball.innerHTML = p2ballC;
+        p2Sr.innerHTML = ((p2RunC*100)/p2ballC).toFixed(1);
         // p2Dots.innerHTML = p2ballC;
     }
 })
@@ -2336,11 +2433,13 @@ p3BallPlus.addEventListener('click',function(){
     p3DotsC++;
     p3Ball.innerHTML = p3ballC;
     p3Dots.innerHTML = p3DotsC;
+    p3Sr.innerHTML = ((p3RunC*100)/p3ballC).toFixed(1);
 })
 p3BallMinus.addEventListener('click',function(){
     if(p3ballC>0){
         p3ballC--;
         p3Ball.innerHTML = p3ballC;
+        p3Sr.innerHTML = ((p3RunC*100)/p3ballC).toFixed(1);
         // p3Dots.innerHTML = p3ballC;
     }
 })
@@ -2350,12 +2449,14 @@ p4BallPlus.addEventListener('click',function(){
     p4DotsC++;
     p4Ball.innerHTML = p4ballC;
     p4Dots.innerHTML = p4DotsC;
+    p4Sr.innerHTML = ((p4RunC*100)/p4ballC).toFixed(1);
 })
 p4BallMinus.addEventListener('click',function(){
     if(p4ballC>0){
 
         p4ballC--;
         p4Ball.innerHTML = p4ballC;
+        p4Sr.innerHTML = ((p4RunC*100)/p4ballC).toFixed(1);
         // p4Dots.innerHTML = p4ballC;
     }
 })
@@ -2365,12 +2466,14 @@ p5BallPlus.addEventListener('click',function(){
     p5DotsC++;
     p5Ball.innerHTML = p5ballC;
     p5Dots.innerHTML = p5DotsC;
+    p5Sr.innerHTML = ((p5RunC*100)/p5ballC).toFixed(1);
 })
 p5BallMinus.addEventListener('click',function(){
     if(p5ballC>0){
         
         p5ballC--;
         p5Ball.innerHTML = p5ballC;
+        p5Sr.innerHTML = ((p5RunC*100)/p5ballC).toFixed(1);
     }
 })
 let p6ballC=0;
@@ -2379,12 +2482,14 @@ p6BallPlus.addEventListener('click',function(){
     p6DotsC++;
     p6Ball.innerHTML = p6ballC;
     p6Dots.innerHTML = p6DotsC;
+    p6Sr.innerHTML = ((p6RunC*100)/p6ballC).toFixed(1);
 })
 p6BallMinus.addEventListener('click',function(){
     if(p6ballC>0){
         
         p6ballC--;
         p6Ball.innerHTML = p6ballC;
+        p6Sr.innerHTML = ((p6RunC*100)/p6ballC).toFixed(1);
     }
 })
 let p7ballC=0;
@@ -2393,12 +2498,14 @@ p7BallPlus.addEventListener('click',function(){
     p7DotsC++;
     p7Ball.innerHTML = p7ballC;
     p7Dots.innerHTML = p7DotsC;
+    p7Sr.innerHTML = ((p7RunC*100)/p7ballC).toFixed(1);
 })
 p7BallMinus.addEventListener('click',function(){
     if(p7ballC>0){
         
         p7ballC--;
         p7Ball.innerHTML = p7ballC;
+        p7Sr.innerHTML = ((p7RunC*100)/p7ballC).toFixed(1);
     }
 })
 let p8ballC=0;
@@ -2407,12 +2514,14 @@ p8BallPlus.addEventListener('click',function(){
     p8DotsC++;
     p8Ball.innerHTML = p8ballC;
     p8Dots.innerHTML = p8DotsC;
+    p8Sr.innerHTML = ((p8RunC*100)/p8ballC).toFixed(1);
 })
 p8BallMinus.addEventListener('click',function(){
     if(p8ballC>0){
         
         p8ballC--;
         p8Ball.innerHTML = p8ballC;
+        p8Sr.innerHTML = ((p8RunC*100)/p8ballC).toFixed(1);
     }
 })
 let p9ballC=0;
@@ -2421,12 +2530,14 @@ p9BallPlus.addEventListener('click',function(){
     p9DotsC++;
     p9Ball.innerHTML = p9ballC;
     p9Dots.innerHTML = p9DotsC;
+    p9Sr.innerHTML = ((p9RunC*100)/p9ballC).toFixed(1);
 })
 p9BallMinus.addEventListener('click',function(){
     if(p9ballC>0){
         
         p9ballC--;
         p9Ball.innerHTML = p9ballC;
+        p9Sr.innerHTML = ((p9RunC*100)/p9ballC).toFixed(1);
     }
 })
 let p10ballC=0;
@@ -2435,12 +2546,14 @@ p10BallPlus.addEventListener('click',function(){
     p10DotsC++;
     p10Ball.innerHTML = p10ballC;
     p10Dots.innerHTML = p10DotsC;
+    p10Sr.innerHTML = ((p10RunC*100)/p10ballC).toFixed(1);
 })
 p10BallMinus.addEventListener('click',function(){
     if(p10ballC>0){
         
         p10ballC--;
         p10Ball.innerHTML = p10ballC;
+        p10Sr.innerHTML = ((p10RunC*100)/p10ballC).toFixed(1);
     }
 })
 let p11ballC=0;
@@ -2449,12 +2562,14 @@ p11BallPlus.addEventListener('click',function(){
     p11DotsC++;
     p11Ball.innerHTML = p11ballC;
     p11Dots.innerHTML = p11DotsC;
+    p11Sr.innerHTML = ((p11RunC*100)/p11ballC).toFixed(1);
 })
 p11BallMinus.addEventListener('click',function(){
     if(p11ballC>0){
         
         p11ballC--;
         p11Ball.innerHTML = p11ballC;
+        p11Sr.innerHTML = ((p11RunC*100)/p11ballC).toFixed(1);
     }
 })
 
@@ -2520,7 +2635,7 @@ bltn1.addEventListener('click',function(){
         err4.innerHTML='Empty field'
     }
     else if(blwer1.value.length<3){
-        err4.innerHTML='Bowler name atleat 3 charactar long.'
+        err4.innerHTML='Bowler name at least 3 charactar long.'
     }else{
         bl1.innerHTML= blwer1.value; 
         blName1.style.display= 'block' 
@@ -2605,7 +2720,7 @@ bltn2.addEventListener('click',function(){
         err4.innerHTML='Empty field'
     }
     else if(blwer2.value.length<3){
-        err4.innerHTML='Bowler name atleat 3 charactar long.'
+        err4.innerHTML='Bowler name at least 3 charactar long.'
     }else{
         bl2.innerHTML= blwer2.value; 
         blName2.style.display= 'block' 
@@ -2695,7 +2810,7 @@ bltn3.addEventListener('click',function(){
         err4.innerHTML='Empty field'
     }
     else if(blwer3.value.length<3){
-        err4.innerHTML='Bowler name atleat 3 charactar long.'
+        err4.innerHTML='Bowler name at least 3 charactar long.'
     }else{
         bl3.innerHTML= blwer3.value; 
         blName3.style.display= 'block' 
@@ -2783,7 +2898,7 @@ bltn4.addEventListener('click',function(){
         err4.innerHTML='Empty field'
     }
     else if(blwer4.value.length<3){
-        err4.innerHTML='Bowler name atleat 3 charactar long.'
+        err4.innerHTML='Bowler name at least 3 charactar long.'
     }else{
         bl4.innerHTML= blwer3.value; 
         blName4.style.display= 'block' 
@@ -2871,7 +2986,7 @@ bltn5.addEventListener('click',function(){
         err4.innerHTML='Empty field'
     }
     else if(blwer5.value.length<3){
-        err4.innerHTML='Bowler name atleat 3 charactar long.'
+        err4.innerHTML='Bowler name at least 3 charactar long.'
     }else{
         bl5.innerHTML= blwer5.value; 
         blName5.style.display= 'block' 
@@ -2959,7 +3074,7 @@ bltn6.addEventListener('click',function(){
         err4.innerHTML='Empty field'
     }
     else if(blwer6.value.length<3){
-        err4.innerHTML='Bowler name atleat 3 charactar long.'
+        err4.innerHTML='Bowler name at least 3 charactar long.'
     }else{
         bl6.innerHTML= blwer6.value; 
         blName6.style.display= 'block' 
@@ -3047,7 +3162,7 @@ bltn7.addEventListener('click',function(){
         err4.innerHTML='Empty field'
     }
     else if(blwer7.value.length<3){
-        err4.innerHTML='Bowler name atleat 3 charactar long.'
+        err4.innerHTML='Bowler name at least 3 charactar long.'
     }else{
         bl7.innerHTML= blwer7.value; 
         blName7.style.display= 'block' 
@@ -3136,7 +3251,7 @@ bltn8.addEventListener('click',function(){
         err4.innerHTML='Empty field'
     }
     else if(blwer8.value.length<3){
-        err4.innerHTML='Bowler name atleat 3 charactar long.'
+        err4.innerHTML='Bowler name at least 3 charactar long.'
     }else{
         bl8.innerHTML= blwer8.value; 
         blName8.style.display= 'block' 
