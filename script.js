@@ -658,7 +658,7 @@ p1Out.addEventListener('click',function(){
     p1Ball.innerHTML = p1ballC;
     p1Dots.innerHTML = p1DotsC;
     console.log(p1Sr)
-    p1Sr.innerHTML = ((RunC*100)/p1ballC).toFixed(1);
+    p1Sr.innerHTML = ((runC*100)/p1ballC).toFixed(1);
 })
 let bt1undo = document.querySelector('.bt1undo')
 bt1undo.addEventListener('click',function(){
@@ -677,7 +677,7 @@ bt1undo.addEventListener('click',function(){
     p1DotsC--;
     p1Ball.innerHTML = p1ballC;
     p1Dots.innerHTML = p1DotsC;
-    p1Sr.innerHTML = ((RunC*100)/p1ballC).toFixed(1);
+    p1Sr.innerHTML = ((runC*100)/p1ballC).toFixed(1);
 })
 
 p2Out.addEventListener('click',function(){
