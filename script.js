@@ -4466,6 +4466,19 @@ bl1OverMinus.addEventListener('click',function(){
 
 let bl1RunC = 0;
 
+bl1RunPlus.addEventListener('click',function(){
+    if(bl1RunC>=0){
+     bl1RunC++;
+     bl1runs.innerHTML= bl1RunC
+    }
+ })
+ bl1RunMinus.addEventListener('click',function(){
+    if(bl1RunC>0){
+     bl1RunC--;
+     bl1runs.innerHTML= bl1RunC
+    }
+ })
+
  let bl1WicketC = 0;
 bl1Wicket2.addEventListener('click',function(){
     if(bl1RunC>=0 && bl1WicketC>=0 && bl1WicketC<10){
@@ -4514,7 +4527,7 @@ bltn2.addEventListener('click',function(){
 // Bowler-01
 let bl1RunPlus1;
 blName1.addEventListener('click', function(){
-    blName1.style.background= 'grey'
+    blName1.style.background= '#9457EB33'
     bl1runs.setAttribute('id', 'bl1Run')
     let bl1Run = document.getElementById('bl1Run')
     bl1RunPlus1= bl1Run;
@@ -4538,7 +4551,7 @@ blName1.addEventListener('click', function(){
 // Bowler-02
 let bl2RunPlus1;
 blName2.addEventListener('click', function(){
-    blName2.style.background= 'grey'
+    blName2.style.background= '#9457EB33'
     bl2runs.setAttribute('id', 'bl2Run')
     let bl2Run = document.getElementById('bl2Run')
     bl2RunPlus1= bl2Run;
@@ -4562,7 +4575,7 @@ blName2.addEventListener('click', function(){
 // Bowler-3
 let bl3RunPlus1;
 blName3.addEventListener('click', function(){
-    blName3.style.background= 'grey'
+    blName3.style.background= '#9457EB33'
     bl3runs.setAttribute('id', 'bl3Run')
     let bl3Run = document.getElementById('bl3Run')
     bl3RunPlus1= bl3Run;
@@ -4586,7 +4599,7 @@ blName3.addEventListener('click', function(){
 // Bowler-04
 let bl4RunPlus1;
 blName4.addEventListener('click', function(){
-    blName4.style.background= 'grey'
+    blName4.style.background= '#9457EB33'
     bl4runs.setAttribute('id', 'bl4Run')
     let bl4Run = document.getElementById('bl4Run')
     bl4RunPlus1= bl4Run;
@@ -4611,7 +4624,7 @@ blName4.addEventListener('click', function(){
 // Bowler-05
 let bl5RunPlus1;
 blName5.addEventListener('click', function(){
-    blName5.style.background= 'grey'
+    blName5.style.background= '#9457EB33'
     bl5runs.setAttribute('id', 'bl5Run')
     let bl5Run = document.getElementById('bl5Run')
     bl5RunPlus1= bl5Run;
@@ -4634,7 +4647,7 @@ blName5.addEventListener('click', function(){
 // Bowler-06
 let bl6RunPlus1;
 blName6.addEventListener('click', function(){
-    blName6.style.background= 'grey'
+    blName6.style.background= '#9457EB33'
     bl6runs.setAttribute('id', 'bl6Run')
     let bl6Run = document.getElementById('bl6Run')
     bl6RunPlus1= bl6Run;
@@ -4657,7 +4670,7 @@ blName6.addEventListener('click', function(){
 // Bowler-07
 let bl7RunPlus1;
 blName7.addEventListener('click', function(){
-    blName7.style.background= 'grey'
+    blName7.style.background= '#9457EB33'
     bl7runs.setAttribute('id', 'bl7Run')
     let bl7Run = document.getElementById('bl7Run')
     bl7RunPlus1= bl7Run;
@@ -4680,7 +4693,7 @@ blName7.addEventListener('click', function(){
 // Bowler-08
 let bl8RunPlus1;
 blName8.addEventListener('click', function(){
-    blName8.style.background= 'grey'
+    blName8.style.background= '#9457EB33'
     bl8runs.setAttribute('id', 'bl8Run')
     let bl8Run = document.getElementById('bl8Run')
     bl8RunPlus1= bl8Run;
@@ -4726,6 +4739,18 @@ bl2OverMinus.addEventListener('click',function(){
 })
 
 let bl2RunC = 0;
+bl2RunPlus.addEventListener('click',function(){
+    if(bl2RunC>=0){
+     bl2RunC++;
+     bl2runs.innerHTML= bl2RunC
+    }
+ })
+ bl2RunMinus.addEventListener('click',function(){
+    if(bl2RunC>0){
+     bl2RunC--;
+     bl2runs.innerHTML= bl2RunC
+    }
+ })
 
  let bl2WicketC = 0;
 
@@ -4804,18 +4829,7 @@ bl3RunMinus.addEventListener('click',function(){
     bl3runs.innerHTML= bl3RunC
    }
 })
-bl3Six.addEventListener('click',function(){
-    if(bl3RunC>=0){
-     bl3RunC+=6;
-     bl3runs.innerHTML= bl3RunC;
-    }
- })
-bl3Four.addEventListener('click',function(){
-    if(bl3RunC>=0){
-     bl3RunC+=4;
-     bl3runs.innerHTML= bl3RunC;
-    }
- })
+
  
  let bl3WicketC = 0;
 
@@ -4892,18 +4906,7 @@ bl4RunMinus.addEventListener('click',function(){
     bl4runs.innerHTML= bl4RunC;
    }
 })
-bl4Six.addEventListener('click',function(){
-    if(bl4RunC>=0){
-     bl4RunC+=6;
-     bl4runs.innerHTML= bl4RunC;
-    }
- })
-bl4Four.addEventListener('click',function(){
-    if(bl4RunC>=0){
-     bl4RunC+=4;
-     bl4runs.innerHTML= bl4RunC;
-    }
- })
+
  
  let bl4WicketC = 0;
 
@@ -4980,18 +4983,7 @@ bl5RunMinus.addEventListener('click',function(){
     bl5runs.innerHTML= bl5RunC;
    }
 })
-bl5Six.addEventListener('click',function(){
-    if(bl5RunC>=0){
-     bl5RunC+=6;
-     bl5runs.innerHTML= bl5RunC;
-    }
- })
-bl5Four.addEventListener('click',function(){
-    if(bl5RunC>=0){
-     bl5RunC+=4;
-     bl5runs.innerHTML= bl5RunC;
-    }
- })
+
  
  let bl5WicketC = 0;
 
@@ -5068,18 +5060,7 @@ bl6RunMinus.addEventListener('click',function(){
     bl6runs.innerHTML= bl6RunC
    }
 })
-bl6Six.addEventListener('click',function(){
-    if(bl6RunC>=0){
-     bl6RunC+=6;
-     bl6runs.innerHTML= bl6RunC;
-    }
- })
-bl6Four.addEventListener('click',function(){
-    if(bl6RunC>=0){
-     bl6RunC+=4;
-     bl6runs.innerHTML= bl6RunC;
-    }
- })
+
  
  let bl6WicketC = 0;
 
@@ -5156,18 +5137,7 @@ bl7RunMinus.addEventListener('click',function(){
     bl7runs.innerHTML= bl7RunC
    }
 })
-bl7Six.addEventListener('click',function(){
-    if(bl7RunC>=0){
-     bl7RunC+=6;
-     bl7runs.innerHTML= bl7RunC;
-    }
- })
-bl7Four.addEventListener('click',function(){
-    if(bl7RunC>=0){
-     bl7RunC+=4;
-     bl7runs.innerHTML= bl7RunC;
-    }
- })
+
  
  let bl7WicketC = 0;
 
@@ -5242,18 +5212,7 @@ bl8RunMinus.addEventListener('click',function(){
     bl8runs.innerHTML= bl8RunC
    }
 })
-bl8Six.addEventListener('click',function(){
-    if(bl8RunC>=0){
-     bl8RunC+=6;
-     bl8runs.innerHTML= bl8RunC;
-    }
- })
-bl8Four.addEventListener('click',function(){
-    if(bl8RunC>=0){
-     bl8RunC+=4;
-     bl8runs.innerHTML= bl8RunC;
-    }
- })
+
  
  let bl8WicketC = 0;
 
