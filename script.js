@@ -116,6 +116,24 @@ totalRunMinus.addEventListener('click',function(){
         if(bl2runs.getAttribute('id')==='bl2Run'){
             bl2RunC--;
             bl2RunPlus1.innerHTML = bl2RunC;
+        } if(bl3runs.getAttribute('id')==='bl3Run'){
+            bl3RunC--;
+            bl3RunPlus1.innerHTML = bl3RunC;
+        }  if(bl4runs.getAttribute('id')==='bl4Run'){
+            bl4RunC--;
+            bl4RunPlus1.innerHTML = bl4RunC;
+        } if(bl5runs.getAttribute('id')==='bl5Run'){
+            bl5RunC--;
+            bl5RunPlus1.innerHTML = bl5RunC;
+        } if(bl6runs.getAttribute('id')==='bl6Run'){
+            bl6RunC--;
+            bl6RunPlus1.innerHTML = bl6RunC;
+        } if(bl7runs.getAttribute('id')==='bl7Run'){
+            bl7RunC--;
+            bl7RunPlus1.innerHTML = bl7RunC;
+        }  if(bl8runs.getAttribute('id')==='bl8Run'){
+            bl8RunC--;
+            bl8RunPlus1.innerHTML = bl8RunC;
         }
         runCounter--;
         totalRun.innerHTML=runCounter;
@@ -134,6 +152,24 @@ totalRunPlus.addEventListener('click',function(){
     if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC++;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC++;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC++;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC++;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC++;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC++;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC++;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 1;
@@ -151,6 +187,24 @@ totalRunDouble.addEventListener('click',function(){
     if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=2;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=2;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=2;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=2;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=2;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=2;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=2;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     runCounter+=2;
     totalRun.innerHTML=runCounter;
@@ -169,6 +223,24 @@ totalRunFour.addEventListener('click',function(){
     if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=4;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=4;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=4;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=4;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=4;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=4;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=4;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     runCounter+=4;
     totalRun.innerHTML=runCounter;
@@ -187,6 +259,24 @@ totalRunSix.addEventListener('click',function(){
     if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=6;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=6;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=6;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=6;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=6;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=6;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=6;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     runCounter+=6;
     totalRun.innerHTML=runCounter;
@@ -267,6 +357,24 @@ wide1.addEventListener('click',function(){
     if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC++;
         bl2RunPlus1.innerHTML = bl2RunC;
+    }if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC++;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC++;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC++;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC++;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC++;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC++;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     wdRunC++;
     extraRunsC++;
@@ -290,6 +398,24 @@ wide2.addEventListener('click',function(){
     if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=5;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=5;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=5;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=5;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=5;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=5;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=5;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     wdRunC+=5;
     extraRunsC+=5;
@@ -316,6 +442,24 @@ noBall.addEventListener('click',function(){
     if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC++;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC++;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC++;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC++;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC++;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC++;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC++;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     noBallRunC++;
     extraRunsC++;
@@ -340,6 +484,24 @@ legBye.addEventListener('click',function(){
     if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC++;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC++;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC++;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC++;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC++;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC++;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC++;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     legByeRunC++;
     extraRunsC++;
@@ -362,6 +524,24 @@ legByeFour.addEventListener('click',function(){
     if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=4;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=4;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=4;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=4;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=4;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=4;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=4;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     legByeRunC+=4;
     extraRunsC+=4;
@@ -386,6 +566,24 @@ bye.addEventListener('click',function(){
     if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC++;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC++;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC++;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC++;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC++;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC++;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC++;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     bRunC++
     extraRunsC++;
@@ -408,6 +606,24 @@ byeFour.addEventListener('click',function(){
     if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=4;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=4;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=4;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=4;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=4;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=4;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=4;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     bRunC+=4
     extraRunsC+=4;
@@ -431,6 +647,24 @@ extraRunMinus.addEventListener('click',function(){
     if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC--;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC--;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC--;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC--;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC--;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC--;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC--;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     wdRunC--;
     wdRun.innerHTML = wdRunC;
@@ -458,6 +692,24 @@ legByeMinus.addEventListener('click',function(){
     if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC--;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC--;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC--;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC--;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC--;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC--;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC--;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     legByeRunC--;
     lbRun.innerHTML = legByeRunC;
@@ -484,6 +736,24 @@ noBallMinus.addEventListener('click',function(){
     if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC--;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC--;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC--;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC--;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC--;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC--;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC--;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     noBallRunC--;
     extraRunsC--;
@@ -509,6 +779,24 @@ byeRunMinus.addEventListener('click',function(){
         if(bl2runs.getAttribute('id')==='bl2Run'){
             bl2RunC--;
             bl2RunPlus1.innerHTML = bl2RunC;
+        } if(bl3runs.getAttribute('id')==='bl3Run'){
+            bl3RunC--;
+            bl3RunPlus1.innerHTML = bl3RunC;
+        }  if(bl4runs.getAttribute('id')==='bl4Run'){
+            bl4RunC--;
+            bl4RunPlus1.innerHTML = bl4RunC;
+        } if(bl5runs.getAttribute('id')==='bl5Run'){
+            bl5RunC--;
+            bl5RunPlus1.innerHTML = bl5RunC;
+        } if(bl6runs.getAttribute('id')==='bl6Run'){
+            bl6RunC--;
+            bl6RunPlus1.innerHTML = bl6RunC;
+        } if(bl7runs.getAttribute('id')==='bl7Run'){
+            bl7RunC--;
+            bl7RunPlus1.innerHTML = bl7RunC;
+        }  if(bl8runs.getAttribute('id')==='bl8Run'){
+            bl8RunC--;
+            bl8RunPlus1.innerHTML = bl8RunC;
         }
     bRunC--;
     bRun.innerHTML = bRunC;
@@ -1468,6 +1756,24 @@ p1RunPlus.addEventListener('click',function(){
     if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC++;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC++;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC++;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC++;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC++;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC++;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC++;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     runC++;
     p1run.innerHTML = runC;
@@ -1505,6 +1811,24 @@ p1Six.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=6;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=6;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=6;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=6;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=6;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=6;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=6;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p1TSixC++;
     runC=runC+6;
@@ -1530,6 +1854,24 @@ p1Four.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=4;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=4;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=4;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=4;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=4;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=4;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=4;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     runC=runC+4;
     p1run.innerHTML = runC;
@@ -1557,6 +1899,24 @@ p1two.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=2;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=2;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=2;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=2;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=2;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=2;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=2;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     runC=runC+2;
     p1run.innerHTML = runC;
@@ -1582,6 +1942,24 @@ p1RunMinus.addEventListener('click',function(){
         } if(bl2runs.getAttribute('id')==='bl2Run'){
             bl2RunC--;
             bl2RunPlus1.innerHTML = bl2RunC;
+        } if(bl3runs.getAttribute('id')==='bl3Run'){
+            bl3RunC--;
+            bl3RunPlus1.innerHTML = bl3RunC;
+        }  if(bl4runs.getAttribute('id')==='bl4Run'){
+            bl4RunC--;
+            bl4RunPlus1.innerHTML = bl4RunC;
+        } if(bl5runs.getAttribute('id')==='bl5Run'){
+            bl5RunC--;
+            bl5RunPlus1.innerHTML = bl5RunC;
+        } if(bl6runs.getAttribute('id')==='bl6Run'){
+            bl6RunC--;
+            bl6RunPlus1.innerHTML = bl6RunC;
+        } if(bl7runs.getAttribute('id')==='bl7Run'){
+            bl7RunC--;
+            bl7RunPlus1.innerHTML = bl7RunC;
+        }  if(bl8runs.getAttribute('id')==='bl8Run'){
+            bl8RunC--;
+            bl8RunPlus1.innerHTML = bl8RunC;
         }
         runC--;
         p1run.innerHTML = runC;
@@ -1605,6 +1983,24 @@ p2RunPlus.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC++;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC++;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC++;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC++;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC++;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC++;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC++;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p2RunC++;
     p2run.innerHTML = p2RunC;
@@ -1636,6 +2032,24 @@ p2Six.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=6;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=6;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=6;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=6;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=6;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=6;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=6;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p2RunC=p2RunC+6;
     p2run.innerHTML = p2RunC;
@@ -1663,6 +2077,24 @@ p2two.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=2;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=2;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=2;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=2;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=2;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=2;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=2;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p2RunC=p2RunC+2;
     p2run.innerHTML = p2RunC;
@@ -1687,6 +2119,24 @@ p2Four.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=4;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=4;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=4;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=4;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=4;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=4;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=4;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p2RunC=p2RunC+4;
     p2run.innerHTML = p2RunC;
@@ -1714,6 +2164,24 @@ p2RunMinus.addEventListener('click',function(){
         } if(bl2runs.getAttribute('id')==='bl2Run'){
             bl2RunC--;
             bl2RunPlus1.innerHTML = bl2RunC;
+        } if(bl3runs.getAttribute('id')==='bl3Run'){
+            bl3RunC--;
+            bl3RunPlus1.innerHTML = bl3RunC;
+        }  if(bl4runs.getAttribute('id')==='bl4Run'){
+            bl4RunC--;
+            bl4RunPlus1.innerHTML = bl4RunC;
+        } if(bl5runs.getAttribute('id')==='bl5Run'){
+            bl5RunC--;
+            bl5RunPlus1.innerHTML = bl5RunC;
+        } if(bl6runs.getAttribute('id')==='bl6Run'){
+            bl6RunC--;
+            bl6RunPlus1.innerHTML = bl6RunC;
+        } if(bl7runs.getAttribute('id')==='bl7Run'){
+            bl7RunC--;
+            bl7RunPlus1.innerHTML = bl7RunC;
+        }  if(bl8runs.getAttribute('id')==='bl8Run'){
+            bl8RunC--;
+            bl8RunPlus1.innerHTML = bl8RunC;
         }
         p2RunC--;
         p2run.innerHTML = p2RunC;
@@ -1736,6 +2204,24 @@ p3RunPlus.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC++;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC++;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC++;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC++;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC++;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC++;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC++;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p3RunC++;
     p3run.innerHTML = p3RunC;
@@ -1768,6 +2254,24 @@ p3Six.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=6;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=6;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=6;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=6;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=6;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=6;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=6;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p3RunC=p3RunC+6;
     p3run.innerHTML = p3RunC;
@@ -1795,6 +2299,24 @@ p3two.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=2;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=2;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=2;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=2;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=2;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=2;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=2;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p3RunC=p3RunC+2;
     p3run.innerHTML = p3RunC;
@@ -1819,6 +2341,24 @@ p3Four.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=4;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=4;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=4;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=4;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=4;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=4;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=4;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p3RunC=p3RunC+4;
     p3run.innerHTML = p3RunC;
@@ -1847,6 +2387,24 @@ p3RunMinus.addEventListener('click',function(){
         } if(bl2runs.getAttribute('id')==='bl2Run'){
             bl2RunC--;
             bl2RunPlus1.innerHTML = bl2RunC;
+        } if(bl3runs.getAttribute('id')==='bl3Run'){
+            bl3RunC--;
+            bl3RunPlus1.innerHTML = bl3RunC;
+        }  if(bl4runs.getAttribute('id')==='bl4Run'){
+            bl4RunC--;
+            bl4RunPlus1.innerHTML = bl4RunC;
+        } if(bl5runs.getAttribute('id')==='bl5Run'){
+            bl5RunC--;
+            bl5RunPlus1.innerHTML = bl5RunC;
+        } if(bl6runs.getAttribute('id')==='bl6Run'){
+            bl6RunC--;
+            bl6RunPlus1.innerHTML = bl6RunC;
+        } if(bl7runs.getAttribute('id')==='bl7Run'){
+            bl7RunC--;
+            bl7RunPlus1.innerHTML = bl7RunC;
+        }  if(bl8runs.getAttribute('id')==='bl8Run'){
+            bl8RunC--;
+            bl8RunPlus1.innerHTML = bl8RunC;
         }
         p3RunC--;
         p3run.innerHTML = p3RunC;
@@ -1870,6 +2428,24 @@ p4RunPlus.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC++;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC++;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC++;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC++;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC++;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC++;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC++;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p4RunC++;
     p4run.innerHTML = p4RunC;
@@ -1902,6 +2478,24 @@ p4Six.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=6;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=6;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=6;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=6;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=6;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=6;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=6;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p4RunC=p4RunC+6;
     p4run.innerHTML = p4RunC;
@@ -1928,6 +2522,24 @@ p4two.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=2;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=2;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=2;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=2;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=2;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=2;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=2;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p4RunC=p4RunC+2;
     p4run.innerHTML = p4RunC;
@@ -1951,6 +2563,24 @@ p4Four.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=4;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=4;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=4;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=4;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=4;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=4;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=4;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p4RunC=p4RunC+4;
     p4run.innerHTML = p4RunC;
@@ -1978,6 +2608,24 @@ p4RunMinus.addEventListener('click',function(){
         } if(bl2runs.getAttribute('id')==='bl2Run'){
             bl2RunC--;
             bl2RunPlus1.innerHTML = bl2RunC;
+        } if(bl3runs.getAttribute('id')==='bl3Run'){
+            bl3RunC--;
+            bl3RunPlus1.innerHTML = bl3RunC;
+        }  if(bl4runs.getAttribute('id')==='bl4Run'){
+            bl4RunC--;
+            bl4RunPlus1.innerHTML = bl4RunC;
+        } if(bl5runs.getAttribute('id')==='bl5Run'){
+            bl5RunC--;
+            bl5RunPlus1.innerHTML = bl5RunC;
+        } if(bl6runs.getAttribute('id')==='bl6Run'){
+            bl6RunC--;
+            bl6RunPlus1.innerHTML = bl6RunC;
+        } if(bl7runs.getAttribute('id')==='bl7Run'){
+            bl7RunC--;
+            bl7RunPlus1.innerHTML = bl7RunC;
+        }  if(bl8runs.getAttribute('id')==='bl8Run'){
+            bl8RunC--;
+            bl8RunPlus1.innerHTML = bl8RunC;
         }
         p4RunC--;
         p4run.innerHTML = p4RunC;
@@ -2000,6 +2648,24 @@ p5RunPlus.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC++;
         bl2RunPlus1.innerHTML = bl2RunC;
+    }if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC++;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC++;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC++;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC++;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC++;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC++;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p5RunC++;
     p5run.innerHTML = p5RunC;
@@ -2031,6 +2697,24 @@ p5Six.addEventListener('click',function(){
     }  if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=6;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=6;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=6;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=6;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=6;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=6;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=6;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p5RunC=p5RunC+6;
     p5run.innerHTML = p5RunC;
@@ -2057,6 +2741,24 @@ p5two.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=2;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=2;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=2;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=2;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=2;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=2;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=2;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p5RunC=p5RunC+2;
     p5run.innerHTML = p5RunC;
@@ -2080,6 +2782,24 @@ p5Four.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=4;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=4;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=4;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=4;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=4;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=4;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=4;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p5RunC=p5RunC+4;
     p5run.innerHTML = p5RunC;
@@ -2106,6 +2826,24 @@ p5RunMinus.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC--;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC--;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC--;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC--;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC--;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC--;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC--;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     if(p5RunC>0){
         p5RunC--;
@@ -2129,6 +2867,24 @@ p6RunPlus.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC++;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC++;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC++;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC++;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC++;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC++;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC++;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p6RunC++;
     p6run.innerHTML = p6RunC;
@@ -2160,6 +2916,24 @@ p6Six.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=6;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=6;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=6;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=6;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=6;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=6;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=6;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p6RunC=p6RunC+6;
     p6run.innerHTML = p6RunC;
@@ -2186,6 +2960,24 @@ p6two.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=2;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=2;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=2;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=2;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=2;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=2;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=2;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p6RunC=p6RunC+2;
     p6run.innerHTML = p6RunC;
@@ -2209,6 +3001,24 @@ p6Four.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=4;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=4;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=4;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=4;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=4;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=4;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=4;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p6RunC=p6RunC+4;
     p6run.innerHTML = p6RunC;
@@ -2236,6 +3046,24 @@ p6RunMinus.addEventListener('click',function(){
         } if(bl2runs.getAttribute('id')==='bl2Run'){
             bl2RunC--;
             bl2RunPlus1.innerHTML = bl2RunC;
+        } if(bl3runs.getAttribute('id')==='bl3Run'){
+            bl3RunC--;
+            bl3RunPlus1.innerHTML = bl3RunC;
+        }  if(bl4runs.getAttribute('id')==='bl4Run'){
+            bl4RunC--;
+            bl4RunPlus1.innerHTML = bl4RunC;
+        } if(bl5runs.getAttribute('id')==='bl5Run'){
+            bl5RunC--;
+            bl5RunPlus1.innerHTML = bl5RunC;
+        } if(bl6runs.getAttribute('id')==='bl6Run'){
+            bl6RunC--;
+            bl6RunPlus1.innerHTML = bl6RunC;
+        } if(bl7runs.getAttribute('id')==='bl7Run'){
+            bl7RunC--;
+            bl7RunPlus1.innerHTML = bl7RunC;
+        }  if(bl8runs.getAttribute('id')==='bl8Run'){
+            bl8RunC--;
+            bl8RunPlus1.innerHTML = bl8RunC;
         }
         p6RunC--;
         p6run.innerHTML = p6RunC;
@@ -2258,6 +3086,24 @@ p7RunPlus.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC++;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC++;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC++;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC++;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC++;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC++;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC++;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p7RunC++;
     p7run.innerHTML = p7RunC;
@@ -2290,6 +3136,24 @@ p7Six.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=6;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=6;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=6;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=6;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=6;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=6;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=6;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p7RunC=p7RunC+6;
     p7run.innerHTML = p7RunC;
@@ -2316,6 +3180,24 @@ p7two.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=2;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=2;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=2;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=2;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=2;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=2;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=2;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p7RunC=p7RunC+2;
     p7run.innerHTML = p7RunC;
@@ -2339,6 +3221,24 @@ p7Four.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=4;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=4;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=4;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=4;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=4;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=4;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=4;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p7RunC=p7RunC+4;
     p7run.innerHTML = p7RunC;
@@ -2367,6 +3267,24 @@ p7RunMinus.addEventListener('click',function(){
         } if(bl2runs.getAttribute('id')==='bl2Run'){
             bl2RunC--;
             bl2RunPlus1.innerHTML = bl2RunC;
+        } if(bl3runs.getAttribute('id')==='bl3Run'){
+            bl3RunC--;
+            bl3RunPlus1.innerHTML = bl3RunC;
+        }  if(bl4runs.getAttribute('id')==='bl4Run'){
+            bl4RunC--;
+            bl4RunPlus1.innerHTML = bl4RunC;
+        } if(bl5runs.getAttribute('id')==='bl5Run'){
+            bl5RunC--;
+            bl5RunPlus1.innerHTML = bl5RunC;
+        } if(bl6runs.getAttribute('id')==='bl6Run'){
+            bl6RunC--;
+            bl6RunPlus1.innerHTML = bl6RunC;
+        } if(bl7runs.getAttribute('id')==='bl7Run'){
+            bl7RunC--;
+            bl7RunPlus1.innerHTML = bl7RunC;
+        }  if(bl8runs.getAttribute('id')==='bl8Run'){
+            bl8RunC--;
+            bl8RunPlus1.innerHTML = bl8RunC;
         }
         p7RunC--;
         p7run.innerHTML = p7RunC;
@@ -2389,6 +3307,24 @@ p8RunPlus.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC++;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC++;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC++;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC++;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC++;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC++;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC++;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p8RunC++;
     p8run.innerHTML = p8RunC;
@@ -2420,6 +3356,24 @@ p8Six.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=6;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=6;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=6;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=6;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=6;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=6;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=6;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p8RunC=p8RunC+6;
     p8run.innerHTML = p8RunC;
@@ -2446,6 +3400,24 @@ p8two.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=2;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=2;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=2;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=2;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=2;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=2;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=2;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p8RunC=p8RunC+2;
     p8run.innerHTML = p8RunC;
@@ -2469,6 +3441,24 @@ p8Four.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=4;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=4;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=4;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=4;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=4;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=4;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=4;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p8RunC=p8RunC+4;
     p8run.innerHTML = p8RunC;
@@ -2497,6 +3487,24 @@ p8RunMinus.addEventListener('click',function(){
         } if(bl2runs.getAttribute('id')==='bl2Run'){
             bl2RunC--;
             bl2RunPlus1.innerHTML = bl2RunC;
+        } if(bl3runs.getAttribute('id')==='bl3Run'){
+            bl3RunC--;
+            bl3RunPlus1.innerHTML = bl3RunC;
+        }  if(bl4runs.getAttribute('id')==='bl4Run'){
+            bl4RunC--;
+            bl4RunPlus1.innerHTML = bl4RunC;
+        } if(bl5runs.getAttribute('id')==='bl5Run'){
+            bl5RunC--;
+            bl5RunPlus1.innerHTML = bl5RunC;
+        } if(bl6runs.getAttribute('id')==='bl6Run'){
+            bl6RunC--;
+            bl6RunPlus1.innerHTML = bl6RunC;
+        } if(bl7runs.getAttribute('id')==='bl7Run'){
+            bl7RunC--;
+            bl7RunPlus1.innerHTML = bl7RunC;
+        }  if(bl8runs.getAttribute('id')==='bl8Run'){
+            bl8RunC--;
+            bl8RunPlus1.innerHTML = bl8RunC;
         }
         p8RunC--;
         p8run.innerHTML = p8RunC;
@@ -2519,6 +3527,24 @@ p9RunPlus.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC++;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC++;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC++;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC++;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC++;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC++;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC++;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p9RunC++;
     p9run.innerHTML = p9RunC;
@@ -2549,6 +3575,24 @@ p9Six.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=6;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=6;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=6;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=6;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=6;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=6;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=6;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p9RunC=p9RunC+6;
     p9run.innerHTML = p9RunC;
@@ -2575,6 +3619,24 @@ p9two.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=2;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=2;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=2;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=2;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=2;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=2;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=2;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p9RunC=p9RunC+2;
     p9run.innerHTML = p9RunC;
@@ -2598,6 +3660,24 @@ p9Four.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=4;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=4;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=4;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=4;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=4;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=4;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=4;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p9RunC=p9RunC+4;
     p9run.innerHTML = p9RunC;
@@ -2625,6 +3705,24 @@ p9RunMinus.addEventListener('click',function(){
         } if(bl2runs.getAttribute('id')==='bl2Run'){
             bl2RunC--;
             bl2RunPlus1.innerHTML = bl2RunC;
+        } if(bl3runs.getAttribute('id')==='bl3Run'){
+            bl3RunC--;
+            bl3RunPlus1.innerHTML = bl3RunC;
+        }  if(bl4runs.getAttribute('id')==='bl4Run'){
+            bl4RunC--;
+            bl4RunPlus1.innerHTML = bl4RunC;
+        } if(bl5runs.getAttribute('id')==='bl5Run'){
+            bl5RunC--;
+            bl5RunPlus1.innerHTML = bl5RunC;
+        } if(bl6runs.getAttribute('id')==='bl6Run'){
+            bl6RunC--;
+            bl6RunPlus1.innerHTML = bl6RunC;
+        } if(bl7runs.getAttribute('id')==='bl7Run'){
+            bl7RunC--;
+            bl7RunPlus1.innerHTML = bl7RunC;
+        }  if(bl8runs.getAttribute('id')==='bl8Run'){
+            bl8RunC--;
+            bl8RunPlus1.innerHTML = bl8RunC;
         }
         p9RunC--;
         p9run.innerHTML = p9RunC;
@@ -2647,6 +3745,24 @@ p10RunPlus.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC++;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC++;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC++;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC++;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC++;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC++;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC++;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p10RunC++;
     p10run.innerHTML = p10RunC;
@@ -2677,6 +3793,24 @@ p10Six.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=6;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=6;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=6;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=6;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=6;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=6;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=6;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p10RunC=p10RunC+6;
     p10run.innerHTML = p10RunC;
@@ -2703,6 +3837,24 @@ p10two.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=2;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=2;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=2;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=2;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=2;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=2;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=2;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p10RunC=p10RunC+2;
     p10run.innerHTML = p10RunC;
@@ -2726,6 +3878,24 @@ p10Four.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=4;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=4;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=4;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=4;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=4;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=4;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=4;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p10RunC=p10RunC+4;
     p10run.innerHTML = p10RunC;
@@ -2753,6 +3923,24 @@ p10RunMinus.addEventListener('click',function(){
         } if(bl2runs.getAttribute('id')==='bl2Run'){
             bl2RunC--;
             bl2RunPlus1.innerHTML = bl2RunC;
+        } if(bl3runs.getAttribute('id')==='bl3Run'){
+            bl3RunC--;
+            bl3RunPlus1.innerHTML = bl3RunC;
+        }  if(bl4runs.getAttribute('id')==='bl4Run'){
+            bl4RunC--;
+            bl4RunPlus1.innerHTML = bl4RunC;
+        } if(bl5runs.getAttribute('id')==='bl5Run'){
+            bl5RunC--;
+            bl5RunPlus1.innerHTML = bl5RunC;
+        } if(bl6runs.getAttribute('id')==='bl6Run'){
+            bl6RunC--;
+            bl6RunPlus1.innerHTML = bl6RunC;
+        } if(bl7runs.getAttribute('id')==='bl7Run'){
+            bl7RunC--;
+            bl7RunPlus1.innerHTML = bl7RunC;
+        }  if(bl8runs.getAttribute('id')==='bl8Run'){
+            bl8RunC--;
+            bl8RunPlus1.innerHTML = bl8RunC;
         }
         p10RunC--;
         p10run.innerHTML = p10RunC;
@@ -2775,6 +3963,24 @@ p11RunPlus.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC++;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC++;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC++;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC++;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC++;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC++;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC++;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p11RunC++;
     p11run.innerHTML = p11RunC;
@@ -2805,6 +4011,24 @@ p11Six.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=6;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=6;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=6;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=6;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=6;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=6;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=6;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p11RunC=p11RunC+6;
     p11run.innerHTML = p11RunC;
@@ -2831,6 +4055,24 @@ p11two.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=2;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=2;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=2;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=2;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=2;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=2;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=2;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p11RunC=p11RunC+2;
     p11run.innerHTML = p11RunC;
@@ -2854,6 +4096,24 @@ p11Four.addEventListener('click',function(){
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bl2RunC+=4;
         bl2RunPlus1.innerHTML = bl2RunC;
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3RunC+=4;
+        bl3RunPlus1.innerHTML = bl3RunC;
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4RunC+=4;
+        bl4RunPlus1.innerHTML = bl4RunC;
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5RunC+=4;
+        bl5RunPlus1.innerHTML = bl5RunC;
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6RunC+=4;
+        bl6RunPlus1.innerHTML = bl6RunC;
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7RunC+=4;
+        bl7RunPlus1.innerHTML = bl7RunC;
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8RunC+=4;
+        bl8RunPlus1.innerHTML = bl8RunC;
     }
     p11RunC=p11RunC+4;
     p11run.innerHTML = p11RunC;
@@ -2881,6 +4141,24 @@ p11RunMinus.addEventListener('click',function(){
         } if(bl2runs.getAttribute('id')==='bl2Run'){
             bl2RunC--;
             bl2RunPlus1.innerHTML = bl2RunC;
+        } if(bl3runs.getAttribute('id')==='bl3Run'){
+            bl3RunC--;
+            bl3RunPlus1.innerHTML = bl3RunC;
+        }  if(bl4runs.getAttribute('id')==='bl4Run'){
+            bl4RunC--;
+            bl4RunPlus1.innerHTML = bl4RunC;
+        } if(bl5runs.getAttribute('id')==='bl5Run'){
+            bl5RunC--;
+            bl5RunPlus1.innerHTML = bl5RunC;
+        } if(bl6runs.getAttribute('id')==='bl6Run'){
+            bl6RunC--;
+            bl6RunPlus1.innerHTML = bl6RunC;
+        } if(bl7runs.getAttribute('id')==='bl7Run'){
+            bl7RunC--;
+            bl7RunPlus1.innerHTML = bl7RunC;
+        }  if(bl8runs.getAttribute('id')==='bl8Run'){
+            bl8RunC--;
+            bl8RunPlus1.innerHTML = bl8RunC;
         }
         p11RunC--;
         p11run.innerHTML = p11RunC;
@@ -3249,6 +4527,12 @@ blName1.addEventListener('click', function(){
     bl3runs.removeAttribute('id', 'bl3Run')
     bl4runs.removeAttribute('id', 'bl4Run')
     bl5runs.removeAttribute('id', 'bl5Run')
+    blName6.style.background= 'none'
+    bl6runs.removeAttribute('id', 'bl6Run')
+    blName7.style.background= 'none'
+    bl7runs.removeAttribute('id', 'bl7Run')
+    blName8.style.background= 'none'
+    bl8runs.removeAttribute('id', 'bl8Run')
 })
 
 // Bowler-02
@@ -3267,6 +4551,12 @@ blName2.addEventListener('click', function(){
     bl3runs.removeAttribute('id', 'bl3Run')
     bl4runs.removeAttribute('id', 'bl4Run')
     bl5runs.removeAttribute('id', 'bl5Run')
+    blName6.style.background= 'none'
+    bl6runs.removeAttribute('id', 'bl6Run')
+    blName7.style.background= 'none'
+    bl7runs.removeAttribute('id', 'bl7Run')
+    blName8.style.background= 'none'
+    bl8runs.removeAttribute('id', 'bl8Run')
 })
 
 // Bowler-3
@@ -3285,6 +4575,12 @@ blName3.addEventListener('click', function(){
     bl2runs.removeAttribute('id', 'bl2Run')
     bl4runs.removeAttribute('id', 'bl4Run')
     bl5runs.removeAttribute('id', 'bl5Run')
+    blName6.style.background= 'none'
+    bl6runs.removeAttribute('id', 'bl6Run')
+    blName7.style.background= 'none'
+    bl7runs.removeAttribute('id', 'bl7Run')
+    blName8.style.background= 'none'
+    bl8runs.removeAttribute('id', 'bl8Run')
 })
 
 // Bowler-04
@@ -3303,6 +4599,12 @@ blName4.addEventListener('click', function(){
     bl2runs.removeAttribute('id', 'bl2Run')
     bl3runs.removeAttribute('id', 'bl3Run')
     bl5runs.removeAttribute('id', 'bl5Run')
+    blName6.style.background= 'none'
+    bl6runs.removeAttribute('id', 'bl6Run')
+    blName7.style.background= 'none'
+    bl7runs.removeAttribute('id', 'bl7Run')
+    blName8.style.background= 'none'
+    bl8runs.removeAttribute('id', 'bl8Run')
 })
 
 
@@ -3322,6 +4624,81 @@ blName5.addEventListener('click', function(){
     bl2runs.removeAttribute('id', 'bl2Run')
     bl3runs.removeAttribute('id', 'bl3Run')
     bl4runs.removeAttribute('id', 'bl4Run')
+    blName6.style.background= 'none'
+    bl6runs.removeAttribute('id', 'bl6Run')
+    blName7.style.background= 'none'
+    bl7runs.removeAttribute('id', 'bl7Run')
+    blName8.style.background= 'none'
+    bl8runs.removeAttribute('id', 'bl8Run')
+})
+// Bowler-06
+let bl6RunPlus1;
+blName6.addEventListener('click', function(){
+    blName6.style.background= 'grey'
+    bl6runs.setAttribute('id', 'bl6Run')
+    let bl6Run = document.getElementById('bl6Run')
+    bl6RunPlus1= bl6Run;
+    console.log('Fifth')
+    blName1.style.background= 'none'
+    blName2.style.background= 'none'
+    blName3.style.background= 'none'
+    blName4.style.background= 'none'
+    blName5.style.background= 'none'
+    bl1runs.removeAttribute('id', 'bl1Run')
+    bl2runs.removeAttribute('id', 'bl2Run')
+    bl3runs.removeAttribute('id', 'bl3Run')
+    bl4runs.removeAttribute('id', 'bl4Run')
+    bl5runs.removeAttribute('id', 'bl5Run')
+    blName7.style.background= 'none'
+    bl7runs.removeAttribute('id', 'bl7Run')
+    blName8.style.background= 'none'
+    bl8runs.removeAttribute('id', 'bl8Run')
+})
+// Bowler-07
+let bl7RunPlus1;
+blName7.addEventListener('click', function(){
+    blName7.style.background= 'grey'
+    bl7runs.setAttribute('id', 'bl7Run')
+    let bl7Run = document.getElementById('bl7Run')
+    bl7RunPlus1= bl7Run;
+    console.log('Fifth')
+    blName1.style.background= 'none'
+    blName2.style.background= 'none'
+    blName3.style.background= 'none'
+    blName4.style.background= 'none'
+    blName5.style.background= 'none'
+    blName6.style.background= 'none'
+    bl1runs.removeAttribute('id', 'bl1Run')
+    bl2runs.removeAttribute('id', 'bl2Run')
+    bl3runs.removeAttribute('id', 'bl3Run')
+    bl4runs.removeAttribute('id', 'bl4Run')
+    bl5runs.removeAttribute('id', 'bl5Run')
+    bl6runs.removeAttribute('id', 'bl6Run')
+    blName8.style.background= 'none'
+    bl8runs.removeAttribute('id', 'bl8Run')
+})
+// Bowler-08
+let bl8RunPlus1;
+blName8.addEventListener('click', function(){
+    blName8.style.background= 'grey'
+    bl8runs.setAttribute('id', 'bl8Run')
+    let bl8Run = document.getElementById('bl8Run')
+    bl8RunPlus1= bl8Run;
+    console.log('Fifth')
+    blName1.style.background= 'none'
+    blName2.style.background= 'none'
+    blName3.style.background= 'none'
+    blName4.style.background= 'none'
+    blName5.style.background= 'none'
+    blName6.style.background= 'none'
+    blName7.style.background= 'none'
+    bl1runs.removeAttribute('id', 'bl1Run')
+    bl2runs.removeAttribute('id', 'bl2Run')
+    bl3runs.removeAttribute('id', 'bl3Run')
+    bl4runs.removeAttribute('id', 'bl4Run')
+    bl5runs.removeAttribute('id', 'bl5Run')
+    bl6runs.removeAttribute('id', 'bl6Run')
+    bl7runs.removeAttribute('id', 'bl7Run')
 })
 /*================================================================================================================
                 #blName1 and bowlers run End
