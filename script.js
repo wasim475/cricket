@@ -109,6 +109,14 @@ let runIncrmenterDeincrementer= document.querySelector('.runIncrmenterDeincremen
 let runCounter=0;
 totalRunMinus.addEventListener('click',function(){
     if(runCounter>=1){
+        if(bl1runs.getAttribute('id')==='bl1Run'){
+            bl1RunC--;
+            bl1RunPlus1.innerHTML = bl1RunC;
+        }
+        if(bl2runs.getAttribute('id')==='bl2Run'){
+            bl2RunC--;
+            bl2RunPlus1.innerHTML = bl2RunC;
+        }
         runCounter--;
         totalRun.innerHTML=runCounter;
         needRuns.innerHTML++
@@ -119,6 +127,14 @@ totalRunMinus.addEventListener('click',function(){
 totalRunPlus.addEventListener('click',function(){
     runCounter++;
     totalRun.innerHTML=runCounter;
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC++;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    }
+    if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC++;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 1;
     }else{
@@ -128,6 +144,14 @@ totalRunPlus.addEventListener('click',function(){
 })
 
 totalRunDouble.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=2;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    }
+    if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=2;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     runCounter+=2;
     totalRun.innerHTML=runCounter;
     if(needRuns.innerHTML>1){
@@ -138,6 +162,14 @@ totalRunDouble.addEventListener('click',function(){
     }
 })
 totalRunFour.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=4;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    }
+    if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=4;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     runCounter+=4;
     totalRun.innerHTML=runCounter;
     if(needRuns.innerHTML>1){
@@ -148,6 +180,14 @@ totalRunFour.addEventListener('click',function(){
     }
 })
 totalRunSix.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=6;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    }
+    if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=6;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     runCounter+=6;
     totalRun.innerHTML=runCounter;
     if(needRuns.innerHTML>1){
@@ -220,6 +260,14 @@ closeBtn.addEventListener('click',function(){
 let wdRunC= 0;
 let extraRunsC =0;
 wide1.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC++;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    }
+    if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC++;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     wdRunC++;
     extraRunsC++;
     runCounter++;
@@ -235,6 +283,14 @@ wide1.addEventListener('click',function(){
 
 })
 wide2.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=5;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    }
+    if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=5;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     wdRunC+=5;
     extraRunsC+=5;
     runCounter+=5;
@@ -253,6 +309,14 @@ wide2.addEventListener('click',function(){
 // no ball
 let noBallRunC= 0;
 noBall.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC++;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    }
+    if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC++;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     noBallRunC++;
     extraRunsC++;
     runCounter++;
@@ -269,6 +333,14 @@ noBall.addEventListener('click',function(){
 })
 let legByeRunC = 0;
 legBye.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC++;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    }
+    if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC++;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     legByeRunC++;
     extraRunsC++;
     runCounter++;
@@ -283,6 +355,14 @@ legBye.addEventListener('click',function(){
     }
 })
 legByeFour.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=4;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    }
+    if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=4;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     legByeRunC+=4;
     extraRunsC+=4;
     runCounter+=4;
@@ -299,6 +379,14 @@ legByeFour.addEventListener('click',function(){
 
 let bRunC = 0;
 bye.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC++;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    }
+    if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC++;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     bRunC++
     extraRunsC++;
     runCounter++;
@@ -313,6 +401,14 @@ bye.addEventListener('click',function(){
     }
 })
 byeFour.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=4;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    }
+    if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=4;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     bRunC+=4
     extraRunsC+=4;
     runCounter+=4;
@@ -328,6 +424,14 @@ byeFour.addEventListener('click',function(){
 })
 extraRunMinus.addEventListener('click',function(){
    if(runCounter>0 && extraRunsC>0){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC--;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    }
+    if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC--;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     wdRunC--;
     wdRun.innerHTML = wdRunC;
     extraRunsC--;
@@ -347,6 +451,14 @@ extraRunMinus.addEventListener('click',function(){
 let legByeMinus = document.querySelector('.legByeMinus')
 legByeMinus.addEventListener('click',function(){
    if(runCounter>0 && extraRunsC>0 && legByeRunC>0){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC--;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    }
+    if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC--;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     legByeRunC--;
     lbRun.innerHTML = legByeRunC;
     extraRunsC--;
@@ -365,6 +477,14 @@ legByeMinus.addEventListener('click',function(){
 let noBallMinus = document.querySelector('.noBallMinus')
 noBallMinus.addEventListener('click',function(){
    if(runCounter>0 && extraRunsC>0 && noBallRunC>0){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC--;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    }
+    if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC--;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     noBallRunC--;
     extraRunsC--;
     runCounter--;
@@ -382,7 +502,14 @@ noBallMinus.addEventListener('click',function(){
 let byeRunMinus = document.querySelector('.byeRunMinus')
 byeRunMinus.addEventListener('click',function(){
     if(runCounter>0 && extraRunsC>0 && bRunC>0){
-       console.log('ami bye minus')
+        if(bl1runs.getAttribute('id')==='bl1Run'){
+            bl1RunC--;
+            bl1RunPlus1.innerHTML = bl1RunC;
+        }
+        if(bl2runs.getAttribute('id')==='bl2Run'){
+            bl2RunC--;
+            bl2RunPlus1.innerHTML = bl2RunC;
+        }
     bRunC--;
     bRun.innerHTML = bRunC;
     extraRunsC--;
@@ -1323,19 +1450,32 @@ let p9BallMinus = document.querySelector('.p9BallMinus')
 let p10BallMinus = document.querySelector('.p10BallMinus')
 let p11BallMinus = document.querySelector('.p11BallMinus')
 
-// Player Ball- #End
 
+
+
+
+// Player Ball- #End
 
 
 // RunPlus Button #Start
 let runC=0;
 p1RunPlus.addEventListener('click',function(){
+
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC++;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    }
+    if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC++;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     runC++;
     p1run.innerHTML = runC;
     runCounter++;
     totalRun.innerHTML=runCounter;
     p1ballC++;
     p1Ball.innerHTML = p1ballC;
+
     p1Sr.innerHTML = ((runC*100)/p1ballC).toFixed(1);
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 1;
@@ -1359,6 +1499,13 @@ let p1TFourC = 0;
 let p1Six = document.querySelector('.p1Six')
 let p1Four = document.querySelector('.p1Four')
 p1Six.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=6;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=6;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p1TSixC++;
     runC=runC+6;
     p1run.innerHTML = runC;
@@ -1377,6 +1524,13 @@ p1Six.addEventListener('click',function(){
 
 })
 p1Four.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=4;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=4;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     runC=runC+4;
     p1run.innerHTML = runC;
     runCounter+=4;
@@ -1397,6 +1551,13 @@ p1Four.addEventListener('click',function(){
 
 let p1two = document.querySelector('.p1two')
 p1two.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=2;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=2;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     runC=runC+2;
     p1run.innerHTML = runC;
     runCounter+=2;
@@ -1415,6 +1576,13 @@ p1two.addEventListener('click',function(){
 
 p1RunMinus.addEventListener('click',function(){
     if(runC>0){
+        if(bl1runs.getAttribute('id')==='bl1Run'){
+            bl1RunC--;
+            bl1RunPlus1.innerHTML = bl1RunC;
+        } if(bl2runs.getAttribute('id')==='bl2Run'){
+            bl2RunC--;
+            bl2RunPlus1.innerHTML = bl2RunC;
+        }
         runC--;
         p1run.innerHTML = runC;
         runCounter--;
@@ -1431,6 +1599,13 @@ p1RunMinus.addEventListener('click',function(){
 })
 let p2RunC = 0;
 p2RunPlus.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC++;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC++;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p2RunC++;
     p2run.innerHTML = p2RunC;
     runCounter++;
@@ -1455,6 +1630,13 @@ let p2TFourC = 0;
 let p2Six = document.querySelector('.p2Six')
 let p2Four = document.querySelector('.p2Four')
 p2Six.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=6;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=6;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p2RunC=p2RunC+6;
     p2run.innerHTML = p2RunC;
     runCounter+=6;
@@ -1475,6 +1657,13 @@ p2Six.addEventListener('click',function(){
 
 let p2two = document.querySelector('.p2two')
 p2two.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=2;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=2;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p2RunC=p2RunC+2;
     p2run.innerHTML = p2RunC;
     runCounter+=2;
@@ -1492,6 +1681,13 @@ p2two.addEventListener('click',function(){
 })
 
 p2Four.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=4;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=4;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p2RunC=p2RunC+4;
     p2run.innerHTML = p2RunC;
     runCounter+=4;
@@ -1512,6 +1708,13 @@ p2Four.addEventListener('click',function(){
 p2RunMinus.addEventListener('click',function(){
     
     if(p2RunC>0){
+        if(bl1runs.getAttribute('id')==='bl1Run'){
+            bl1RunC--;
+            bl1RunPlus1.innerHTML = bl1RunC;
+        } if(bl2runs.getAttribute('id')==='bl2Run'){
+            bl2RunC--;
+            bl2RunPlus1.innerHTML = bl2RunC;
+        }
         p2RunC--;
         p2run.innerHTML = p2RunC;
         runCounter--;
@@ -1527,6 +1730,13 @@ p2RunMinus.addEventListener('click',function(){
 })
 let p3RunC = 0;
 p3RunPlus.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC++;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC++;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p3RunC++;
     p3run.innerHTML = p3RunC;
     runCounter++;
@@ -1552,6 +1762,13 @@ let p3TFourC = 0;
 let p3Six = document.querySelector('.p3Six')
 let p3Four = document.querySelector('.p3Four')
 p3Six.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=6;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=6;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p3RunC=p3RunC+6;
     p3run.innerHTML = p3RunC;
     runCounter+=6;
@@ -1572,6 +1789,13 @@ p3Six.addEventListener('click',function(){
 
 let p3two = document.querySelector('.p3two')
 p3two.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=2;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=2;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p3RunC=p3RunC+2;
     p3run.innerHTML = p3RunC;
     runCounter+=2;
@@ -1589,6 +1813,13 @@ p3two.addEventListener('click',function(){
 })
 
 p3Four.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=4;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=4;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p3RunC=p3RunC+4;
     p3run.innerHTML = p3RunC;
     runCounter+=4;
@@ -1610,6 +1841,13 @@ p3Four.addEventListener('click',function(){
 p3RunMinus.addEventListener('click',function(){
     
     if(p3RunC>0){
+        if(bl1runs.getAttribute('id')==='bl1Run'){
+            bl1RunC--;
+            bl1RunPlus1.innerHTML = bl1RunC;
+        } if(bl2runs.getAttribute('id')==='bl2Run'){
+            bl2RunC--;
+            bl2RunPlus1.innerHTML = bl2RunC;
+        }
         p3RunC--;
         p3run.innerHTML = p3RunC;
         runCounter--;
@@ -1626,6 +1864,13 @@ p3RunMinus.addEventListener('click',function(){
 })
 let p4RunC = 0;
 p4RunPlus.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC++;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC++;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p4RunC++;
     p4run.innerHTML = p4RunC;
     runCounter++;
@@ -1651,6 +1896,13 @@ let p4TFourC = 0;
 let p4Six = document.querySelector('.p4Six')
 let p4Four = document.querySelector('.p4Four')
 p4Six.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=6;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=6;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p4RunC=p4RunC+6;
     p4run.innerHTML = p4RunC;
     runCounter+=6;
@@ -1670,6 +1922,13 @@ p4Six.addEventListener('click',function(){
 })
 let p4two = document.querySelector('.p4two')
 p4two.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=2;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=2;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p4RunC=p4RunC+2;
     p4run.innerHTML = p4RunC;
     runCounter+=2;
@@ -1686,6 +1945,13 @@ p4two.addEventListener('click',function(){
 
 })
 p4Four.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=4;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=4;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p4RunC=p4RunC+4;
     p4run.innerHTML = p4RunC;
     runCounter+=4;
@@ -1706,6 +1972,13 @@ p4Four.addEventListener('click',function(){
 
 p4RunMinus.addEventListener('click',function(){
     if(p4RunC>0){
+        if(bl1runs.getAttribute('id')==='bl1Run'){
+            bl1RunC--;
+            bl1RunPlus1.innerHTML = bl1RunC;
+        } if(bl2runs.getAttribute('id')==='bl2Run'){
+            bl2RunC--;
+            bl2RunPlus1.innerHTML = bl2RunC;
+        }
         p4RunC--;
         p4run.innerHTML = p4RunC;
         runCounter--;
@@ -1721,6 +1994,13 @@ p4RunMinus.addEventListener('click',function(){
 })
 let p5RunC = 0;
 p5RunPlus.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC++;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC++;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p5RunC++;
     p5run.innerHTML = p5RunC;
     runCounter++;
@@ -1745,6 +2025,13 @@ let p5TFourC = 0;
 let p5Six = document.querySelector('.p5Six')
 let p5Four = document.querySelector('.p5Four')
 p5Six.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=6;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    }  if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=6;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p5RunC=p5RunC+6;
     p5run.innerHTML = p5RunC;
     runCounter+=6;
@@ -1764,6 +2051,13 @@ p5Six.addEventListener('click',function(){
 })
 let p5two = document.querySelector('.p5two')
 p5two.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=2;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=2;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p5RunC=p5RunC+2;
     p5run.innerHTML = p5RunC;
     runCounter+=2;
@@ -1780,6 +2074,13 @@ p5two.addEventListener('click',function(){
 
 })
 p5Four.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+4;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=4;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p5RunC=p5RunC+4;
     p5run.innerHTML = p5RunC;
     runCounter+=4;
@@ -1799,6 +2100,13 @@ p5Four.addEventListener('click',function(){
 })
 
 p5RunMinus.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC--;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC--;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     if(p5RunC>0){
         p5RunC--;
         p5run.innerHTML = p5RunC;
@@ -1815,6 +2123,13 @@ p5RunMinus.addEventListener('click',function(){
 })
 let p6RunC = 0;
 p6RunPlus.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC++;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC++;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p6RunC++;
     p6run.innerHTML = p6RunC;
     runCounter++;
@@ -1839,6 +2154,13 @@ let p6TFourC = 0;
 let p6Six = document.querySelector('.p6Six')
 let p6Four = document.querySelector('.p6Four')
 p6Six.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=6;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=6;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p6RunC=p6RunC+6;
     p6run.innerHTML = p6RunC;
     runCounter+=6;
@@ -1858,6 +2180,13 @@ p6Six.addEventListener('click',function(){
 })
 let p6two = document.querySelector('.p6two')
 p6two.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=2;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=2;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p6RunC=p6RunC+2;
     p6run.innerHTML = p6RunC;
     runCounter+=2;
@@ -1874,6 +2203,13 @@ p6two.addEventListener('click',function(){
 
 })
 p6Four.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=4;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=4;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p6RunC=p6RunC+4;
     p6run.innerHTML = p6RunC;
     runCounter+=4;
@@ -1894,6 +2230,13 @@ p6Four.addEventListener('click',function(){
 
 p6RunMinus.addEventListener('click',function(){
     if(p6RunC>0){
+        if(bl1runs.getAttribute('id')==='bl1Run'){
+            bl1RunC--;
+            bl1RunPlus1.innerHTML = bl1RunC;
+        } if(bl2runs.getAttribute('id')==='bl2Run'){
+            bl2RunC--;
+            bl2RunPlus1.innerHTML = bl2RunC;
+        }
         p6RunC--;
         p6run.innerHTML = p6RunC;
         runCounter--;
@@ -1909,6 +2252,13 @@ p6RunMinus.addEventListener('click',function(){
 })
 let p7RunC = 0;
 p7RunPlus.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC++;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC++;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p7RunC++;
     p7run.innerHTML = p7RunC;
     runCounter++;
@@ -1934,6 +2284,13 @@ let p7TFourC = 0;
 let p7Six = document.querySelector('.p7Six')
 let p7Four = document.querySelector('.p7Four')
 p7Six.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=6;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=6;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p7RunC=p7RunC+6;
     p7run.innerHTML = p7RunC;
     runCounter+=6;
@@ -1953,6 +2310,13 @@ p7Six.addEventListener('click',function(){
 })
 let p7two = document.querySelector('.p7two')
 p7two.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=2;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=2;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p7RunC=p7RunC+2;
     p7run.innerHTML = p7RunC;
     runCounter+=2;
@@ -1969,6 +2333,13 @@ p7two.addEventListener('click',function(){
 
 })
 p7Four.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=4;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=4;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p7RunC=p7RunC+4;
     p7run.innerHTML = p7RunC;
     runCounter+=4;
@@ -1990,6 +2361,13 @@ p7Four.addEventListener('click',function(){
 p7RunMinus.addEventListener('click',function(){
     
     if(p7RunC>0){
+        if(bl1runs.getAttribute('id')==='bl1Run'){
+            bl1RunC--;
+            bl1RunPlus1.innerHTML = bl1RunC;
+        } if(bl2runs.getAttribute('id')==='bl2Run'){
+            bl2RunC--;
+            bl2RunPlus1.innerHTML = bl2RunC;
+        }
         p7RunC--;
         p7run.innerHTML = p7RunC;
         runCounter--;
@@ -2005,6 +2383,13 @@ p7RunMinus.addEventListener('click',function(){
 })
 let p8RunC = 0;
 p8RunPlus.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC++;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC++;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p8RunC++;
     p8run.innerHTML = p8RunC;
     runCounter++;
@@ -2029,6 +2414,13 @@ let p8Six = document.querySelector('.p8Six')
 let p8Four = document.querySelector('.p8Four')
 
 p8Six.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=6;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=6;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p8RunC=p8RunC+6;
     p8run.innerHTML = p8RunC;
     runCounter+=6;
@@ -2048,6 +2440,13 @@ p8Six.addEventListener('click',function(){
 })
 let p8two = document.querySelector('.p8two')
 p8two.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=2;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=2;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p8RunC=p8RunC+2;
     p8run.innerHTML = p8RunC;
     runCounter+=2;
@@ -2064,6 +2463,13 @@ p8two.addEventListener('click',function(){
 
 })
 p8Four.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=4;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=4;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p8RunC=p8RunC+4;
     p8run.innerHTML = p8RunC;
     runCounter+=4;
@@ -2085,6 +2491,13 @@ p8Four.addEventListener('click',function(){
 p8RunMinus.addEventListener('click',function(){
     
     if(p8RunC>0){
+        if(bl1runs.getAttribute('id')==='bl1Run'){
+            bl1RunC--;
+            bl1RunPlus1.innerHTML = bl1RunC;
+        } if(bl2runs.getAttribute('id')==='bl2Run'){
+            bl2RunC--;
+            bl2RunPlus1.innerHTML = bl2RunC;
+        }
         p8RunC--;
         p8run.innerHTML = p8RunC;
         runCounter--;
@@ -2100,6 +2513,13 @@ p8RunMinus.addEventListener('click',function(){
 })
 let p9RunC = 0;
 p9RunPlus.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC++;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC++;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p9RunC++;
     p9run.innerHTML = p9RunC;
     runCounter++;
@@ -2123,6 +2543,13 @@ let p9TFourC = 0;
 let p9Six = document.querySelector('.p9Six')
 let p9Four = document.querySelector('.p9Four')
 p9Six.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=6;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=6;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p9RunC=p9RunC+6;
     p9run.innerHTML = p9RunC;
     runCounter+=6;
@@ -2142,6 +2569,13 @@ p9Six.addEventListener('click',function(){
 })
 let p9two = document.querySelector('.p9two')
 p9two.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=2;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=2;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p9RunC=p9RunC+2;
     p9run.innerHTML = p9RunC;
     runCounter+=2;
@@ -2158,6 +2592,13 @@ p9two.addEventListener('click',function(){
 
 })
 p9Four.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=4;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=4;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p9RunC=p9RunC+4;
     p9run.innerHTML = p9RunC;
     runCounter+=4;
@@ -2178,6 +2619,13 @@ p9Four.addEventListener('click',function(){
 
 p9RunMinus.addEventListener('click',function(){
     if(p9RunC>0){
+        if(bl1runs.getAttribute('id')==='bl1Run'){
+            bl1RunC--;
+            bl1RunPlus1.innerHTML = bl1RunC;
+        } if(bl2runs.getAttribute('id')==='bl2Run'){
+            bl2RunC--;
+            bl2RunPlus1.innerHTML = bl2RunC;
+        }
         p9RunC--;
         p9run.innerHTML = p9RunC;
         runCounter--;
@@ -2193,6 +2641,13 @@ p9RunMinus.addEventListener('click',function(){
 })
 let p10RunC = 0;
 p10RunPlus.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC++;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC++;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p10RunC++;
     p10run.innerHTML = p10RunC;
     runCounter++;
@@ -2216,6 +2671,13 @@ let p10TFourC = 0;
 let p10Six = document.querySelector('.p10Six')
 let p10Four = document.querySelector('.p10Four')
 p10Six.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=6;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=6;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p10RunC=p10RunC+6;
     p10run.innerHTML = p10RunC;
     runCounter+=6;
@@ -2235,6 +2697,13 @@ p10Six.addEventListener('click',function(){
 })
 let p10two = document.querySelector('.p10two')
 p10two.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=2;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=2;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p10RunC=p10RunC+2;
     p10run.innerHTML = p10RunC;
     runCounter+=2;
@@ -2251,6 +2720,13 @@ p10two.addEventListener('click',function(){
 
 })
 p10Four.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=4;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=4;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p10RunC=p10RunC+4;
     p10run.innerHTML = p10RunC;
     runCounter+=4;
@@ -2271,6 +2747,13 @@ p10Four.addEventListener('click',function(){
 p10RunMinus.addEventListener('click',function(){
     
     if(p10RunC>0){
+        if(bl1runs.getAttribute('id')==='bl1Run'){
+            bl1RunC--;
+            bl1RunPlus1.innerHTML = bl1RunC;
+        } if(bl2runs.getAttribute('id')==='bl2Run'){
+            bl2RunC--;
+            bl2RunPlus1.innerHTML = bl2RunC;
+        }
         p10RunC--;
         p10run.innerHTML = p10RunC;
         runCounter--;
@@ -2286,6 +2769,13 @@ p10RunMinus.addEventListener('click',function(){
 })
 let p11RunC = 0;
 p11RunPlus.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC++;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC++;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p11RunC++;
     p11run.innerHTML = p11RunC;
     runCounter++;
@@ -2309,6 +2799,13 @@ let p11TFourC = 0;
 let p11Six = document.querySelector('.p11Six')
 let p11Four = document.querySelector('.p11Four')
 p11Six.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=6;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=6;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p11RunC=p11RunC+6;
     p11run.innerHTML = p11RunC;
     runCounter+=6;
@@ -2328,6 +2825,13 @@ p11Six.addEventListener('click',function(){
 })
 let p11two = document.querySelector('.p11two')
 p11two.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=2;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=2;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p11RunC=p11RunC+2;
     p11run.innerHTML = p11RunC;
     runCounter+=2;
@@ -2344,6 +2848,13 @@ p11two.addEventListener('click',function(){
 
 })
 p11Four.addEventListener('click',function(){
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1RunC+=4;
+        bl1RunPlus1.innerHTML = bl1RunC;
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2RunC+=4;
+        bl2RunPlus1.innerHTML = bl2RunC;
+    }
     p11RunC=p11RunC+4;
     p11run.innerHTML = p11RunC;
     runCounter+=4;
@@ -2364,6 +2875,13 @@ p11Four.addEventListener('click',function(){
 
 p11RunMinus.addEventListener('click',function(){
     if(p11RunC>0){
+        if(bl1runs.getAttribute('id')==='bl1Run'){
+            bl1RunC--;
+            bl1RunPlus1.innerHTML = bl1RunC;
+        } if(bl2runs.getAttribute('id')==='bl2Run'){
+            bl2RunC--;
+            bl2RunPlus1.innerHTML = bl2RunC;
+        }
         p11RunC--;
         p11run.innerHTML = p11RunC;
         runCounter--;
@@ -2669,30 +3187,7 @@ bl1OverMinus.addEventListener('click',function(){
 })
 
 let bl1RunC = 0;
-bl1RunPlus.addEventListener('click',function(){
-   if(bl1RunC>=0){
-    bl1RunC++;
-    bl1runs.innerHTML= bl1RunC;
-   }
-})
-bl1RunMinus.addEventListener('click',function(){
-   if(bl1RunC>0){
-    bl1RunC--;
-    bl1runs.innerHTML= bl1RunC;
-   }
-})
-bl1Six.addEventListener('click',function(){
-    if(bl1RunC>=0){
-     bl1RunC+=6;
-     bl1runs.innerHTML= bl1RunC;
-    }
- })
-bl1Four.addEventListener('click',function(){
-    if(bl1RunC>=0){
-     bl1RunC+=4;
-     bl1runs.innerHTML= bl1RunC;
-    }
- })
+
  let bl1WicketC = 0;
 bl1Wicket2.addEventListener('click',function(){
     if(bl1RunC>=0 && bl1WicketC>=0 && bl1WicketC<10){
@@ -2735,6 +3230,104 @@ bltn2.addEventListener('click',function(){
 
 // b2 in de
 
+/*================================================================================================================
+                #blName1 and bowlers run start
+==================================================================================================================*/ 
+// Bowler-01
+let bl1RunPlus1;
+blName1.addEventListener('click', function(){
+    blName1.style.background= 'grey'
+    bl1runs.setAttribute('id', 'bl1Run')
+    let bl1Run = document.getElementById('bl1Run')
+    bl1RunPlus1= bl1Run;
+    console.log('first')
+    blName2.style.background= 'none'
+    blName3.style.background= 'none'
+    blName4.style.background= 'none'
+    blName5.style.background= 'none'
+    bl2runs.removeAttribute('id', 'bl2Run')
+    bl3runs.removeAttribute('id', 'bl3Run')
+    bl4runs.removeAttribute('id', 'bl4Run')
+    bl5runs.removeAttribute('id', 'bl5Run')
+})
+
+// Bowler-02
+let bl2RunPlus1;
+blName2.addEventListener('click', function(){
+    blName2.style.background= 'grey'
+    bl2runs.setAttribute('id', 'bl2Run')
+    let bl2Run = document.getElementById('bl2Run')
+    bl2RunPlus1= bl2Run;
+    console.log('Second')
+    blName1.style.background= 'none'
+    blName3.style.background= 'none'
+    blName4.style.background= 'none'
+    blName5.style.background= 'none'
+    bl1runs.removeAttribute('id', 'bl1Run')
+    bl3runs.removeAttribute('id', 'bl3Run')
+    bl4runs.removeAttribute('id', 'bl4Run')
+    bl5runs.removeAttribute('id', 'bl5Run')
+})
+
+// Bowler-3
+let bl3RunPlus1;
+blName3.addEventListener('click', function(){
+    blName3.style.background= 'grey'
+    bl3runs.setAttribute('id', 'bl3Run')
+    let bl3Run = document.getElementById('bl3Run')
+    bl3RunPlus1= bl3Run;
+    console.log('Third')
+    blName1.style.background= 'none'
+    blName2.style.background= 'none'
+    blName4.style.background= 'none'
+    blName5.style.background= 'none'
+    bl1runs.removeAttribute('id', 'bl1Run')
+    bl2runs.removeAttribute('id', 'bl2Run')
+    bl4runs.removeAttribute('id', 'bl4Run')
+    bl5runs.removeAttribute('id', 'bl5Run')
+})
+
+// Bowler-04
+let bl4RunPlus1;
+blName4.addEventListener('click', function(){
+    blName4.style.background= 'grey'
+    bl4runs.setAttribute('id', 'bl4Run')
+    let bl4Run = document.getElementById('bl4Run')
+    bl4RunPlus1= bl4Run;
+    console.log('Fourth')
+    blName1.style.background= 'none'
+    blName2.style.background= 'none'
+    blName3.style.background= 'none'
+    blName5.style.background= 'none'
+    bl1runs.removeAttribute('id', 'bl1Run')
+    bl2runs.removeAttribute('id', 'bl2Run')
+    bl3runs.removeAttribute('id', 'bl3Run')
+    bl5runs.removeAttribute('id', 'bl5Run')
+})
+
+
+// Bowler-05
+let bl5RunPlus1;
+blName5.addEventListener('click', function(){
+    blName5.style.background= 'grey'
+    bl5runs.setAttribute('id', 'bl5Run')
+    let bl5Run = document.getElementById('bl5Run')
+    bl5RunPlus1= bl5Run;
+    console.log('Fifth')
+    blName1.style.background= 'none'
+    blName2.style.background= 'none'
+    blName3.style.background= 'none'
+    blName4.style.background= 'none'
+    bl1runs.removeAttribute('id', 'bl1Run')
+    bl2runs.removeAttribute('id', 'bl2Run')
+    bl3runs.removeAttribute('id', 'bl3Run')
+    bl4runs.removeAttribute('id', 'bl4Run')
+})
+/*================================================================================================================
+                #blName1 and bowlers run End
+==================================================================================================================*/ 
+// blName1 and bowlers run End
+
 let bl2OverCounter= 0;
 bl2OverPlus.addEventListener('click',function(){
    if(bl2OverCounter>=0){
@@ -2756,30 +3349,6 @@ bl2OverMinus.addEventListener('click',function(){
 })
 
 let bl2RunC = 0;
-bl2RunPlus.addEventListener('click',function(){
-   if(bl2RunC>=0){
-    bl2RunC++;
-    bl2runs.innerHTML= bl2RunC;
-   }
-})
-bl2RunMinus.addEventListener('click',function(){
-   if(bl2RunC>0){
-    bl2RunC--;
-    bl2runs.innerHTML= bl2RunC;
-   }
-})
-bl2Six.addEventListener('click',function(){
-    if(bl2RunC>=0){
-     bl2RunC+=6;
-     bl2runs.innerHTML= bl2RunC;
-    }
- })
-bl2Four.addEventListener('click',function(){
-    if(bl2RunC>=0){
-     bl2RunC+=4;
-     bl2runs.innerHTML= bl2RunC;
-    }
- })
 
  let bl2WicketC = 0;
 
@@ -2900,7 +3469,7 @@ bltn4.addEventListener('click',function(){
     else if(blwer4.value.length<3){
         err4.innerHTML='Bowler name at least 3 charactar long.'
     }else{
-        bl4.innerHTML= blwer3.value; 
+        bl4.innerHTML= blwer4.value; 
         blName4.style.display= 'block' 
         err4.innerHTML= ''
         blwer4.style.display= 'none' 
