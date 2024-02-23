@@ -5067,6 +5067,8 @@ p11BallMinus.addEventListener('click',function(){
     }
 })
 
+
+
 // BallPlus Minus Button #End
 
 // Batter namae portion #Start
@@ -5926,3 +5928,11 @@ bl8Wicket2.addEventListener('click',function(){
 /*=========================================================
             #Bwler part end
 =========================================================*/
+
+let lastBallMinus = document.querySelector('.lastBallMinus')
+
+lastBallMinus.addEventListener('click',function(){
+    if(lastTen.firstChild){
+        lastTen.removeChild(lastTen.firstChild)
+    }
+})
