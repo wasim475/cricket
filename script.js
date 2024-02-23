@@ -5262,6 +5262,15 @@ bltn2.addEventListener('click',function(){
                 #blName1 and bowlers run start
 ==================================================================================================================*/ 
 // Bowler-01
+let p1Buttons = document.querySelector('.p1Buttons')
+let p2Buttons = document.querySelector('.p2Buttons')
+let p3Buttons = document.querySelector('.p3Buttons')
+let p4Buttons = document.querySelector('.p4Buttons')
+let p5Buttons = document.querySelector('.p5Buttons')
+let p6Buttons = document.querySelector('.p6Buttons')
+let p7Buttons = document.querySelector('.p7Buttons')
+let p8Buttons = document.querySelector('.p8Buttons')
+
 let bl1RunPlus1;
 blName1.addEventListener('click', function(){
     blName1.style.background= '#9457EB33'
@@ -5283,6 +5292,15 @@ blName1.addEventListener('click', function(){
     bl7runs.removeAttribute('id', 'bl7Run')
     blName8.style.background= 'none'
     bl8runs.removeAttribute('id', 'bl8Run')
+    // bollwers buttons
+    p1Buttons.style.display = 'inline'
+    p2Buttons.style.display = 'none'
+    p3Buttons.style.display = 'none'
+    p4Buttons.style.display = 'none'
+    p5Buttons.style.display = 'none'
+    p6Buttons.style.display = 'none'
+    p7Buttons.style.display = 'none'
+    p8Buttons.style.display = 'none'
 })
 
 // Bowler-02
@@ -5307,6 +5325,15 @@ blName2.addEventListener('click', function(){
     bl7runs.removeAttribute('id', 'bl7Run')
     blName8.style.background= 'none'
     bl8runs.removeAttribute('id', 'bl8Run')
+     // bollwers buttons
+     p1Buttons.style.display = 'none'
+     p2Buttons.style.display = 'inline'
+     p3Buttons.style.display = 'none'
+     p4Buttons.style.display = 'none'
+     p5Buttons.style.display = 'none'
+     p6Buttons.style.display = 'none'
+     p7Buttons.style.display = 'none'
+     p8Buttons.style.display = 'none'
 })
 
 // Bowler-3
@@ -5331,6 +5358,15 @@ blName3.addEventListener('click', function(){
     bl7runs.removeAttribute('id', 'bl7Run')
     blName8.style.background= 'none'
     bl8runs.removeAttribute('id', 'bl8Run')
+     // bollwers buttons
+     p1Buttons.style.display = 'none'
+     p2Buttons.style.display = 'none'
+     p3Buttons.style.display = 'inline'
+     p4Buttons.style.display = 'none'
+     p5Buttons.style.display = 'none'
+     p6Buttons.style.display = 'none'
+     p7Buttons.style.display = 'none'
+     p8Buttons.style.display = 'none'
 })
 
 // Bowler-04
@@ -5355,6 +5391,15 @@ blName4.addEventListener('click', function(){
     bl7runs.removeAttribute('id', 'bl7Run')
     blName8.style.background= 'none'
     bl8runs.removeAttribute('id', 'bl8Run')
+     // bollwers buttons
+     p1Buttons.style.display = 'none'
+     p2Buttons.style.display = 'none'
+     p3Buttons.style.display = 'none'
+     p4Buttons.style.display = 'inline'
+     p5Buttons.style.display = 'none'
+     p6Buttons.style.display = 'none'
+     p7Buttons.style.display = 'none'
+     p8Buttons.style.display = 'none'
 })
 
 
@@ -5380,6 +5425,15 @@ blName5.addEventListener('click', function(){
     bl7runs.removeAttribute('id', 'bl7Run')
     blName8.style.background= 'none'
     bl8runs.removeAttribute('id', 'bl8Run')
+     // bollwers buttons
+     p1Buttons.style.display = 'none'
+     p2Buttons.style.display = 'none'
+     p3Buttons.style.display = 'none'
+     p4Buttons.style.display = 'none'
+     p5Buttons.style.display = 'inline'
+     p6Buttons.style.display = 'none'
+     p7Buttons.style.display = 'none'
+     p8Buttons.style.display = 'none'
 })
 // Bowler-06
 let bl6RunPlus1;
@@ -5403,6 +5457,15 @@ blName6.addEventListener('click', function(){
     bl7runs.removeAttribute('id', 'bl7Run')
     blName8.style.background= 'none'
     bl8runs.removeAttribute('id', 'bl8Run')
+     // bollwers buttons
+     p1Buttons.style.display = 'none'
+     p2Buttons.style.display = 'none'
+     p3Buttons.style.display = 'none'
+     p4Buttons.style.display = 'none'
+     p5Buttons.style.display = 'none'
+     p6Buttons.style.display = 'inline'
+     p7Buttons.style.display = 'none'
+     p8Buttons.style.display = 'none'
 })
 // Bowler-07
 let bl7RunPlus1;
@@ -5426,6 +5489,15 @@ blName7.addEventListener('click', function(){
     bl6runs.removeAttribute('id', 'bl6Run')
     blName8.style.background= 'none'
     bl8runs.removeAttribute('id', 'bl8Run')
+     // bollwers buttons
+     p1Buttons.style.display = 'none'
+     p2Buttons.style.display = 'none'
+     p3Buttons.style.display = 'none'
+     p4Buttons.style.display = 'none'
+     p5Buttons.style.display = 'none'
+     p6Buttons.style.display = 'none'
+     p7Buttons.style.display = 'inline'
+     p8Buttons.style.display = 'none'
 })
 // Bowler-08
 let bl8RunPlus1;
@@ -5449,11 +5521,22 @@ blName8.addEventListener('click', function(){
     bl5runs.removeAttribute('id', 'bl5Run')
     bl6runs.removeAttribute('id', 'bl6Run')
     bl7runs.removeAttribute('id', 'bl7Run')
+     // bollwers buttons
+     p1Buttons.style.display = 'none'
+     p2Buttons.style.display = 'none'
+     p3Buttons.style.display = 'none'
+     p4Buttons.style.display = 'none'
+     p5Buttons.style.display = 'none'
+     p6Buttons.style.display = 'none'
+     p7Buttons.style.display = 'none'
+     p8Buttons.style.display = 'inline'
 })
 /*================================================================================================================
                 #blName1 and bowlers run End
 ==================================================================================================================*/ 
 // blName1 and bowlers run End
+
+
 
 let bl2OverCounter= 0;
 bl2OverPlus.addEventListener('click',function(){
