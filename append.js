@@ -20,3 +20,9 @@ NoBall.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
 })
+
+
+
+if(lastTen.firstChild){
+    lastTen.removeChild(lastTen.firstChild)
+}
