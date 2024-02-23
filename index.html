@@ -20,7 +20,7 @@
 <body style="font-family: manrope;">
    <header class="text-center">
     <div class="mb-3">
-      <h1 class="text-4xl text-center font-extrabold text-red-500 mb-3">ScoreCard</h1>
+      <h1 class="text-2xl text-center font-extrabold text-red-500 mb-3">ScoreCard</h1>
       <h2 class="text-center"> <span class="team1 font-semibold text-2xl">Team1 </span> <span class="text-red-500"> VS </span> <span class="team2 font-semibold text-2xl"> Team2</span> </h2>
     </div>
      <!-- inputs -->
@@ -80,11 +80,15 @@
         <button title="It's work only for overs"  class="totalOverMinus ml-1 text-white btn btn-xs bg-red-500 px-3">-Ov</button> 
 
       </span> </p>
+
+        <p class="inline font-bold text-xs py-3">
+            last balls: <p id="lastTen" class="overflow-hidden w-3/4 h-7 font-bold text-xs py-3 inline"></p>
+        </p>
       
 <!-- ==========================================================================================
             #Extra field Start
 ============================================================================================== -->
-<button class="extraBtn btn mt-5 bg-cyan-700 text-white font-extrabold" onclick="my_modal_5.showModal()">Extra Runs
+<button class="extraBtn btn mt-2 bg-cyan-700 text-white font-extrabold" onclick="my_modal_5.showModal()">Extra Runs
   <i class="extraIcon text-white fa-solid fa-hand-pointer fa-beat"></i>
 </button>
 <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
@@ -532,10 +536,8 @@
                           <span class="bl1 mr-7 font-bold"></span> Over:
                           <span class="bl1over text-lg font-extrabold text-blue-500 mr-2">0</span> Runs:
                           <span class="bl1runs text-lg font-extrabold text-green-500 mr-2">0</span>Wicket:
-                          <span class="bl1Wicket text-lg font-extrabold text-red-500">0</span>
-                          
+                          <span class="bl1Wicket text-lg font-extrabold text-red-500">0</span>                          
                           <br>
-                          
                           <button class="bl1OverPlus btn btn-xs text-white bg-blue-500 px-4">Ov+</button>  
                           <button class="bl1RunPlus btn btn-xs text-white bg-violet-500 px-4">R+</button>  
                           <button class="bl1RunMinus btn btn-xs text-white bg-red-500 px-4">R-</button>   
