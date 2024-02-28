@@ -6171,9 +6171,20 @@ bl8Wicket2.addEventListener('click',function(){
 =========================================================*/
 
 let lastBallMinus = document.querySelector('.lastBallMinus')
+let plusSign = document.querySelector('.plusSign')
 
 lastBallMinus.addEventListener('click',function(){
     if(lastTen.firstChild){
         lastTen.removeChild(lastTen.firstChild)
+    }
+})
+plusSign.addEventListener('click',function(){
+    let sp = document.createElement('span')
+    sp.innerHTML = '+'
+    if(lastTen.firstChild){
+        lastTen.insertBefore(sp,lastTen.firstChild)
+    }else{
+        
+        lastTen.appendChild(sp)
     }
 })
