@@ -21,6 +21,19 @@ NoBall.addEventListener('click',function(){
     }
 })
 
+bo.addEventListener('click',function(){
+    let sp = document.createElement('span')
+    sp.innerHTML = '| '
+    sp.style.fontSize = 'bold'
+    sp.style.color = 'red'
+    if(lastTen.firstChild){
+        lastTen.insertBefore(sp,lastTen.firstChild)
+    }else{
+        
+        lastTen.appendChild(sp)
+    }
+})
+
 
 
 if(lastTen.firstChild){

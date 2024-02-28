@@ -1002,6 +1002,19 @@ totalOverPlus.addEventListener('click',function(){
     if(overCounter>=0 && overCounter<overLimit.value){
         overCounter++;
         totalOvar.innerHTML = overCounter;
+        let sp = document.createElement('span')
+        sp.innerHTML = '| '
+        sp.style.fontWeight = 'bolder'
+        sp.style.fontSize = '16px'
+        sp.style.color = 'red'
+        if(lastTen.firstChild){
+            lastTen.insertBefore(sp,lastTen.firstChild)
+        }else{
+            
+            lastTen.appendChild(sp)
+        }
+
+        
      
     }else{
       
@@ -5190,6 +5203,20 @@ bl1OverPlus.addEventListener('click',function(){
     bl1over.innerHTML= bl1OverCounter;
     overCounter++;
     totalOvar.innerHTML = overCounter;
+
+    let sp = document.createElement('span')
+    sp.innerHTML = '| '
+    sp.style.fontWeight = 'bolder'
+    sp.style.fontSize = '16px'
+    sp.style.color = 'red'
+    if(lastTen.firstChild){
+        lastTen.insertBefore(sp,lastTen.firstChild)
+    }else{
+        
+        lastTen.appendChild(sp)
+    }
+
+
    }
 })
 bl1OverMinus.addEventListener('click',function(){
@@ -5546,6 +5573,18 @@ bl2OverPlus.addEventListener('click',function(){
     // don't touc2
     overCounter++;
     totalOvar.innerHTML = overCounter;
+
+    let sp = document.createElement('span')
+    sp.innerHTML = '| '
+    sp.style.fontWeight = 'bolder'
+    sp.style.fontSize = '16px'
+    sp.style.color = 'red'
+    if(lastTen.firstChild){
+        lastTen.insertBefore(sp,lastTen.firstChild)
+    }else{
+        
+        lastTen.appendChild(sp)
+    }
    }
 })
 bl2OverMinus.addEventListener('click',function(){
@@ -5624,6 +5663,19 @@ bl3OverPlus.addEventListener('click',function(){
     // don't touc2
     overCounter++;
     totalOvar.innerHTML = overCounter;
+
+    let sp = document.createElement('span')
+    sp.innerHTML = '| '
+    sp.style.fontWeight = 'bolder'
+    sp.style.fontSize = '16px'
+    sp.style.color = 'red'
+    if(lastTen.firstChild){
+        lastTen.insertBefore(sp,lastTen.firstChild)
+    }else{
+        
+        lastTen.appendChild(sp)
+    }
+
    }
 })
 bl3OverMinus.addEventListener('click',function(){
@@ -5701,6 +5753,19 @@ bl4OverPlus.addEventListener('click',function(){
     // don't touc2
     overCounter++;
     totalOvar.innerHTML = overCounter;
+
+    let sp = document.createElement('span')
+    sp.innerHTML = '| '
+    sp.style.fontWeight = 'bolder'
+    sp.style.fontSize = '16px'
+    sp.style.color = 'red'
+    if(lastTen.firstChild){
+        lastTen.insertBefore(sp,lastTen.firstChild)
+    }else{
+        
+        lastTen.appendChild(sp)
+    }
+
    }
 })
 bl4OverMinus.addEventListener('click',function(){
@@ -5778,6 +5843,20 @@ bl5OverPlus.addEventListener('click',function(){
      // don't touc2
      overCounter++;
      totalOvar.innerHTML = overCounter;
+
+     let sp = document.createElement('span')
+     sp.innerHTML = '| '
+     sp.style.fontWeight = 'bolder'
+     sp.style.fontSize = '16px'
+     sp.style.color = 'red'
+     if(lastTen.firstChild){
+         lastTen.insertBefore(sp,lastTen.firstChild)
+     }else{
+         
+         lastTen.appendChild(sp)
+     }
+
+
     }
  })
 bl5OverMinus.addEventListener('click',function(){
@@ -5855,6 +5934,20 @@ bl6OverPlus.addEventListener('click',function(){
      // don't touc2
      overCounter++;
      totalOvar.innerHTML = overCounter;
+
+     let sp = document.createElement('span')
+     sp.innerHTML = '| '
+     sp.style.fontWeight = 'bolder'
+     sp.style.fontSize = '16px'
+     sp.style.color = 'red'
+     if(lastTen.firstChild){
+         lastTen.insertBefore(sp,lastTen.firstChild)
+     }else{
+         
+         lastTen.appendChild(sp)
+     }
+
+
     }
  })
 bl6OverMinus.addEventListener('click',function(){
@@ -5932,6 +6025,20 @@ bl7OverPlus.addEventListener('click',function(){
      // don't touc2
      overCounter++;
      totalOvar.innerHTML = overCounter;
+
+     let sp = document.createElement('span')
+     sp.innerHTML = '| '
+     sp.style.fontWeight = 'bolder'
+     sp.style.fontSize = '16px'
+     sp.style.color = 'red'
+     if(lastTen.firstChild){
+         lastTen.insertBefore(sp,lastTen.firstChild)
+     }else{
+         
+         lastTen.appendChild(sp)
+     }
+
+
     }
  })
 bl7OverMinus.addEventListener('click',function(){
@@ -6007,6 +6114,20 @@ bl8OverPlus.addEventListener('click',function(){
      // don't touc2
      overCounter++;
      totalOvar.innerHTML = overCounter;
+
+     let sp = document.createElement('span')
+     sp.innerHTML = '| '
+     sp.style.fontWeight = 'bolder'
+     sp.style.fontSize = '16px'
+     sp.style.color = 'red'
+     if(lastTen.firstChild){
+         lastTen.insertBefore(sp,lastTen.firstChild)
+     }else{
+         
+         lastTen.appendChild(sp)
+     }
+
+
     }
  })
 bl8OverMinus.addEventListener('click',function(){

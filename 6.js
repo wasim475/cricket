@@ -1,19 +1,3 @@
-if(bl3runs.getAttribute('id')==='bl3Run'){
-    bl3RunC+=6;
-    bl3RunPlus1.innerHTML = bl3RunC;
-}  if(bl4runs.getAttribute('id')==='bl4Run'){
-    bl4RunC+=6;
-    bl4RunPlus1.innerHTML = bl4RunC;
-} if(bl5runs.getAttribute('id')==='bl5Run'){
-    bl5RunC+=6;
-    bl5RunPlus1.innerHTML = bl5RunC;
-} if(bl6runs.getAttribute('id')==='bl6Run'){
-    bl6RunC+=6;
-    bl6RunPlus1.innerHTML = bl6RunC;
-} if(bl7runs.getAttribute('id')==='bl7Run'){
-    bl7RunC+=6;
-    bl7RunPlus1.innerHTML = bl7RunC;
-}  if(bl8runs.getAttribute('id')==='bl8Run'){
-    bl8RunC+=6;
-    bl8RunPlus1.innerHTML = bl8RunC;
-}
+const nums = [1,2,3,4,5];
+let output = nums.filter(n => n%2);
+console.log(output);
