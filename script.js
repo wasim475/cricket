@@ -1218,6 +1218,7 @@ let bt11w = getId('bt11Wicker')
 
 // Out portion #tart
 p1Out.addEventListener('click',function(){
+    
     p1RunPlus.style.display = 'none'
     p1BallPlus.style.display = 'none'
     p1RunMinus.style.display = 'none'
@@ -1240,28 +1241,47 @@ p1Out.addEventListener('click',function(){
 
     if(bl1runs.getAttribute('id')==='bl1Run'){
         bt1w.innerHTML = blwer1.value;
+        bl1WicketC++
+        bl1Wicket.innerHTML = bl1WicketC
         ShowElement('bwp1')
-    } if(bl2runs.getAttribute('id')==='bl2Run'){
+    }else if(bl2runs.getAttribute('id')==='bl2Run'){
         bt1w.innerHTML = blwer2.value;
+        bl2WicketC++
+        bl2Wicket.innerHTML = bl2WicketC
         ShowElement('bwp1')
-    } if(bl3runs.getAttribute('id')==='bl3Run'){
+    }else if(bl3runs.getAttribute('id')==='bl3Run'){
         bt1w.innerHTML = blwer3.value;
+        bl3WicketC++
+        bl3Wicket.innerHTML = bl3WicketC
         ShowElement('bwp1')
-    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+    } else if(bl4runs.getAttribute('id')==='bl4Run'){
         bt1w.innerHTML = blwer4.value;
+        bl4WicketC++
+        bl4Wicket.innerHTML = bl4WicketC
         ShowElement('bwp1')
-    } if(bl5runs.getAttribute('id')==='bl5Run'){
+    }else if(bl5runs.getAttribute('id')==='bl5Run'){
         bt1w.innerHTML = blwer5.value;
+        bl5WicketC++
+        bl5Wicket.innerHTML = bl5WicketC
         ShowElement('bwp1')
-    } if(bl6runs.getAttribute('id')==='bl6Run'){
+    }else if(bl6runs.getAttribute('id')==='bl6Run'){
         bt1w.innerHTML = blwer6.value;
+        bl6WicketC++
+        bl6Wicket.innerHTML = bl6WicketC
         ShowElement('bwp1')
-    } if(bl7runs.getAttribute('id')==='bl7Run'){
+    }else if(bl7runs.getAttribute('id')==='bl7Run'){
         bt1w.innerHTML = blwer7.value;
+        bl7WicketC++
+        bl7Wicket.innerHTML = bl7WicketC
         ShowElement('bwp1')
-    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+    } else if(bl8runs.getAttribute('id')==='bl8Run'){
         bt1w.innerHTML = blwer8.value;
+        bl8WicketC++
+        bl8Wicket.innerHTML = bl8WicketC
         ShowElement('bwp1')
+    }else{
+        ShowElement('bwp1')
+        hideElement('bwtn1')
     }
 
     let sp = document.createElement('span')
@@ -1293,6 +1313,45 @@ bt1undo.addEventListener('click',function(){
     p1Sr.innerHTML = ((runC*100)/p1ballC).toFixed(1);
     hideElement('bwp1')
 
+    
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1WicketC--
+        bl1Wicket.innerHTML = bl1WicketC
+        
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2WicketC--
+        bl2Wicket.innerHTML = bl2WicketC
+      
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3WicketC--
+        bl3Wicket.innerHTML = b31WicketC
+      
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4WicketC--
+        bl4Wicket.innerHTML = bl4WicketC
+       
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5WicketC--
+            bl5Wicket.innerHTML = bl5Wick1etC
+       
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6WicketC--
+        bl6Wicket.innerHTML = bl6Wicke1tC
+       
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7WicketC--
+        bl7Wicket.innerHTML = bl7WicketC
+        
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8WicketC--
+        bl8Wicket.innerHTML = bl8WicketC
+       
+    }
+
+    
+        ShowElement('bwtn1')
+        hideElement('bwp1')
+    
 
     
     if(lastTen.firstChild){
@@ -1322,29 +1381,48 @@ p2Out.addEventListener('click',function(){
 // let bt2w = getId('bt2Wicker')
 if(bl1runs.getAttribute('id')==='bl1Run'){
     bt2w.innerHTML = blwer1.value;
+    bl1WicketC++
+        bl1Wicket.innerHTML = bl1WicketC
     ShowElement('bwp2')
     // bt2w.classList.remove('hidden')
 } if(bl2runs.getAttribute('id')==='bl2Run'){
     bt2w.innerHTML = blwer2.value;
+    bl2WicketC++
+        bl2Wicket.innerHTML = bl2WicketC
     ShowElement('bwp2')
 } if(bl3runs.getAttribute('id')==='bl3Run'){
     bt2w.innerHTML = blwer3.value;
+    bl3WicketC++
+        bl3Wicket.innerHTML = bl3WicketC
     ShowElement('bwp2')
 }  if(bl4runs.getAttribute('id')==='bl4Run'){
     bt2w.innerHTML = blwer4.value;
+    bl4WicketC++
+        bl4Wicket.innerHTML = bl4WicketC
     ShowElement('bwp2')
 } if(bl5runs.getAttribute('id')==='bl5Run'){
     bt2w.innerHTML = blwer5.value;
+    bl5WicketC++
+        bl5Wicket.innerHTML = bl5WicketC
     ShowElement('bwp2')
 } if(bl6runs.getAttribute('id')==='bl6Run'){
     bt2w.innerHTML = blwer6.value;
+    bl6WicketC++
+        bl6Wicket.innerHTML = bl6WicketC
     ShowElement('bwp2')
 } if(bl7runs.getAttribute('id')==='bl7Run'){
     bt2w.innerHTML = blwer7.value;
+    bl7WicketC++
+        bl7Wicket.innerHTML = bl7WicketC
     ShowElement('bwp2')
 }  if(bl8runs.getAttribute('id')==='bl8Run'){
     bt2w.innerHTML = blwer8.value;
+    bl8WicketC++
+        bl8Wicket.innerHTML = bl8WicketC
     ShowElement('bwp2')
+} else{
+    ShowElement('bwp2')
+    // hideElement('bwtn2')
 }
 
 
@@ -1377,6 +1455,42 @@ bt2undo.addEventListener('click',function(){
     p2Ball.innerHTML = p2ballC;
     p2Dots.innerHTML = p2DotsC;
     p2Sr.innerHTML = ((p2RunC*100)/p2ballC).toFixed(1);
+    ShowElement('bwtn2')
+    hideElement('bwp2')
+
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1WicketC--
+        bl1Wicket.innerHTML = bl1WicketC
+        
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2WicketC--
+        bl2Wicket.innerHTML = bl2WicketC
+      
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3WicketC--
+        bl3Wicket.innerHTML = b31WicketC
+      
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4WicketC--
+        bl4Wicket.innerHTML = bl4WicketC
+       
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5WicketC--
+            bl5Wicket.innerHTML = bl5Wick1etC
+       
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6WicketC--
+        bl6Wicket.innerHTML = bl6Wicke1tC
+       
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7WicketC--
+        bl7Wicket.innerHTML = bl7WicketC
+        
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8WicketC--
+        bl8Wicket.innerHTML = bl8WicketC
+       
+    }
     hideElement('bwp2')
     if(lastTen.firstChild){
         lastTen.removeChild(lastTen.firstChild)
@@ -1406,28 +1520,47 @@ p3Out.addEventListener('click',function(){
 
     if(bl1runs.getAttribute('id')==='bl1Run'){
         bt3w.innerHTML = blwer1.value;
+        bl1WicketC++
+        bl1Wicket.innerHTML = bl1WicketC
         ShowElement('bwp3')
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bt3w.innerHTML = blwer2.value;
+        bl2WicketC++
+        bl2Wicket.innerHTML = bl2WicketC
         ShowElement('bwp3')
     } if(bl3runs.getAttribute('id')==='bl3Run'){
         bt3w.innerHTML = blwer3.value;
+        bl3WicketC++
+        bl3Wicket.innerHTML = bl3WicketC
         ShowElement('bwp3')
     }  if(bl4runs.getAttribute('id')==='bl4Run'){
         bt3w.innerHTML = blwer4.value;
+        bl4WicketC++
+        bl4Wicket.innerHTML = bl4WicketC
         ShowElement('bwp3')
     } if(bl5runs.getAttribute('id')==='bl5Run'){
         bt3w.innerHTML = blwer5.value;
+        bl5WicketC++
+        bl5Wicket.innerHTML = bl5WicketC
         ShowElement('bwp3')
     } if(bl6runs.getAttribute('id')==='bl6Run'){
         bt3w.innerHTML = blwer6.value;
+        bl6WicketC++
+        bl6Wicket.innerHTML = bl6WicketC
         ShowElement('bwp3')
     } if(bl7runs.getAttribute('id')==='bl7Run'){
         bt3w.innerHTML = blwer7.value;
+        bl7WicketC++
+        bl7Wicket.innerHTML = bl7WicketC
         ShowElement('bwp3')
     }  if(bl8runs.getAttribute('id')==='bl8Run'){
         bt3w.innerHTML = blwer8.value;
+        bl8WicketC++
+        bl8Wicket.innerHTML = bl8WicketC
         ShowElement('bwp3')
+    } else{
+        ShowElement('bwp3')
+        // hideElement('bwtn3')
     }
 
 
@@ -1461,7 +1594,39 @@ bt3undo.addEventListener('click',function(){
     p3Sr.innerHTML = ((p3RunC*100)/p3ballC).toFixed(1);
     hideElement('bwp3')
 
-
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1WicketC--
+        bl1Wicket.innerHTML = bl1WicketC
+        
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2WicketC--
+        bl2Wicket.innerHTML = bl2WicketC
+      
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3WicketC--
+        bl3Wicket.innerHTML = b31WicketC
+      
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4WicketC--
+        bl4Wicket.innerHTML = bl4WicketC
+       
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5WicketC--
+            bl5Wicket.innerHTML = bl5Wick1etC
+       
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6WicketC--
+        bl6Wicket.innerHTML = bl6Wicke1tC
+       
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7WicketC--
+        bl7Wicket.innerHTML = bl7WicketC
+        
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8WicketC--
+        bl8Wicket.innerHTML = bl8WicketC
+       
+    }
 
     if(lastTen.firstChild){
         lastTen.removeChild(lastTen.firstChild)
@@ -1489,28 +1654,47 @@ p4Out.addEventListener('click',function(){
     
 if(bl1runs.getAttribute('id')==='bl1Run'){
     bt4w.innerHTML = blwer1.value;
+    bl1WicketC++
+        bl1Wicket.innerHTML = bl1WicketC
     ShowElement('bwp4')
 } if(bl2runs.getAttribute('id')==='bl2Run'){
     bt4w.innerHTML = blwer2.value;
+    bl2WicketC++
+        bl2Wicket.innerHTML = bl2WicketC
     ShowElement('bwp4')
 } if(bl3runs.getAttribute('id')==='bl3Run'){
     bt4w.innerHTML = blwer3.value;
+    bl3WicketC++
+        bl3Wicket.innerHTML = bl3WicketC
     ShowElement('bwp4')
 }  if(bl4runs.getAttribute('id')==='bl4Run'){
     bt4w.innerHTML = blwer4.value;
+    bl4WicketC++
+        bl4Wicket.innerHTML = bl4WicketC
     ShowElement('bwp4')
 } if(bl5runs.getAttribute('id')==='bl5Run'){
     bt4w.innerHTML = blwer5.value;
+    bl5WicketC++
+        bl5Wicket.innerHTML = bl5WicketC
     ShowElement('bwp4')
 } if(bl6runs.getAttribute('id')==='bl6Run'){
     bt4w.innerHTML = blwer6.value;
+    bl6WicketC++
+        bl6Wicket.innerHTML = bl6WicketC
     ShowElement('bwp4')
 } if(bl7runs.getAttribute('id')==='bl7Run'){
     bt4w.innerHTML = blwer7.value;
+    bl7WicketC++
+        bl7Wicket.innerHTML = bl7WicketC
     ShowElement('bwp4')
 }  if(bl8runs.getAttribute('id')==='bl8Run'){
     bt4w.innerHTML = blwer8.value;
+    bl8WicketC++
+    bl8Wicket.innerHTML = bl8WicketC
     ShowElement('bwp4')
+}else{
+    ShowElement('bwp4')
+    // hideElement('bwtn4')
 }
 
     let sp = document.createElement('span')
@@ -1540,6 +1724,40 @@ bt4undo.addEventListener('click',function(){
     p4Ball.innerHTML = p4ballC;
     p4Dots.innerHTML = p4DotsC;
     p4Sr.innerHTML = ((p4RunC*100)/p4ballC).toFixed(1);
+
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1WicketC--
+        bl1Wicket.innerHTML = bl1WicketC
+        
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2WicketC--
+        bl2Wicket.innerHTML = bl2WicketC
+      
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3WicketC--
+        bl3Wicket.innerHTML = b31WicketC
+      
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4WicketC--
+        bl4Wicket.innerHTML = bl4WicketC
+       
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5WicketC--
+            bl5Wicket.innerHTML = bl5Wick1etC
+       
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6WicketC--
+        bl6Wicket.innerHTML = bl6Wicke1tC
+       
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7WicketC--
+        bl7Wicket.innerHTML = bl7WicketC
+        
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8WicketC--
+        bl8Wicket.innerHTML = bl8WicketC
+       
+    }
     hideElement('bwp4')
     if(lastTen.firstChild){
         lastTen.removeChild(lastTen.firstChild)
@@ -1566,28 +1784,47 @@ p11Out.addEventListener('click',function(){
     
 if(bl1runs.getAttribute('id')==='bl1Run'){
     bt11w.innerHTML = blwer1.value;
+    bl1WicketC++
+        bl1Wicket.innerHTML = bl1WicketC
     ShowElement('bwp11')
 } if(bl2runs.getAttribute('id')==='bl2Run'){
     bt11w.innerHTML = blwer2.value;
+    bl2WicketC++
+        bl2Wicket.innerHTML = bl2WicketC
     ShowElement('bwp11')
 } if(bl3runs.getAttribute('id')==='bl3Run'){
     bt11w.innerHTML = blwer3.value;
+    bl3WicketC++
+        bl3Wicket.innerHTML = b31WicketC
     ShowElement('bwp11')
 }  if(bl4runs.getAttribute('id')==='bl4Run'){
     bt11w.innerHTML = blwer4.value;
+    bl4WicketC++
+        bl4Wicket.innerHTML = bl4WicketC
     ShowElement('bwp11')
 } if(bl5runs.getAttribute('id')==='bl5Run'){
     bt11w.innerHTML = blwer5.value;
+    bl5WicketC++
+        bl5Wicket.innerHTML = bl5Wick1etC
     ShowElement('bwp11')
 } if(bl6runs.getAttribute('id')==='bl6Run'){
     bt11w.innerHTML = blwer6.value;
+    bl6WicketC++
+        bl6Wicket.innerHTML = bl6Wicke1tC
     ShowElement('bwp11')
 } if(bl7runs.getAttribute('id')==='bl7Run'){
     bt11w.innerHTML = blwer7.value;
+    bl7WicketC++
+        bl7Wicket.innerHTML = bl7WicketC
     ShowElement('bwp11')
 }  if(bl8runs.getAttribute('id')==='bl8Run'){
     bt11w.innerHTML = blwer8.value;
+    bl8WicketC++
+    bl8Wicket.innerHTML = bl8WicketC
     ShowElement('bwp11')
+}else{
+    ShowElement('bwp11')
+    // hideElement('bwtn11')
 }
 
     let sp = document.createElement('span')
@@ -1617,6 +1854,40 @@ bt11undo.addEventListener('click',function(){
     p11Ball.innerHTML = p11ballC;
     p11Dots.innerHTML = p11DotsC;
     p11Sr.innerHTML = ((p11RunC*100)/p11ballC).toFixed(1);
+
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1WicketC--
+        bl1Wicket.innerHTML = bl1WicketC
+        
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2WicketC--
+        bl2Wicket.innerHTML = bl2WicketC
+      
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3WicketC--
+        bl3Wicket.innerHTML = b31WicketC
+      
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4WicketC--
+        bl4Wicket.innerHTML = bl4WicketC
+       
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5WicketC--
+            bl5Wicket.innerHTML = bl5Wick1etC
+       
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6WicketC--
+        bl6Wicket.innerHTML = bl6Wicke1tC
+       
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7WicketC--
+        bl7Wicket.innerHTML = bl7WicketC
+        
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8WicketC--
+        bl8Wicket.innerHTML = bl8WicketC
+       
+    }
     hideElement('bwp11')
     if(lastTen.firstChild){
         lastTen.removeChild(lastTen.firstChild)
@@ -1643,28 +1914,47 @@ p5Out.addEventListener('click',function(){
     
 if(bl1runs.getAttribute('id')==='bl1Run'){
     bt5w.innerHTML = blwer1.value;
+    bl1WicketC++
+    bl1Wicket.innerHTML = bl1WicketC
     ShowElement('bwp5')
 } if(bl2runs.getAttribute('id')==='bl2Run'){
     bt5w.innerHTML = blwer2.value;
+    bl2WicketC++
+    bl2Wicket.innerHTML = bl2WicketC
     ShowElement('bwp5')
 } if(bl3runs.getAttribute('id')==='bl3Run'){
     bt5w.innerHTML = blwer3.value;
+        bl3WicketC++
+    bl3Wicket.innerHTML = bl3WicketC
     ShowElement('bwp5')
 }  if(bl4runs.getAttribute('id')==='bl4Run'){
     bt5w.innerHTML = blwer4.value;
+        bl4WicketC++
+    bl4Wicket.innerHTML = bl4WicketC
     ShowElement('bwp5')
 } if(bl5runs.getAttribute('id')==='bl5Run'){
     bt5w.innerHTML = blwer5.value;
+        bl5WicketC++
+    bl5Wicket.innerHTML = bl5WicketC
     ShowElement('bwp5')
 } if(bl6runs.getAttribute('id')==='bl6Run'){
     bt5w.innerHTML = blwer6.value;
+        bl6WicketC++
+    bl6Wicket.innerHTML = bl6WicketC
     ShowElement('bwp5')
 } if(bl7runs.getAttribute('id')==='bl7Run'){
     bt5w.innerHTML = blwer7.value;
+        bl7WicketC++
+    bl7Wicket.innerHTML = bl7WicketC
     ShowElement('bwp5')
 }  if(bl8runs.getAttribute('id')==='bl8Run'){
     bt5w.innerHTML = blwer8.value;
+        bl8WicketC++
+    bl8Wicket.innerHTML = bl8WicketC
     ShowElement('bwp5')
+}else{
+    ShowElement('bwp5')
+    // hideElement('bwtn5')
 }
 
     let sp = document.createElement('span')
@@ -1695,6 +1985,39 @@ bt5undo.addEventListener('click',function(){
     p5Ball.innerHTML = p5ballC;
     p5Dots.innerHTML = p5DotsC;
     p5Sr.innerHTML = ((p5RunC*100)/p5ballC).toFixed(1);
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1WicketC--
+        bl1Wicket.innerHTML = bl1WicketC
+        
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2WicketC--
+        bl2Wicket.innerHTML = bl2WicketC
+      
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3WicketC--
+        bl3Wicket.innerHTML = b31WicketC
+      
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4WicketC--
+        bl4Wicket.innerHTML = bl4WicketC
+       
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5WicketC--
+            bl5Wicket.innerHTML = bl5Wick1etC
+       
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6WicketC--
+        bl6Wicket.innerHTML = bl6Wicke1tC
+       
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7WicketC--
+        bl7Wicket.innerHTML = bl7WicketC
+        
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8WicketC--
+        bl8Wicket.innerHTML = bl8WicketC
+       
+    }
     hideElement('bwp5')
     if(lastTen.firstChild){
         lastTen.removeChild(lastTen.firstChild)
@@ -1722,28 +2045,47 @@ p6Out.addEventListener('click',function(){
     
 if(bl1runs.getAttribute('id')==='bl1Run'){
     bt6w.innerHTML = blwer1.value;
+    bl1WicketC++
+    bl1Wicket.innerHTML = bl1WicketC
     ShowElement('bwp6')
 } if(bl2runs.getAttribute('id')==='bl2Run'){
     bt6w.innerHTML = blwer2.value;
+    bl2WicketC++
+    bl2Wicket.innerHTML = bl2WicketC
     ShowElement('bwp6')
 } if(bl3runs.getAttribute('id')==='bl3Run'){
     bt6w.innerHTML = blwer3.value;
+    bl3WicketC++
+    bl3Wicket.innerHTML = bl3WicketC
     ShowElement('bwp6')
 }  if(bl4runs.getAttribute('id')==='bl4Run'){
     bt6w.innerHTML = blwer4.value;
+    bl4WicketC++
+    bl4Wicket.innerHTML = bl4WicketC
     ShowElement('bwp6')
 } if(bl5runs.getAttribute('id')==='bl5Run'){
     bt6w.innerHTML = blwer5.value;
+    bl5WicketC++
+    bl5Wicket.innerHTML = bl5WicketC
     ShowElement('bwp6')
 } if(bl6runs.getAttribute('id')==='bl6Run'){
     bt6w.innerHTML = blwer6.value;
+    bl6WicketC++
+    bl6Wicket.innerHTML = bl6WicketC
     ShowElement('bwp6')
 } if(bl7runs.getAttribute('id')==='bl7Run'){
     bt6w.innerHTML = blwer7.value;
+    bl7WicketC++
+    bl7Wicket.innerHTML = bl7WicketC
     ShowElement('bwp6')
 }  if(bl8runs.getAttribute('id')==='bl8Run'){
     bt6w.innerHTML = blwer8.value;
+    bl8WicketC++
+    bl8Wicket.innerHTML = bl8WicketC
     ShowElement('bwp6')
+}else{
+    ShowElement('bwp6')
+    // hideElement('bwtn6')
 }
 
     let sp = document.createElement('span')
@@ -1774,6 +2116,40 @@ bt6undo.addEventListener('click',function(){
     p6Ball.innerHTML = p6ballC;
     p6Dots.innerHTML = p6DotsC;
     p6Sr.innerHTML = ((p6RunC*100)/p6ballC).toFixed(1);
+
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1WicketC--
+        bl1Wicket.innerHTML = bl1WicketC
+        
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2WicketC--
+        bl2Wicket.innerHTML = bl2WicketC
+      
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3WicketC--
+        bl3Wicket.innerHTML = b31WicketC
+      
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4WicketC--
+        bl4Wicket.innerHTML = bl4WicketC
+       
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5WicketC--
+            bl5Wicket.innerHTML = bl5Wick1etC
+       
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6WicketC--
+        bl6Wicket.innerHTML = bl6Wicke1tC
+       
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7WicketC--
+        bl7Wicket.innerHTML = bl7WicketC
+        
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8WicketC--
+        bl8Wicket.innerHTML = bl8WicketC
+       
+    }
     hideElement('bwp6')
     if(lastTen.firstChild){
         lastTen.removeChild(lastTen.firstChild)
@@ -1801,28 +2177,47 @@ p7Out.addEventListener('click',function(){
     
 if(bl1runs.getAttribute('id')==='bl1Run'){
     bt7w.innerHTML = blwer1.value;
+    bl1WicketC++
+    bl1Wicket.innerHTML = bl1WicketC
     ShowElement('bwp7')
 } if(bl2runs.getAttribute('id')==='bl2Run'){
     bt7w.innerHTML = blwer2.value;
+    bl2WicketC++
+    bl2Wicket.innerHTML = bl2WicketC
     ShowElement('bwp7')
 } if(bl3runs.getAttribute('id')==='bl3Run'){
     bt7w.innerHTML = blwer3.value;
+    bl3WicketC++
+    bl3Wicket.innerHTML = bl3WicketC
     ShowElement('bwp7')
 }  if(bl4runs.getAttribute('id')==='bl4Run'){
     bt7w.innerHTML = blwer4.value;
+    bl4WicketC++
+    bl4Wicket.innerHTML = bl4WicketC
     ShowElement('bwp7')
 } if(bl5runs.getAttribute('id')==='bl5Run'){
     bt7w.innerHTML = blwer5.value;
+    bl5WicketC++
+    bl5Wicket.innerHTML = bl5WicketC
     ShowElement('bwp7')
 } if(bl6runs.getAttribute('id')==='bl6Run'){
     bt7w.innerHTML = blwer6.value;
+    bl6WicketC++
+    bl6Wicket.innerHTML = bl6WicketC
     ShowElement('bwp7')
 } if(bl7runs.getAttribute('id')==='bl7Run'){
     bt7w.innerHTML = blwer7.value;
+    bl7WicketC++
+    bl7Wicket.innerHTML = bl7WicketC
     ShowElement('bwp7')
 }  if(bl8runs.getAttribute('id')==='bl8Run'){
     bt7w.innerHTML = blwer8.value;
+    bl8WicketC++
+    bl8Wicket.innerHTML = bl8WicketC
     ShowElement('bwp7')
+}else{
+    ShowElement('bwp7')
+    // hideElement('bwtn7')
 }
 
     let sp = document.createElement('span')
@@ -1853,6 +2248,40 @@ bt7undo.addEventListener('click',function(){
     p7Ball.innerHTML = p7ballC;
     p7Dots.innerHTML = p7DotsC;
     p7Sr.innerHTML = ((p7RunC*100)/p7ballC).toFixed(1);
+
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1WicketC--
+        bl1Wicket.innerHTML = bl1WicketC
+        
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2WicketC--
+        bl2Wicket.innerHTML = bl2WicketC
+      
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3WicketC--
+        bl3Wicket.innerHTML = b31WicketC
+      
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4WicketC--
+        bl4Wicket.innerHTML = bl4WicketC
+       
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5WicketC--
+            bl5Wicket.innerHTML = bl5Wick1etC
+       
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6WicketC--
+        bl6Wicket.innerHTML = bl6Wicke1tC
+       
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7WicketC--
+        bl7Wicket.innerHTML = bl7WicketC
+        
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8WicketC--
+        bl8Wicket.innerHTML = bl8WicketC
+       
+    }
     hideElement('bwp7')
     if(lastTen.firstChild){
         lastTen.removeChild(lastTen.firstChild)
@@ -1880,28 +2309,47 @@ p8Out.addEventListener('click',function(){
     
 if(bl1runs.getAttribute('id')==='bl1Run'){
     bt8w.innerHTML = blwer1.value;
+    bl1WicketC++
+    bl1Wicket.innerHTML = bl1WicketC
     ShowElement('bwp8')
 } if(bl2runs.getAttribute('id')==='bl2Run'){
     bt8w.innerHTML = blwer2.value;
+    bl2WicketC++
+    bl2Wicket.innerHTML = bl2WicketC
     ShowElement('bwp8')
 } if(bl3runs.getAttribute('id')==='bl3Run'){
     bt8w.innerHTML = blwer3.value;
+    bl3WicketC++
+    bl3Wicket.innerHTML = bl3WicketC
     ShowElement('bwp8')
 }  if(bl4runs.getAttribute('id')==='bl4Run'){
     bt8w.innerHTML = blwer4.value;
+    bl4WicketC++
+    bl4Wicket.innerHTML = bl4WicketC
     ShowElement('bwp8')
 } if(bl5runs.getAttribute('id')==='bl5Run'){
     bt8w.innerHTML = blwer5.value;
+    bl5WicketC++
+    bl5Wicket.innerHTML = bl5WicketC
     ShowElement('bwp8')
 } if(bl6runs.getAttribute('id')==='bl6Run'){
     bt8w.innerHTML = blwer6.value;
+    bl6WicketC++
+    bl6Wicket.innerHTML = bl6WicketC
     ShowElement('bwp8')
 } if(bl7runs.getAttribute('id')==='bl7Run'){
     bt8w.innerHTML = blwer7.value;
+    bl7WicketC++
+    bl7Wicket.innerHTML = bl7WicketC
     ShowElement('bwp8')
 }  if(bl8runs.getAttribute('id')==='bl8Run'){
     bt8w.innerHTML = blwer8.value;
+    bl8WicketC++
+    bl8Wicket.innerHTML = bl8WicketC
     ShowElement('bwp8')
+}else{
+    ShowElement('bwp2')
+    // hideElement('bwtn2')
 }
 
     let sp = document.createElement('span')
@@ -1932,6 +2380,40 @@ bt8undo.addEventListener('click',function(){
     p8Ball.innerHTML = p8ballC;
     p8Dots.innerHTML = p8DotsC;
     p8Sr.innerHTML = ((p8RunC*100)/p8ballC).toFixed(1);
+
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1WicketC--
+        bl1Wicket.innerHTML = bl1WicketC
+        
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2WicketC--
+        bl2Wicket.innerHTML = bl2WicketC
+      
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3WicketC--
+        bl3Wicket.innerHTML = b31WicketC
+      
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4WicketC--
+        bl4Wicket.innerHTML = bl4WicketC
+       
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5WicketC--
+            bl5Wicket.innerHTML = bl5Wick1etC
+       
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6WicketC--
+        bl6Wicket.innerHTML = bl6Wicke1tC
+       
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7WicketC--
+        bl7Wicket.innerHTML = bl7WicketC
+        
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8WicketC--
+        bl8Wicket.innerHTML = bl8WicketC
+       
+    }
     hideElement('bwp8')
     if(lastTen.firstChild){
         lastTen.removeChild(lastTen.firstChild)
@@ -1958,56 +2440,51 @@ p9Out.addEventListener('click',function(){
     
 if(bl1runs.getAttribute('id')==='bl1Run'){
     bt9w.innerHTML = blwer1.value;
+    bl1WicketC++
+    bl1Wicket.innerHTML = bl1WicketC
     ShowElement('bwp9')
 } if(bl2runs.getAttribute('id')==='bl2Run'){
     bt9w.innerHTML = blwer2.value;
+    bl2WicketC++
+    bl2Wicket.innerHTML = bl2WicketC
     ShowElement('bwp9')
 } if(bl3runs.getAttribute('id')==='bl3Run'){
     bt9w.innerHTML = blwer3.value;
+    bl3WicketC++
+    bl3Wicket.innerHTML = bl3WicketC
     ShowElement('bwp9')
 }  if(bl4runs.getAttribute('id')==='bl4Run'){
     bt9w.innerHTML = blwer4.value;
+    bl4WicketC++
+    bl4Wicket.innerHTML = bl4WicketC
     ShowElement('bwp9')
 } if(bl5runs.getAttribute('id')==='bl5Run'){
     bt9w.innerHTML = blwer5.value;
+    bl5WicketC++
+    bl5Wicket.innerHTML = bl5WicketC
     ShowElement('bwp9')
 } if(bl6runs.getAttribute('id')==='bl6Run'){
     bt9w.innerHTML = blwer6.value;
+    bl6WicketC++
+    bl6Wicket.innerHTML = bl6WicketC
     ShowElement('bwp9')
 } if(bl7runs.getAttribute('id')==='bl7Run'){
     bt9w.innerHTML = blwer7.value;
+    bl7WicketC++
+    bl7Wicket.innerHTML = bl7WicketC
     ShowElement('bwp9')
 }  if(bl8runs.getAttribute('id')==='bl8Run'){
     bt9w.innerHTML = blwer8.value;
+    bl8WicketC++
+    bl8Wicket.innerHTML = bl8WicketC
     ShowElement('bwp9')
+}else{
+    ShowElement('bwp2')
+    // hideElement('bwtn2')
 }
 
     
-if(bl1runs.getAttribute('id')==='bl1Run'){
-    bt8w.innerHTML = blwer1.value;
-    ShowElement('bwp9')
-} if(bl2runs.getAttribute('id')==='bl2Run'){
-    bt8w.innerHTML = blwer2.value;
-    ShowElement('bwp9')
-} if(bl3runs.getAttribute('id')==='bl3Run'){
-    bt8w.innerHTML = blwer3.value;
-    ShowElement('bwp9')
-}  if(bl4runs.getAttribute('id')==='bl4Run'){
-    bt8w.innerHTML = blwer4.value;
-    ShowElement('bwp9')
-} if(bl5runs.getAttribute('id')==='bl5Run'){
-    bt8w.innerHTML = blwer5.value;
-    ShowElement('bwp9')
-} if(bl6runs.getAttribute('id')==='bl6Run'){
-    bt8w.innerHTML = blwer6.value;
-    ShowElement('bwp9')
-} if(bl7runs.getAttribute('id')==='bl7Run'){
-    bt8w.innerHTML = blwer7.value;
-    ShowElement('bwp9')
-}  if(bl8runs.getAttribute('id')==='bl8Run'){
-    bt8w.innerHTML = blwer8.value;
-    ShowElement('bwp9')
-}
+
 
     let sp = document.createElement('span')
     sp.innerHTML = 'w '
@@ -2038,6 +2515,40 @@ bt9undo.addEventListener('click',function(){
     p9Ball.innerHTML = p9ballC;
     p9Dots.innerHTML = p9DotsC;
     p9Sr.innerHTML = ((p9RunC*100)/p9ballC).toFixed(1);
+
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1WicketC--
+        bl1Wicket.innerHTML = bl1WicketC
+        
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2WicketC--
+        bl2Wicket.innerHTML = bl2WicketC
+      
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3WicketC--
+        bl3Wicket.innerHTML = b31WicketC
+      
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4WicketC--
+        bl4Wicket.innerHTML = bl4WicketC
+       
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5WicketC--
+            bl5Wicket.innerHTML = bl5Wick1etC
+       
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6WicketC--
+        bl6Wicket.innerHTML = bl6Wicke1tC
+       
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7WicketC--
+        bl7Wicket.innerHTML = bl7WicketC
+        
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8WicketC--
+        bl8Wicket.innerHTML = bl8WicketC
+       
+    }
     hideElement('bwp9')
     if(lastTen.firstChild){
         lastTen.removeChild(lastTen.firstChild)
@@ -2065,30 +2576,48 @@ p10Out.addEventListener('click',function(){
 
     if(bl1runs.getAttribute('id')==='bl1Run'){
         bt10w.innerHTML = blwer1.value;
+        bl1WicketC++
+    bl1Wicket.innerHTML = bl1WicketC
         ShowElement('bwp10')
     } if(bl2runs.getAttribute('id')==='bl2Run'){
         bt10w.innerHTML = blwer2.value;
         ShowElement('bwp10')
+        bl2WicketC++
+    bl2Wicket.innerHTML = bl2WicketC
     } if(bl3runs.getAttribute('id')==='bl3Run'){
         bt10w.innerHTML = blwer3.value;
+        bl3WicketC++
+    bl3Wicket.innerHTML = bl3WicketC
         ShowElement('bwp10')
     }  if(bl4runs.getAttribute('id')==='bl4Run'){
         bt10w.innerHTML = blwer4.value;
+        bl4WicketC++
+    bl4Wicket.innerHTML = bl4WicketC
         ShowElement('bwp10')
     } if(bl5runs.getAttribute('id')==='bl5Run'){
         bt10w.innerHTML = blwer5.value;
+        bl5WicketC++
+    bl5Wicket.innerHTML = bl5WicketC
         ShowElement('bwp10')
     } if(bl6runs.getAttribute('id')==='bl6Run'){
         bt10w.innerHTML = blwer6.value;
+        bl6WicketC++
+    bl6Wicket.innerHTML = bl6WicketC
         ShowElement('bwp10')
     } if(bl7runs.getAttribute('id')==='bl7Run'){
         bt10w.innerHTML = blwer7.value;
+        bl7WicketC++
+    bl7Wicket.innerHTML = bl7WicketC
         ShowElement('bwp10')
     }  if(bl8runs.getAttribute('id')==='bl8Run'){
         bt10w.innerHTML = blwer8.value;
+        bl8WicketC++
+        bl8Wicket.innerHTML = bl8WicketC
         ShowElement('bwp10')
+    }else{
+        ShowElement('bwp10')
+        // hideElement('bwtn10')
     }
-
     let sp = document.createElement('span')
     sp.innerHTML = 'w '
     if(lastTen.firstChild){
@@ -2116,6 +2645,40 @@ bt10undo.addEventListener('click',function(){
     p10Ball.innerHTML = p10ballC;
     p10Dots.innerHTML = p10DotsC;
     p10Sr.innerHTML = ((p10RunC*100)/p10ballC).toFixed(1);
+
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bl1WicketC--
+        bl1Wicket.innerHTML = bl1WicketC
+        
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bl2WicketC--
+        bl2Wicket.innerHTML = bl2WicketC
+      
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bl3WicketC--
+        bl3Wicket.innerHTML = b31WicketC
+      
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bl4WicketC--
+        bl4Wicket.innerHTML = bl4WicketC
+       
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bl5WicketC--
+            bl5Wicket.innerHTML = bl5Wick1etC
+       
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bl6WicketC--
+        bl6Wicket.innerHTML = bl6Wicke1tC
+       
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bl7WicketC--
+        bl7Wicket.innerHTML = bl7WicketC
+        
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bl8WicketC--
+        bl8Wicket.innerHTML = bl8WicketC
+       
+    }
     hideElement('bwp10')
     if(lastTen.firstChild){
         lastTen.removeChild(lastTen.firstChild)
@@ -5678,6 +6241,35 @@ let p5Buttons = document.querySelector('.p5Buttons')
 let p6Buttons = document.querySelector('.p6Buttons')
 let p7Buttons = document.querySelector('.p7Buttons')
 let p8Buttons = document.querySelector('.p8Buttons')
+
+getId('deSelect').addEventListener('click', function(){
+    
+    blName6.style.background= 'none'
+    blName1.style.background= 'none'
+    blName2.style.background= 'none'
+    blName3.style.background= 'none'
+    blName4.style.background= 'none'
+    blName5.style.background= 'none'
+    blName7.style.background= 'none'
+    blName8.style.background= 'none'
+    bl1runs.removeAttribute('id', 'bl1Run')
+    bl2runs.removeAttribute('id', 'bl2Run')
+    bl3runs.removeAttribute('id', 'bl3Run')
+    bl4runs.removeAttribute('id', 'bl4Run')
+    bl5runs.removeAttribute('id', 'bl5Run')
+    bl6runs.removeAttribute('id', 'bl6Run')
+    bl7runs.removeAttribute('id', 'bl7Run')
+    bl8runs.removeAttribute('id', 'bl8Run')
+     // bollwers buttons
+     p1Buttons.style.display = 'none'
+     p2Buttons.style.display = 'none'
+     p3Buttons.style.display = 'none'
+     p4Buttons.style.display = 'none'
+     p5Buttons.style.display = 'none'
+     p6Buttons.style.display = 'none'
+     p7Buttons.style.display = 'none'
+     p8Buttons.style.display = 'none'
+})
 
 let bl1RunPlus1;
 blName1.addEventListener('click', function(){

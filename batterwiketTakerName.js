@@ -1,26 +1,33 @@
-
 if(bl1runs.getAttribute('id')==='bl1Run'){
-    bt10w.innerHTML = blwer1.value;
-    ShowElement('bwp10')
+    bl1WicketC--
+    bl1Wicket.innerHTML = bl1WicketC
+    
 } if(bl2runs.getAttribute('id')==='bl2Run'){
-    bt10w.innerHTML = blwer2.value;
-    ShowElement('bwp10')
+    bl2WicketC--
+    bl2Wicket.innerHTML = bl2WicketC
+  
 } if(bl3runs.getAttribute('id')==='bl3Run'){
-    bt10w.innerHTML = blwer3.value;
-    ShowElement('bwp10')
+    bl3WicketC--
+    bl3Wicket.innerHTML = b31WicketC
+  
 }  if(bl4runs.getAttribute('id')==='bl4Run'){
-    bt10w.innerHTML = blwer4.value;
-    ShowElement('bwp10')
+    bl4WicketC--
+    bl4Wicket.innerHTML = bl4WicketC
+   
 } if(bl5runs.getAttribute('id')==='bl5Run'){
-    bt10w.innerHTML = blwer5.value;
-    ShowElement('bwp10')
+    bl5WicketC--
+        bl5Wicket.innerHTML = bl5Wick1etC
+   
 } if(bl6runs.getAttribute('id')==='bl6Run'){
-    bt10w.innerHTML = blwer6.value;
-    ShowElement('bwp10')
+    bl6WicketC--
+    bl6Wicket.innerHTML = bl6Wicke1tC
+   
 } if(bl7runs.getAttribute('id')==='bl7Run'){
-    bt10w.innerHTML = blwer7.value;
-    ShowElement('bwp10')
+    bl7WicketC--
+    bl7Wicket.innerHTML = bl7WicketC
+    
 }  if(bl8runs.getAttribute('id')==='bl8Run'){
-    bt10w.innerHTML = blwer8.value;
-    ShowElement('bwp10')
+    bl8WicketC--
+    bl8Wicket.innerHTML = bl8WicketC
+   
 }
