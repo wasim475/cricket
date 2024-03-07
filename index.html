@@ -29,7 +29,7 @@
       <input class="team1Input border-black-100 border-2 py-[1px] px-1 rounded-lg" type="text" placeholder="Enter team1 name">
       <input class="team2Input hidden border-black-100 border-2 py-[1px] px-1 rounded-lg" type="text" placeholder="Enter team2 name">
       <!-- btns -->
-      <button class="btn-team1 btn btn-sm bg-gray-400 text-white">Submit</button>
+      <button id="submit1" class="btn-team1 btn btn-sm bg-gray-400 text-white">Submit</button>
       <button class="btn-team2 hidden btn btn-sm bg-gray-400 text-white">Submit</button>
  
       <h2 class="error1 text-red-500"></h2>
@@ -60,7 +60,7 @@
 
      <section class="mb-6 text-center">
       <div class="overLimitPortion hidden">
-        <input type="number" placeholder="Write total over." class="overLimit border-2 border-gray-400 px-2 rounded-lg"> <button class="overLimitBtn btn btn-sm bg-yellow-500  text-white">Set Over</button>
+        <input type="number" placeholder="Write total over." class="overLimit border-2 border-gray-400 px-2 rounded-lg"> <button id="setOver" class="overLimitBtn btn btn-sm bg-yellow-500  text-white">Set Over</button>
         <h2 class="error3 text-red-500"></h2>
       </div>
      </section>
@@ -223,6 +223,8 @@
                     <br>
 
                     <button class="bt1undo hidden btn btn-xs bg-green-500 text-white px-4 mt-1">   <i class="fa-solid fa-arrow-rotate-left"></i></button>
+
+                    <h2 id="bwp1" class="inline hidden pl-2 ">b <span id="bt1Wicker"></span></h2>
                     
                     <button class="p1RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
                     <button class="p1BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
@@ -250,6 +252,8 @@
                     
                     <button class="bt2undo hidden btn btn-xs bg-green-500 text-white px-4 mt-1">   <i class="fa-solid fa-arrow-rotate-left"></i></button>
 
+                    <h2 id="bwp2" class="inline hidden pl-2 ">b <span id="bt2Wicker"></span></h2>
+
                     <button class="p2RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
                     <button class="p2BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button> 
                     <button class="p2two btn btn-xs text-white bg-green-500 px-4">2</button>  
@@ -275,6 +279,8 @@
                     
                     <button class="bt3undo hidden btn btn-xs bg-green-500 text-white px-4 mt-1">   <i class="fa-solid fa-arrow-rotate-left"></i></button>
 
+                    <h2 id="bwp3" class="inline hidden pl-2 ">b <span id="bt3Wicker"></span></h2>
+
                     <button class="p3RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
                     <button class="p3BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
                     <button class="p3two btn btn-xs text-white bg-green-500 px-4">2</button> 
@@ -299,6 +305,9 @@
                       <br>
 
                       <button class="bt4undo hidden btn btn-xs bg-green-500 text-white px-4 mt-1">   <i class="fa-solid fa-arrow-rotate-left"></i></button>
+
+                      <h2 id="bwp4" class="inline hidden pl-2 ">b <span id="bt4Wicker"></span></h2>
+
     
                       <button class="p4RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
                       <button class="p4BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
@@ -324,6 +333,9 @@
                         <br>
 
                         <button class="bt5undo hidden btn btn-xs bg-green-500 text-white px-4 mt-1">   <i class="fa-solid fa-arrow-rotate-left"></i></button>
+
+                        <h2 id="bwp5" class="inline hidden pl-2 ">b <span id="bt5Wicker"></span></h2>
+
       
                         <button class="p5RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
                         <button class="p5BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
@@ -351,6 +363,9 @@
                           <button class="bt6undo hidden btn btn-xs bg-green-500 text-white px-4 mt-1">   <i class="fa-solid fa-arrow-rotate-left"></i></button>
 
                           <button class="bt6undo hidden btn btn-xs bg-green-500 text-white px-4 mt-1">   <i class="fa-solid fa-arrow-rotate-left"></i></button>
+
+                          <h2 id="bwp6" class="inline hidden pl-2 ">b <span id="bt6Wicker"></span></h2>
+
         
                           <button class="p6RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
                           <button class="p6BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button> 
@@ -376,6 +391,9 @@
                             <br>
 
                             <button class="bt7undo hidden btn btn-xs bg-green-500 text-white px-4 mt-1">   <i class="fa-solid fa-arrow-rotate-left"></i></button>
+
+                            <h2 id="bwp7" class="inline hidden pl-2 ">b <span id="bt7Wicker"></span></h2>
+
           
                             <button class="p7RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
                             <button class="p7BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
@@ -401,6 +419,9 @@
                               <br>
 
                               <button class="bt8undo hidden btn btn-xs bg-green-500 text-white px-4 mt-1">   <i class="fa-solid fa-arrow-rotate-left"></i></button>
+
+                              <h2 id="bwp8" class="inline hidden pl-2 ">b <span id="bt8Wicker"></span></h2>
+
             
                               <button class="p8RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
                               <button class="p8BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>
@@ -426,6 +447,9 @@
                                 <br>
 
                                 <button class="bt9undo hidden btn btn-xs bg-green-500 text-white px-4 mt-1">   <i class="fa-solid fa-arrow-rotate-left"></i></button>
+
+                                <h2 id="bwp9" class="inline hidden pl-2 ">b <span id="bt9Wicker"></span></h2>
+
               
                                 <button class="p9RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
                                 <button class="p9BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button> 
@@ -451,6 +475,9 @@
                                   <br>
 
                                   <button class="bt10undo hidden btn btn-xs bg-green-500 text-white px-4 mt-1">   <i class="fa-solid fa-arrow-rotate-left"></i></button>
+
+                                  <h2 id="bwp10" class="inline hidden pl-2 ">b <span id="bt10Wicker"></span></h2>
+
                 
                                   <button class="p10RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
                                   <button class="p10BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button>  
@@ -476,6 +503,9 @@
                                     <br>
 
                                     <button class="bt11undo hidden btn btn-xs bg-green-500 text-white px-4 mt-1">   <i class="fa-solid fa-arrow-rotate-left"></i></button>
+
+                                    <h2 id="bwp11" class="inline hidden pl-2 ">b <span id="bt11Wicker"></span></h2>
+
                   
                                     <button class="p11RunPlus btn btn-xs text-white bg-green-500 px-4">R+</button> 
                                     <button class="p11BallPlus btn btn-xs text-white bg-green-500 px-4">B+</button> 
@@ -662,10 +692,11 @@
                 </div>
         </section>
 
-   <footer class="text-center mt-[55vh]">
+   <footer class="text-center mt-2">
     
-    <a href="https://m.facebook.com/wasim.hossain.3382118/" target="_blank" class="font-bold" ><i class="fa-brands fa-square-facebook"></i> Nadim Nafi</a>
+    <a id="footer" href="https://m.facebook.com/wasim.hossain.3382118/" target="_blank" class="font-bold" ><i class="fa-brands fa-square-facebook"></i> Nadim Nafi</a>
    </footer>
     <script src="./script.js"></script>
+    <script src="./script2.js"></script>
 </body>
 </html>

@@ -1,3 +1,25 @@
+function getId(elementId){
+    let element = document.getElementById(elementId)
+    return element;
+}
+
+function getInnerHtml(elementId){
+    let element = document.getElementById(elementId)
+    let text = element.innerHTML;
+    return text;
+}
+
+function hideElement(elementId){
+    let element = document.getElementById(elementId)
+    let hide=  element.classList.add('hidden')
+    return hide;
+}
+function ShowElement(elementId){
+    let element = document.getElementById(elementId)
+    element.classList.remove('hidden')
+}
+
+
 
 
 /*=====================================================================
@@ -1182,7 +1204,17 @@ let btn9 = document.querySelector('.btn9')
 let btn10 = document.querySelector('.btn10')
 let btn11 = document.querySelector('.btn11')
 // b portion #End
-
+let bt1w = getId('bt1Wicker')
+let bt2w = getId('bt2Wicker')
+let bt3w = getId('bt3Wicker')
+let bt4w = getId('bt4Wicker')
+let bt5w = getId('bt5Wicker')
+let bt6w = getId('bt6Wicker')
+let bt7w = getId('bt7Wicker')
+let bt8w = getId('bt8Wicker')
+let bt9w = getId('bt9Wicker')
+let bt10w = getId('bt10Wicker')
+let bt11w = getId('bt11Wicker')
 
 // Out portion #tart
 p1Out.addEventListener('click',function(){
@@ -1203,6 +1235,35 @@ p1Out.addEventListener('click',function(){
     p1Dots.innerHTML = p1DotsC;
     console.log(p1Sr)
     p1Sr.innerHTML = ((runC*100)/p1ballC).toFixed(1);
+
+
+
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bt1w.innerHTML = blwer1.value;
+        ShowElement('bwp1')
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bt1w.innerHTML = blwer2.value;
+        ShowElement('bwp1')
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bt1w.innerHTML = blwer3.value;
+        ShowElement('bwp1')
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bt1w.innerHTML = blwer4.value;
+        ShowElement('bwp1')
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bt1w.innerHTML = blwer5.value;
+        ShowElement('bwp1')
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bt1w.innerHTML = blwer6.value;
+        ShowElement('bwp1')
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bt1w.innerHTML = blwer7.value;
+        ShowElement('bwp1')
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bt1w.innerHTML = blwer8.value;
+        ShowElement('bwp1')
+    }
+
     let sp = document.createElement('span')
     sp.innerHTML = 'w '
     if(lastTen.firstChild){
@@ -1230,6 +1291,10 @@ bt1undo.addEventListener('click',function(){
     p1Ball.innerHTML = p1ballC;
     p1Dots.innerHTML = p1DotsC;
     p1Sr.innerHTML = ((runC*100)/p1ballC).toFixed(1);
+    hideElement('bwp1')
+
+
+    
     if(lastTen.firstChild){
         lastTen.removeChild(lastTen.firstChild)
     }
@@ -1252,6 +1317,37 @@ p2Out.addEventListener('click',function(){
     p2Ball.innerHTML = p2ballC;
     p2Dots.innerHTML = p2DotsC;
     p2Sr.innerHTML = ((p2RunC*100)/p2ballC).toFixed(1);
+
+    
+// let bt2w = getId('bt2Wicker')
+if(bl1runs.getAttribute('id')==='bl1Run'){
+    bt2w.innerHTML = blwer1.value;
+    ShowElement('bwp2')
+    // bt2w.classList.remove('hidden')
+} if(bl2runs.getAttribute('id')==='bl2Run'){
+    bt2w.innerHTML = blwer2.value;
+    ShowElement('bwp2')
+} if(bl3runs.getAttribute('id')==='bl3Run'){
+    bt2w.innerHTML = blwer3.value;
+    ShowElement('bwp2')
+}  if(bl4runs.getAttribute('id')==='bl4Run'){
+    bt2w.innerHTML = blwer4.value;
+    ShowElement('bwp2')
+} if(bl5runs.getAttribute('id')==='bl5Run'){
+    bt2w.innerHTML = blwer5.value;
+    ShowElement('bwp2')
+} if(bl6runs.getAttribute('id')==='bl6Run'){
+    bt2w.innerHTML = blwer6.value;
+    ShowElement('bwp2')
+} if(bl7runs.getAttribute('id')==='bl7Run'){
+    bt2w.innerHTML = blwer7.value;
+    ShowElement('bwp2')
+}  if(bl8runs.getAttribute('id')==='bl8Run'){
+    bt2w.innerHTML = blwer8.value;
+    ShowElement('bwp2')
+}
+
+
     let sp = document.createElement('span')
     sp.innerHTML = 'w '
     if(lastTen.firstChild){
@@ -1281,6 +1377,7 @@ bt2undo.addEventListener('click',function(){
     p2Ball.innerHTML = p2ballC;
     p2Dots.innerHTML = p2DotsC;
     p2Sr.innerHTML = ((p2RunC*100)/p2ballC).toFixed(1);
+    hideElement('bwp2')
     if(lastTen.firstChild){
         lastTen.removeChild(lastTen.firstChild)
     }
@@ -1305,6 +1402,35 @@ p3Out.addEventListener('click',function(){
     p3Ball.innerHTML = p3ballC;
     p3Dots.innerHTML = p3DotsC;
     p3Sr.innerHTML = ((p3RunC*100)/p3ballC).toFixed(1);
+
+
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bt3w.innerHTML = blwer1.value;
+        ShowElement('bwp3')
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bt3w.innerHTML = blwer2.value;
+        ShowElement('bwp3')
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bt3w.innerHTML = blwer3.value;
+        ShowElement('bwp3')
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bt3w.innerHTML = blwer4.value;
+        ShowElement('bwp3')
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bt3w.innerHTML = blwer5.value;
+        ShowElement('bwp3')
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bt3w.innerHTML = blwer6.value;
+        ShowElement('bwp3')
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bt3w.innerHTML = blwer7.value;
+        ShowElement('bwp3')
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bt3w.innerHTML = blwer8.value;
+        ShowElement('bwp3')
+    }
+
+
     let sp = document.createElement('span')
     sp.innerHTML = 'w '
     if(lastTen.firstChild){
@@ -1333,6 +1459,10 @@ bt3undo.addEventListener('click',function(){
     p3Ball.innerHTML = p3ballC;
     p3Dots.innerHTML = p3DotsC;
     p3Sr.innerHTML = ((p3RunC*100)/p3ballC).toFixed(1);
+    hideElement('bwp3')
+
+
+
     if(lastTen.firstChild){
         lastTen.removeChild(lastTen.firstChild)
     }
@@ -1355,6 +1485,33 @@ p4Out.addEventListener('click',function(){
     p4Ball.innerHTML = p4ballC;
     p4Dots.innerHTML = p4DotsC;
     p4Sr.innerHTML = ((p4RunC*100)/p4ballC).toFixed(1);
+
+    
+if(bl1runs.getAttribute('id')==='bl1Run'){
+    bt4w.innerHTML = blwer1.value;
+    ShowElement('bwp4')
+} if(bl2runs.getAttribute('id')==='bl2Run'){
+    bt4w.innerHTML = blwer2.value;
+    ShowElement('bwp4')
+} if(bl3runs.getAttribute('id')==='bl3Run'){
+    bt4w.innerHTML = blwer3.value;
+    ShowElement('bwp4')
+}  if(bl4runs.getAttribute('id')==='bl4Run'){
+    bt4w.innerHTML = blwer4.value;
+    ShowElement('bwp4')
+} if(bl5runs.getAttribute('id')==='bl5Run'){
+    bt4w.innerHTML = blwer5.value;
+    ShowElement('bwp4')
+} if(bl6runs.getAttribute('id')==='bl6Run'){
+    bt4w.innerHTML = blwer6.value;
+    ShowElement('bwp4')
+} if(bl7runs.getAttribute('id')==='bl7Run'){
+    bt4w.innerHTML = blwer7.value;
+    ShowElement('bwp4')
+}  if(bl8runs.getAttribute('id')==='bl8Run'){
+    bt4w.innerHTML = blwer8.value;
+    ShowElement('bwp4')
+}
 
     let sp = document.createElement('span')
     sp.innerHTML = 'w '
@@ -1383,6 +1540,7 @@ bt4undo.addEventListener('click',function(){
     p4Ball.innerHTML = p4ballC;
     p4Dots.innerHTML = p4DotsC;
     p4Sr.innerHTML = ((p4RunC*100)/p4ballC).toFixed(1);
+    hideElement('bwp4')
     if(lastTen.firstChild){
         lastTen.removeChild(lastTen.firstChild)
     }
@@ -1404,6 +1562,33 @@ p11Out.addEventListener('click',function(){
     p11Ball.innerHTML = p11ballC;
     p11Dots.innerHTML = p11DotsC;
     p11Sr.innerHTML = ((p11RunC*100)/p11ballC).toFixed(1);
+
+    
+if(bl1runs.getAttribute('id')==='bl1Run'){
+    bt11w.innerHTML = blwer1.value;
+    ShowElement('bwp11')
+} if(bl2runs.getAttribute('id')==='bl2Run'){
+    bt11w.innerHTML = blwer2.value;
+    ShowElement('bwp11')
+} if(bl3runs.getAttribute('id')==='bl3Run'){
+    bt11w.innerHTML = blwer3.value;
+    ShowElement('bwp11')
+}  if(bl4runs.getAttribute('id')==='bl4Run'){
+    bt11w.innerHTML = blwer4.value;
+    ShowElement('bwp11')
+} if(bl5runs.getAttribute('id')==='bl5Run'){
+    bt11w.innerHTML = blwer5.value;
+    ShowElement('bwp11')
+} if(bl6runs.getAttribute('id')==='bl6Run'){
+    bt11w.innerHTML = blwer6.value;
+    ShowElement('bwp11')
+} if(bl7runs.getAttribute('id')==='bl7Run'){
+    bt11w.innerHTML = blwer7.value;
+    ShowElement('bwp11')
+}  if(bl8runs.getAttribute('id')==='bl8Run'){
+    bt11w.innerHTML = blwer8.value;
+    ShowElement('bwp11')
+}
 
     let sp = document.createElement('span')
     sp.innerHTML = 'w '
@@ -1432,6 +1617,7 @@ bt11undo.addEventListener('click',function(){
     p11Ball.innerHTML = p11ballC;
     p11Dots.innerHTML = p11DotsC;
     p11Sr.innerHTML = ((p11RunC*100)/p11ballC).toFixed(1);
+    hideElement('bwp11')
     if(lastTen.firstChild){
         lastTen.removeChild(lastTen.firstChild)
     }
@@ -1453,6 +1639,33 @@ p5Out.addEventListener('click',function(){
     p5Ball.innerHTML = p5ballC;
     p5Dots.innerHTML = p5DotsC;
     p5Sr.innerHTML = ((p5RunC*100)/p5ballC).toFixed(1);
+
+    
+if(bl1runs.getAttribute('id')==='bl1Run'){
+    bt5w.innerHTML = blwer1.value;
+    ShowElement('bwp5')
+} if(bl2runs.getAttribute('id')==='bl2Run'){
+    bt5w.innerHTML = blwer2.value;
+    ShowElement('bwp5')
+} if(bl3runs.getAttribute('id')==='bl3Run'){
+    bt5w.innerHTML = blwer3.value;
+    ShowElement('bwp5')
+}  if(bl4runs.getAttribute('id')==='bl4Run'){
+    bt5w.innerHTML = blwer4.value;
+    ShowElement('bwp5')
+} if(bl5runs.getAttribute('id')==='bl5Run'){
+    bt5w.innerHTML = blwer5.value;
+    ShowElement('bwp5')
+} if(bl6runs.getAttribute('id')==='bl6Run'){
+    bt5w.innerHTML = blwer6.value;
+    ShowElement('bwp5')
+} if(bl7runs.getAttribute('id')==='bl7Run'){
+    bt5w.innerHTML = blwer7.value;
+    ShowElement('bwp5')
+}  if(bl8runs.getAttribute('id')==='bl8Run'){
+    bt5w.innerHTML = blwer8.value;
+    ShowElement('bwp5')
+}
 
     let sp = document.createElement('span')
     sp.innerHTML = 'w '
@@ -1482,6 +1695,7 @@ bt5undo.addEventListener('click',function(){
     p5Ball.innerHTML = p5ballC;
     p5Dots.innerHTML = p5DotsC;
     p5Sr.innerHTML = ((p5RunC*100)/p5ballC).toFixed(1);
+    hideElement('bwp5')
     if(lastTen.firstChild){
         lastTen.removeChild(lastTen.firstChild)
     }
@@ -1504,6 +1718,33 @@ p6Out.addEventListener('click',function(){
     p6Ball.innerHTML = p6ballC;
     p6Dots.innerHTML = p6DotsC;
     p6Sr.innerHTML = ((p6RunC*100)/p6ballC).toFixed(1);
+
+    
+if(bl1runs.getAttribute('id')==='bl1Run'){
+    bt6w.innerHTML = blwer1.value;
+    ShowElement('bwp6')
+} if(bl2runs.getAttribute('id')==='bl2Run'){
+    bt6w.innerHTML = blwer2.value;
+    ShowElement('bwp6')
+} if(bl3runs.getAttribute('id')==='bl3Run'){
+    bt6w.innerHTML = blwer3.value;
+    ShowElement('bwp6')
+}  if(bl4runs.getAttribute('id')==='bl4Run'){
+    bt6w.innerHTML = blwer4.value;
+    ShowElement('bwp6')
+} if(bl5runs.getAttribute('id')==='bl5Run'){
+    bt6w.innerHTML = blwer5.value;
+    ShowElement('bwp6')
+} if(bl6runs.getAttribute('id')==='bl6Run'){
+    bt6w.innerHTML = blwer6.value;
+    ShowElement('bwp6')
+} if(bl7runs.getAttribute('id')==='bl7Run'){
+    bt6w.innerHTML = blwer7.value;
+    ShowElement('bwp6')
+}  if(bl8runs.getAttribute('id')==='bl8Run'){
+    bt6w.innerHTML = blwer8.value;
+    ShowElement('bwp6')
+}
 
     let sp = document.createElement('span')
     sp.innerHTML = 'w '
@@ -1533,6 +1774,7 @@ bt6undo.addEventListener('click',function(){
     p6Ball.innerHTML = p6ballC;
     p6Dots.innerHTML = p6DotsC;
     p6Sr.innerHTML = ((p6RunC*100)/p6ballC).toFixed(1);
+    hideElement('bwp6')
     if(lastTen.firstChild){
         lastTen.removeChild(lastTen.firstChild)
     }
@@ -1555,6 +1797,33 @@ p7Out.addEventListener('click',function(){
     p7Ball.innerHTML = p7ballC;
     p7Dots.innerHTML = p7DotsC;
     p7Sr.innerHTML = ((p7RunC*100)/p7ballC).toFixed(1);
+
+    
+if(bl1runs.getAttribute('id')==='bl1Run'){
+    bt7w.innerHTML = blwer1.value;
+    ShowElement('bwp7')
+} if(bl2runs.getAttribute('id')==='bl2Run'){
+    bt7w.innerHTML = blwer2.value;
+    ShowElement('bwp7')
+} if(bl3runs.getAttribute('id')==='bl3Run'){
+    bt7w.innerHTML = blwer3.value;
+    ShowElement('bwp7')
+}  if(bl4runs.getAttribute('id')==='bl4Run'){
+    bt7w.innerHTML = blwer4.value;
+    ShowElement('bwp7')
+} if(bl5runs.getAttribute('id')==='bl5Run'){
+    bt7w.innerHTML = blwer5.value;
+    ShowElement('bwp7')
+} if(bl6runs.getAttribute('id')==='bl6Run'){
+    bt7w.innerHTML = blwer6.value;
+    ShowElement('bwp7')
+} if(bl7runs.getAttribute('id')==='bl7Run'){
+    bt7w.innerHTML = blwer7.value;
+    ShowElement('bwp7')
+}  if(bl8runs.getAttribute('id')==='bl8Run'){
+    bt7w.innerHTML = blwer8.value;
+    ShowElement('bwp7')
+}
 
     let sp = document.createElement('span')
     sp.innerHTML = 'w '
@@ -1584,6 +1853,7 @@ bt7undo.addEventListener('click',function(){
     p7Ball.innerHTML = p7ballC;
     p7Dots.innerHTML = p7DotsC;
     p7Sr.innerHTML = ((p7RunC*100)/p7ballC).toFixed(1);
+    hideElement('bwp7')
     if(lastTen.firstChild){
         lastTen.removeChild(lastTen.firstChild)
     }
@@ -1606,6 +1876,33 @@ p8Out.addEventListener('click',function(){
     p8Ball.innerHTML = p8ballC;
     p8Dots.innerHTML = p8DotsC;
     p8Sr.innerHTML = ((p8RunC*100)/p8ballC).toFixed(1);
+
+    
+if(bl1runs.getAttribute('id')==='bl1Run'){
+    bt8w.innerHTML = blwer1.value;
+    ShowElement('bwp8')
+} if(bl2runs.getAttribute('id')==='bl2Run'){
+    bt8w.innerHTML = blwer2.value;
+    ShowElement('bwp8')
+} if(bl3runs.getAttribute('id')==='bl3Run'){
+    bt8w.innerHTML = blwer3.value;
+    ShowElement('bwp8')
+}  if(bl4runs.getAttribute('id')==='bl4Run'){
+    bt8w.innerHTML = blwer4.value;
+    ShowElement('bwp8')
+} if(bl5runs.getAttribute('id')==='bl5Run'){
+    bt8w.innerHTML = blwer5.value;
+    ShowElement('bwp8')
+} if(bl6runs.getAttribute('id')==='bl6Run'){
+    bt8w.innerHTML = blwer6.value;
+    ShowElement('bwp8')
+} if(bl7runs.getAttribute('id')==='bl7Run'){
+    bt8w.innerHTML = blwer7.value;
+    ShowElement('bwp8')
+}  if(bl8runs.getAttribute('id')==='bl8Run'){
+    bt8w.innerHTML = blwer8.value;
+    ShowElement('bwp8')
+}
 
     let sp = document.createElement('span')
     sp.innerHTML = 'w '
@@ -1635,6 +1932,7 @@ bt8undo.addEventListener('click',function(){
     p8Ball.innerHTML = p8ballC;
     p8Dots.innerHTML = p8DotsC;
     p8Sr.innerHTML = ((p8RunC*100)/p8ballC).toFixed(1);
+    hideElement('bwp8')
     if(lastTen.firstChild){
         lastTen.removeChild(lastTen.firstChild)
     }
@@ -1656,6 +1954,60 @@ p9Out.addEventListener('click',function(){
     p9Ball.innerHTML = p9ballC;
     p9Dots.innerHTML = p9DotsC;
     p9Sr.innerHTML = ((p9RunC*100)/p9ballC).toFixed(1);
+
+    
+if(bl1runs.getAttribute('id')==='bl1Run'){
+    bt9w.innerHTML = blwer1.value;
+    ShowElement('bwp9')
+} if(bl2runs.getAttribute('id')==='bl2Run'){
+    bt9w.innerHTML = blwer2.value;
+    ShowElement('bwp9')
+} if(bl3runs.getAttribute('id')==='bl3Run'){
+    bt9w.innerHTML = blwer3.value;
+    ShowElement('bwp9')
+}  if(bl4runs.getAttribute('id')==='bl4Run'){
+    bt9w.innerHTML = blwer4.value;
+    ShowElement('bwp9')
+} if(bl5runs.getAttribute('id')==='bl5Run'){
+    bt9w.innerHTML = blwer5.value;
+    ShowElement('bwp9')
+} if(bl6runs.getAttribute('id')==='bl6Run'){
+    bt9w.innerHTML = blwer6.value;
+    ShowElement('bwp9')
+} if(bl7runs.getAttribute('id')==='bl7Run'){
+    bt9w.innerHTML = blwer7.value;
+    ShowElement('bwp9')
+}  if(bl8runs.getAttribute('id')==='bl8Run'){
+    bt9w.innerHTML = blwer8.value;
+    ShowElement('bwp9')
+}
+
+    
+if(bl1runs.getAttribute('id')==='bl1Run'){
+    bt8w.innerHTML = blwer1.value;
+    ShowElement('bwp9')
+} if(bl2runs.getAttribute('id')==='bl2Run'){
+    bt8w.innerHTML = blwer2.value;
+    ShowElement('bwp9')
+} if(bl3runs.getAttribute('id')==='bl3Run'){
+    bt8w.innerHTML = blwer3.value;
+    ShowElement('bwp9')
+}  if(bl4runs.getAttribute('id')==='bl4Run'){
+    bt8w.innerHTML = blwer4.value;
+    ShowElement('bwp9')
+} if(bl5runs.getAttribute('id')==='bl5Run'){
+    bt8w.innerHTML = blwer5.value;
+    ShowElement('bwp9')
+} if(bl6runs.getAttribute('id')==='bl6Run'){
+    bt8w.innerHTML = blwer6.value;
+    ShowElement('bwp9')
+} if(bl7runs.getAttribute('id')==='bl7Run'){
+    bt8w.innerHTML = blwer7.value;
+    ShowElement('bwp9')
+}  if(bl8runs.getAttribute('id')==='bl8Run'){
+    bt8w.innerHTML = blwer8.value;
+    ShowElement('bwp9')
+}
 
     let sp = document.createElement('span')
     sp.innerHTML = 'w '
@@ -1686,6 +2038,7 @@ bt9undo.addEventListener('click',function(){
     p9Ball.innerHTML = p9ballC;
     p9Dots.innerHTML = p9DotsC;
     p9Sr.innerHTML = ((p9RunC*100)/p9ballC).toFixed(1);
+    hideElement('bwp9')
     if(lastTen.firstChild){
         lastTen.removeChild(lastTen.firstChild)
     }
@@ -1708,6 +2061,33 @@ p10Out.addEventListener('click',function(){
     p10Ball.innerHTML = p10ballC;
     p10Dots.innerHTML = p10DotsC;
     p10Sr.innerHTML = ((p10RunC*100)/p10ballC).toFixed(1);
+
+
+    if(bl1runs.getAttribute('id')==='bl1Run'){
+        bt10w.innerHTML = blwer1.value;
+        ShowElement('bwp10')
+    } if(bl2runs.getAttribute('id')==='bl2Run'){
+        bt10w.innerHTML = blwer2.value;
+        ShowElement('bwp10')
+    } if(bl3runs.getAttribute('id')==='bl3Run'){
+        bt10w.innerHTML = blwer3.value;
+        ShowElement('bwp10')
+    }  if(bl4runs.getAttribute('id')==='bl4Run'){
+        bt10w.innerHTML = blwer4.value;
+        ShowElement('bwp10')
+    } if(bl5runs.getAttribute('id')==='bl5Run'){
+        bt10w.innerHTML = blwer5.value;
+        ShowElement('bwp10')
+    } if(bl6runs.getAttribute('id')==='bl6Run'){
+        bt10w.innerHTML = blwer6.value;
+        ShowElement('bwp10')
+    } if(bl7runs.getAttribute('id')==='bl7Run'){
+        bt10w.innerHTML = blwer7.value;
+        ShowElement('bwp10')
+    }  if(bl8runs.getAttribute('id')==='bl8Run'){
+        bt10w.innerHTML = blwer8.value;
+        ShowElement('bwp10')
+    }
 
     let sp = document.createElement('span')
     sp.innerHTML = 'w '
@@ -1736,6 +2116,7 @@ bt10undo.addEventListener('click',function(){
     p10Ball.innerHTML = p10ballC;
     p10Dots.innerHTML = p10DotsC;
     p10Sr.innerHTML = ((p10RunC*100)/p10ballC).toFixed(1);
+    hideElement('bwp10')
     if(lastTen.firstChild){
         lastTen.removeChild(lastTen.firstChild)
     }
@@ -5329,6 +5710,8 @@ blName1.addEventListener('click', function(){
     p7Buttons.style.display = 'none'
     p8Buttons.style.display = 'none'
 })
+
+
 
 // Bowler-02
 let bl2RunPlus1;
