@@ -137,7 +137,12 @@ let undo1= document.querySelector('.undo1')
 let scoreAndOver= document.querySelector('.scoreAndOver')
 let runIncrmenterDeincrementer= document.querySelector('.runIncrmenterDeincrementer')
 
-let runCounter=0;
+
+if (!sessionStorage.getItem('initTotalrun')) {
+    sessionStorage.setItem('initTotalrun', '0');
+  }
+  
+  let runCounter = Number(sessionStorage.getItem('initTotalrun'));
 totalRunMinus.addEventListener('click',function(){
     if(runCounter>=1){
         if(bl1runs.getAttribute('id')==='bl1Run'){
@@ -167,14 +172,16 @@ totalRunMinus.addEventListener('click',function(){
             bl8RunPlus1.innerHTML = bl8RunC;
         }
         runCounter--;
+        sessionStorage.setItem('initTotalrun', runCounter);
         totalRun.innerHTML=runCounter;
         needRuns.innerHTML++
     }
 })
 
-
+totalRun.innerHTML=runCounter;
 totalRunPlus.addEventListener('click',function(){
     runCounter++;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     if(bl1runs.getAttribute('id')==='bl1Run'){
         bl1RunC++;
@@ -255,6 +262,7 @@ totalRunDouble.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     runCounter+=2;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 2;
@@ -300,6 +308,7 @@ totalRunFour.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     runCounter+=4;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 4;
@@ -345,6 +354,7 @@ totalRunSix.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     runCounter+=6;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     if(needRuns.innerHTML>1){
         needRuns.innerHTML-= 6;
@@ -466,6 +476,7 @@ wide1.addEventListener('click',function(){
     wdRunC++;
     extraRunsC++;
     runCounter++;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     extraRuns.innerHTML = extraRunsC;
     wdRun.innerHTML = wdRunC;
@@ -516,6 +527,7 @@ wide2.addEventListener('click',function(){
     wdRunC+=5;
     extraRunsC+=5;
     runCounter+=5;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     extraRuns.innerHTML = extraRunsC;
     wdRun.innerHTML = wdRunC;
@@ -569,6 +581,7 @@ noBall.addEventListener('click',function(){
     noBallRunC++;
     extraRunsC++;
     runCounter++;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     extraRuns.innerHTML = extraRunsC;
     nbRun.innerHTML = noBallRunC;
@@ -620,6 +633,7 @@ legBye.addEventListener('click',function(){
     legByeRunC++;
     extraRunsC++;
     runCounter++;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     extraRuns.innerHTML = extraRunsC;
     lbRun.innerHTML = legByeRunC;
@@ -668,6 +682,7 @@ legByeFour.addEventListener('click',function(){
     legByeRunC+=4;
     extraRunsC+=4;
     runCounter+=4;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     extraRuns.innerHTML = extraRunsC;
     lbRun.innerHTML = legByeRunC;
@@ -718,6 +733,7 @@ bye.addEventListener('click',function(){
     bRunC++
     extraRunsC++;
     runCounter++;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     extraRuns.innerHTML = extraRunsC;
     bRun.innerHTML = bRunC;
@@ -766,6 +782,7 @@ byeFour.addEventListener('click',function(){
     bRunC+=4
     extraRunsC+=4;
     runCounter+=4;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     extraRuns.innerHTML = extraRunsC;
     bRun.innerHTML = bRunC;
@@ -808,6 +825,7 @@ extraRunMinus.addEventListener('click',function(){
     wdRun.innerHTML = wdRunC;
     extraRunsC--;
     runCounter--;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     extraRuns.innerHTML = extraRunsC;
     if(needRuns.innerHTML>1){
@@ -853,6 +871,7 @@ legByeMinus.addEventListener('click',function(){
     lbRun.innerHTML = legByeRunC;
     extraRunsC--;
     runCounter--;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     extraRuns.innerHTML = extraRunsC;
     if(needRuns.innerHTML>1){
@@ -896,6 +915,7 @@ noBallMinus.addEventListener('click',function(){
     noBallRunC--;
     extraRunsC--;
     runCounter--;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     extraRuns.innerHTML = extraRunsC;
     nbRun.innerHTML = noBallRunC;
@@ -940,6 +960,7 @@ byeRunMinus.addEventListener('click',function(){
     bRun.innerHTML = bRunC;
     extraRunsC--;
     runCounter--;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     extraRuns.innerHTML = extraRunsC;
     if(needRuns.innerHTML>1){
@@ -1012,17 +1033,25 @@ let error3 = document.querySelector('.error3')
 let overLimitPortion = document.querySelector('.overLimitPortion')
 let overIncrementDecrement = document.querySelector('.overIncrementDecrement')
 
-let overCounter =0;
+
+if (!sessionStorage.getItem('initOver')) {
+    sessionStorage.setItem('initOver', '0');
+  }
+  
+  let overCounter = Number(sessionStorage.getItem('initOver'));
 
 totalOverMinus.addEventListener('click',function(){
     if(overCounter>0){
         overCounter--;
+        sessionStorage.setItem('initOver', overCounter);
         totalOvar.innerHTML = overCounter;
     }
 })
+
 totalOverPlus.addEventListener('click',function(){
     if(overCounter>=0 && overCounter<overLimit.value){
         overCounter++;
+        sessionStorage.setItem('initOver', overCounter);
         totalOvar.innerHTML = overCounter;
         let sp = document.createElement('span')
         sp.innerHTML = '| '
@@ -1047,6 +1076,7 @@ totalOverPlus.addEventListener('click',function(){
         
     }
 })
+totalOvar.innerHTML = overCounter;
 
 overLimitBtn.addEventListener('click',function(){
     if(!(overLimit.value) && !overLimit.value>0){
@@ -1216,6 +1246,11 @@ let bt9w = getId('bt9Wicker')
 let bt10w = getId('bt10Wicker')
 let bt11w = getId('bt11Wicker')
 
+function runOut(elementId){
+    let element = document.getElementById(elementId)
+    element.innerHTML = '(run out)'
+}
+
 // Out portion #tart
 p1Out.addEventListener('click',function(){
     
@@ -1238,6 +1273,10 @@ p1Out.addEventListener('click',function(){
     p1Sr.innerHTML = ((runC*100)/p1ballC).toFixed(1);
 
 
+    ShowElement('bwp1')
+    // hideElement('bwtn1')
+    ShowElement('bwtn1')
+    
 
     if(bl1runs.getAttribute('id')==='bl1Run'){
         bt1w.innerHTML = blwer1.value;
@@ -1279,9 +1318,8 @@ p1Out.addEventListener('click',function(){
         bl8WicketC++
         bl8Wicket.innerHTML = bl8WicketC
         ShowElement('bwp1')
-    }else{
-        ShowElement('bwp1')
-        hideElement('bwtn1')
+    } else{
+        runOut('bwp1')
     }
 
     let sp = document.createElement('span')
@@ -2480,7 +2518,7 @@ if(bl1runs.getAttribute('id')==='bl1Run'){
     ShowElement('bwp9')
 }else{
     ShowElement('bwp2')
-    // hideElement('bwtn2')
+    hideElement('bwtn2')
 }
 
     
@@ -2573,6 +2611,9 @@ p10Out.addEventListener('click',function(){
     p10Dots.innerHTML = p10DotsC;
     p10Sr.innerHTML = ((p10RunC*100)/p10ballC).toFixed(1);
 
+    ShowElement('bwp10')
+    hideElement('bwtn10')
+
 
     if(bl1runs.getAttribute('id')==='bl1Run'){
         bt10w.innerHTML = blwer1.value;
@@ -2614,10 +2655,9 @@ p10Out.addEventListener('click',function(){
         bl8WicketC++
         bl8Wicket.innerHTML = bl8WicketC
         ShowElement('bwp10')
-    }else{
-        ShowElement('bwp10')
-        // hideElement('bwtn10')
     }
+    
+    
     let sp = document.createElement('span')
     sp.innerHTML = 'w '
     if(lastTen.firstChild){
@@ -2989,6 +3029,7 @@ p1RunPlus.addEventListener('click',function(){
     runC++;
     p1run.innerHTML = runC;
     runCounter++;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p1ballC++;
     p1Ball.innerHTML = p1ballC;
@@ -3053,6 +3094,7 @@ p1Six.addEventListener('click',function(){
     runC=runC+6;
     p1run.innerHTML = runC;
     runCounter+=6;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p1TSix.innerHTML = p1TSixC
     p1ballC++;
@@ -3104,6 +3146,7 @@ p1Four.addEventListener('click',function(){
     runC=runC+4;
     p1run.innerHTML = runC;
     runCounter+=4;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p1TFourC++;
     p1TFour.innerHTML = p1TFourC;
@@ -3158,6 +3201,7 @@ p1two.addEventListener('click',function(){
     runC=runC+2;
     p1run.innerHTML = runC;
     runCounter+=2;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p1ballC++;
     p1Ball.innerHTML = p1ballC;
@@ -3201,6 +3245,7 @@ p1RunMinus.addEventListener('click',function(){
         runC--;
         p1run.innerHTML = runC;
         runCounter--;
+        sessionStorage.setItem('initTotalrun', runCounter);
         totalRun.innerHTML=runCounter;
         p1Sr.innerHTML = ((runC*100)/p1ballC).toFixed(1);
         if(needRuns.innerHTML>1){
@@ -3251,6 +3296,7 @@ p2RunPlus.addEventListener('click',function(){
     p2RunC++;
     p2run.innerHTML = p2RunC;
     runCounter++;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p2ballC++;
     p2Ball.innerHTML = p2ballC;
@@ -3309,6 +3355,7 @@ p2Six.addEventListener('click',function(){
     p2RunC=p2RunC+6;
     p2run.innerHTML = p2RunC;
     runCounter+=6;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p2TSixC++;
     p2TSix.innerHTML = p2TSixC;
@@ -3363,6 +3410,7 @@ p2two.addEventListener('click',function(){
     p2run.innerHTML = p2RunC;
     runCounter+=2;
     totalRun.innerHTML=runCounter;
+    sessionStorage.setItem('initTotalrun', runCounter);
     p2ballC++;
     p2Ball.innerHTML = p2ballC;
     p2Sr.innerHTML = ((p2RunC*100)/p2ballC).toFixed(1);
@@ -3412,6 +3460,7 @@ p2Four.addEventListener('click',function(){
     p2RunC=p2RunC+4;
     p2run.innerHTML = p2RunC;
     runCounter+=4;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p2TFourC++;
     p2TFour.innerHTML = p2TFourC;
@@ -3457,6 +3506,7 @@ p2RunMinus.addEventListener('click',function(){
         p2RunC--;
         p2run.innerHTML = p2RunC;
         runCounter--;
+        sessionStorage.setItem('initTotalrun', runCounter);
         totalRun.innerHTML=runCounter;
         p2Sr.innerHTML = ((p2RunC*100)/p2ballC).toFixed(1);
         if(needRuns.innerHTML>1){
@@ -3505,6 +3555,7 @@ p3RunPlus.addEventListener('click',function(){
     p3RunC++;
     p3run.innerHTML = p3RunC;
     runCounter++;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p3ballC++;
     p3Ball.innerHTML = p3ballC;
@@ -3564,6 +3615,7 @@ p3Six.addEventListener('click',function(){
     p3RunC=p3RunC+6;
     p3run.innerHTML = p3RunC;
     runCounter+=6;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p3TSixC++;
     p3TSix.innerHTML = p3TSixC;
@@ -3618,6 +3670,7 @@ p3two.addEventListener('click',function(){
     p3RunC=p3RunC+2;
     p3run.innerHTML = p3RunC;
     runCounter+=2;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p3ballC++;
     p3Ball.innerHTML = p3ballC;
@@ -3669,6 +3722,7 @@ p3Four.addEventListener('click',function(){
     p3RunC=p3RunC+4;
     p3run.innerHTML = p3RunC;
     runCounter+=4;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p3TFourC++;
     p3TFour.innerHTML = p3TFourC;
@@ -3715,6 +3769,7 @@ p3RunMinus.addEventListener('click',function(){
         p3RunC--;
         p3run.innerHTML = p3RunC;
         runCounter--;
+        sessionStorage.setItem('initTotalrun', runCounter);
         totalRun.innerHTML=runCounter;
         p3Sr.innerHTML = ((p3RunC*100)/p3ballC).toFixed(1);
         if(needRuns.innerHTML>1){
@@ -3765,6 +3820,7 @@ p4RunPlus.addEventListener('click',function(){
     p4RunC++;
     p4run.innerHTML = p4RunC;
     runCounter++;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p4ballC++;
     p4Ball.innerHTML = p4ballC;
@@ -3824,6 +3880,7 @@ p4Six.addEventListener('click',function(){
     p4RunC=p4RunC+6;
     p4run.innerHTML = p4RunC;
     runCounter+=6;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p4TSixC++;
     p4TSix.innerHTML = p4TSixC;
@@ -3877,6 +3934,7 @@ p4two.addEventListener('click',function(){
     p4RunC=p4RunC+2;
     p4run.innerHTML = p4RunC;
     runCounter+=2;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p4ballC++;
     p4Ball.innerHTML = p4ballC;
@@ -3927,6 +3985,7 @@ p4Four.addEventListener('click',function(){
     p4RunC=p4RunC+4;
     p4run.innerHTML = p4RunC;
     runCounter+=4;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p4TFourC++;
     p4TFour.innerHTML = p4TFourC;
@@ -3972,6 +4031,7 @@ p4RunMinus.addEventListener('click',function(){
         p4RunC--;
         p4run.innerHTML = p4RunC;
         runCounter--;
+        sessionStorage.setItem('initTotalrun', runCounter);
         totalRun.innerHTML=runCounter;
         p4Sr.innerHTML = ((p4RunC*100)/p4ballC).toFixed(1);
         if(needRuns.innerHTML>1){
@@ -4020,6 +4080,7 @@ p5RunPlus.addEventListener('click',function(){
     p5RunC++;
     p5run.innerHTML = p5RunC;
     runCounter++;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p5ballC++;
     p5Ball.innerHTML = p5ballC;
@@ -4078,6 +4139,7 @@ p5Six.addEventListener('click',function(){
     p5RunC=p5RunC+6;
     p5run.innerHTML = p5RunC;
     runCounter+=6;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p5TSixC++;
     p5TSix.innerHTML = p5TSixC;
@@ -4131,6 +4193,7 @@ p5two.addEventListener('click',function(){
     p5RunC=p5RunC+2;
     p5run.innerHTML = p5RunC;
     runCounter+=2;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p5ballC++;
     p5Ball.innerHTML = p5ballC;
@@ -4181,6 +4244,7 @@ p5Four.addEventListener('click',function(){
     p5RunC=p5RunC+4;
     p5run.innerHTML = p5RunC;
     runCounter+=4;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p5TFourC++;
     p5TFour.innerHTML = p5TFourC;
@@ -4226,6 +4290,7 @@ p5RunMinus.addEventListener('click',function(){
         p5RunC--;
         p5run.innerHTML = p5RunC;
         runCounter--;
+        sessionStorage.setItem('initTotalrun', runCounter);
         totalRun.innerHTML=runCounter;
         p5Sr.innerHTML = ((p5RunC*100)/p5ballC).toFixed(1);
         if(needRuns.innerHTML>1){
@@ -4275,6 +4340,7 @@ p6RunPlus.addEventListener('click',function(){
     p6RunC++;
     p6run.innerHTML = p6RunC;
     runCounter++;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p6ballC++;
     p6Ball.innerHTML = p6ballC;
@@ -4333,6 +4399,7 @@ p6Six.addEventListener('click',function(){
     p6RunC=p6RunC+6;
     p6run.innerHTML = p6RunC;
     runCounter+=6;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p6TSixC++;
     p6TSix.innerHTML = p6TSixC;
@@ -4386,6 +4453,7 @@ p6two.addEventListener('click',function(){
     p6RunC=p6RunC+2;
     p6run.innerHTML = p6RunC;
     runCounter+=2;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p6ballC++;
     p6Ball.innerHTML = p6ballC;
@@ -4436,6 +4504,7 @@ p6Four.addEventListener('click',function(){
     p6RunC=p6RunC+4;
     p6run.innerHTML = p6RunC;
     runCounter+=4;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p6TFourC++;
     p6TFour.innerHTML = p6TFourC;
@@ -4481,6 +4550,7 @@ p6RunMinus.addEventListener('click',function(){
         p6RunC--;
         p6run.innerHTML = p6RunC;
         runCounter--;
+        sessionStorage.setItem('initTotalrun', runCounter);
         totalRun.innerHTML=runCounter;
         p6Sr.innerHTML = ((p6RunC*100)/p6ballC).toFixed(1);
         if(needRuns.innerHTML>1){
@@ -4530,6 +4600,7 @@ p7RunPlus.addEventListener('click',function(){
     p7RunC++;
     p7run.innerHTML = p7RunC;
     runCounter++;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p7ballC++;
     p7Ball.innerHTML = p7ballC;
@@ -4589,6 +4660,7 @@ p7Six.addEventListener('click',function(){
     p7RunC=p7RunC+6;
     p7run.innerHTML = p7RunC;
     runCounter+=6;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p7TSixC++;
     p7TSix.innerHTML = p7TSixC;
@@ -4642,6 +4714,7 @@ p7two.addEventListener('click',function(){
     p7RunC=p7RunC+2;
     p7run.innerHTML = p7RunC;
     runCounter+=2;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p7ballC++;
     p7Ball.innerHTML = p7ballC;
@@ -4692,6 +4765,7 @@ p7Four.addEventListener('click',function(){
     p7RunC=p7RunC+4;
     p7run.innerHTML = p7RunC;
     runCounter+=4;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p7TFourC++;
     p7TFour.innerHTML = p7TFourC;
@@ -4738,6 +4812,7 @@ p7RunMinus.addEventListener('click',function(){
         p7RunC--;
         p7run.innerHTML = p7RunC;
         runCounter--;
+        sessionStorage.setItem('initTotalrun', runCounter);
         totalRun.innerHTML=runCounter;
         p7Sr.innerHTML = ((p7RunC*100)/p7ballC).toFixed(1);
         if(needRuns.innerHTML>1){
@@ -4787,6 +4862,7 @@ p8RunPlus.addEventListener('click',function(){
     p8RunC++;
     p8run.innerHTML = p8RunC;
     runCounter++;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p8ballC++;
     p8Ball.innerHTML = p8ballC;
@@ -4845,6 +4921,7 @@ p8Six.addEventListener('click',function(){
     p8RunC=p8RunC+6;
     p8run.innerHTML = p8RunC;
     runCounter+=6;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p8TSixC++;
     p8TSix.innerHTML = p8TSixC;
@@ -4898,6 +4975,7 @@ p8two.addEventListener('click',function(){
     p8RunC=p8RunC+2;
     p8run.innerHTML = p8RunC;
     runCounter+=2;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p8ballC++;
     p8Ball.innerHTML = p8ballC;
@@ -4948,6 +5026,7 @@ p8Four.addEventListener('click',function(){
     p8RunC=p8RunC+4;
     p8run.innerHTML = p8RunC;
     runCounter+=4;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p8TFourC++;
     p8TFour.innerHTML = p8TFourC;
@@ -4994,6 +5073,7 @@ p8RunMinus.addEventListener('click',function(){
         p8RunC--;
         p8run.innerHTML = p8RunC;
         runCounter--;
+        sessionStorage.setItem('initTotalrun', runCounter);
         totalRun.innerHTML=runCounter;
         p8Sr.innerHTML = ((p8RunC*100)/p8ballC).toFixed(1);
         if(needRuns.innerHTML>1){
@@ -5043,6 +5123,7 @@ p9RunPlus.addEventListener('click',function(){
     p9RunC++;
     p9run.innerHTML = p9RunC;
     runCounter++;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p9ballC++;
     p9Ball.innerHTML = p9ballC;
@@ -5100,6 +5181,7 @@ p9Six.addEventListener('click',function(){
     p9RunC=p9RunC+6;
     p9run.innerHTML = p9RunC;
     runCounter+=6;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p9TSixC++;
     p9TSix.innerHTML = p9TSixC;
@@ -5153,6 +5235,7 @@ p9two.addEventListener('click',function(){
     p9RunC=p9RunC+2;
     p9run.innerHTML = p9RunC;
     runCounter+=2;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p9ballC++;
     p9Ball.innerHTML = p9ballC;
@@ -5203,6 +5286,7 @@ p9Four.addEventListener('click',function(){
     p9RunC=p9RunC+4;
     p9run.innerHTML = p9RunC;
     runCounter+=4;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p9TFourC++;
     p9TFour.innerHTML =p9TFourC;
@@ -5248,6 +5332,7 @@ p9RunMinus.addEventListener('click',function(){
         p9RunC--;
         p9run.innerHTML = p9RunC;
         runCounter--;
+        sessionStorage.setItem('initTotalrun', runCounter);
         totalRun.innerHTML=runCounter;
         p9Sr.innerHTML = ((p9RunC*100)/p9ballC).toFixed(1);
         if(needRuns.innerHTML>1){
@@ -5297,6 +5382,7 @@ p10RunPlus.addEventListener('click',function(){
     p10RunC++;
     p10run.innerHTML = p10RunC;
     runCounter++;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p10ballC++;
     p10Ball.innerHTML = p10ballC;
@@ -5354,6 +5440,7 @@ p10Six.addEventListener('click',function(){
     p10RunC=p10RunC+6;
     p10run.innerHTML = p10RunC;
     runCounter+=6;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p10TSixC++;
     p10TSix.innerHTML =p10TSixC
@@ -5407,6 +5494,7 @@ p10two.addEventListener('click',function(){
     p10RunC=p10RunC+2;
     p10run.innerHTML = p10RunC;
     runCounter+=2;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p10ballC++;
     p10Ball.innerHTML = p10ballC;
@@ -5457,6 +5545,7 @@ p10Four.addEventListener('click',function(){
     p10RunC=p10RunC+4;
     p10run.innerHTML = p10RunC;
     runCounter+=4;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p10TFourC++;
     p10TFour.innerHTML = p10TFourC;
@@ -5502,6 +5591,7 @@ p10RunMinus.addEventListener('click',function(){
         p10RunC--;
         p10run.innerHTML = p10RunC;
         runCounter--;
+        sessionStorage.setItem('initTotalrun', runCounter);
         totalRun.innerHTML=runCounter;
         p10Sr.innerHTML = ((p10RunC*100)/p10ballC).toFixed(1);
         if(needRuns.innerHTML>1){
@@ -5551,6 +5641,7 @@ p11RunPlus.addEventListener('click',function(){
     p11RunC++;
     p11run.innerHTML = p11RunC;
     runCounter++;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p11ballC++;
     p11Ball.innerHTML = p11ballC;
@@ -5608,6 +5699,7 @@ p11Six.addEventListener('click',function(){
     p11RunC=p11RunC+6;
     p11run.innerHTML = p11RunC;
     runCounter+=6;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p11TSixC++;
     p11TSix.innerHTML =p11TSixC;
@@ -5661,6 +5753,7 @@ p11two.addEventListener('click',function(){
     p11RunC=p11RunC+2;
     p11run.innerHTML = p11RunC;
     runCounter+=2;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p11ballC++;
     p11Ball.innerHTML = p11ballC;
@@ -5711,6 +5804,7 @@ p11Four.addEventListener('click',function(){
     p11RunC=p11RunC+4;
     p11run.innerHTML = p11RunC;
     runCounter+=4;
+    sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p11TFourC++;
     p11TFour.innerHTML= p11TFourC
@@ -5756,6 +5850,7 @@ p11RunMinus.addEventListener('click',function(){
         p11RunC--;
         p11run.innerHTML = p11RunC;
         runCounter--;
+        sessionStorage.setItem('initTotalrun', runCounter);
         totalRun.innerHTML=runCounter;
         p11Sr.innerHTML = ((p11RunC*100)/p11ballC).toFixed(1);
         if(needRuns.innerHTML>1){
@@ -6146,6 +6241,7 @@ bl1OverPlus.addEventListener('click',function(){
     bl1OverCounter++;
     bl1over.innerHTML= bl1OverCounter;
     overCounter++;
+    sessionStorage.setItem('initOver', overCounter);
     totalOvar.innerHTML = overCounter;
 
     let sp = document.createElement('span')
@@ -6168,6 +6264,7 @@ bl1OverMinus.addEventListener('click',function(){
     bl1OverCounter--;
     bl1over.innerHTML= bl1OverCounter;
     overCounter--;
+    sessionStorage.setItem('initOver', overCounter);
     totalOvar.innerHTML = overCounter;
    }
 })
@@ -6547,6 +6644,7 @@ bl2OverPlus.addEventListener('click',function(){
     bl2over.innerHTML= bl2OverCounter;
     // don't touc2
     overCounter++;
+    sessionStorage.setItem('initOver', overCounter);
     totalOvar.innerHTML = overCounter;
 
     let sp = document.createElement('span')
@@ -6568,6 +6666,7 @@ bl2OverMinus.addEventListener('click',function(){
     bl2over.innerHTML= bl2OverCounter;
     // dont touch
     overCounter--;
+    sessionStorage.setItem('initOver', overCounter);
     totalOvar.innerHTML = overCounter;
    }
 })
@@ -6637,6 +6736,7 @@ bl3OverPlus.addEventListener('click',function(){
     bl3over.innerHTML= bl3OverCounter;
     // don't touc2
     overCounter++;
+    sessionStorage.setItem('initOver', overCounter);
     totalOvar.innerHTML = overCounter;
 
     let sp = document.createElement('span')
@@ -6659,6 +6759,7 @@ bl3OverMinus.addEventListener('click',function(){
     bl3over.innerHTML= bl3OverCounter;
     // dont touch
     overCounter--;
+    sessionStorage.setItem('initOver', overCounter);
     totalOvar.innerHTML = overCounter;
    }
 })
@@ -6727,6 +6828,7 @@ bl4OverPlus.addEventListener('click',function(){
     bl4over.innerHTML= bl4OverCounter;
     // don't touc2
     overCounter++;
+    sessionStorage.setItem('initOver', overCounter);
     totalOvar.innerHTML = overCounter;
 
     let sp = document.createElement('span')
@@ -6749,6 +6851,7 @@ bl4OverMinus.addEventListener('click',function(){
     bl4over.innerHTML= bl4OverCounter;
     // dont touch
     overCounter--;
+    sessionStorage.setItem('initOver', overCounter);
     totalOvar.innerHTML = overCounter;
    }
 })
@@ -6817,6 +6920,7 @@ bl5OverPlus.addEventListener('click',function(){
      bl5over.innerHTML= bl5OverCounter;
      // don't touc2
      overCounter++;
+     sessionStorage.setItem('initOver', overCounter);
      totalOvar.innerHTML = overCounter;
 
      let sp = document.createElement('span')
@@ -6840,6 +6944,7 @@ bl5OverMinus.addEventListener('click',function(){
     bl5over.innerHTML= bl5OverCounter;
     // dont touch
     overCounter--;
+    sessionStorage.setItem('initOver', overCounter);
     totalOvar.innerHTML = overCounter;
    }
 })
@@ -6908,6 +7013,7 @@ bl6OverPlus.addEventListener('click',function(){
      bl6over.innerHTML= bl6OverCounter;
      // don't touc2
      overCounter++;
+     sessionStorage.setItem('initOver', overCounter);
      totalOvar.innerHTML = overCounter;
 
      let sp = document.createElement('span')
@@ -6931,6 +7037,7 @@ bl6OverMinus.addEventListener('click',function(){
     bl6over.innerHTML= bl6OverCounter;
     // dont touch
     overCounter--;
+    sessionStorage.setItem('initOver', overCounter);
     totalOvar.innerHTML = overCounter;
    }
 })
@@ -6999,6 +7106,7 @@ bl7OverPlus.addEventListener('click',function(){
      bl7over.innerHTML= bl7OverCounter;
      // don't touc2
      overCounter++;
+     sessionStorage.setItem('initOver', overCounter);
      totalOvar.innerHTML = overCounter;
 
      let sp = document.createElement('span')
@@ -7022,6 +7130,7 @@ bl7OverMinus.addEventListener('click',function(){
     bl7over.innerHTML= bl7OverCounter;
     // dont touch
     overCounter--;
+    sessionStorage.setItem('initOver', overCounter);
     totalOvar.innerHTML = overCounter;
    }
 })
@@ -7088,6 +7197,7 @@ bl8OverPlus.addEventListener('click',function(){
      bl8over.innerHTML= bl8OverCounter;
      // don't touc2
      overCounter++;
+     sessionStorage.setItem('initOver', overCounter);
      totalOvar.innerHTML = overCounter;
 
      let sp = document.createElement('span')
@@ -7111,6 +7221,7 @@ bl8OverMinus.addEventListener('click',function(){
     bl8over.innerHTML= bl8OverCounter;
     // dont touch
     overCounter--;
+    sessionStorage.setItem('initOver', overCounter);
     totalOvar.innerHTML = overCounter;
    }
 })
