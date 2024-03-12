@@ -3215,6 +3215,7 @@ p1RunPlus.addEventListener('click',function(){
     sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p1ballC++;
+    sessionStorage.setItem('initp1ballC', p1ballC);
     p1Ball.innerHTML = p1ballC;
 
     p1Sr.innerHTML = ((runC*100)/p1ballC).toFixed(1);
@@ -3284,6 +3285,7 @@ p1Six.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     p1TSix.innerHTML = p1TSixC
     p1ballC++;
+    sessionStorage.setItem('initp1ballC', p1ballC);
     p1Ball.innerHTML = p1ballC;
     p1Sr.innerHTML = ((runC*100)/p1ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -3338,6 +3340,7 @@ p1Four.addEventListener('click',function(){
     p1TFourC++;
     p1TFour.innerHTML = p1TFourC;
     p1ballC++;
+    sessionStorage.setItem('initp1ballC', p1ballC);
     p1Ball.innerHTML = p1ballC;
     p1Sr.innerHTML = ((runC*100)/p1ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -3392,6 +3395,7 @@ p1two.addEventListener('click',function(){
     sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p1ballC++;
+    sessionStorage.setItem('initp1ballC', p1ballC);
     p1Ball.innerHTML = p1ballC;
     p1Sr.innerHTML = ((runC*100)/p1ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -3494,6 +3498,7 @@ p2RunPlus.addEventListener('click',function(){
     sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p2ballC++;
+    sessionStorage.setItem('initp2ballC', p2ballC);
     p2Ball.innerHTML = p2ballC;
     p2Sr.innerHTML = ((p2RunC*100)/p2ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -3556,6 +3561,7 @@ p2Six.addEventListener('click',function(){
     p2TSixC++;
     p2TSix.innerHTML = p2TSixC;
     p2ballC++;
+    sessionStorage.setItem('initp2ballC', p2ballC);
     p2Ball.innerHTML = p2ballC;
     p2Sr.innerHTML = ((p2RunC*100)/p2ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -3609,6 +3615,8 @@ p2two.addEventListener('click',function(){
     totalRun.innerHTML=runCounter;
     sessionStorage.setItem('initTotalrun', runCounter);
     p2ballC++;
+    sessionStorage.setItem('initp2ballC', p2ballC);
+     sessionStorage.setItem('initp2ballC', p2ballC);
     p2Ball.innerHTML = p2ballC;
     p2Sr.innerHTML = ((p2RunC*100)/p2ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -3663,6 +3671,7 @@ p2Four.addEventListener('click',function(){
     p2TFourC++;
     p2TFour.innerHTML = p2TFourC;
     p2ballC++;
+    sessionStorage.setItem('initp2ballC', p2ballC);
     p2Ball.innerHTML = p2ballC;
     p2Sr.innerHTML = ((p2RunC*100)/p2ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -3764,6 +3773,7 @@ p3RunPlus.addEventListener('click',function(){
     sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p3ballC++;
+    sessionStorage.setItem('initp3ballC', p3ballC)
     p3Ball.innerHTML = p3ballC;
     p3Sr.innerHTML = ((p3RunC*100)/p3ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -3827,6 +3837,7 @@ p3Six.addEventListener('click',function(){
     p3TSixC++;
     p3TSix.innerHTML = p3TSixC;
     p3ballC++;
+    sessionStorage.setItem('initp3ballC', p3ballC)
     p3Ball.innerHTML = p3ballC;
     p3Sr.innerHTML = ((p3RunC*100)/p3ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -3881,6 +3892,8 @@ p3two.addEventListener('click',function(){
     sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p3ballC++;
+    sessionStorage.setItem('initp3ballC', p3ballC)
+
     p3Ball.innerHTML = p3ballC;
     p3Sr.innerHTML = ((p3RunC*100)/p3ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -3936,6 +3949,7 @@ p3Four.addEventListener('click',function(){
     p3TFourC++;
     p3TFour.innerHTML = p3TFourC;
     p3ballC++;
+    sessionStorage.setItem('initp3ballC', p3ballC)
     p3Ball.innerHTML = p3ballC;
     p3Sr.innerHTML = ((p3RunC*100)/p3ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -4041,6 +4055,7 @@ p4RunPlus.addEventListener('click',function(){
     sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p4ballC++;
+    sessionStorage.setItem('initp4ballC', p4ballC)
     p4Ball.innerHTML = p4ballC;
     p4Sr.innerHTML = ((p4RunC*100)/p4ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -4104,6 +4119,7 @@ p4Six.addEventListener('click',function(){
     p4TSixC++;
     p4TSix.innerHTML = p4TSixC;
     p4ballC++;
+    sessionStorage.setItem('initp4ballC', p4ballC)
     p4Ball.innerHTML = p4ballC;
     p4Sr.innerHTML = ((p4RunC*100)/p4ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -4157,6 +4173,8 @@ p4two.addEventListener('click',function(){
     sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p4ballC++;
+    sessionStorage.setItem('initp4ballC', p4ballC)
+
     p4Ball.innerHTML = p4ballC;
     p4Sr.innerHTML = ((p4RunC*100)/p4ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -4211,6 +4229,7 @@ p4Four.addEventListener('click',function(){
     p4TFourC++;
     p4TFour.innerHTML = p4TFourC;
     p4ballC++;
+    sessionStorage.setItem('initp4ballC', p4ballC)
     p4Ball.innerHTML = p4ballC;
     p4Sr.innerHTML = ((p4RunC*100)/p4ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -4313,6 +4332,7 @@ p5RunPlus.addEventListener('click',function(){
     sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p5ballC++;
+    sessionStorage.setItem('initp5ballC', p5ballC)
     p5Ball.innerHTML = p5ballC;
     p5Sr.innerHTML = ((p5RunC*100)/p5ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -4375,6 +4395,7 @@ p5Six.addEventListener('click',function(){
     p5TSixC++;
     p5TSix.innerHTML = p5TSixC;
     p5ballC++;
+    sessionStorage.setItem('initp5ballC', p5ballC)
     p5Ball.innerHTML = p5ballC;
     p5Sr.innerHTML = ((p5RunC*100)/p5ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -4428,6 +4449,7 @@ p5two.addEventListener('click',function(){
     sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p5ballC++;
+    sessionStorage.setItem('initp5ballC', p5ballC)
     p5Ball.innerHTML = p5ballC;
     p5Sr.innerHTML = ((p5RunC*100)/p5ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -4482,6 +4504,7 @@ p5Four.addEventListener('click',function(){
     p5TFourC++;
     p5TFour.innerHTML = p5TFourC;
     p5ballC++;
+    sessionStorage.setItem('initp5ballC', p5ballC)
     p5Ball.innerHTML = p5ballC;
     p5Sr.innerHTML = ((p5RunC*100)/p5ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -4584,6 +4607,7 @@ p6RunPlus.addEventListener('click',function(){
     sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p6ballC++;
+    sessionStorage.setItem('initp6ballC', p6ballC)
     p6Ball.innerHTML = p6ballC;
     p6Sr.innerHTML = ((p6RunC*100)/p6ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -4646,6 +4670,7 @@ p6Six.addEventListener('click',function(){
     p6TSixC++;
     p6TSix.innerHTML = p6TSixC;
     p6ballC++;
+    sessionStorage.setItem('initp6ballC', p6ballC)
     p6Ball.innerHTML = p6ballC;
     p6Sr.innerHTML = ((p6RunC*100)/p6ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -4699,6 +4724,7 @@ p6two.addEventListener('click',function(){
     sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p6ballC++;
+    sessionStorage.setItem('initp6ballC', p6ballC)
     p6Ball.innerHTML = p6ballC;
     p6Sr.innerHTML = ((p6RunC*100)/p6ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -4753,6 +4779,7 @@ p6Four.addEventListener('click',function(){
     p6TFourC++;
     p6TFour.innerHTML = p6TFourC;
     p6ballC++;
+    sessionStorage.setItem('initp6ballC', p6ballC)
     p6Ball.innerHTML = p6ballC;
     p6Sr.innerHTML = ((p6RunC*100)/p6ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -4855,6 +4882,7 @@ p7RunPlus.addEventListener('click',function(){
     sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p7ballC++;
+    sessionStorage.setItem('initp7ballC', p7ballC)
     p7Ball.innerHTML = p7ballC;
     p7Sr.innerHTML = ((p7RunC*100)/p7ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -4918,6 +4946,7 @@ p7Six.addEventListener('click',function(){
     p7TSixC++;
     p7TSix.innerHTML = p7TSixC;
     p7ballC++;
+    sessionStorage.setItem('initp7ballC', p7ballC)
     p7Ball.innerHTML = p7ballC;
     p7Sr.innerHTML = ((p7RunC*100)/p7ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -4971,6 +5000,7 @@ p7two.addEventListener('click',function(){
     sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p7ballC++;
+    sessionStorage.setItem('initp7ballC', p7ballC)
     p7Ball.innerHTML = p7ballC;
     p7Sr.innerHTML = ((p7RunC*100)/p7ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -5025,6 +5055,7 @@ p7Four.addEventListener('click',function(){
     p7TFourC++;
     p7TFour.innerHTML = p7TFourC;
     p7ballC++;
+    sessionStorage.setItem('initp7ballC', p7ballC)
     p7Ball.innerHTML = p7ballC;
     p7Sr.innerHTML = ((p7RunC*100)/p7ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -5130,6 +5161,7 @@ p8RunPlus.addEventListener('click',function(){
     sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p8ballC++;
+    sessionStorage.setItem('initp8ballC', p8ballC)
     p8Ball.innerHTML = p8ballC;
     p8Sr.innerHTML = ((p8RunC*100)/p8ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -5192,6 +5224,7 @@ p8Six.addEventListener('click',function(){
     p8TSixC++;
     p8TSix.innerHTML = p8TSixC;
     p8ballC++;
+    sessionStorage.setItem('initp8ballC', p8ballC)
     p8Ball.innerHTML = p8ballC;
     p8Sr.innerHTML = ((p8RunC*100)/p8ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -5245,6 +5278,7 @@ p8two.addEventListener('click',function(){
     sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p8ballC++;
+    sessionStorage.setItem('initp8ballC', p8ballC)
     p8Ball.innerHTML = p8ballC;
     p8Sr.innerHTML = ((p8RunC*100)/p8ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -5299,6 +5333,7 @@ p8Four.addEventListener('click',function(){
     p8TFourC++;
     p8TFour.innerHTML = p8TFourC;
     p8ballC++;
+    sessionStorage.setItem('initp8ballC', p8ballC)
     p8Ball.innerHTML = p8ballC;
     p8Sr.innerHTML = ((p8RunC*100)/p8ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -5402,6 +5437,7 @@ p9RunPlus.addEventListener('click',function(){
     sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p9ballC++;
+    sessionStorage.setItem('initp9ballC', p9ballC)
     p9Ball.innerHTML = p9ballC;
     p9Sr.innerHTML = ((p9RunC*100)/p9ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -5463,6 +5499,7 @@ p9Six.addEventListener('click',function(){
     p9TSixC++;
     p9TSix.innerHTML = p9TSixC;
     p9ballC++;
+    sessionStorage.setItem('initp9ballC', p9ballC)
     p9Ball.innerHTML = p9ballC;
     p9Sr.innerHTML = ((p9RunC*100)/p9ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -5516,6 +5553,7 @@ p9two.addEventListener('click',function(){
     sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p9ballC++;
+    sessionStorage.setItem('initp9ballC', p9ballC)
     p9Ball.innerHTML = p9ballC;
     p9Sr.innerHTML = ((p9RunC*100)/p9ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -5570,6 +5608,7 @@ p9Four.addEventListener('click',function(){
     p9TFourC++;
     p9TFour.innerHTML =p9TFourC;
     p9ballC++;
+    sessionStorage.setItem('initp9ballC', p9ballC)
     p9Ball.innerHTML = p9ballC;
     p9Sr.innerHTML = ((p9RunC*100)/p9ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -5672,6 +5711,7 @@ p10RunPlus.addEventListener('click',function(){
     sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p10ballC++;
+    sessionStorage.setItem('initp10ballC', p10ballC)
     p10Ball.innerHTML = p10ballC;
     p10Sr.innerHTML = ((p10RunC*100)/p10ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -5733,6 +5773,7 @@ p10Six.addEventListener('click',function(){
     p10TSixC++;
     p10TSix.innerHTML =p10TSixC
     p10ballC++;
+    sessionStorage.setItem('initp10ballC', p10ballC)
     p10Ball.innerHTML = p10ballC;
     p10Sr.innerHTML = ((p10RunC*100)/p10ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -5786,6 +5827,7 @@ p10two.addEventListener('click',function(){
     sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p10ballC++;
+    sessionStorage.setItem('initp10ballC', p10ballC)
     p10Ball.innerHTML = p10ballC;
     p10Sr.innerHTML = ((p10RunC*100)/p10ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -5840,6 +5882,7 @@ p10Four.addEventListener('click',function(){
     p10TFourC++;
     p10TFour.innerHTML = p10TFourC;
     p10ballC++;
+    sessionStorage.setItem('initp10ballC', p10ballC)
     p10Ball.innerHTML = p10ballC;
     p10Sr.innerHTML = ((p10RunC*100)/p10ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -5942,6 +5985,7 @@ p11RunPlus.addEventListener('click',function(){
     sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p11ballC++;
+    sessionStorage.setItem('initp11ballC', p11ballC)
     p11Ball.innerHTML = p11ballC;
     p11Sr.innerHTML = ((p11RunC*100)/p11ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -6003,6 +6047,7 @@ p11Six.addEventListener('click',function(){
     p11TSixC++;
     p11TSix.innerHTML =p11TSixC;
     p11ballC++;
+    sessionStorage.setItem('initp11ballC', p11ballC)
     p11Ball.innerHTML = p11ballC;
     p11Sr.innerHTML = ((p11RunC*100)/p11ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -6056,6 +6101,7 @@ p11two.addEventListener('click',function(){
     sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
     p11ballC++;
+    sessionStorage.setItem('initp11ballC', p11ballC)
     p11Ball.innerHTML = p11ballC;
     p11Sr.innerHTML = ((p11RunC*100)/p11ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -6110,6 +6156,7 @@ p11Four.addEventListener('click',function(){
     p11TFourC++;
     p11TFour.innerHTML= p11TFourC
     p11ballC++;
+    sessionStorage.setItem('initp11ballC', p11ballC)
     p11Ball.innerHTML = p11ballC;
     p11Sr.innerHTML = ((p11RunC*100)/p11ballC).toFixed(1);
     if(needRuns.innerHTML>1){
@@ -6180,9 +6227,14 @@ let p11Sr = document.querySelector('.p11Sr')
 
 // RunPlus Minus Button #End
 // BallPlus Minus Button #start
-let p1ballC=0;
+if (!sessionStorage.getItem('initp1ballC')) {
+    sessionStorage.setItem('initp1ballC', '0');
+  }
+let p1ballC = Number(sessionStorage.getItem('initp1ballC'));
+
 p1BallPlus.addEventListener('click',function(){
     p1ballC++;
+    sessionStorage.setItem('initp1ballC', p1ballC);
     p1DotsC++;
     p1Ball.innerHTML = p1ballC;
     p1Dots.innerHTML = p1DotsC;
@@ -6198,18 +6250,31 @@ p1BallPlus.addEventListener('click',function(){
     }
     
 })
+p1Ball.innerHTML = p1ballC;
+
 p1BallMinus.addEventListener('click',function(){
     if(p1ballC>0){
         p1ballC--;
+        sessionStorage.setItem('initp1ballC', p1ballC);
         p1Ball.innerHTML = p1ballC;
         p1Sr.innerHTML = ((runC*100)/p1ballC).toFixed(1);
         // p1Dots.innerHTML = p1ballC;
     }
     
 })
-let p2ballC=0;
+
+if (!sessionStorage.getItem('initp2ballC')) {
+    sessionStorage.setItem('initp2ballC', '0');
+  }
+let p2ballC = Number(sessionStorage.getItem('initp2ballC'));
+
+sessionStorage.setItem('initp2ballC', p2ballC);
+
+
+
 p2BallPlus.addEventListener('click',function(){
     p2ballC++;
+    sessionStorage.setItem('initp2ballC', p2ballC);
     p2DotsC++;
     p2Ball.innerHTML = p2ballC;
     p2Dots.innerHTML = p2DotsC;
@@ -6227,14 +6292,24 @@ p2BallPlus.addEventListener('click',function(){
 p2BallMinus.addEventListener('click',function(){
     if(p2ballC>0){
         p2ballC--;
+        sessionStorage.setItem('initp2ballC', p2ballC);
         p2Ball.innerHTML = p2ballC;
         p2Sr.innerHTML = ((p2RunC*100)/p2ballC).toFixed(1);
         // p2Dots.innerHTML = p2ballC;
     }
 })
-let p3ballC=0;
+p2Ball.innerHTML = p2ballC;
+
+if (!sessionStorage.getItem('initp3ballC')) {
+    sessionStorage.setItem('initp3ballC', '0');
+  }
+let p3ballC = Number(sessionStorage.getItem('initp3ballC'));
+
+
+
 p3BallPlus.addEventListener('click',function(){
     p3ballC++;
+    sessionStorage.setItem('initp3ballC', p3ballC);
     p3DotsC++;
     p3Ball.innerHTML = p3ballC;
     p3Dots.innerHTML = p3DotsC;
@@ -6252,15 +6327,25 @@ p3BallPlus.addEventListener('click',function(){
 p3BallMinus.addEventListener('click',function(){
     if(p3ballC>0){
         p3ballC--;
+        sessionStorage.setItem('initp3ballC', p3ballC);
         p3Ball.innerHTML = p3ballC;
         p3Sr.innerHTML = ((p3RunC*100)/p3ballC).toFixed(1);
         // p3Dots.innerHTML = p3ballC;
     }
 })
-let p4ballC=0;
+p3Ball.innerHTML = p3ballC;
+
+if (!sessionStorage.getItem('initp4ballC')) {
+    sessionStorage.setItem('initp4ballC', '0');
+  }
+let p4ballC = Number(sessionStorage.getItem('initp4ballC'));
+
+
+
 p4BallPlus.addEventListener('click',function(){
     p4ballC++;
     p4DotsC++;
+    sessionStorage.setItem('initp4ballC', p4ballC);
     p4Ball.innerHTML = p4ballC;
     p4Dots.innerHTML = p4DotsC;
     p4Sr.innerHTML = ((p4RunC*100)/p4ballC).toFixed(1);
@@ -6278,14 +6363,22 @@ p4BallMinus.addEventListener('click',function(){
     if(p4ballC>0){
 
         p4ballC--;
+        sessionStorage.setItem('initp4ballC', p4ballC);
         p4Ball.innerHTML = p4ballC;
         p4Sr.innerHTML = ((p4RunC*100)/p4ballC).toFixed(1);
         // p4Dots.innerHTML = p4ballC;
     }
 })
-let p5ballC=0;
+p4Ball.innerHTML = p4ballC;
+if (!sessionStorage.getItem('initp5ballC')) {
+    sessionStorage.setItem('initp5ballC', '0');
+  }
+let p5ballC = Number(sessionStorage.getItem('initp5ballC'));
+
+
 p5BallPlus.addEventListener('click',function(){
     p5ballC++;
+    sessionStorage.setItem('initp5ballC', p5ballC);
     p5DotsC++;
     p5Ball.innerHTML = p5ballC;
     p5Dots.innerHTML = p5DotsC;
@@ -6304,13 +6397,22 @@ p5BallMinus.addEventListener('click',function(){
     if(p5ballC>0){
         
         p5ballC--;
+        sessionStorage.setItem('initp5ballC', p5ballC);
         p5Ball.innerHTML = p5ballC;
         p5Sr.innerHTML = ((p5RunC*100)/p5ballC).toFixed(1);
     }
 })
-let p6ballC=0;
+p5Ball.innerHTML = p5ballC;
+
+if (!sessionStorage.getItem('initp6ballC')) {
+    sessionStorage.setItem('initp6ballC', '0');
+  }
+let p6ballC = Number(sessionStorage.getItem('initp6ballC'));
+
+
 p6BallPlus.addEventListener('click',function(){
     p6ballC++;
+    sessionStorage.setItem('initp6ballC', p6ballC);
     p6DotsC++;
     p6Ball.innerHTML = p6ballC;
     p6Dots.innerHTML = p6DotsC;
@@ -6329,13 +6431,23 @@ p6BallMinus.addEventListener('click',function(){
     if(p6ballC>0){
         
         p6ballC--;
+        sessionStorage.setItem('initp6ballC', p6ballC);
         p6Ball.innerHTML = p6ballC;
         p6Sr.innerHTML = ((p6RunC*100)/p6ballC).toFixed(1);
     }
 })
-let p7ballC=0;
+p6Ball.innerHTML = p6ballC;
+
+if (!sessionStorage.getItem('initp7ballC')) {
+    sessionStorage.setItem('initp7ballC', '0');
+  }
+let p7ballC = Number(sessionStorage.getItem('initp7ballC'));
+
+
+
 p7BallPlus.addEventListener('click',function(){
     p7ballC++;
+    sessionStorage.setItem('initp7ballC', p7ballC);
     p7DotsC++;
     p7Ball.innerHTML = p7ballC;
     p7Dots.innerHTML = p7DotsC;
@@ -6354,13 +6466,21 @@ p7BallMinus.addEventListener('click',function(){
     if(p7ballC>0){
         
         p7ballC--;
-        p7Ball.innerHTML = p7ballC;
+        sessionStorage.setItem('initp7ballC', p7ballC);
+     
         p7Sr.innerHTML = ((p7RunC*100)/p7ballC).toFixed(1);
     }
 })
-let p8ballC=0;
+p7Ball.innerHTML = p7ballC;
+if (!sessionStorage.getItem('initp8ballC')) {
+    sessionStorage.setItem('initp8ballC', '0');
+  }
+let p8ballC = Number(sessionStorage.getItem('initp8ballC'));
+
+
 p8BallPlus.addEventListener('click',function(){
     p8ballC++;
+    sessionStorage.setItem('initp8ballC', p8ballC);
     p8DotsC++;
     p8Ball.innerHTML = p8ballC;
     p8Dots.innerHTML = p8DotsC;
@@ -6379,13 +6499,22 @@ p8BallMinus.addEventListener('click',function(){
     if(p8ballC>0){
         
         p8ballC--;
+        sessionStorage.setItem('initp8ballC', p8ballC);
         p8Ball.innerHTML = p8ballC;
         p8Sr.innerHTML = ((p8RunC*100)/p8ballC).toFixed(1);
     }
 })
-let p9ballC=0;
+p8Ball.innerHTML = p8ballC;
+
+if (!sessionStorage.getItem('initp9ballC')) {
+    sessionStorage.setItem('initp9ballC', '0');
+  }
+let p9ballC = Number(sessionStorage.getItem('initp9ballC'));
+
+
 p9BallPlus.addEventListener('click',function(){
     p9ballC++;
+    sessionStorage.setItem('initp9ballC', p9ballC);
     p9DotsC++;
     p9Ball.innerHTML = p9ballC;
     p9Dots.innerHTML = p9DotsC;
@@ -6404,13 +6533,21 @@ p9BallMinus.addEventListener('click',function(){
     if(p9ballC>0){
         
         p9ballC--;
+        sessionStorage.setItem('initp9ballC', p9ballC);
         p9Ball.innerHTML = p9ballC;
         p9Sr.innerHTML = ((p9RunC*100)/p9ballC).toFixed(1);
     }
 })
-let p10ballC=0;
+p9Ball.innerHTML = p9ballC;
+if (!sessionStorage.getItem('initp10ballC')) {
+    sessionStorage.setItem('initp10ballC', '0');
+  }
+let p10ballC = Number(sessionStorage.getItem('initp10ballC'));
+
+
 p10BallPlus.addEventListener('click',function(){
     p10ballC++;
+    sessionStorage.setItem('initp10ballC', p10ballC);
     p10DotsC++;
     p10Ball.innerHTML = p10ballC;
     p10Dots.innerHTML = p10DotsC;
@@ -6429,13 +6566,21 @@ p10BallMinus.addEventListener('click',function(){
     if(p10ballC>0){
         
         p10ballC--;
+        sessionStorage.setItem('initp10ballC', p10ballC);
         p10Ball.innerHTML = p10ballC;
         p10Sr.innerHTML = ((p10RunC*100)/p10ballC).toFixed(1);
     }
 })
-let p11ballC=0;
+p10Ball.innerHTML = p10ballC;
+if (!sessionStorage.getItem('initp11ballC')) {
+    sessionStorage.setItem('initp11ballC', '0');
+  }
+let p11ballC = Number(sessionStorage.getItem('initp11ballC'));
+
+
 p11BallPlus.addEventListener('click',function(){
     p11ballC++;
+    sessionStorage.setItem('initp11ballC', p11ballC);
     p11DotsC++;
     p11Ball.innerHTML = p11ballC;
     p11Dots.innerHTML = p11DotsC;
@@ -6454,10 +6599,12 @@ p11BallMinus.addEventListener('click',function(){
     if(p11ballC>0){
         
         p11ballC--;
+        sessionStorage.setItem('initp11ballC', p11ballC);
         p11Ball.innerHTML = p11ballC;
         p11Sr.innerHTML = ((p11RunC*100)/p11ballC).toFixed(1);
     }
 })
+p11Ball.innerHTML = p11ballC;
 
 
 
