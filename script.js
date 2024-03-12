@@ -1083,6 +1083,106 @@ overLimitBtn.addEventListener('click',function(){
         error3.innerHTML = 'Invalid'
     }
     else{
+        if (sessionStorage.getItem('initp1')) {
+            player1.style.display= 'block'
+            let b1dis = sessionStorage.getItem('initp1');
+            p1.innerHTML = b1dis;
+            btn1.style.display = 'none'
+            b1.style.display = 'none';
+            btn2.style.display = 'inline-block'
+            b2.style.display = 'inline-block';
+          }
+
+        if (sessionStorage.getItem('initp2')) {
+            player2.style.display= 'block'
+            let b2dis = sessionStorage.getItem('initp2');
+            p2.innerHTML = b2dis;
+            btn2.style.display = 'none'
+            b2.style.display = 'none';
+            btn3.style.display = 'inline-block'
+            b3.style.display = 'inline-block';
+          }
+
+        if (sessionStorage.getItem('initp3')) {
+            player3.style.display= 'block'
+            let b3dis = sessionStorage.getItem('initp3');
+            p3.innerHTML = b3dis;
+            btn3.style.display = 'none'
+            b3.style.display = 'none';
+            btn4.style.display = 'inline-block'
+            b4.style.display = 'inline-block';
+        }
+        if (sessionStorage.getItem('initp4')) {
+            player4.style.display= 'block'
+            let b4dis = sessionStorage.getItem('initp4');
+            p4.innerHTML = b4dis;
+            btn4.style.display = 'none'
+            b4.style.display = 'none';
+            btn5.style.display = 'inline-block'
+            b5.style.display = 'inline-block';
+          }
+          if (sessionStorage.getItem('initp5')) {
+            player5.style.display= 'block'
+            let b5dis = sessionStorage.getItem('initp5');
+            p5.innerHTML = b5dis;
+            btn5.style.display = 'none'
+            b5.style.display = 'none';
+            btn6.style.display = 'inline-block'
+            b6.style.display = 'inline-block';
+          }
+          if (sessionStorage.getItem('initp6')) {
+            player6.style.display= 'block'
+            let b6dis = sessionStorage.getItem('initp6');
+            p6.innerHTML = b6dis;
+            btn6.style.display = 'none'
+            b6.style.display = 'none';
+            btn7.style.display = 'inline-block'
+            b7.style.display = 'inline-block';
+          }
+          if (sessionStorage.getItem('initp7')) {
+            player7.style.display= 'block'
+            let b7dis = sessionStorage.getItem('initp7');
+            p7.innerHTML = b7dis;
+            btn7.style.display = 'none'
+            b7.style.display = 'none';
+            btn8.style.display = 'inline-block'
+            b8.style.display = 'inline-block';
+          }
+          if (sessionStorage.getItem('initp8')) {
+            player8.style.display= 'block'
+            let b8dis = sessionStorage.getItem('initp8');
+            p8.innerHTML = b8dis;
+            btn8.style.display = 'none'
+            b8.style.display = 'none';
+            btn9.style.display = 'inline-block'
+            b9.style.display = 'inline-block';
+          }
+          if (sessionStorage.getItem('initp9')) {
+            player9.style.display= 'block'
+            let b9dis = sessionStorage.getItem('initp9');
+            p9.innerHTML = b9dis;
+            btn9.style.display = 'none'
+            b9.style.display = 'none';
+            btn10.style.display = 'inline-block'
+            b10.style.display = 'inline-block';
+          }
+          if (sessionStorage.getItem('initp10')) {
+            player10.style.display= 'block'
+            let b10dis = sessionStorage.getItem('initp10');
+            p10.innerHTML = b10dis;
+            btn10.style.display = 'none'
+            b10.style.display = 'none';
+            btn11.style.display = 'inline-block'
+            b11.style.display = 'inline-block';
+          }
+          if (sessionStorage.getItem('initp11')) {
+            player11.style.display= 'block'
+            let b11dis = sessionStorage.getItem('initp11');
+            p11.innerHTML = b11dis;
+            btn11.style.display = 'none'
+            b11.style.display = 'none';
+            
+          }
         overLimitPortion.style.display = 'none'
         scoreAndOver.style.display = 'block'
         batterOrBowler.style.display = 'flex'
@@ -2732,7 +2832,14 @@ btn1.addEventListener('click',function(){
         err2.innerHTML = 'Write a Batter name.'
     }else{
         err2.style.display = 'none'
-        p1.innerHTML = b1.value;
+        if (!sessionStorage.getItem('initp1')) {
+            sessionStorage.setItem('initp1', b1.value);
+            player1.style.display= 'block'
+          }
+          
+        let b1dis = sessionStorage.getItem('initp1');
+        p1.innerHTML = b1dis;
+        // p1.innerHTML = b1.value;
         player1.style.display= 'block'
         btn1.style.display = 'none'
         b1.style.display = 'none';
@@ -2747,8 +2854,16 @@ btn2.addEventListener('click',function(){
         err2.style.display = 'inline-block'
     }
     else{
+
         err2.style.display = 'none'
-        p2.innerHTML = b2.value;
+        // p2.innerHTML = b2.value;
+        if (!sessionStorage.getItem('initp2')) {
+            sessionStorage.setItem('initp2', b2.value);
+            player2.style.display= 'block'
+          }
+          
+        let b2dis = sessionStorage.getItem('initp2');
+        p2.innerHTML = b2dis;
         player2.style.display= 'block'
         btn2.style.display = 'none'
         b2.style.display = 'none';
@@ -2763,7 +2878,14 @@ btn3.addEventListener('click',function(){
     }
     else{
         err2.style.display = 'none'
-        p3.innerHTML = b3.value;
+        // p3.innerHTML = b3.value;
+        if (!sessionStorage.getItem('initp3')) {
+            sessionStorage.setItem('initp3', b3.value);
+            player3.style.display= 'block'
+          }
+          
+        let b3dis = sessionStorage.getItem('initp3');
+        p3.innerHTML = b3dis;
         player3.style.display= 'block'
         btn3.style.display = 'none'
         b3.style.display = 'none';
@@ -2778,7 +2900,14 @@ btn4.addEventListener('click',function(){
     }
     else{
         err2.style.display = 'none'
-        p4.innerHTML = b4.value;
+        // p4.innerHTML = b4.value;
+        if (!sessionStorage.getItem('initp4')) {
+            sessionStorage.setItem('initp4', b4.value);
+            player4.style.display= 'block'
+          }
+          
+        let b4dis = sessionStorage.getItem('initp4');
+        p4.innerHTML = b4dis;
         player4.style.display= 'block'
         btn4.style.display = 'none'
         b4.style.display = 'none';
@@ -2793,7 +2922,14 @@ btn5.addEventListener('click',function(){
     }
     else{
         err2.style.display = 'none'
-        p5.innerHTML = b5.value;
+        if (!sessionStorage.getItem('initp5')) {
+            sessionStorage.setItem('initp5', b5.value);
+            player5.style.display= 'block'
+          }
+          
+        let b5dis = sessionStorage.getItem('initp5');
+        p5.innerHTML = b5dis;
+        // p5.innerHTML = b5.value;
         player5.style.display= 'block'
         btn5.style.display = 'none'
         b5.style.display = 'none';
@@ -2808,7 +2944,14 @@ btn6.addEventListener('click',function(){
     }
     else{
         err2.style.display = 'none'
-        p6.innerHTML = b6.value;
+        if (!sessionStorage.getItem('initp6')) {
+            sessionStorage.setItem('initp6', b6.value);
+            player6.style.display= 'block'
+          }
+          
+        let b6dis = sessionStorage.getItem('initp6');
+        p6.innerHTML = b6dis;
+        // p6.innerHTML = b6.value;
         player6.style.display= 'block'
         btn6.style.display = 'none'
         b6.style.display = 'none';
@@ -2823,7 +2966,14 @@ btn7.addEventListener('click',function(){
     }
     else{
         err2.style.display = 'none'
-        p7.innerHTML = b7.value;
+        if (!sessionStorage.getItem('initp7')) {
+            sessionStorage.setItem('initp7', b7.value);
+            player7.style.display= 'block'
+          }
+          
+        let b7dis = sessionStorage.getItem('initp7');
+        p7.innerHTML = b7dis;
+        // p7.innerHTML = b7.value;
         player7.style.display= 'block'
         btn7.style.display = 'none'
         b7.style.display = 'none';
@@ -2838,7 +2988,14 @@ btn8.addEventListener('click',function(){
     }
     else{
         err2.style.display = 'none'
-        p8.innerHTML = b8.value;
+        if (!sessionStorage.getItem('initp8')) {
+            sessionStorage.setItem('initp8', b8.value);
+            player8.style.display= 'block'
+          }
+          
+        let b8dis = sessionStorage.getItem('initp8');
+        p8.innerHTML = b8dis;
+        // p8.innerHTML = b8.value;
         player8.style.display= 'block'
         btn8.style.display = 'none'
         b8.style.display = 'none';
@@ -2853,7 +3010,14 @@ btn9.addEventListener('click',function(){
     }
     else{
         err2.style.display = 'none'
-        p9.innerHTML = b9.value;
+        if (!sessionStorage.getItem('initp9')) {
+            sessionStorage.setItem('initp9', b9.value);
+            player9.style.display= 'block'
+          }
+          
+        let b9dis = sessionStorage.getItem('initp9');
+        p9.innerHTML = b9dis;
+        // p9.innerHTML = b9.value;
         player9.style.display= 'block'
         btn9.style.display = 'none'
         b9.style.display = 'none';
@@ -2868,7 +3032,14 @@ btn10.addEventListener('click',function(){
     }
     else{
         err2.style.display = 'none'
-        p10.innerHTML = b10.value;
+        if (!sessionStorage.getItem('initp10')) {
+            sessionStorage.setItem('initp10', b10.value);
+            player10.style.display= 'block'
+          }
+          
+        let b10dis = sessionStorage.getItem('initp10');
+        p10.innerHTML = b10dis;
+        // p10.innerHTML = b10.value;
         player10.style.display= 'block'
         btn10.style.display = 'none'
         b10.style.display = 'none';
@@ -2883,7 +3054,14 @@ btn11.addEventListener('click',function(){
     }
     else{
         err2.style.display = 'none'
-        p11.innerHTML = b11.value;
+        if (!sessionStorage.getItem('initp11')) {
+            sessionStorage.setItem('initp11', b11.value);
+            player11.style.display= 'block'
+          }
+          
+        let b11dis = sessionStorage.getItem('initp11');
+        p11.innerHTML = b11dis;
+        // p11.innerHTML = b11.value;
         player11.style.display= 'block'
         btn11.style.display = 'none'
         b11.style.display = 'none';
@@ -2988,7 +3166,11 @@ let p11BallMinus = document.querySelector('.p11BallMinus')
 
 
 // RunPlus Button #Start
-let runC=0;
+if (!sessionStorage.getItem('initrunC')) {
+    sessionStorage.setItem('initrunC', '0');
+  }
+  
+  let runC = Number(sessionStorage.getItem('initrunC'));
 p1RunPlus.addEventListener('click',function(){
 
     if(bl1runs.getAttribute('id')==='bl1Run'){
@@ -3027,6 +3209,7 @@ p1RunPlus.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     runC++;
+    sessionStorage.setItem('initrunC', runC);
     p1run.innerHTML = runC;
     runCounter++;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -3043,6 +3226,7 @@ p1RunPlus.addEventListener('click',function(){
     }
     
 })
+p1run.innerHTML = runC;
 
 
 let p1Dots = document.querySelector('.p1Dots')
@@ -3092,7 +3276,9 @@ p1Six.addEventListener('click',function(){
     }
     p1TSixC++;
     runC=runC+6;
+    
     p1run.innerHTML = runC;
+    sessionStorage.setItem('initrunC', runC);
     runCounter+=6;
     sessionStorage.setItem('initTotalrun', runCounter);
     totalRun.innerHTML=runCounter;
@@ -3144,6 +3330,7 @@ p1Four.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     runC=runC+4;
+    sessionStorage.setItem('initrunC', runC);
     p1run.innerHTML = runC;
     runCounter+=4;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -3199,6 +3386,7 @@ p1two.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     runC=runC+2;
+    sessionStorage.setItem('initrunC', runC);
     p1run.innerHTML = runC;
     runCounter+=2;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -3243,6 +3431,7 @@ p1RunMinus.addEventListener('click',function(){
             bl8RunPlus1.innerHTML = bl8RunC;
         }
         runC--;
+        sessionStorage.setItem('initrunC', runC);
         p1run.innerHTML = runC;
         runCounter--;
         sessionStorage.setItem('initTotalrun', runCounter);
@@ -3257,7 +3446,12 @@ p1RunMinus.addEventListener('click',function(){
     }
     
 })
-let p2RunC = 0;
+
+if (!sessionStorage.getItem('initp2RunC')) {
+    sessionStorage.setItem('initp2RunC', '0');
+  }
+let p2RunC = Number(sessionStorage.getItem('initp2RunC'));
+
 p2RunPlus.addEventListener('click',function(){
     if(bl1runs.getAttribute('id')==='bl1Run'){
         bl1RunC++;
@@ -3294,6 +3488,7 @@ p2RunPlus.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p2RunC++;
+    sessionStorage.setItem('initp2RunC', p2RunC);
     p2run.innerHTML = p2RunC;
     runCounter++;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -3353,6 +3548,7 @@ p2Six.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p2RunC=p2RunC+6;
+    sessionStorage.setItem('initp2RunC', p2RunC);
     p2run.innerHTML = p2RunC;
     runCounter+=6;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -3407,6 +3603,7 @@ p2two.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p2RunC=p2RunC+2;
+    sessionStorage.setItem('initp2RunC', p2RunC);
     p2run.innerHTML = p2RunC;
     runCounter+=2;
     totalRun.innerHTML=runCounter;
@@ -3458,6 +3655,7 @@ p2Four.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p2RunC=p2RunC+4;
+    sessionStorage.setItem('initp2RunC', p2RunC);
     p2run.innerHTML = p2RunC;
     runCounter+=4;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -3504,6 +3702,7 @@ p2RunMinus.addEventListener('click',function(){
             bl8RunPlus1.innerHTML = bl8RunC;
         }
         p2RunC--;
+        sessionStorage.setItem('initp2RunC', p2RunC);
         p2run.innerHTML = p2RunC;
         runCounter--;
         sessionStorage.setItem('initTotalrun', runCounter);
@@ -3517,7 +3716,13 @@ p2RunMinus.addEventListener('click',function(){
         }
     }
 })
-let p3RunC = 0;
+p2run.innerHTML = p2RunC;
+
+if (!sessionStorage.getItem('initp3RunC')) {
+    sessionStorage.setItem('initp3RunC', '0');
+  }
+let p3RunC = Number(sessionStorage.getItem('initp3RunC'));
+
 p3RunPlus.addEventListener('click',function(){
     if(bl1runs.getAttribute('id')==='bl1Run'){
         bl1RunC++;
@@ -3553,6 +3758,7 @@ p3RunPlus.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p3RunC++;
+    sessionStorage.setItem('initp3RunC', p3RunC);
     p3run.innerHTML = p3RunC;
     runCounter++;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -3613,6 +3819,7 @@ p3Six.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p3RunC=p3RunC+6;
+    sessionStorage.setItem('initp3RunC', p3RunC);
     p3run.innerHTML = p3RunC;
     runCounter+=6;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -3668,6 +3875,7 @@ p3two.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p3RunC=p3RunC+2;
+    sessionStorage.setItem('initp3RunC', p3RunC);
     p3run.innerHTML = p3RunC;
     runCounter+=2;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -3720,6 +3928,7 @@ p3Four.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p3RunC=p3RunC+4;
+    sessionStorage.setItem('initp3RunC', p3RunC);
     p3run.innerHTML = p3RunC;
     runCounter+=4;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -3767,6 +3976,7 @@ p3RunMinus.addEventListener('click',function(){
             bl8RunPlus1.innerHTML = bl8RunC;
         }
         p3RunC--;
+        sessionStorage.setItem('initp3RunC', p3RunC);
         p3run.innerHTML = p3RunC;
         runCounter--;
         sessionStorage.setItem('initTotalrun', runCounter);
@@ -3781,7 +3991,14 @@ p3RunMinus.addEventListener('click',function(){
     }
     
 })
-let p4RunC = 0;
+p3run.innerHTML = p3RunC;
+
+if (!sessionStorage.getItem('initp4RunC')) {
+    sessionStorage.setItem('initp4RunC', '0');
+  }
+let p4RunC = Number(sessionStorage.getItem('initp4RunC'));
+
+
 p4RunPlus.addEventListener('click',function(){
     if(bl1runs.getAttribute('id')==='bl1Run'){
         bl1RunC++;
@@ -3818,6 +4035,7 @@ p4RunPlus.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p4RunC++;
+    sessionStorage.setItem('initp4RunC', p4RunC);
     p4run.innerHTML = p4RunC;
     runCounter++;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -3878,6 +4096,7 @@ p4Six.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p4RunC=p4RunC+6;
+    sessionStorage.setItem('initp4RunC', p4RunC);
     p4run.innerHTML = p4RunC;
     runCounter+=6;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -3932,6 +4151,7 @@ p4two.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p4RunC=p4RunC+2;
+    sessionStorage.setItem('initp4RunC', p4RunC);
     p4run.innerHTML = p4RunC;
     runCounter+=2;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -3983,6 +4203,7 @@ p4Four.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p4RunC=p4RunC+4;
+    sessionStorage.setItem('initp4RunC', p4RunC);
     p4run.innerHTML = p4RunC;
     runCounter+=4;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -4029,6 +4250,7 @@ p4RunMinus.addEventListener('click',function(){
             bl8RunPlus1.innerHTML = bl8RunC;
         }
         p4RunC--;
+        sessionStorage.setItem('initp4RunC', p4RunC);
         p4run.innerHTML = p4RunC;
         runCounter--;
         sessionStorage.setItem('initTotalrun', runCounter);
@@ -4042,7 +4264,14 @@ p4RunMinus.addEventListener('click',function(){
         }
     }
 })
-let p5RunC = 0;
+p4run.innerHTML = p4RunC;
+
+if (!sessionStorage.getItem('initp5RunC')) {
+    sessionStorage.setItem('initp5RunC', '0');
+  }
+let p5RunC = Number(sessionStorage.getItem('initp5RunC'));
+
+
 p5RunPlus.addEventListener('click',function(){
     if(bl1runs.getAttribute('id')==='bl1Run'){
         bl1RunC++;
@@ -4077,7 +4306,8 @@ p5RunPlus.addEventListener('click',function(){
         
         lastTen.appendChild(sp)
     }
-    p5RunC++;
+    p5RunC++; 
+    sessionStorage.setItem('initp5RunC', p5RunC);  
     p5run.innerHTML = p5RunC;
     runCounter++;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -4137,6 +4367,7 @@ p5Six.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p5RunC=p5RunC+6;
+    sessionStorage.setItem('initp5RunC', p5RunC);
     p5run.innerHTML = p5RunC;
     runCounter+=6;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -4191,6 +4422,7 @@ p5two.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p5RunC=p5RunC+2;
+    sessionStorage.setItem('initp5RunC', p5RunC);
     p5run.innerHTML = p5RunC;
     runCounter+=2;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -4242,6 +4474,7 @@ p5Four.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p5RunC=p5RunC+4;
+    sessionStorage.setItem('initp5RunC', p5RunC);
     p5run.innerHTML = p5RunC;
     runCounter+=4;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -4288,6 +4521,7 @@ p5RunMinus.addEventListener('click',function(){
     }
     if(p5RunC>0){
         p5RunC--;
+        sessionStorage.setItem('initp5RunC', p5RunC);
         p5run.innerHTML = p5RunC;
         runCounter--;
         sessionStorage.setItem('initTotalrun', runCounter);
@@ -4301,7 +4535,13 @@ p5RunMinus.addEventListener('click',function(){
         }
     }
 })
-let p6RunC = 0;
+p5run.innerHTML = p5RunC;
+
+if (!sessionStorage.getItem('initp6RunC')) {
+    sessionStorage.setItem('initp6RunC', '0');
+  }
+let p6RunC = Number(sessionStorage.getItem('initp6RunC'));
+
 p6RunPlus.addEventListener('click',function(){
     if(bl1runs.getAttribute('id')==='bl1Run'){
         bl1RunC++;
@@ -4338,6 +4578,7 @@ p6RunPlus.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p6RunC++;
+    sessionStorage.setItem('initp6RunC', p6RunC);
     p6run.innerHTML = p6RunC;
     runCounter++;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -4397,6 +4638,7 @@ p6Six.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p6RunC=p6RunC+6;
+    sessionStorage.setItem('initp6RunC', p6RunC);
     p6run.innerHTML = p6RunC;
     runCounter+=6;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -4451,6 +4693,7 @@ p6two.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p6RunC=p6RunC+2;
+    sessionStorage.setItem('initp6RunC', p6RunC);
     p6run.innerHTML = p6RunC;
     runCounter+=2;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -4502,6 +4745,7 @@ p6Four.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p6RunC=p6RunC+4;
+    sessionStorage.setItem('initp6RunC', p6RunC);
     p6run.innerHTML = p6RunC;
     runCounter+=4;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -4548,6 +4792,7 @@ p6RunMinus.addEventListener('click',function(){
             bl8RunPlus1.innerHTML = bl8RunC;
         }
         p6RunC--;
+        sessionStorage.setItem('initp6RunC', p6RunC);
         p6run.innerHTML = p6RunC;
         runCounter--;
         sessionStorage.setItem('initTotalrun', runCounter);
@@ -4561,7 +4806,13 @@ p6RunMinus.addEventListener('click',function(){
         }
     }
 })
-let p7RunC = 0;
+p6run.innerHTML = p6RunC;
+
+if (!sessionStorage.getItem('initp7RunC')) {
+    sessionStorage.setItem('initp7RunC', '0');
+  }
+let p7RunC = Number(sessionStorage.getItem('initp7RunC'));
+
 p7RunPlus.addEventListener('click',function(){
     if(bl1runs.getAttribute('id')==='bl1Run'){
         bl1RunC++;
@@ -4598,6 +4849,7 @@ p7RunPlus.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p7RunC++;
+    sessionStorage.setItem('initp7RunC', p7RunC);
     p7run.innerHTML = p7RunC;
     runCounter++;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -4658,6 +4910,7 @@ p7Six.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p7RunC=p7RunC+6;
+    sessionStorage.setItem('initp7RunC', p7RunC);
     p7run.innerHTML = p7RunC;
     runCounter+=6;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -4712,6 +4965,7 @@ p7two.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p7RunC=p7RunC+2;
+    sessionStorage.setItem('initp7RunC', p7RunC);
     p7run.innerHTML = p7RunC;
     runCounter+=2;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -4763,6 +5017,7 @@ p7Four.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p7RunC=p7RunC+4;
+    sessionStorage.setItem('initp7RunC', p7RunC);
     p7run.innerHTML = p7RunC;
     runCounter+=4;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -4810,6 +5065,7 @@ p7RunMinus.addEventListener('click',function(){
             bl8RunPlus1.innerHTML = bl8RunC;
         }
         p7RunC--;
+        sessionStorage.setItem('initp7RunC', p7RunC);
         p7run.innerHTML = p7RunC;
         runCounter--;
         sessionStorage.setItem('initTotalrun', runCounter);
@@ -4823,7 +5079,15 @@ p7RunMinus.addEventListener('click',function(){
         }
     }
 })
-let p8RunC = 0;
+p7run.innerHTML = p7RunC;
+
+
+if (!sessionStorage.getItem('initp8RunC')) {
+    sessionStorage.setItem('initp8RunC', '0');
+  }
+let p8RunC = Number(sessionStorage.getItem('initp8RunC'));
+
+
 p8RunPlus.addEventListener('click',function(){
     if(bl1runs.getAttribute('id')==='bl1Run'){
         bl1RunC++;
@@ -4860,6 +5124,7 @@ p8RunPlus.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p8RunC++;
+    sessionStorage.setItem('initp8RunC', p8RunC);
     p8run.innerHTML = p8RunC;
     runCounter++;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -4919,6 +5184,7 @@ p8Six.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p8RunC=p8RunC+6;
+    sessionStorage.setItem('initp8RunC', p8RunC);
     p8run.innerHTML = p8RunC;
     runCounter+=6;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -4973,6 +5239,7 @@ p8two.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p8RunC=p8RunC+2;
+    sessionStorage.setItem('initp8RunC', p8RunC);
     p8run.innerHTML = p8RunC;
     runCounter+=2;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -5024,6 +5291,7 @@ p8Four.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p8RunC=p8RunC+4;
+    sessionStorage.setItem('initp8RunC', p8RunC);
     p8run.innerHTML = p8RunC;
     runCounter+=4;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -5071,6 +5339,7 @@ p8RunMinus.addEventListener('click',function(){
             bl8RunPlus1.innerHTML = bl8RunC;
         }
         p8RunC--;
+        sessionStorage.setItem('initp8RunC', p8RunC);
         p8run.innerHTML = p8RunC;
         runCounter--;
         sessionStorage.setItem('initTotalrun', runCounter);
@@ -5084,7 +5353,13 @@ p8RunMinus.addEventListener('click',function(){
         }
     }
 })
-let p9RunC = 0;
+p8run.innerHTML = p8RunC;
+
+if (!sessionStorage.getItem('initp9RunC')) {
+    sessionStorage.setItem('initp9RunC', '0');
+  }
+let p9RunC = Number(sessionStorage.getItem('initp9RunC'));
+
 p9RunPlus.addEventListener('click',function(){
     if(bl1runs.getAttribute('id')==='bl1Run'){
         bl1RunC++;
@@ -5121,6 +5396,7 @@ p9RunPlus.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p9RunC++;
+    sessionStorage.setItem('initp9RunC', p9RunC);
     p9run.innerHTML = p9RunC;
     runCounter++;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -5179,6 +5455,7 @@ p9Six.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p9RunC=p9RunC+6;
+    sessionStorage.setItem('initp9RunC', p9RunC);
     p9run.innerHTML = p9RunC;
     runCounter+=6;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -5233,6 +5510,7 @@ p9two.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p9RunC=p9RunC+2;
+    sessionStorage.setItem('initp9RunC', p9RunC);
     p9run.innerHTML = p9RunC;
     runCounter+=2;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -5284,6 +5562,7 @@ p9Four.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p9RunC=p9RunC+4;
+    sessionStorage.setItem('initp9RunC', p9RunC);
     p9run.innerHTML = p9RunC;
     runCounter+=4;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -5330,6 +5609,7 @@ p9RunMinus.addEventListener('click',function(){
             bl8RunPlus1.innerHTML = bl8RunC;
         }
         p9RunC--;
+        sessionStorage.setItem('initp9RunC', p9RunC);
         p9run.innerHTML = p9RunC;
         runCounter--;
         sessionStorage.setItem('initTotalrun', runCounter);
@@ -5343,7 +5623,13 @@ p9RunMinus.addEventListener('click',function(){
         }
     }
 })
-let p10RunC = 0;
+p9run.innerHTML = p9RunC;
+
+if (!sessionStorage.getItem('initp10RunC')) {
+    sessionStorage.setItem('initp10RunC', '0');
+  }
+let p10RunC = Number(sessionStorage.getItem('initp10RunC'));
+
 p10RunPlus.addEventListener('click',function(){
     if(bl1runs.getAttribute('id')==='bl1Run'){
         bl1RunC++;
@@ -5380,6 +5666,7 @@ p10RunPlus.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p10RunC++;
+    sessionStorage.setItem('initp10RunC', p10RunC);
     p10run.innerHTML = p10RunC;
     runCounter++;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -5438,6 +5725,7 @@ p10Six.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p10RunC=p10RunC+6;
+    sessionStorage.setItem('initp10RunC', p10RunC);
     p10run.innerHTML = p10RunC;
     runCounter+=6;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -5492,6 +5780,7 @@ p10two.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p10RunC=p10RunC+2;
+    sessionStorage.setItem('initp10RunC', p10RunC);
     p10run.innerHTML = p10RunC;
     runCounter+=2;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -5543,6 +5832,7 @@ p10Four.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p10RunC=p10RunC+4;
+    sessionStorage.setItem('initp10RunC', p10RunC);
     p10run.innerHTML = p10RunC;
     runCounter+=4;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -5589,6 +5879,7 @@ p10RunMinus.addEventListener('click',function(){
             bl8RunPlus1.innerHTML = bl8RunC;
         }
         p10RunC--;
+        sessionStorage.setItem('initp10RunC', p10RunC);
         p10run.innerHTML = p10RunC;
         runCounter--;
         sessionStorage.setItem('initTotalrun', runCounter);
@@ -5602,7 +5893,13 @@ p10RunMinus.addEventListener('click',function(){
         }
     }
 })
-let p11RunC = 0;
+p10run.innerHTML = p10RunC;
+
+if (!sessionStorage.getItem('initp11RunC')) {
+    sessionStorage.setItem('initp11RunC', '0');
+  }
+let p11RunC = Number(sessionStorage.getItem('initp11RunC'));
+
 p11RunPlus.addEventListener('click',function(){
     if(bl1runs.getAttribute('id')==='bl1Run'){
         bl1RunC++;
@@ -5639,6 +5936,7 @@ p11RunPlus.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p11RunC++;
+    sessionStorage.setItem('initp11RunC', p11RunC);
     p11run.innerHTML = p11RunC;
     runCounter++;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -5697,6 +5995,7 @@ p11Six.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p11RunC=p11RunC+6;
+    sessionStorage.setItem('initp11RunC', p11RunC);
     p11run.innerHTML = p11RunC;
     runCounter+=6;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -5751,6 +6050,7 @@ p11two.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p11RunC=p11RunC+2;
+    sessionStorage.setItem('initp11RunC', p11RunC);
     p11run.innerHTML = p11RunC;
     runCounter+=2;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -5802,6 +6102,7 @@ p11Four.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
     p11RunC=p11RunC+4;
+    sessionStorage.setItem('initp11RunC', p11RunC);
     p11run.innerHTML = p11RunC;
     runCounter+=4;
     sessionStorage.setItem('initTotalrun', runCounter);
@@ -5848,6 +6149,7 @@ p11RunMinus.addEventListener('click',function(){
             bl8RunPlus1.innerHTML = bl8RunC;
         }
         p11RunC--;
+        sessionStorage.setItem('initp11RunC', p11RunC);
         p11run.innerHTML = p11RunC;
         runCounter--;
         sessionStorage.setItem('initTotalrun', runCounter);
@@ -5861,6 +6163,7 @@ p11RunMinus.addEventListener('click',function(){
         }
     }
 })
+p11run.innerHTML = p11RunC;
 
 let p1Sr = document.querySelector('.p1Sr')
 let p2Sr = document.querySelector('.p2Sr')
