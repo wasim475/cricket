@@ -33,6 +33,11 @@ let team1 = document.querySelector('.team1')
 let team2 = document.querySelector('.team2')
 let error1 = document.querySelector('.error1')
 
+
+
+
+
+
 btnTeam1.addEventListener('click',function(){
     if(!team1Input.value){
         error1.innerHTML= 'please enter team name.'
@@ -42,14 +47,26 @@ btnTeam1.addEventListener('click',function(){
     }
    
     else{
+        if (!sessionStorage.getItem('team1Input')) {
+            sessionStorage.setItem('team1Input', team1Input.value);
+          
+          }
+          
+        let team1dis = sessionStorage.getItem('team1Input');
         
-            team1.innerHTML = team1Input.value
-            tossTeam1.innerHTML = team1Input.value
+      
+        
+            team1.innerHTML = team1dis
+            tossTeam1.innerHTML = team1dis
+
             team1Input.style.display = 'none'
             btnTeam1.style.display = 'none'
+            
             team2Input.style.display = 'inline'
             btnTeam2.style.display = 'inline'
             error1.innerHTML= '';
+
+          
         
        
     }
@@ -65,12 +82,20 @@ btnTeam2.addEventListener('click',function(){
     }
    
     else{
-        team2.innerHTML = team2Input.value
-        tossTeam2.innerHTML = team2Input.value
+
+        if (!sessionStorage.getItem('team2Input')) {
+            sessionStorage.setItem('team2Input', team2Input.value);
+            
+          }
+          
+        let team2dis = sessionStorage.getItem('team2Input');
+        team2.innerHTML = team2dis
+        tossTeam2.innerHTML = team2dis
         team2Input.style.display = 'none'
         btnTeam2.style.display = 'none'
         toss.style.display = 'block'
-        error1.innerHTML =''
+            error1.innerHTML =''
+        
     }
    
 })
@@ -90,14 +115,24 @@ let battingFirst= document.querySelector('.battingFirst')
 let battingTarget= document.querySelector('.battingTarget')
 
 tossTeam1.addEventListener('click',function(){
+    if (!sessionStorage.getItem('tossTeam1')) {
+        sessionStorage.setItem('tossTeam1', tossTeam1.innerHTML);
+        
+      }
+      let tt1 = sessionStorage.getItem('tossTeam1')
     battingFirstOrTarget.style.display = 'inline-block'
     toss.style.display = 'none'
-    scoreCard.innerHTML = tossTeam1.innerHTML
+    scoreCard.innerHTML = tt1;
 })
 tossTeam2.addEventListener('click',function(){
+    if (!sessionStorage.getItem('tossTeam2')) {
+        sessionStorage.setItem('tossTeam2', tossTeam2.innerHTML);
+        
+      }
+      let tt2 = sessionStorage.getItem('tossTeam2')
     battingFirstOrTarget.style.display = 'inline-block'
     toss.style.display = 'none'
-    scoreCard.innerHTML = tossTeam2.innerHTML
+    scoreCard.innerHTML = tt2
 })
 
 battingFirst.addEventListener('click',function(){
@@ -991,15 +1026,22 @@ targetBtn.addEventListener('click',function(){
     if(!targetInput.value || targetInput.value<1){
         error2.innerHTML = 'Invalid'
     }else{
-        targetRuns.innerHTML = targetInput.value;
-        targetName.style.display = 'block'
+        if (!sessionStorage.getItem('Targetv')) {
+            sessionStorage.setItem('Targetv', targetInput.value);
+          }
+        let target2 = Number(sessionStorage.getItem('Targetv'));
+        
+          
+
+        targetRuns.innerHTML =target2;
+        
         error2.innerHTML = ''
         target.style.display = 'none'
         error2.innerHTML= ''
         overLimitPortion.style.display = 'block'
-        needRuns.innerHTML = targetInput.value
+        needRuns.innerHTML = target2;
         NeedTeamName.innerHTML=scoreCard.innerHTML
-        needToWin.style.display = 'block'
+       
     }
     
 })
@@ -1049,7 +1091,7 @@ totalOverMinus.addEventListener('click',function(){
 })
 
 totalOverPlus.addEventListener('click',function(){
-    if(overCounter>=0 && overCounter<overLimit.value){
+    if(overCounter>=0 && overCounter < Number(overLL.innerHTML)){
         overCounter++;
         sessionStorage.setItem('initOver', overCounter);
         totalOvar.innerHTML = overCounter;
@@ -1073,120 +1115,138 @@ totalOverPlus.addEventListener('click',function(){
             runIncrmenterDeincrementer.style.display= 'none'
             totalOvar.innerHTML= overCounter;
             undo1.style.display = 'block'
+           
         
     }
 })
 totalOvar.innerHTML = overCounter;
+let overLL = document.querySelector('.overLL')
+
 
 overLimitBtn.addEventListener('click',function(){
-    if(!(overLimit.value) && !overLimit.value>0){
+    if(!(overLimit.value)){
         error3.innerHTML = 'Invalid'
     }
     else{
-        if (sessionStorage.getItem('initp1')) {
-            player1.style.display= 'block'
-            let b1dis = sessionStorage.getItem('initp1');
-            p1.innerHTML = b1dis;
-            btn1.style.display = 'none'
-            b1.style.display = 'none';
-            btn2.style.display = 'inline-block'
-            b2.style.display = 'inline-block';
+        if (!sessionStorage.getItem('overLimit1')) {
+            sessionStorage.setItem('overLimit1', overLimit.value);
+          
           }
+          
+        let overLimitt = Number(sessionStorage.getItem('overLimit1'))
+        overLL.innerText = overLimitt;
+        console.log(overLL)
 
-        if (sessionStorage.getItem('initp2')) {
-            player2.style.display= 'block'
-            let b2dis = sessionStorage.getItem('initp2');
-            p2.innerHTML = b2dis;
-            btn2.style.display = 'none'
-            b2.style.display = 'none';
-            btn3.style.display = 'inline-block'
-            b3.style.display = 'inline-block';
-          }
+        // if (sessionStorage.getItem('initp1')) {
+        //     player1.style.display= 'block'
+        //     let b1dis = sessionStorage.getItem('initp1');
+        //     p1.innerHTML = b1dis;
+        //     btn1.style.display = 'none'
+        //     b1.style.display = 'none';
+        //     btn2.style.display = 'inline-block'
+        //     b2.style.display = 'inline-block';
+        //   }
 
-        if (sessionStorage.getItem('initp3')) {
-            player3.style.display= 'block'
-            let b3dis = sessionStorage.getItem('initp3');
-            p3.innerHTML = b3dis;
-            btn3.style.display = 'none'
-            b3.style.display = 'none';
-            btn4.style.display = 'inline-block'
-            b4.style.display = 'inline-block';
-        }
-        if (sessionStorage.getItem('initp4')) {
-            player4.style.display= 'block'
-            let b4dis = sessionStorage.getItem('initp4');
-            p4.innerHTML = b4dis;
-            btn4.style.display = 'none'
-            b4.style.display = 'none';
-            btn5.style.display = 'inline-block'
-            b5.style.display = 'inline-block';
-          }
-          if (sessionStorage.getItem('initp5')) {
-            player5.style.display= 'block'
-            let b5dis = sessionStorage.getItem('initp5');
-            p5.innerHTML = b5dis;
-            btn5.style.display = 'none'
-            b5.style.display = 'none';
-            btn6.style.display = 'inline-block'
-            b6.style.display = 'inline-block';
-          }
-          if (sessionStorage.getItem('initp6')) {
-            player6.style.display= 'block'
-            let b6dis = sessionStorage.getItem('initp6');
-            p6.innerHTML = b6dis;
-            btn6.style.display = 'none'
-            b6.style.display = 'none';
-            btn7.style.display = 'inline-block'
-            b7.style.display = 'inline-block';
-          }
-          if (sessionStorage.getItem('initp7')) {
-            player7.style.display= 'block'
-            let b7dis = sessionStorage.getItem('initp7');
-            p7.innerHTML = b7dis;
-            btn7.style.display = 'none'
-            b7.style.display = 'none';
-            btn8.style.display = 'inline-block'
-            b8.style.display = 'inline-block';
-          }
-          if (sessionStorage.getItem('initp8')) {
-            player8.style.display= 'block'
-            let b8dis = sessionStorage.getItem('initp8');
-            p8.innerHTML = b8dis;
-            btn8.style.display = 'none'
-            b8.style.display = 'none';
-            btn9.style.display = 'inline-block'
-            b9.style.display = 'inline-block';
-          }
-          if (sessionStorage.getItem('initp9')) {
-            player9.style.display= 'block'
-            let b9dis = sessionStorage.getItem('initp9');
-            p9.innerHTML = b9dis;
-            btn9.style.display = 'none'
-            b9.style.display = 'none';
-            btn10.style.display = 'inline-block'
-            b10.style.display = 'inline-block';
-          }
-          if (sessionStorage.getItem('initp10')) {
-            player10.style.display= 'block'
-            let b10dis = sessionStorage.getItem('initp10');
-            p10.innerHTML = b10dis;
-            btn10.style.display = 'none'
-            b10.style.display = 'none';
-            btn11.style.display = 'inline-block'
-            b11.style.display = 'inline-block';
-          }
-          if (sessionStorage.getItem('initp11')) {
-            player11.style.display= 'block'
-            let b11dis = sessionStorage.getItem('initp11');
-            p11.innerHTML = b11dis;
-            btn11.style.display = 'none'
-            b11.style.display = 'none';
+        // if (sessionStorage.getItem('initp2')) {
+        //     player2.style.display= 'block'
+        //     let b2dis = sessionStorage.getItem('initp2');
+        //     p2.innerHTML = b2dis;
+        //     btn2.style.display = 'none'
+        //     b2.style.display = 'none';
+        //     btn3.style.display = 'inline-block'
+        //     b3.style.display = 'inline-block';
+        //   }
+
+        // if (sessionStorage.getItem('initp3')) {
+        //     player3.style.display= 'block'
+        //     let b3dis = sessionStorage.getItem('initp3');
+        //     p3.innerHTML = b3dis;
+        //     btn3.style.display = 'none'
+        //     b3.style.display = 'none';
+        //     btn4.style.display = 'inline-block'
+        //     b4.style.display = 'inline-block';
+        // }
+        // if (sessionStorage.getItem('initp4')) {
+        //     player4.style.display= 'block'
+        //     let b4dis = sessionStorage.getItem('initp4');
+        //     p4.innerHTML = b4dis;
+        //     btn4.style.display = 'none'
+        //     b4.style.display = 'none';
+        //     btn5.style.display = 'inline-block'
+        //     b5.style.display = 'inline-block';
+        //   }
+        //   if (sessionStorage.getItem('initp5')) {
+        //     player5.style.display= 'block'
+        //     let b5dis = sessionStorage.getItem('initp5');
+        //     p5.innerHTML = b5dis;
+        //     btn5.style.display = 'none'
+        //     b5.style.display = 'none';
+        //     btn6.style.display = 'inline-block'
+        //     b6.style.display = 'inline-block';
+        //   }
+        //   if (sessionStorage.getItem('initp6')) {
+        //     player6.style.display= 'block'
+        //     let b6dis = sessionStorage.getItem('initp6');
+        //     p6.innerHTML = b6dis;
+        //     btn6.style.display = 'none'
+        //     b6.style.display = 'none';
+        //     btn7.style.display = 'inline-block'
+        //     b7.style.display = 'inline-block';
+        //   }
+        //   if (sessionStorage.getItem('initp7')) {
+        //     player7.style.display= 'block'
+        //     let b7dis = sessionStorage.getItem('initp7');
+        //     p7.innerHTML = b7dis;
+        //     btn7.style.display = 'none'
+        //     b7.style.display = 'none';
+        //     btn8.style.display = 'inline-block'
+        //     b8.style.display = 'inline-block';
+        //   }
+        //   if (sessionStorage.getItem('initp8')) {
+        //     player8.style.display= 'block'
+        //     let b8dis = sessionStorage.getItem('initp8');
+        //     p8.innerHTML = b8dis;
+        //     btn8.style.display = 'none'
+        //     b8.style.display = 'none';
+        //     btn9.style.display = 'inline-block'
+        //     b9.style.display = 'inline-block';
+        //   }
+        //   if (sessionStorage.getItem('initp9')) {
+        //     player9.style.display= 'block'
+        //     let b9dis = sessionStorage.getItem('initp9');
+        //     p9.innerHTML = b9dis;
+        //     btn9.style.display = 'none'
+        //     b9.style.display = 'none';
+        //     btn10.style.display = 'inline-block'
+        //     b10.style.display = 'inline-block';
+        //   }
+        //   if (sessionStorage.getItem('initp10')) {
+        //     player10.style.display= 'block'
+        //     let b10dis = sessionStorage.getItem('initp10');
+        //     p10.innerHTML = b10dis;
+        //     btn10.style.display = 'none'
+        //     b10.style.display = 'none';
+        //     btn11.style.display = 'inline-block'
+        //     b11.style.display = 'inline-block';
+        //   }
+        //   if (sessionStorage.getItem('initp11')) {
+        //     player11.style.display= 'block'
+        //     let b11dis = sessionStorage.getItem('initp11');
+        //     p11.innerHTML = b11dis;
+        //     btn11.style.display = 'none'
+        //     b11.style.display = 'none';
             
-          }
+        //   }
+
+        if(Number(targetRuns.innerHTML)>0){
+            targetName.style.display = 'block'
+            needToWin.style.display = 'block'
+        }
         overLimitPortion.style.display = 'none'
         scoreAndOver.style.display = 'block'
         batterOrBowler.style.display = 'flex'
         batsman.style.display = 'block'
+        
         
     }
 })
@@ -7724,3 +7784,159 @@ plusSign.addEventListener('click',function(){
         lastTen.appendChild(sp)
     }
 })
+
+
+if (sessionStorage.getItem('team1Input') && sessionStorage.getItem('team2Input') && sessionStorage.getItem('overLimit1') ) {
+    
+    team1Input.style.display = 'none'
+    btnTeam1.style.display = 'none'
+    
+    let team2dis = sessionStorage.getItem('team2Input');
+    let team1dis = sessionStorage.getItem('team1Input');
+    // toss.style.display = 'block'
+
+    let target2 = Number(sessionStorage.getItem('Targetv'));
+    targetRuns.innerHTML =target2;
+      
+    team2.innerHTML = team2dis;
+    team1.innerHTML = team1dis;
+  
+      let overCounter = Number(sessionStorage.getItem('initOver'));
+    
+    tossTeam2.innerHTML = team2dis;
+    tossTeam1.innerHTML = team1dis;
+
+    team2Input.style.display = 'none'
+    btnTeam2.style.display = 'none'
+
+    if (sessionStorage.getItem('initp1')) {
+        player1.style.display= 'block'
+        let b1dis = sessionStorage.getItem('initp1');
+        p1.innerHTML = b1dis;
+        btn1.style.display = 'none'
+        b1.style.display = 'none';
+        btn2.style.display = 'inline-block'
+        b2.style.display = 'inline-block';
+      }
+
+    if (sessionStorage.getItem('initp2')) {
+        player2.style.display= 'block'
+        let b2dis = sessionStorage.getItem('initp2');
+        p2.innerHTML = b2dis;
+        btn2.style.display = 'none'
+        b2.style.display = 'none';
+        btn3.style.display = 'inline-block'
+        b3.style.display = 'inline-block';
+      }
+
+    if (sessionStorage.getItem('initp3')) {
+        player3.style.display= 'block'
+        let b3dis = sessionStorage.getItem('initp3');
+        p3.innerHTML = b3dis;
+        btn3.style.display = 'none'
+        b3.style.display = 'none';
+        btn4.style.display = 'inline-block'
+        b4.style.display = 'inline-block';
+    }
+    if (sessionStorage.getItem('initp4')) {
+        player4.style.display= 'block'
+        let b4dis = sessionStorage.getItem('initp4');
+        p4.innerHTML = b4dis;
+        btn4.style.display = 'none'
+        b4.style.display = 'none';
+        btn5.style.display = 'inline-block'
+        b5.style.display = 'inline-block';
+      }
+      if (sessionStorage.getItem('initp5')) {
+        player5.style.display= 'block'
+        let b5dis = sessionStorage.getItem('initp5');
+        p5.innerHTML = b5dis;
+        btn5.style.display = 'none'
+        b5.style.display = 'none';
+        btn6.style.display = 'inline-block'
+        b6.style.display = 'inline-block';
+      }
+      if (sessionStorage.getItem('initp6')) {
+        player6.style.display= 'block'
+        let b6dis = sessionStorage.getItem('initp6');
+        p6.innerHTML = b6dis;
+        btn6.style.display = 'none'
+        b6.style.display = 'none';
+        btn7.style.display = 'inline-block'
+        b7.style.display = 'inline-block';
+      }
+      if (sessionStorage.getItem('initp7')) {
+        player7.style.display= 'block'
+        let b7dis = sessionStorage.getItem('initp7');
+        p7.innerHTML = b7dis;
+        btn7.style.display = 'none'
+        b7.style.display = 'none';
+        btn8.style.display = 'inline-block'
+        b8.style.display = 'inline-block';
+      }
+      if (sessionStorage.getItem('initp8')) {
+        player8.style.display= 'block'
+        let b8dis = sessionStorage.getItem('initp8');
+        p8.innerHTML = b8dis;
+        btn8.style.display = 'none'
+        b8.style.display = 'none';
+        btn9.style.display = 'inline-block'
+        b9.style.display = 'inline-block';
+      }
+      if (sessionStorage.getItem('initp9')) {
+        player9.style.display= 'block'
+        let b9dis = sessionStorage.getItem('initp9');
+        p9.innerHTML = b9dis;
+        btn9.style.display = 'none'
+        b9.style.display = 'none';
+        btn10.style.display = 'inline-block'
+        b10.style.display = 'inline-block';
+      }
+      if (sessionStorage.getItem('initp10')) {
+        player10.style.display= 'block'
+        let b10dis = sessionStorage.getItem('initp10');
+        p10.innerHTML = b10dis;
+        btn10.style.display = 'none'
+        b10.style.display = 'none';
+        btn11.style.display = 'inline-block'
+        b11.style.display = 'inline-block';
+      }
+      if (sessionStorage.getItem('initp11')) {
+        player11.style.display= 'block'
+        let b11dis = sessionStorage.getItem('initp11');
+        p11.innerHTML = b11dis;
+        btn11.style.display = 'none'
+        b11.style.display = 'none';
+        
+      }
+      if (sessionStorage.getItem('tossTeam1')) {
+          let tt1 = sessionStorage.getItem('tossTeam1')
+          scoreCard.innerHTML = tt1;
+        
+        
+      }
+      if (sessionStorage.getItem('tossTeam2')) {
+          let tt2 = sessionStorage.getItem('tossTeam2')
+          scoreCard.innerHTML = tt2;
+        
+        
+      }
+
+      if (sessionStorage.getItem('overLimit1')) {
+        
+       
+        let overLimitt = Number(sessionStorage.getItem('overLimit1'))
+        overLL.innerHTML= overLimitt;
+      
+      }
+  
+    overLimitPortion.style.display = 'none'
+    scoreAndOver.style.display = 'block'
+    batterOrBowler.style.display = 'flex'
+    batsman.style.display = 'block'
+    if(Number(targetRuns.innerHTML)>0){
+        targetName.style.display = 'block'
+        needToWin.style.display = 'block'
+    }
+    footer.style.display= 'none'
+  }
